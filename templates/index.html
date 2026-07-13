@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>India Mobile Pulse - 印度手机圈热点</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <!-- 顶栏 -->
+    <header class="top-bar">
+        <div class="logo">
+            <span class="logo-icon">📡</span>
+            <div>
+                <h1>India Mobile Pulse</h1>
+                <p class="subtitle">印度手机圈热点监测</p>
+            </div>
+        </div>
+        <div class="top-actions">
+            <span class="last-update" id="lastUpdate">--</span>
+            <span class="next-schedule" id="nextSchedule"></span>
+            <button class="btn btn-outline" id="btnRefresh" title="刷新数据">⟳ 刷新</button>
+            <button class="btn btn-primary" id="btnCollect" title="手动采集">📥 采集</button>
+            <button class="btn btn-accent" id="btnAnalyze" title="手动分析">🧠 分析</button>
+        </div>
+    </header>
+
+    <main class="container">
+        <!-- 统计卡片 -->
+        <section class="stats-row">
+            <div class="stat-card">
+                <div class="stat-icon">📰</div>
+                <div class="stat-value" id="statTotal">--</div>
+                <div class="stat-label">总帖子</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">📅</div>
+                <div class="stat-value" id="statToday">--</div>
+                <div class="stat-label">今日新增</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">🏷️</div>
+                <div class="stat-value" id="statBrands">--</div>
+                <div class="stat-label">涉及品牌</div>
+            </div>
+            <div class="stat-card">
+                <div class="stat-icon">😊</div>
+                <div class="stat-value" id="statSentiment">--</div>
+                <div class="stat-label">整体情感</div>
+            </div>
+        </section>
+
+        <!-- AI 分析报告 -->
+        <section class="analysis-section" id="analysisSection">
+            <div class="section-header">
+                <h2>🧠 AI 分析报告</h2>
+                <span class="analysis-time" id="analysisTime">--</span>
+            </div>
+            <div class="analysis-content" id="analysisContent">
+                <div class="empty-state">暂无分析报告，点击「分析」按钮生成</div>
+            </div>
+        </section>
+
+        <!-- 品牌声量排行 -->
+        <section class="brands-section" id="brandsSection">
+            <div class="section-header">
+                <h2>🏷️ 品牌声量</h2>
+            </div>
+            <div class="brands-chart" id="brandsChart">
+                <div class="empty-state">暂无数据</div>
+            </div>
+        </section>
+
+        <!-- 帖子列表 -->
+        <section class="posts-section">
+            <div class="section-header">
+                <h2>📋 最新帖子</h2>
+            </div>
+            <div class="filter-bar">
+                <div class="filter-tabs" id="sourceTabs">
+                    <button class="tab active" data-source="">全部</button>
+                    <button class="tab" data-source="official">官方/媒体</button>
+                    <button class="tab" data-source="reddit">Reddit</button>
+                    <button class="tab" data-source="youtube">YouTube</button>
+                    <button class="tab" data-source="news">新闻</button>
+                </div>
+                <div class="filter-tabs" id="periodTabs">
+                    <button class="tab active" data-period="all">全部</button>
+                    <button class="tab" data-period="today">今天</button>
+                    <button class="tab" data-period="yesterday">昨天</button>
+                    <button class="tab" data-period="week">本周</button>
+                </div>
+                <select class="brand-filter" id="brandFilter">
+                    <option value="">全部品牌</option>
+                </select>
+            </div>
+            <div class="posts-list" id="postsList">
+                <div class="empty-state">加载中...</div>
+            </div>
+        </section>
+
+        <!-- 采集日志 -->
+        <section class="runs-section">
+            <div class="section-header">
+                <h2>⚙️ 采集状态</h2>
+            </div>
+            <div class="runs-list" id="runsList">
+                <div class="empty-state">暂无记录</div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Toast 通知 -->
+    <div class="toast" id="toast"></div>
+
+    <script src="/static/app.js"></script>
+</body>
+</html>
