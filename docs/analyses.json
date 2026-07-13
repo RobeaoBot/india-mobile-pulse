@@ -1,0 +1,17 @@
+{
+  "analyses": [
+    {
+      "id": 1,
+      "period_start": "2021-07-28T07:00:00",
+      "period_end": "2026-06-29T12:02:09",
+      "summary": "本期监测到最受关注的品牌为：Apple(79次提及)、Samsung(46次提及)、OnePlus(36次提及)、Xiaomi(31次提及)、Motorola(30次提及)。热门讨论话题包括：launch、android、price等。整体情感倾向：正面4%、负面0%、中性95%。",
+      "hot_topics": "[{\"topic\": \"launch\", \"description\": \"Breaking: Huawei HarmonyOS PC launching in May\", \"heat\": \"high\", \"count\": 89}, {\"topic\": \"android\", \"description\": \"Hours after iOS 26 launch, Google is preparing to officially launch Android 16 t\", \"heat\": \"high\", \"count\": 56}, {\"topic\": \"price\", \"description\": \"Motorola Edge 70 Pro+ With 50MP Periscope Telephoto Camera, 144Hz AMOLED Display\", \"heat\": \"high\", \"count\": 51}, {\"topic\": \"apple\", \"description\": \"Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Androi\", \"heat\": \"high\", \"count\": 43}, {\"topic\": \"pro\", \"description\": \"Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Androi\", \"heat\": \"high\", \"count\": 40}, {\"topic\": \"2026\", \"description\": \"Huawei HDC 2026 Set for June 12–14: HarmonyOS 7 Officially Confirmed\", \"heat\": \"high\", \"count\": 35}, {\"topic\": \"galaxy\", \"description\": \"Samsung Galaxy S26 Ultra: Check expected launch date, price, specifications, and\", \"heat\": \"high\", \"count\": 35}, {\"topic\": \"iphone\", \"description\": \"Next iPhone update: what is the next iOS version? (iOS 26.3)\", \"heat\": \"high\", \"count\": 32}, {\"topic\": \"smartphone\", \"description\": \"HarmonyOS 3 for smartphones launching on July 27\", \"heat\": \"high\", \"count\": 32}, {\"topic\": \"battery\", \"description\": \"Motorola Edge 70 Fusion 512GB Hits India: Why Its 7,000mAh Battery Fits in 8mm\", \"heat\": \"high\", \"count\": 32}]",
+      "brand_sentiment": "{\"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性30条 (共31条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面1条/中性75条 (共79条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性34条 (共36条提及)\"}, \"Vivo\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性22条 (共22条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性29条 (共30条提及)\"}, \"Oppo\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性26条 (共26条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性44条 (共46条提及)\"}, \"Nothing\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性22条 (共22条提及)\"}, \"Realme\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性19条 (共19条提及)\"}, \"Google\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性15条 (共15条提及)\"}, \"Lava\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性3条 (共3条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性3条 (共3条提及)\"}, \"Tecno\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性2条 (共3条提及)\"}}",
+      "key_insights": "[\"品牌声量前三：Apple, Samsung, OnePlus\", \"讨论最热的关键词：launch, android, price, apple, pro\"]",
+      "trending_keywords": "[\"launch\", \"android\", \"price\", \"apple\", \"pro\", \"2026\", \"galaxy\", \"iphone\", \"smartphone\", \"battery\", \"series\", \"ultra\", \"oneplus\", \"google\", \"samsung\"]",
+      "posts_analyzed": 428,
+      "provider": "rule",
+      "created_at": "2026-06-29 12:26:41"
+    }
+  ]
+}
