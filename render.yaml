@@ -1,0 +1,19 @@
+services:
+  - type: web
+    name: india-mobile-pulse
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: gunicorn --workers 1 --bind 0.0.0.0:$PORT --timeout 300 wsgi:app
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.11.6"
+      - key: DAILY_COLLECTION_TIME
+        value: "12:00"
+      - key: LLM_PROVIDER
+        value: none
+      - key: DATABASE_PATH
+        value: /opt/render/project/data/pulse.db
+    disk:
+      name: pulse-data
+      mountPath: /opt/render/project/data
+      sizeGB: 1
