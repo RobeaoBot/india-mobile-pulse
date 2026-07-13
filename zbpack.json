@@ -1,0 +1,7 @@
+{
+    "python": {
+        "entry": "app.py",
+        "version": "3.11"
+    },
+    "start_command": "_startup"
+}
