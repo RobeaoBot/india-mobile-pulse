@@ -1,0 +1,9 @@
+flask>=3.0
+apscheduler>=3.10
+requests>=2.31
+beautifulsoup4>=4.12
+feedparser>=6.0
+openai>=1.0
+lxml>=5.0
+gunicorn>=21.0
+gradio>=4.0
