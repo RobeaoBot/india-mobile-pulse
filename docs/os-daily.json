@@ -1,0 +1,395 @@
+{
+  "date": "2026-07-14",
+  "title": "📱 印度手机操作系统日报 — 2026年07月14日",
+  "reports": [
+    {
+      "os_name": "Android",
+      "icon": "🤖",
+      "name_cn": "安卓",
+      "color": "#3DDC84",
+      "total_posts": 84,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 83
+      },
+      "sentiment_pct": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 99
+      },
+      "top_brands": [
+        {
+          "name": "Apple",
+          "count": 15
+        },
+        {
+          "name": "Google",
+          "count": 15
+        },
+        {
+          "name": "Samsung",
+          "count": 9
+        },
+        {
+          "name": "OnePlus",
+          "count": 8
+        },
+        {
+          "name": "Motorola",
+          "count": 3
+        },
+        {
+          "name": "Xiaomi",
+          "count": 3
+        },
+        {
+          "name": "Vivo",
+          "count": 2
+        },
+        {
+          "name": "Oppo",
+          "count": 2
+        }
+      ],
+      "summary": "安卓生态今日共有 84 条相关讨论，以中性讨论为主。热门品牌：Apple、Google、Samsung。关注焦点：Hours after iOS 26 launch, Google is pre",
+      "highlights": [
+        {
+          "category": "🆕 新品发布",
+          "title": "Hours after iOS 26 launch, Google is preparing to officially launch Android 16 today",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdGtyOFVnaENBaXc3bWpjaHRRWWFXTzFJeFU2VnR3YW1PRTRzZHZtcXhJNnF0UTh4NnVVVGJ3WmhkQ2FVZW1Qa0JPMHVQWlQ0QS1mcmFsWkpwMFBmMU9NRko2RzR4TlR4NlpKdDhaanFXeTlFUzRmVUR3ckd4QU1KZy13X0I0Z2RSckotdnhiWmE3Q2VUdThWWVhoZjJNakRZZTRmTEZrSVg2aWdJN0JtNHR3ZE5ES3NpM3ppWDJLQzcxOTdvMkhpWWR1a2lHZkl6Y2pFNmlpcF9WeGJFRDJZTTNBMWXSAeoBQVVfeXFMTlJiNHNzZnptaDg1OEM5aDN3T3RmV29RUjRTVmM5Q1V4bDNfMkhQZFVwYkpyd2oteGVXVlpuemFJZHJqY0ppSTNmMXZDWkhSbi1veVNNN2VHUjczVlpxUlJLZU1UcWZjTXB0OWptWFY5RHpVc1RTdXBCQlZhX2lhMXRZc3FVRUZrT2ZuVjJPSXNQZVNLN2w3bzZ0MThtc2d3LW1VLThXaWtnM01qRXhldXgyRGtPd2tCVXhNWTBjWjkwaFRnZE5XM0lxV09jMW0yV05tdHRxdUktSWdSZFhNbnNnTmRZVHB0ZlNn?oc=5"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "Android vs iOS vs Others – Smartphone OS Guide",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Vivo reveals Android 16-based OriginOS 6 update timeline for India: Eligible devices, what's new & more",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNzJqd1l5SWdhN09NVzRpOWFHb1lnTGJTN3VUdVNDalhDZU9XRkRUTnc2Wm0zXzVaNVhpWmFmZXQzTEhHWURMUkJDOTBLVUh0WTVKVjlUODlsOHROQnpQbFFhU3RSQ0V3blo5aTliYWZfMGN6VXI0SU9SMTNXVkNvMEpVc0FxTWRtcGQwOE0zeDNXM3pBOHBndG81OTR6bVBrZ3pqQ2N4X1Z3Rzkxdmc1Z0ZPdTZfN2VDTlRXeTZsZFF5cjVYbm9JbVVwZy1TV1FUSmVkS0N6aERjSElUM2ppYWNieTYxUDYwVDhuT3lTSERqMXNiOU10aNIB_gFBVV95cUxQUUxZN0V5SUdiTERENEJkZ1BzdlVPT0doWkNvWUxkXzNNUWtzTENNSTBDOVBfb3FDa3VOX1BtTEJ5ZFBYZmZvUnRRVy1faUpNdDRyY3lBNlVrUENTdGpSQXEtS1haYy1IYUoyOUdaLUppQUdGZGhsWU9zVmotc1FHSk9HMVFnTmcxWVE3MHNzVjdKUXlIbFdicjZCcTNnQXVZdS1yR2I4cFk1SXdIeVdkd1JZZHY5TmpRcVJWZVFJX1JkUXNLUDFCNm43M0pGWkJhT016cUdrNjhOdWtzczV6OUJfeHR0U2pmQkRYT0NHS2JhaWVwR0RhcHZ3bjFOdw?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "OnePlus announces OxygenOS 16: Full list of eligible phones and new features",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM3pPcndJZ29RREpOQzBWLUxnbEc5Q3F6WE1kQUtxRkVHaE1TR2F5aXpOUXRNREdDTUhmd0R0V0pEMTBwTEVVQTl2emdKV3dtdXFwYlVYVUVQSWNubFhpZW1Ddl92RFB4WWsxTFBxdGtBYjI2by1pRUZoMGhTQ0VJSUZLTTdlRmZTVTk0djYxU2JRakx4LTdEWkZBSThWQlp6elY1cWpKck41aWtqaUVCbldkc0hJZm9HaGYzbkY4SXZWZUJfUjNqUNIBzwFBVV95cUxPWGtLN2ZrOXBCLVVCUDAwUll4MUxwLUtzSnlHMWdoRmxkNnpjSlFZdG1TSlRNZnNobGVaUGRJYkdya1NQVEgyaTNnWWpwTURmNmUzNlZaQlh6Q0xkWjByZjZTcW9QV2lXb2ZqR2xWR3dYOXRFd1ptLWgycER2XzdVRi1pRUt2UjdxZG5XeGlRal91STVmRm02OVItdnJXWUxpa1NYcjdUV2RDMlJjajhEQ2U2ZkZoOTZrd2lKd1BxZFpTaFFlaldIVnZpRktxNkU?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "BGMI 4.4 update release date India time: Check how to download new update for Android, iOS and APK users",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdXA2TG9kU0hPS2NGTWJiZnVPb3pXbVdaYW04R0VnWGd6Qm1UZkVVbXN1dW9ObXhlaG5veVFNZWExSEkzZTd1a21pVmNadnVtMmlXYmJBeklGUkRXaS01ejU2MG9jZ2dUeTRJWkduZzlYblE3TloyS2dVbEh0S0lPMjhQblplSGNXejFzLU44ODFJMDZxaVZtR2NXMUFJZU12VzFtdmhTQnRQS0k1S2ZrNjdlOU9QdEV6dWh2N1NaOUwxT2NIa3FjbnBsQ0x5NG5ScVFaUVFuQmdUMjdYanFVZVlzYXhrYWJGeDk3WXdmblpLclV1N1pDcFAyS2pGMjZ2dXFISDNJX3FfRzBT0gGSAkFVX3lxTE8yWENTRW5NdEVDWWVJVnI4US1ES3UtQUlxMEc2OUtfTjZ0c1plLURsMGtoS2YteWFzQnJORUduUzVhZWQtZENJQjNMbjlfbzFiZHJ3bVBtbGZaS0lSNEFMNmppY2RmWXo1VHVONDI5dzFxUWJMWG1TTVY4UVAyUmwtTmtkTmo2TVI1V2d0RE13SVNTTGFCUTdJQy04WmZWYUhZRWhnbVpHUzVrcWZsc1A4dFZnTzdNYUpXRzQ3bjdidUtjNXhXOVc3Ny1RUzlGY3hBblZpR2NLN1hVQ1VJSXFWQkdHYXdyS0tNM1FtOU1PekhXeHNBTmpQV3BKQ3Jab3dmN1J0dmdwVHludzV4YWVkTUE?oc=5"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Android messaging that users ha",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNd0U4TU1RSHNybjNvWUc2YXAxaG8wN1U0YVcxaUFpMV9obW9jLWxWSjRuenBWRGNQNHJQbEJoU3FsaXlIdUNmTWdaa0RuT0JrWThfd2x0a3JlaHhTOElOeDVSN0prUDY3Szh6dkxPQkxtZHVYWm1pY0pwN0NNYnJiMWY3VnAybW5JU1l4blRQRnlNdFNRSzdzZmFkVzhRZHN3aXdfYkNnWlpIay1sbEwwRDAtX3FSQUFpbjQ2MER0UlA1WnNxRzJaaG9JR0F2NVQ1M0Fjcm0zektJdHEteUlrUXprRUtqNFVHRWFCckJsSGpqSGtxRzBxQm9rVFplTDdQdGtSbzF2ak95ZnhDalVfT25URzVkWGg0QWtwa0p3QUp0SEZGS3BqZHpENW9md1A0Z0VDUl82SW4wQjhWTEHSAcMCQVVfeXFMT3BHSGZqVWRtWVZWTkZ3Skx1MjBveElmUlN4RkM3VlE0NjZ5QXliUnhESHpwNmJtUGRzbnJCRXh2eWlKQ3ZzN1dlWTBCTWpMRDZ0S0tNbGV5WDZjYmZtakRLcXFCc28yVlpzWkx5MFV2Q2IyanAxdEpCcWotaWFHNWR0NG5MYk50eFppdWJkSU5Zb284MjFaRWJJWThZS3dYVVltdTBzN09TSk8zVDRqeEItTDFOcC1yVUhlcmFuWV84bGhpNWlkODlVRjNaTjNFbDlOMmt0VGRFMVhxTnJpNlJzVjBsa2hHUExqN0xXZ3NYWHNRa1U1YXJYanhNQWRHTEtnZ2VQN0QwSnVGSk9LTkRYU2g4R0tacU8yWVVsd2JoeHF3a1JwY0RYaGpOUGY0bTNhX3RRbzZ2bHpVdHViZmJ4dUE?oc=5"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "After iOS, XChat app is coming to Android with encrypted chats: Details",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMVYzX1J1aVg1c2xqQmJ5MFdhaXBUWXpDdl9Vb05KYjFUaFdMLWJ6SHFEMnNMRVVpOUlQNXFPV0hNVGFMTEJPQy05T3dvUlZrYTZmQlZGWDZHaVZIdTV4ZHp0NG1hNzBQQVN0MWpkWUtoUnNNNTJrZFoxempKa1BaczJLN0s5MmdCNk9xei0xdE91OXFjbHZoX1RJcUtJSGpUMUNTc19yWTNtaVg1Mmw0bFZfQThwUUp6OXFZYXRqMXRFbC0zQ0RzSzBxQ2VWaEJQLXYzR3FVaEI2SlBH0gHiAUFVX3lxTE5wUXZTZUVDQU4wQVNqNDNfMk9KeXhVdkwyUTNMSDFPNG9ZemY1d0xRNFRJWnk0eUpfMnVodmVaVlhUZU1iY3pWMkV1TnhnSkk3OE4zVUk2YTM1aGN0Yjd3YWpNSGlIdjROQlpUNHBnSnh4a0twQnlGb2tpSEhlWktyOHM2RXlyMWJPalNWc1hnSnNoX2hLZ1RwblRQVUxUa1Z3RDlyQmRDenpTUG9aRllRaF9YU3Bpc2VTdUt3Q0I3eFNhWHFrci1FZ2IxV2czSG1LQlMxYVcxb1FXWW5tMzNVYmc?oc=5"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "Android 17: Official features, leaked features, codename, and everything else we know",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JTTVhR1k1aEs0ZGlVZkxMaFd2VFVBWHQ5ZHJtZHdfU0ZhaTFkU09fYlduR3c3WnhBbmVIdG9Cb1U0aldhTDhJc0NOX2ZTWTJmYmROZVFIakd1V1ByRFd1R1JR?oc=5"
+        }
+      ],
+      "top_posts": [
+        {
+          "title": "Hours after iOS 26 launch, Google is preparing to officially launch Android 16 today",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdGtyOFVnaENBaXc3bWpjaHRRWWFXTzFJeFU2VnR3YW1PRTRzZHZtcXhJNnF0UTh4NnVVVGJ3WmhkQ2FVZW1Qa0JPMHVQWlQ0QS1mcmFsWkpwMFBmMU9NRko2RzR4TlR4NlpKdDhaanFXeTlFUzRmVUR3ckd4QU1KZy13X0I0Z2RSckotdnhiWmE3Q2VUdThWWVhoZjJNakRZZTRmTEZrSVg2aWdJN0JtNHR3ZE5ES3NpM3ppWDJLQzcxOTdvMkhpWWR1a2lHZkl6Y2pFNmlpcF9WeGJFRDJZTTNBMWXSAeoBQVVfeXFMTlJiNHNzZnptaDg1OEM5aDN3T3RmV29RUjRTVmM5Q1V4bDNfMkhQZFVwYkpyd2oteGVXVlpuemFJZHJqY0ppSTNmMXZDWkhSbi1veVNNN2VHUjczVlpxUlJLZU1UcWZjTXB0OWptWFY5RHpVc1RTdXBCQlZhX2lhMXRZc3FVRUZrT2ZuVjJPSXNQZVNLN2w3bzZ0MThtc2d3LW1VLThXaWtnM01qRXhldXgyRGtPd2tCVXhNWTBjWjkwaFRnZE5XM0lxV09jMW0yV05tdHRxdUktSWdSZFhNbnNnTmRZVHB0ZlNn?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "India Today",
+          "published_at": "2025-06-10T07:00:00"
+        },
+        {
+          "title": "Android vs iOS vs Others – Smartphone OS Guide",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Airtel",
+          "published_at": "2025-10-27T07:00:00"
+        },
+        {
+          "title": "Worst to best: All the major Android skins, ranked",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTE9TUkV3TWxrMU9iNFlXOHJmNG54cS1aVlduYkR2bV9uWXhzLVFfQllkaV9aU0Z3UllhRXpMOHhjMHlEaFQ3V2FpdnlvTEJ2YVJSXzF4MHVqX1VkQi03ZzFDWHRyR01mcG45X0tvZmkwSQ?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Android Authority",
+          "published_at": "2026-01-16T08:00:00"
+        },
+        {
+          "title": "OnePlus confirms official list of devices getting Android 16 starting in November",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxOV2IyM1ZCT1o3SzVIVV9WZHl5REFnSXZCSlEwaTE3ckNsR2NsWTg4b010RDNqbWxrWWNqZVZHSTc2bG9WVkZsNWgza2ZHZUI4anMyTDlpUzVQM2dNWFVNNDRHQUVtdEhOa0w1LXFVRDE5Qklfbzh0MTFudmdaR2RQY1lfbDBxTEctQU1hTA?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "9to5Google",
+          "published_at": "2025-10-16T07:00:00"
+        },
+        {
+          "title": "Vivo reveals Android 16-based OriginOS 6 update timeline for India: Eligible devices, what's new & more",
+          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNzJqd1l5SWdhN09NVzRpOWFHb1lnTGJTN3VUdVNDalhDZU9XRkRUTnc2Wm0zXzVaNVhpWmFmZXQzTEhHWURMUkJDOTBLVUh0WTVKVjlUODlsOHROQnpQbFFhU3RSQ0V3blo5aTliYWZfMGN6VXI0SU9SMTNXVkNvMEpVc0FxTWRtcGQwOE0zeDNXM3pBOHBndG81OTR6bVBrZ3pqQ2N4X1Z3Rzkxdmc1Z0ZPdTZfN2VDTlRXeTZsZFF5cjVYbm9JbVVwZy1TV1FUSmVkS0N6aERjSElUM2ppYWNieTYxUDYwVDhuT3lTSERqMXNiOU10aNIB_gFBVV95cUxQUUxZN0V5SUdiTERENEJkZ1BzdlVPT0doWkNvWUxkXzNNUWtzTENNSTBDOVBfb3FDa3VOX1BtTEJ5ZFBYZmZvUnRRVy1faUpNdDRyY3lBNlVrUENTdGpSQXEtS1haYy1IYUoyOUdaLUppQUdGZGhsWU9zVmotc1FHSk9HMVFnTmcxWVE3MHNzVjdKUXlIbFdicjZCcTNnQXVZdS1yR2I4cFk1SXdIeVdkd1JZZHY5TmpRcVJWZVFJX1JkUXNLUDFCNm43M0pGWkJhT016cUdrNjhOdWtzczV6OUJfeHR0U2pmQkRYT0NHS2JhaWVwR0RhcHZ3bjFOdw?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Mint",
+          "published_at": "2025-10-18T07:00:00"
+        }
+      ]
+    },
+    {
+      "os_name": "iOS",
+      "icon": "🍎",
+      "name_cn": "苹果 iOS",
+      "color": "#007AFF",
+      "total_posts": 44,
+      "sentiment": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 44
+      },
+      "sentiment_pct": {
+        "positive": 0,
+        "negative": 0,
+        "neutral": 100
+      },
+      "top_brands": [
+        {
+          "name": "Apple",
+          "count": 42
+        },
+        {
+          "name": "Nothing",
+          "count": 1
+        },
+        {
+          "name": "OnePlus",
+          "count": 1
+        },
+        {
+          "name": "Samsung",
+          "count": 1
+        }
+      ],
+      "summary": "苹果 iOS生态今日共有 44 条相关讨论，以中性讨论为主。热门品牌：Apple、Nothing、OnePlus。关注焦点：Hours after iOS 26 launch, Google is pre",
+      "highlights": [
+        {
+          "category": "🆕 新品发布",
+          "title": "Hours after iOS 26 launch, Google is preparing to officially launch Android 16 today",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdGtyOFVnaENBaXc3bWpjaHRRWWFXTzFJeFU2VnR3YW1PRTRzZHZtcXhJNnF0UTh4NnVVVGJ3WmhkQ2FVZW1Qa0JPMHVQWlQ0QS1mcmFsWkpwMFBmMU9NRko2RzR4TlR4NlpKdDhaanFXeTlFUzRmVUR3ckd4QU1KZy13X0I0Z2RSckotdnhiWmE3Q2VUdThWWVhoZjJNakRZZTRmTEZrSVg2aWdJN0JtNHR3ZE5ES3NpM3ppWDJLQzcxOTdvMkhpWWR1a2lHZkl6Y2pFNmlpcF9WeGJFRDJZTTNBMWXSAeoBQVVfeXFMTlJiNHNzZnptaDg1OEM5aDN3T3RmV29RUjRTVmM5Q1V4bDNfMkhQZFVwYkpyd2oteGVXVlpuemFJZHJqY0ppSTNmMXZDWkhSbi1veVNNN2VHUjczVlpxUlJLZU1UcWZjTXB0OWptWFY5RHpVc1RTdXBCQlZhX2lhMXRZc3FVRUZrT2ZuVjJPSXNQZVNLN2w3bzZ0MThtc2d3LW1VLThXaWtnM01qRXhldXgyRGtPd2tCVXhNWTBjWjkwaFRnZE5XM0lxV09jMW0yV05tdHRxdUktSWdSZFhNbnNnTmRZVHB0ZlNn?oc=5"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "Next iPhone update: what is the next iOS version? (iOS 26.3)",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOX0NyM05FXy1ZZjV5NlVsYU1QLXVyQXBfVzZ3eUNWZWU4MEk3YXpJYzAyeVlRRDMycXJtZUZRc1RQdWd5Qk1WWFNzVGdTWlh0S1hMbTFmTmZfMzZJVmpuQWQtWXBTWlhncDZLN2UydzdSenhjSTJfbkdvUmdvWjl4X0RZUEk3U3d0djUyVkw1LXpDdjNlU0lDcFBQNkZ2cy1BQ2c?oc=5"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "Android vs iOS vs Others – Smartphone OS Guide",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "BGMI 4.4 update release date India time: Check how to download new update for Android, iOS and APK users",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdXA2TG9kU0hPS2NGTWJiZnVPb3pXbVdaYW04R0VnWGd6Qm1UZkVVbXN1dW9ObXhlaG5veVFNZWExSEkzZTd1a21pVmNadnVtMmlXYmJBeklGUkRXaS01ejU2MG9jZ2dUeTRJWkduZzlYblE3TloyS2dVbEh0S0lPMjhQblplSGNXejFzLU44ODFJMDZxaVZtR2NXMUFJZU12VzFtdmhTQnRQS0k1S2ZrNjdlOU9QdEV6dWh2N1NaOUwxT2NIa3FjbnBsQ0x5NG5ScVFaUVFuQmdUMjdYanFVZVlzYXhrYWJGeDk3WXdmblpLclV1N1pDcFAyS2pGMjZ2dXFISDNJX3FfRzBT0gGSAkFVX3lxTE8yWENTRW5NdEVDWWVJVnI4US1ES3UtQUlxMEc2OUtfTjZ0c1plLURsMGtoS2YteWFzQnJORUduUzVhZWQtZENJQjNMbjlfbzFiZHJ3bVBtbGZaS0lSNEFMNmppY2RmWXo1VHVONDI5dzFxUWJMWG1TTVY4UVAyUmwtTmtkTmo2TVI1V2d0RE13SVNTTGFCUTdJQy04WmZWYUhZRWhnbVpHUzVrcWZsc1A4dFZnTzdNYUpXRzQ3bjdidUtjNXhXOVc3Ny1RUzlGY3hBblZpR2NLN1hVQ1VJSXFWQkdHYXdyS0tNM1FtOU1PekhXeHNBTmpQV3BKQ3Jab3dmN1J0dmdwVHludzV4YWVkTUE?oc=5"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Android messaging that users ha",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNd0U4TU1RSHNybjNvWUc2YXAxaG8wN1U0YVcxaUFpMV9obW9jLWxWSjRuenBWRGNQNHJQbEJoU3FsaXlIdUNmTWdaa0RuT0JrWThfd2x0a3JlaHhTOElOeDVSN0prUDY3Szh6dkxPQkxtZHVYWm1pY0pwN0NNYnJiMWY3VnAybW5JU1l4blRQRnlNdFNRSzdzZmFkVzhRZHN3aXdfYkNnWlpIay1sbEwwRDAtX3FSQUFpbjQ2MER0UlA1WnNxRzJaaG9JR0F2NVQ1M0Fjcm0zektJdHEteUlrUXprRUtqNFVHRWFCckJsSGpqSGtxRzBxQm9rVFplTDdQdGtSbzF2ak95ZnhDalVfT25URzVkWGg0QWtwa0p3QUp0SEZGS3BqZHpENW9md1A0Z0VDUl82SW4wQjhWTEHSAcMCQVVfeXFMT3BHSGZqVWRtWVZWTkZ3Skx1MjBveElmUlN4RkM3VlE0NjZ5QXliUnhESHpwNmJtUGRzbnJCRXh2eWlKQ3ZzN1dlWTBCTWpMRDZ0S0tNbGV5WDZjYmZtakRLcXFCc28yVlpzWkx5MFV2Q2IyanAxdEpCcWotaWFHNWR0NG5MYk50eFppdWJkSU5Zb284MjFaRWJJWThZS3dYVVltdTBzN09TSk8zVDRqeEItTDFOcC1yVUhlcmFuWV84bGhpNWlkODlVRjNaTjNFbDlOMmt0VGRFMVhxTnJpNlJzVjBsa2hHUExqN0xXZ3NYWHNRa1U1YXJYanhNQWRHTEtnZ2VQN0QwSnVGSk9LTkRYU2g4R0tacU8yWVVsd2JoeHF3a1JwY0RYaGpOUGY0bTNhX3RRbzZ2bHpVdHViZmJ4dUE?oc=5"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "After iOS, XChat app is coming to Android with encrypted chats: Details",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxOMVYzX1J1aVg1c2xqQmJ5MFdhaXBUWXpDdl9Vb05KYjFUaFdMLWJ6SHFEMnNMRVVpOUlQNXFPV0hNVGFMTEJPQy05T3dvUlZrYTZmQlZGWDZHaVZIdTV4ZHp0NG1hNzBQQVN0MWpkWUtoUnNNNTJrZFoxempKa1BaczJLN0s5MmdCNk9xei0xdE91OXFjbHZoX1RJcUtJSGpUMUNTc19yWTNtaVg1Mmw0bFZfQThwUUp6OXFZYXRqMXRFbC0zQ0RzSzBxQ2VWaEJQLXYzR3FVaEI2SlBH0gHiAUFVX3lxTE5wUXZTZUVDQU4wQVNqNDNfMk9KeXhVdkwyUTNMSDFPNG9ZemY1d0xRNFRJWnk0eUpfMnVodmVaVlhUZU1iY3pWMkV1TnhnSkk3OE4zVUk2YTM1aGN0Yjd3YWpNSGlIdjROQlpUNHBnSnh4a0twQnlGb2tpSEhlWktyOHM2RXlyMWJPalNWc1hnSnNoX2hLZ1RwblRQVUxUa1Z3RDlyQmRDenpTUG9aRllRaF9YU3Bpc2VTdUt3Q0I3eFNhWHFrci1FZ2IxV2czSG1LQlMxYVcxb1FXWW5tMzNVYmc?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Apple officially announces iOS 27, the next major iPhone update",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TMmRQb3c4bUNCbFVXRHJjRzhyTTZfdUxaM05CN1dxVjN0MDRxZUMyeVcyNnBFNGNqcExCVGRoYXZrZDFlaXI2ZGcyVm1UN2hhdDhZZFFTTjJGTU5UaWk2cA?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Amazfit introduces iOS notification forwarding beta for EU users",
+          "source": "official",
+          "url": "https://www.fonearena.com/blog/486064/amazfit-ios-notification-forwarding-beta-eu.html"
+        }
+      ],
+      "top_posts": [
+        {
+          "title": "Hours after iOS 26 launch, Google is preparing to officially launch Android 16 today",
+          "url": "https://news.google.com/rss/articles/CBMi5AFBVV95cUxOdGtyOFVnaENBaXc3bWpjaHRRWWFXTzFJeFU2VnR3YW1PRTRzZHZtcXhJNnF0UTh4NnVVVGJ3WmhkQ2FVZW1Qa0JPMHVQWlQ0QS1mcmFsWkpwMFBmMU9NRko2RzR4TlR4NlpKdDhaanFXeTlFUzRmVUR3ckd4QU1KZy13X0I0Z2RSckotdnhiWmE3Q2VUdThWWVhoZjJNakRZZTRmTEZrSVg2aWdJN0JtNHR3ZE5ES3NpM3ppWDJLQzcxOTdvMkhpWWR1a2lHZkl6Y2pFNmlpcF9WeGJFRDJZTTNBMWXSAeoBQVVfeXFMTlJiNHNzZnptaDg1OEM5aDN3T3RmV29RUjRTVmM5Q1V4bDNfMkhQZFVwYkpyd2oteGVXVlpuemFJZHJqY0ppSTNmMXZDWkhSbi1veVNNN2VHUjczVlpxUlJLZU1UcWZjTXB0OWptWFY5RHpVc1RTdXBCQlZhX2lhMXRZc3FVRUZrT2ZuVjJPSXNQZVNLN2w3bzZ0MThtc2d3LW1VLThXaWtnM01qRXhldXgyRGtPd2tCVXhNWTBjWjkwaFRnZE5XM0lxV09jMW0yV05tdHRxdUktSWdSZFhNbnNnTmRZVHB0ZlNn?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "India Today",
+          "published_at": "2025-06-10T07:00:00"
+        },
+        {
+          "title": "Next iPhone update: what is the next iOS version? (iOS 26.3)",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxOX0NyM05FXy1ZZjV5NlVsYU1QLXVyQXBfVzZ3eUNWZWU4MEk3YXpJYzAyeVlRRDMycXJtZUZRc1RQdWd5Qk1WWFNzVGdTWlh0S1hMbTFmTmZfMzZJVmpuQWQtWXBTWlhncDZLN2UydzdSenhjSTJfbkdvUmdvWjl4X0RZUEk3U3d0djUyVkw1LXpDdjNlU0lDcFBQNkZ2cy1BQ2c?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "The Mac Observer",
+          "published_at": "2026-01-23T08:00:00"
+        },
+        {
+          "title": "Android vs iOS vs Others – Smartphone OS Guide",
+          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Airtel",
+          "published_at": "2025-10-27T07:00:00"
+        },
+        {
+          "title": "How to Download the 4Rabet App on Android & iOS (2026)",
+          "url": "https://news.google.com/rss/articles/CBMic0FVX3lxTFBCczNmcjM4RlZXOVJGeFB1TklGbjNiQ09MVXVqQy1UWml2SktiVE5yc1NodzdrTEdzd01TMWZPTzA4MnhhWF9Nb2JLS19ITjd5T0VkSUpJZ0FNVERMZXJucWptUndOVEE0dHVEcUJCcDl0UEU?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Goal.com",
+          "published_at": "2026-06-01T07:00:00"
+        },
+        {
+          "title": "BGMI 4.4 update release date India time: Check how to download new update for Android, iOS and APK users",
+          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdXA2TG9kU0hPS2NGTWJiZnVPb3pXbVdaYW04R0VnWGd6Qm1UZkVVbXN1dW9ObXhlaG5veVFNZWExSEkzZTd1a21pVmNadnVtMmlXYmJBeklGUkRXaS01ejU2MG9jZ2dUeTRJWkduZzlYblE3TloyS2dVbEh0S0lPMjhQblplSGNXejFzLU44ODFJMDZxaVZtR2NXMUFJZU12VzFtdmhTQnRQS0k1S2ZrNjdlOU9QdEV6dWh2N1NaOUwxT2NIa3FjbnBsQ0x5NG5ScVFaUVFuQmdUMjdYanFVZVlzYXhrYWJGeDk3WXdmblpLclV1N1pDcFAyS2pGMjZ2dXFISDNJX3FfRzBT0gGSAkFVX3lxTE8yWENTRW5NdEVDWWVJVnI4US1ES3UtQUlxMEc2OUtfTjZ0c1plLURsMGtoS2YteWFzQnJORUduUzVhZWQtZENJQjNMbjlfbzFiZHJ3bVBtbGZaS0lSNEFMNmppY2RmWXo1VHVONDI5dzFxUWJMWG1TTVY4UVAyUmwtTmtkTmo2TVI1V2d0RE13SVNTTGFCUTdJQy04WmZWYUhZRWhnbVpHUzVrcWZsc1A4dFZnTzdNYUpXRzQ3bjdidUtjNXhXOVc3Ny1RUzlGY3hBblZpR2NLN1hVQ1VJSXFWQkdHYXdyS0tNM1FtOU1PekhXeHNBTmpQV3BKQ3Jab3dmN1J0dmdwVHludzV4YWVkTUE?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "The Economic Times",
+          "published_at": "2026-05-19T07:00:00"
+        }
+      ]
+    },
+    {
+      "os_name": "HarmonyOS",
+      "icon": "🔮",
+      "name_cn": "鸿蒙",
+      "color": "#CE0E2D",
+      "total_posts": 15,
+      "sentiment": {
+        "positive": 1,
+        "negative": 0,
+        "neutral": 14
+      },
+      "sentiment_pct": {
+        "positive": 7,
+        "negative": 0,
+        "neutral": 93
+      },
+      "top_brands": [
+        {
+          "name": "Xiaomi",
+          "count": 1
+        }
+      ],
+      "summary": "鸿蒙生态今日共有 15 条相关讨论，以中性讨论为主。热门品牌：Xiaomi。关注焦点：Breaking: Huawei HarmonyOS PC launching ",
+      "highlights": [
+        {
+          "category": "🆕 新品发布",
+          "title": "Breaking: Huawei HarmonyOS PC launching in May",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56M1I5VGNVR2xxUUh2UXljV3Q0UnFjT1dJenM4RUtuVC14YWJJNi1ZM2Yzb0FYcTFWU2lQTkdoaUFjQlZQNWQ0TGlWMnZZOEpBMlhqTWRiWVRoWHgxekNkUjdxT2xNOVRPU3I0UGEwWG5GOEphaGfSAXtBVV95cUxNUVlKV1JBakpxNHc5eEMxeHhVREhFeXNOOTljWEhGamxvZ3VPLTBqSFhPYy1vNW5BS2syZWdlamdoR2w5Qkhra0ptcUFDZU0tM19OU3YxZU1raG10QTZ0RW1YU3o5NVl0c1JjclRBeFNhd0F5MGhkTDU1Vzg?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Huawei HarmonyOS PC Ultimate Design announced, with foldable form factor?",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTduNTlVR1QwcWdFMVpndHh5VnZBZHNlWENlLXRmVkRZSjZaZUpqMmlZS2lMRXREOGpoSHB5UUsyTE5xYlJuR1dfWkpWTnVaMTFNSms1eVZYMG9pbGtnTDZmMWNteHB6QnpsUFpkb1hNWFVPb0U4cEVYRlE0NWV1M2FXQ1BvNEhaQ3RWZXJ4eFZnVXhrMXJ3U1dBR25sOUtSTGpwNdIBqgFBVV95cUxNY1J6aWpKb1BlZVhBVjVoZVNCSjJodGdJRG00RVctZDRhQzRaVnlMWGVESDNZSGhrdjdKRFU0TFdhbHNhTXlXTFNoeDhfNnJycXA3UzBXd0tBRzZmN0xrc2E1OVNRdXByd3RES09lUEQ2cVo0cmhPR2VNajZRdHdSaUdmRFBJdUdnTU1QcTVrZVpyR0xaYTYxWVJLUDlxajQ2OWVvUURVOVFlQQ?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "HarmonyOS 3 for smartphones launching on July 27",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYXlMWWdrLUF3dXhtX1RXX2pOSU9tQ2FFNzVRUi1Ma3dYTENVMTJrY0I5eXRGLUZKWEUzdVduSTYyOERBNm5kRE1SVjR4ak5YTTZ3WnNaZHRybUpVUmxlbTlmVjNnSzZxREVvODZ0aTBPMTI2UG5vWjJiU1NldE1VODJPbWVUQdIBiwFBVV95cUxNMU1pYWdZOXlDdTBDMjJjRXdlRk9GMjQydmNzbkM5SlNSa0ZXbnBGbDM2cE12ZlUwMXhXQzkzTWxIMWlYZ1Q1MFpHcHBBdkhvMXpyZjlGRmllc1VFUk5kZFlCLVlsNGlodFAzUU85OWM4aF92YndWemJwZlB1VG9KalVHSWJjSllQV1kw?oc=5"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "HarmonyOS 5.1 gets official rollout date for these 30+ Huawei devices",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMVp4WkdycVhLcTFXaTFBa2RzRjhmRHA3aGVzZHM2cncwMkItc1Z0YlhucXpKOVF3N1FPMWNyWmJKUXV1UHpsMlNsWG9FM0hRc2RZeTdiSHpZS3BaSjVZRWJtRUJHQ3lMdElIcFY0NXRvd2lEWDIzVHJUOFdfSThpZjVEY0w4OWtOQkZDZDhXbFl0d3liZEZzbi1hakZsMEJf0gGmAUFVX3lxTE82NWJEOFA3eHJKMmM1U1hNLXNiQkUzNVI2X005bmNkeEg1dlZlYmx0bjNYOXRxZFhQNmtqaHBKNGQyamRyYWZ4d01KOTFIUnJ1NGpUbmVqUmstMHZ1OXQ0aEoyUDhDNE1tSmlFeXpyNzZvT3ZsUm43NFRBV3NpaU93aTA3UlhBY0FHTFlUUW5VYlg1SnNSOFFsdzB3Uk8xcDQzQ0xIekE?oc=5"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "HarmonyOS 5.0 upgrade for P60/Mate 50 series is in the works: Huawei",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxNMFRCSXkwV1lYNk9IcHVOWjRSVGtpZDAzVmx0WF9qRDlaTTZsNFpaUDN1bEJ4cFNWWW51b29TQ2ZYb2cyMmo2MW9XZkZpS2FRM0NpaTVwb2V0YUoyNjhxQW5CS0xiWW56QXBYcnhRclhmS1dpU1drUmk4UmpONGdwVHZTQ2gtNkZKWTZTWlVZNHdCSTdJOWxHd0lGZ2VGYnPSAaQBQVVfeXFMUEt0YUxtR0Z4VEdnUTBEUGdmNWZ3SHFOYW1RRU5pOGZGSmJGVEhsemMtd1VoT3Nhdm4tbHdVcmt0blZybURPbFlfVG5RRmhHb05kR3JvQ3JSbHZGQl9ZUUdGNmpXeVNMd3RYTzdCT2hPQzVFZ0NMd3huQjdLLTdqeEdJVUxndXU0WUZBajROQzZ3b09DOS1YVGZzNkJGLWFZdk1SSDQ?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Huawei HM740 HarmonyOS PC set to launch on December 11",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxObnZLMkhfR2wtUGRoUDJiSmx2S2E4MWVkbzlQa1YwUVlrOVl0dkQwdFo0b3FNa014V3o0eEg3Y2kwaFM3YkM1RDdwSTFiTUY2aS1lSlNfeE94MlNqRkpvamM4OURPS1BwbHk4VkFmTy0xY2liNmJhMWJVc2hQbW9OeG0xc3JSTkxVNTNqdlNn0gGTAUFVX3lxTFBzbDUzTjNob0c2dldPSTlLckJ3MGI0cnFheEpaaEZfYUcxcnNwSWF2V09xTTdjaUNEVWI2Z0xUMjZrdFVzYkE5OENsaUhjcmlJYXBfV1R3NmlzMVdBOTdYRlVOdjhrUlJPY1VYa1JvMjhVdDh6akU2TXNabUxSYmdmWWtZdnl5eGRRNVVPZTl2NXhZMA?oc=5"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "Huawei Pura 80, Pura 70, Mate 70, Mate 60 refreshed with new HarmonyOS feature pack",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeE8zdWhlVmczVFhXdlZEVUdFRjloT2RPakZJbnNvYjNXSWpBb01BNTJuWE5HeS11ZGtZeXNnX2l2WFo2cXdDbkV4VG8xYlhKOEh0LUpqb2pOY0c4bHhuTFFGYlBUVV93RG5fUnN5WTBDOWZYYXQ0dmRoTHozbk0ybDA2Q0FHdUFzMFpHbWlCZVdpYlptLVlxSdIBngFBVV95cUxNZ05fbElXdHVjSmxLYTJaNi1hX3BGMnN5LW9yWS05M1g3YnhoQlRvUlZ0ZjlvM2NRc1RWUkFOVWtfUDVwWF9VSkpXa0huVDFTbUtUeXQ2TE81M3hvcEVnZTNRM0x6UHlQTVhoNlNhQm9lRmwxM1NvSlQ4U2lJVXp2YzJLa1dnWW5IWlViN1BkY3RZNV9hM0hRUWVBdnZtUQ?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "HarmonyOS 6 beta made new installation record in 24 hours of release",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeVF0RVJYbVE3cVF1ampIZjE5ZnpOVGNzYmU1ZVJUQjZXWVk4Vm5XNG9pZ0FaZU1tNi1PbVJQYkdlbVlWRWdyMUdpZVVSUUpNVnNEVTNSNHFaanpxQmdKd1pIczR0ZDhvaW9xaTdvamNWZlJJdE5qX3NMejIydUZuQ1A3YnRuWG1TUUJ4a191SXBwbWR3ZzN5OUhoVmVWd2VT0gGmAUFVX3lxTFBYMmZFZnhNbjl1Q2lJMkRFYk9zcy0zb2doYzduUXc5OTNfdHlGZGk4WGwtMkVpRkl2QkVPRmRJd201aDdoZmlFYTR0T2tuVWVzYWczRDc4NzUzdlZMX2pwRWtXOEExUUVxWXNoV2JKODB6ZGU1ZW1EaTlydFZLS044ZkVfWmZUcGhRMHRCZGtZTldtQ1RVR3k2VlVfU1U3YUtmUXpMV1E?oc=5"
+        }
+      ],
+      "top_posts": [
+        {
+          "title": "Breaking: Huawei HarmonyOS PC launching in May",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56M1I5VGNVR2xxUUh2UXljV3Q0UnFjT1dJenM4RUtuVC14YWJJNi1ZM2Yzb0FYcTFWU2lQTkdoaUFjQlZQNWQ0TGlWMnZZOEpBMlhqTWRiWVRoWHgxekNkUjdxT2xNOVRPU3I0UGEwWG5GOEphaGfSAXtBVV95cUxNUVlKV1JBakpxNHc5eEMxeHhVREhFeXNOOTljWEhGamxvZ3VPLTBqSFhPYy1vNW5BS2syZWdlamdoR2w5Qkhra0ptcUFDZU0tM19OU3YxZU1raG10QTZ0RW1YU3o5NVl0c1JjclRBeFNhd0F5MGhkTDU1Vzg?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Huawei Central",
+          "published_at": "2025-03-20T07:00:00"
+        },
+        {
+          "title": "Huawei HarmonyOS PC Ultimate Design announced, with foldable form factor?",
+          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTduNTlVR1QwcWdFMVpndHh5VnZBZHNlWENlLXRmVkRZSjZaZUpqMmlZS2lMRXREOGpoSHB5UUsyTE5xYlJuR1dfWkpWTnVaMTFNSms1eVZYMG9pbGtnTDZmMWNteHB6QnpsUFpkb1hNWFVPb0U4cEVYRlE0NWV1M2FXQ1BvNEhaQ3RWZXJ4eFZnVXhrMXJ3U1dBR25sOUtSTGpwNdIBqgFBVV95cUxNY1J6aWpKb1BlZVhBVjVoZVNCSjJodGdJRG00RVctZDRhQzRaVnlMWGVESDNZSGhrdjdKRFU0TFdhbHNhTXlXTFNoeDhfNnJycXA3UzBXd0tBRzZmN0xrc2E1OVNRdXByd3RES09lUEQ2cVo0cmhPR2VNajZRdHdSaUdmRFBJdUdnTU1QcTVrZVpyR0xaYTYxWVJLUDlxajQ2OWVvUURVOVFlQQ?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Huawei Central",
+          "published_at": "2025-05-15T07:00:00"
+        },
+        {
+          "title": "HarmonyOS 3 for smartphones launching on July 27",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYXlMWWdrLUF3dXhtX1RXX2pOSU9tQ2FFNzVRUi1Ma3dYTENVMTJrY0I5eXRGLUZKWEUzdVduSTYyOERBNm5kRE1SVjR4ak5YTTZ3WnNaZHRybUpVUmxlbTlmVjNnSzZxREVvODZ0aTBPMTI2UG5vWjJiU1NldE1VODJPbWVUQdIBiwFBVV95cUxNMU1pYWdZOXlDdTBDMjJjRXdlRk9GMjQydmNzbkM5SlNSa0ZXbnBGbDM2cE12ZlUwMXhXQzkzTWxIMWlYZ1Q1MFpHcHBBdkhvMXpyZjlGRmllc1VFUk5kZFlCLVlsNGlodFAzUU85OWM4aF92YndWemJwZlB1VG9KalVHSWJjSllQV1kw?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Huawei Central",
+          "published_at": "2022-07-18T07:00:00"
+        },
+        {
+          "title": "Over 300 open source components now added to HarmonyOS",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZE1fb3RZRWRWak1KczBlN24yODE3ckhKdjUxbFYyMUwydU1qdTRCQXNOSUpnSVd4UUh4ODk2VGR5V2tsY3JWRXFadkdIQ2d6ZGpfbk1mb3hHVVpuTExVLTNaOGRBWGJJSGdmcGZFTHNyV3Z0LTZQVHJZVjh2QzlSOHlyOTlGcEhwdHBDMzNB0gGTAUFVX3lxTE9nN093dHBSTUlMZGlrNFlaX0JIV3BvZ3B3MkFnVWZWRWhfOEFDenIyMkJYSVM3MUYwWW85NTdSdkxQQzYwTWZ0dzM4Qmg5NDhfZUNYMjI1cXVvRzBDTW4xTDZGN1BjNjJyUEViTUZvdGk2M29rZy03RkVvaHBSVGYybENHQ0ZramhKNVZGdlRrc19GTQ?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Huawei Central",
+          "published_at": "2021-07-28T07:00:00"
+        },
+        {
+          "title": "HarmonyOS 5.1 gets official rollout date for these 30+ Huawei devices",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQMVp4WkdycVhLcTFXaTFBa2RzRjhmRHA3aGVzZHM2cncwMkItc1Z0YlhucXpKOVF3N1FPMWNyWmJKUXV1UHpsMlNsWG9FM0hRc2RZeTdiSHpZS3BaSjVZRWJtRUJHQ3lMdElIcFY0NXRvd2lEWDIzVHJUOFdfSThpZjVEY0w4OWtOQkZDZDhXbFl0d3liZEZzbi1hakZsMEJf0gGmAUFVX3lxTE82NWJEOFA3eHJKMmM1U1hNLXNiQkUzNVI2X005bmNkeEg1dlZlYmx0bjNYOXRxZFhQNmtqaHBKNGQyamRyYWZ4d01KOTFIUnJ1NGpUbmVqUmstMHZ1OXQ0aEoyUDhDNE1tSmlFeXpyNzZvT3ZsUm43NFRBV3NpaU93aTA3UlhBY0FHTFlUUW5VYlg1SnNSOFFsdzB3Uk8xcDQzQ0xIekE?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Huawei Central",
+          "published_at": "2025-07-23T07:00:00"
+        }
+      ]
+    }
+  ],
+  "last_updated": "2026-07-14T00:38:03.127634"
+}
