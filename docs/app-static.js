@@ -23,10 +23,11 @@ async function loadJSON(path) {
 
 async function loadDashboard() {
     try {
-        const [dashboard, postsData, brandsData] = await Promise.all([
+        const [dashboard, postsData, brandsData, osDaily] = await Promise.all([
             loadJSON('dashboard.json'),
             loadJSON('posts.json'),
             loadJSON('brands.json'),
+            loadJSON('os-daily.json'),
         ]);
 
         state.dashboardData = dashboard;
@@ -34,6 +35,7 @@ async function loadDashboard() {
 
         renderStats(dashboard.stats);
         renderAnalysis(dashboard.latest_analysis);
+        renderOsDaily(osDaily);
         renderBrands(brandsData.brands || {});
         renderPosts(filterPosts(state.allPosts));
         renderRuns(dashboard.recent_runs || []);
@@ -360,6 +362,95 @@ function showToast(msg) {
     toast.textContent = msg;
     toast.classList.add('show');
     setTimeout(function() { toast.classList.remove('show'); }, 3000);
+}
+
+// ============================================================
+// OS Daily Report - 操作系统日报
+// ============================================================
+
+function renderOsDaily(data) {
+    if (!data || !data.reports) return;
+
+    document.getElementById('osDailyDate').textContent = data.date || '--';
+
+    const container = document.getElementById('osDailyContent');
+    let html = '<div class="os-cards">';
+
+    data.reports.forEach(function(report) {
+        const sent = report.sentiment || { positive: 0, negative: 0, neutral: 0 };
+        const pct = report.sentiment_pct || { positive: 0, negative: 0, neutral: 0 };
+        const total = report.total_posts || 0;
+
+        html += '<div class="os-card" style="border-top: 3px solid ' + report.color + '">';
+
+        // Header
+        html += '<div class="os-card-header">' +
+            '<span class="os-card-icon">' + report.icon + '</span>' +
+            '<div>' +
+            '<div class="os-card-title">' + escapeHtml(report.name_cn) + '</div>' +
+            '<div class="os-card-count">' + total + ' 条相关讨论</div>' +
+            '</div></div>';
+
+        // Body
+        html += '<div class="os-card-body">';
+
+        // 情感条
+        html += '<div class="os-sentiment-bar">' +
+            '<div class="pos" style="width:' + pct.positive + '%"></div>' +
+            '<div class="neu" style="width:' + pct.neutral + '%"></div>' +
+            '<div class="neg" style="width:' + pct.negative + '%"></div>' +
+            '</div>';
+
+        html += '<div class="os-sentiment-labels">' +
+            '<span><span class="os-sentiment-dot" style="background:var(--green)"></span>正面 ' + pct.positive + '%</span>' +
+            '<span><span class="os-sentiment-dot" style="background:var(--yellow)"></span>中性 ' + pct.neutral + '%</span>' +
+            '<span><span class="os-sentiment-dot" style="background:var(--red)"></span>负面 ' + pct.negative + '%</span>' +
+            '</div>';
+
+        // 摘要
+        if (report.summary) {
+            html += '<div class="os-summary">' + escapeHtml(report.summary) + '</div>';
+        }
+
+        // 品牌
+        if (report.top_brands && report.top_brands.length > 0) {
+            html += '<div class="os-brands">';
+            report.top_brands.forEach(function(b) {
+                html += '<span class="os-brand-tag">' + escapeHtml(b.name) + ' ' + b.count + '</span>';
+            });
+            html += '</div>';
+        }
+
+        // 亮点
+        if (report.highlights && report.highlights.length > 0) {
+            html += '<div class="os-highlights">';
+            report.highlights.forEach(function(h) {
+                html += '<div class="os-highlight-item">' +
+                    '<span class="os-highlight-cat">' + escapeHtml(h.category) + '</span>' +
+                    '<a href="' + escapeHtml(h.url || '#') + '" target="_blank" class="os-highlight-title">' + escapeHtml(h.title) + '</a>' +
+                    '</div>';
+            });
+            html += '</div>';
+        }
+
+        // 精选帖子
+        if (report.top_posts && report.top_posts.length > 0) {
+            html += '<div class="os-top-posts">';
+            report.top_posts.forEach(function(p) {
+                const sourceLabels = { reddit: 'R', youtube: 'YT', news: 'N', official: 'OFF' };
+                html += '<a href="' + escapeHtml(p.url || '#') + '" target="_blank" class="os-post-item">' +
+                    '<span class="os-post-source ' + p.source + '">' + (sourceLabels[p.source] || '?') + '</span>' +
+                    '<span class="os-post-title">' + escapeHtml(p.title) + '</span>' +
+                    '</a>';
+            });
+            html += '</div>';
+        }
+
+        html += '</div></div>';
+    });
+
+    html += '</div>';
+    container.innerHTML = html;
 }
 
 // ============================================================
