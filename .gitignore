@@ -1,0 +1,32 @@
+# India Mobile Pulse - Git 忽略规则
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+*.egg-info/
+dist/
+build/
+venv/
+.venv/
+
+# 数据库（本地开发数据不上传）
+data/
+*.db
+
+# 环境变量
+.env
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# 日志
+*.log
