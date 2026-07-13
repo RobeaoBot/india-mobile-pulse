@@ -258,4 +258,102 @@ section {
     .top-bar { flex-direction: column; gap: 12px; }
     .top-actions { width: 100%; justify-content: center; }
     .brand-bar-name { width: 60px; font-size: 12px; }
+    .os-cards { grid-template-columns: 1fr; }
+}
+
+/* ============================================================
+   OS Daily Report - 操作系统日报
+   ============================================================ */
+
+.os-daily-date { font-size: 12px; color: var(--text-muted); }
+
+.os-daily-content { padding: 20px; }
+
+.os-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; }
+
+.os-card {
+    background: var(--bg-tertiary);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-lg);
+    overflow: hidden;
+    transition: var(--transition);
+}
+.os-card:hover { border-color: var(--border); transform: translateY(-2px); box-shadow: var(--shadow); }
+
+.os-card-header {
+    display: flex; align-items: center; gap: 10px;
+    padding: 16px 16px 12px;
+    border-bottom: 1px solid var(--border-light);
+}
+.os-card-icon { font-size: 28px; }
+.os-card-title { font-size: 16px; font-weight: 700; }
+.os-card-count { font-size: 12px; color: var(--text-muted); margin-top: 2px; }
+
+.os-card-body { padding: 14px 16px; }
+
+/* 情感条 */
+.os-sentiment-bar {
+    display: flex; height: 6px; border-radius: 3px; overflow: hidden;
+    margin-bottom: 10px; background: var(--bg-primary);
+}
+.os-sentiment-bar .pos { background: var(--green); }
+.os-sentiment-bar .neu { background: var(--yellow); }
+.os-sentiment-bar .neg { background: var(--red); }
+
+.os-sentiment-labels {
+    display: flex; gap: 12px; margin-bottom: 12px; font-size: 11px; color: var(--text-secondary);
+}
+.os-sentiment-labels span { display: flex; align-items: center; gap: 4px; }
+.os-sentiment-dot { width: 6px; height: 6px; border-radius: 50%; display: inline-block; }
+
+/* 摘要 */
+.os-summary {
+    font-size: 13px; line-height: 1.7; color: var(--text-primary);
+    padding: 10px 12px; background: var(--accent-bg); border-radius: var(--radius);
+    border-left: 3px solid var(--accent); margin-bottom: 12px;
+}
+
+/* 品牌 */
+.os-brands { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 12px; }
+.os-brand-tag {
+    padding: 2px 8px; border-radius: 10px; font-size: 11px; font-weight: 500;
+    background: var(--bg-secondary); border: 1px solid var(--border-light); color: var(--text-secondary);
+}
+
+/* 亮点 */
+.os-highlights { margin-bottom: 8px; }
+.os-highlight-item {
+    display: flex; align-items: flex-start; gap: 8px; padding: 6px 0;
+    border-bottom: 1px solid var(--border-light); font-size: 12px;
+}
+.os-highlight-item:last-child { border-bottom: none; }
+.os-highlight-cat {
+    flex-shrink: 0; padding: 1px 6px; border-radius: 8px; font-size: 10px;
+    font-weight: 600; background: var(--purple-bg); color: var(--purple);
+}
+.os-highlight-title {
+    color: var(--text-secondary); line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.os-highlight-title:hover { color: var(--accent); }
+
+/* 精选帖子 */
+.os-top-posts { margin-top: 10px; }
+.os-post-item {
+    display: flex; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border-light);
+    font-size: 12px; color: var(--text-secondary); text-decoration: none;
+}
+.os-post-item:last-child { border-bottom: none; }
+.os-post-item:hover { color: var(--accent); }
+.os-post-source {
+    flex-shrink: 0; padding: 1px 6px; border-radius: 4px; font-size: 10px;
+    font-weight: 600; color: #fff;
+}
+.os-post-source.reddit { background: var(--source-reddit); }
+.os-post-source.youtube { background: var(--source-youtube); }
+.os-post-source.news { background: var(--source-news); }
+.os-post-source.official { background: var(--source-official); }
+.os-post-title {
+    line-height: 1.4;
+    display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
