@@ -1,0 +1,30 @@
+name: Daily Data Collection
+
+on:
+  schedule:
+    - cron: '30 6 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+      - run: pip install -r requirements.txt
+      - run: python export_data.py
+        env:
+          COLLECT: "1"
+          ANALYZE: "1"
+      - run: |
+          cd docs
+          git config user.name "Pulse Bot"
+          git config user.email "pulse-bot@users.noreply.github.com"
+          git add -A
+          git diff --staged --quiet || (git commit -m "data update: $(date -u '+%Y-%m-%d %H:%M UTC')" && git push)
