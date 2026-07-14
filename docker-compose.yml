@@ -1,0 +1,29 @@
+version: "3.8"
+
+services:
+  pulse:
+    build: .
+    container_name: india-mobile-pulse
+    ports:
+      - "${PORT:-5000}:5000"
+    volumes:
+      - pulse-data:/app/data
+    environment:
+      - TZ=Asia/Kolkata
+      - LLM_PROVIDER=${LLM_PROVIDER:-none}
+      - LLM_OPENAI_API_KEY=${LLM_OPENAI_API_KEY:-}
+      - LLM_OPENAI_BASE_URL=${LLM_OPENAI_BASE_URL:-https://api.openai.com/v1}
+      - LLM_OPENAI_MODEL=${LLM_OPENAI_MODEL:-gpt-4o-mini}
+      - LLM_GEMINI_API_KEY=${LLM_GEMINI_API_KEY:-}
+      - DAILY_COLLECTION_TIME=${DAILY_COLLECTION_TIME:-12:00}
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/dashboard"]
+      interval: 60s
+      timeout: 10s
+      retries: 3
+      start_period: 30s
+
+volumes:
+  pulse-data:
+    driver: local
