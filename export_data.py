@@ -158,6 +158,7 @@ def generate_os_daily(posts):
             "top_posts": [
                 {
                     "title": p.get("title", ""),
+                    "title_cn": _quick_translate(p.get("title", "")),
                     "url": p.get("url", ""),
                     "source": p.get("source", ""),
                     "score": p.get("score", 0),
@@ -178,16 +179,17 @@ def generate_os_daily(posts):
 
 
 def _generate_os_summary(os_name, cfg, posts, sentiment, brands, total):
-    """生成中文摘要"""
+    """生成详细中文摘要 — 多维度归纳"""
     name = cfg["name_cn"]
     count = len(posts)
 
     if count == 0:
         return f"今日暂无{name}相关动态。"
 
-    # 情感判断
+    # ---- 1. 概况 ----
     if total > 0:
-        pos_pct = sentiment["positive"] / total * 100
+        pos_pct = round(sentiment["positive"] / total * 100)
+        neg_pct = round(sentiment["negative"] / total * 100)
         if pos_pct >= 50:
             mood = "整体氛围积极乐观"
         elif pos_pct >= 30:
@@ -195,31 +197,222 @@ def _generate_os_summary(os_name, cfg, posts, sentiment, brands, total):
         else:
             mood = "以中性讨论为主"
     else:
+        pos_pct = neg_pct = 0
         mood = "暂无情感数据"
 
-    # 品牌提及
-    top_brands = [b for b, _ in brands.most_common(3)]
-    brand_str = "、".join(top_brands) if top_brands else "多个品牌"
+    top_brands_list = [b for b, _ in brands.most_common(5)]
+    brand_str = "、".join(top_brands_list) if top_brands_list else "多个品牌"
 
-    # 话题提取
-    key_topics = []
-    for p in posts[:8]:
-        title = p.get("title", "")
-        # 提取关键信息（简化版，取标题前30字）
-        if len(key_topics) < 3:
-            key_topics.append(title[:40])
+    lines = []
+    lines.append(f"📊 {name}生态今日共有 {count} 条相关讨论，{mood}。")
+    lines.append(f"📈 情感分布：正面 {pos_pct}% / 负面 {neg_pct}% / 中性 {100-pos_pct-neg_pct}%。")
+    if top_brands_list:
+        lines.append(f"🏷️ 热门品牌：{brand_str}。")
 
-    summary = f"{name}生态今日共有 {count} 条相关讨论，{mood}。"
-    if top_brands:
-        summary += f"热门品牌：{brand_str}。"
-    if key_topics:
-        summary += f"关注焦点：{key_topics[0]}"
+    # ---- 2. 按分类归纳亮点 ----
+    CATEGORIES = {
+        "新品发布": ["launch", "release", "announce", "unveil", "reveal", "发布", "推出"],
+        "系统更新": ["update", "upgrade", "beta", "stable", "rollout", "更新", "升级"],
+        "问题反馈": ["bug", "issue", "problem", "fix", "crash", "error", "问题", "故障"],
+        "市场数据": ["market", "share", "sales", "growth", "report", "份额", "销量"],
+        "安全隐私": ["security", "privacy", "vulnerability", "patch", "安全", "隐私"],
+        "功能体验": ["feature", "camera", "battery", "performance", "ai", "功能", "体验"],
+    }
 
-    return summary
+    cat_posts = {}
+    for p in posts:
+        text = (p.get("title", "") + " " + p.get("content", "")).lower()
+        for cat_name, keywords in CATEGORIES.items():
+            if any(kw in text for kw in keywords):
+                cat_posts.setdefault(cat_name, []).append(p)
+                break
+
+    for cat_name, cat_list in cat_posts.items():
+        cat_count = len(cat_list)
+        # 取前3条最相关标题，翻译为中文摘要
+        sample_titles = [p.get("title", "") for p in cat_list[:3]]
+        sample_cn = [_quick_translate(t) for t in sample_titles]
+        detail = "；".join(sample_cn)
+        if cat_count > 3:
+            detail += f"等{cat_count}条相关报道"
+        icon_map = {
+            "新品发布": "🆕", "系统更新": "🔄", "问题反馈": "🐛",
+            "市场数据": "📊", "安全隐私": "🔐", "功能体验": "🎮",
+        }
+        icon = icon_map.get(cat_name, "📌")
+        lines.append(f"{icon} 【{cat_name}】共{cat_count}条 — {detail}")
+
+    # ---- 3. 关注焦点 ----
+    # 取得分最高或最新2条
+    focus_posts = sorted(posts, key=lambda p: p.get("score", 0), reverse=True)[:3]
+    if not focus_posts:
+        focus_posts = posts[:3]
+    focus_strs = []
+    for fp in focus_posts:
+        focus_strs.append(_quick_translate(fp.get("title", "")))
+    if focus_strs:
+        lines.append(f"🔥 关注焦点：{'；'.join(focus_strs)}")
+
+    return "\n".join(lines)
+
+
+def _quick_translate(title):
+    """英文标题翻译为中文简述（基于实体+动作的结构化翻译，不做逐词替换）"""
+    if not title:
+        return ""
+    
+    # 实体识别
+    entities = []
+    entity_map = [
+        # OS 版本（长词优先）
+        ("Android 17", "Android 17"), ("Android 16", "Android 16"),
+        ("iOS 27", "iOS 27"), ("iOS 26.3", "iOS 26.3"), ("iOS 26", "iOS 26"),
+        ("HarmonyOS 6", "鸿蒙6"), ("HarmonyOS 5.1", "鸿蒙5.1"),
+        ("HarmonyOS 5.0", "鸿蒙5.0"), ("HarmonyOS 3", "鸿蒙3"),
+        # 品牌
+        ("Samsung", "三星"), ("Google", "谷歌"), ("Apple", "苹果"),
+        ("OnePlus", "一加"), ("Xiaomi", "小米"), ("Huawei", "华为"),
+        ("Motorola", "摩托罗拉"), ("Pixel", "Pixel"), ("Honor", "荣耀"),
+        ("Oppo", "OPPO"), ("Vivo", "vivo"), ("Realme", "真我"),
+        ("Nothing", "Nothing"), ("Infinix", "传音"), ("Tecno", "Tecno"),
+        ("Toyota", "丰田"),
+        # OS 定制系统
+        ("OxygenOS 16", "OxygenOS 16"), ("OxygenOS", "OxygenOS"),
+        ("OriginOS 6", "OriginOS 6"), ("OriginOS", "OriginOS"),
+        ("One UI", "One UI"), ("ColorOS", "ColorOS"), ("MIUI", "MIUI"),
+        ("FunTouch OS", "FunTouch OS"), ("Realme UI", "Realme UI"),
+        ("Nothing OS", "Nothing OS"),
+        # 通用 OS
+        ("HarmonyOS", "鸿蒙"), ("Android", "Android"), ("iOS", "iOS"),
+        # 产品线
+        ("iPhone 17 Pro", "iPhone 17 Pro"), ("iPhone", "iPhone"),
+        ("Ultimate Design", "至尊版"),
+        ("Galaxy S26", "Galaxy S26"),
+        # 应用/产品
+        ("XChat", "XChat"), ("BGMI", "BGMI"), ("Amazfit", "Amazfit"),
+        ("Kagi News", "Kagi News"), ("Google News", "Google News"),
+        ("Apple TV", "Apple TV"),
+        ("Qi2", "Qi2"),
+    ]
+    
+    title_lower = title.lower()
+    for en, cn in entity_map:
+        if en.lower() in title_lower and cn not in entities:
+            entities.append(cn)
+    
+    # 动作识别
+    action = ""
+    action_map = [
+        # 长短语优先
+        ("preparing to officially launch", "准备正式发布"),
+        ("set to launch", "即将发布"),
+        ("is coming to", "即将登陆"),
+        ("is in the works", "正在开发中"),
+        ("could finally fix", "终于有望修复"),
+        ("gets official rollout date", "获官方推送日期"),
+        ("made new installation record", "创下安装新纪录"),
+        ("officially announces", "正式宣布"),
+        ("announces", "宣布"),
+        ("reveals", "公布"), ("revealed", "公布"),
+        ("launching", "即将发布"), ("launch", "发布"),
+        ("announced", "宣布"), ("announce", "宣布"),
+        ("unveiled", "发布"), ("unveil", "发布"),
+        ("released", "发布"), ("release", "发布"),
+        ("update", "更新"), ("upgrade", "升级"),
+        ("rollout", "推送"), ("rolling out", "推送"),
+        ("fix", "修复"),
+        ("confirmed", "确认"), ("confirms", "确认"),
+        ("introduces", "引入"),
+        ("refreshed with", "更新获得"),
+        ("added to", "添加至"),
+    ]
+    
+    for kw, cn in action_map:
+        if kw in title_lower:
+            action = cn
+            break
+    
+    # 主题/对象识别
+    topic = ""
+    topic_map = [
+        ("smartphone os guide", "智能手机操作系统指南"),
+        ("smartphone", "智能手机"), ("phone", "手机"), ("pc", "电脑"),
+        ("tablet", "平板"), ("foldable", "折叠屏"),
+        ("battery", "电池"), ("camera", "相机"), ("display", "屏幕"),
+        ("security", "安全功能"), ("privacy", "隐私"),
+        ("encrypted chats", "加密聊天"), ("encrypted", "加密"),
+        ("market share", "市场份额"), ("sales", "销量"),
+        ("open source", "开源"),
+        ("wireless charging", "无线充电"),
+        ("ui upgrades", "UI升级"),
+        ("feature pack", "功能包"), ("features", "功能"),
+        ("beta", "测试版"), ("stable", "稳定版"),
+        ("timeline", "时间表"),
+        ("eligible devices", "适配机型"), ("eligible phones", "适配机型"),
+        ("skins, ranked", "定制系统排名"), ("skins", "定制系统"),
+        ("smart ecosystem", "智能生态"),
+        ("notification forwarding", "通知转发"),
+        ("live pro sports", "职业体育直播"),
+        ("messaging", "消息互通"),
+    ]
+    
+    for kw, cn in topic_map:
+        if kw in title_lower:
+            topic = cn
+            break
+    
+    # 地区/范围
+    region = ""
+    region_map = [
+        ("for india", "印度"), ("in india", "印度"),
+        ("for eu", "欧盟"), ("for smartphones", "智能手机版"),
+    ]
+    for kw, cn in region_map:
+        if kw in title_lower:
+            region = cn
+            break
+    
+    # 组装中文简述
+    parts = []
+    if entities:
+        parts.append("".join(entities[:3]))  # 最多3个实体
+    if action:
+        parts.append(action)
+    if topic:
+        parts.append(topic)
+    if region:
+        parts.append(f"（{region}）")
+    
+    if parts:
+        # 用自然语言连接各部分
+        result = ""
+        # 实体之间用顿号分隔，去重
+        seen = set()
+        unique_ents = []
+        for e in entities[:3]:
+            if e not in seen:
+                seen.add(e)
+                unique_ents.append(e)
+        ent_str = "、".join(unique_ents) if unique_ents else ""
+        if ent_str and action and topic:
+            result = f"{ent_str}{action}{topic}{f'（{region}）' if region else ''}"
+        elif ent_str and action:
+            result = f"{ent_str}{action}{f'（{region}）' if region else ''}"
+        elif ent_str and topic:
+            result = f"{ent_str}{topic}{f'（{region}）' if region else ''}"
+        elif ent_str:
+            result = f"{ent_str}相关动态{f'（{region}）' if region else ''}"
+        else:
+            result = "".join(parts)
+    else:
+        # 兜底：保留原文前50字符
+        result = title[:50] + ("..." if len(title) > 50 else "")
+    
+    return result
 
 
 def _extract_highlights(posts):
-    """从帖子中提取亮点（中文归纳）"""
+    """从帖子中提取亮点（中文归纳 + 中文标题翻译）"""
     highlights = []
 
     # 按关键词分类亮点
@@ -236,9 +429,12 @@ def _extract_highlights(posts):
         title_lower = (p.get("title", "") + " " + p.get("content", "")).lower()
         for cat_name, keywords in CATEGORIES.items():
             if any(kw in title_lower for kw in keywords):
+                title_en = p.get("title", "")
+                title_cn = _quick_translate(title_en)
                 highlight = {
                     "category": cat_name,
-                    "title": p.get("title", ""),
+                    "title": title_en,
+                    "title_cn": title_cn,
                     "source": p.get("source", ""),
                     "url": p.get("url", ""),
                 }
@@ -247,8 +443,8 @@ def _extract_highlights(posts):
                     highlights.append(highlight)
                 break
 
-    # 最多返回 8 条
-    return highlights[:8]
+    # 最多返回 10 条
+    return highlights[:10]
 
 
 def export_data():
