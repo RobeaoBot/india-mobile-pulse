@@ -407,9 +407,16 @@ function renderOsDaily(data) {
             '<span><span class="os-sentiment-dot" style="background:var(--red)"></span>负面 ' + pct.negative + '%</span>' +
             '</div>';
 
-        // 摘要
+        // 摘要 — 多行展示
         if (report.summary) {
-            html += '<div class="os-summary">' + escapeHtml(report.summary) + '</div>';
+            var summaryLines = report.summary.split('\n');
+            html += '<div class="os-summary">';
+            summaryLines.forEach(function(line) {
+                if (line.trim()) {
+                    html += '<div class="os-summary-line">' + escapeHtml(line) + '</div>';
+                }
+            });
+            html += '</div>';
         }
 
         // 品牌
@@ -421,27 +428,39 @@ function renderOsDaily(data) {
             html += '</div>';
         }
 
-        // 亮点
+        // 亮点 — 展示中文标题
         if (report.highlights && report.highlights.length > 0) {
             html += '<div class="os-highlights">';
+            html += '<div class="os-highlights-title">📌 要闻速览</div>';
             report.highlights.forEach(function(h) {
+                var displayTitle = h.title_cn || h.title;
                 html += '<div class="os-highlight-item">' +
                     '<span class="os-highlight-cat">' + escapeHtml(h.category) + '</span>' +
-                    '<a href="' + escapeHtml(h.url || '#') + '" target="_blank" class="os-highlight-title">' + escapeHtml(h.title) + '</a>' +
-                    '</div>';
+                    '<div class="os-highlight-body">' +
+                    '<a href="' + escapeHtml(h.url || '#') + '" target="_blank" class="os-highlight-title">' + escapeHtml(displayTitle) + '</a>' +
+                    (h.title_cn && h.title_cn !== h.title ? '<div class="os-highlight-original">' + escapeHtml(h.title) + '</div>' : '') +
+                    '</div></div>';
             });
             html += '</div>';
         }
 
-        // 精选帖子
+        // 精选帖子 — 展示中文标题
         if (report.top_posts && report.top_posts.length > 0) {
             html += '<div class="os-top-posts">';
+            html += '<div class="os-top-posts-title">🔥 热门讨论</div>';
             report.top_posts.forEach(function(p) {
-                const sourceLabels = { reddit: 'R', youtube: 'YT', news: 'N', official: 'OFF' };
+                var sourceLabels = { reddit: 'R', youtube: 'YT', news: 'N', official: 'OFF' };
+                var displayTitle = p.title_cn || p.title;
                 html += '<a href="' + escapeHtml(p.url || '#') + '" target="_blank" class="os-post-item">' +
                     '<span class="os-post-source ' + p.source + '">' + (sourceLabels[p.source] || '?') + '</span>' +
-                    '<span class="os-post-title">' + escapeHtml(p.title) + '</span>' +
-                    '</a>';
+                    '<div class="os-post-body">' +
+                    '<div class="os-post-title">' + escapeHtml(displayTitle) + '</div>' +
+                    (p.title_cn && p.title_cn !== p.title ? '<div class="os-post-original">' + escapeHtml(p.title) + '</div>' : '') +
+                    '<div class="os-post-meta-line">' +
+                    '<span>' + escapeHtml(p.author || '') + '</span>' +
+                    '<span>' + formatTime(p.published_at) + '</span>' +
+                    '</div>' +
+                    '</div></a>';
             });
             html += '</div>';
         }
