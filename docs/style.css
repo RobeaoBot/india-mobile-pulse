@@ -309,8 +309,16 @@ section {
 /* 摘要 */
 .os-summary {
     font-size: 13px; line-height: 1.7; color: var(--text-primary);
-    padding: 10px 12px; background: var(--accent-bg); border-radius: var(--radius);
-    border-left: 3px solid var(--accent); margin-bottom: 12px;
+    padding: 12px 14px; background: var(--accent-bg); border-radius: var(--radius);
+    border-left: 3px solid var(--accent); margin-bottom: 14px;
+}
+.os-summary-line {
+    padding: 2px 0;
+}
+.os-summary-line:first-child {
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 4px;
 }
 
 /* 品牌 */
@@ -321,39 +329,63 @@ section {
 }
 
 /* 亮点 */
-.os-highlights { margin-bottom: 8px; }
+.os-highlights { margin-bottom: 12px; }
+.os-highlights-title {
+    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border-light);
+}
 .os-highlight-item {
-    display: flex; align-items: flex-start; gap: 8px; padding: 6px 0;
+    display: flex; align-items: flex-start; gap: 8px; padding: 7px 0;
     border-bottom: 1px solid var(--border-light); font-size: 12px;
 }
 .os-highlight-item:last-child { border-bottom: none; }
 .os-highlight-cat {
     flex-shrink: 0; padding: 1px 6px; border-radius: 8px; font-size: 10px;
     font-weight: 600; background: var(--purple-bg); color: var(--purple);
+    line-height: 1.6; margin-top: 1px;
 }
+.os-highlight-body { flex: 1; min-width: 0; }
 .os-highlight-title {
-    color: var(--text-secondary); line-height: 1.4;
+    color: var(--text-primary); line-height: 1.4; font-weight: 500;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
 }
 .os-highlight-title:hover { color: var(--accent); }
+.os-highlight-original {
+    font-size: 11px; color: var(--text-muted); margin-top: 2px;
+    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+    font-style: italic;
+}
 
 /* 精选帖子 */
-.os-top-posts { margin-top: 10px; }
+.os-top-posts { margin-top: 12px; }
+.os-top-posts-title {
+    font-size: 13px; font-weight: 600; color: var(--text-primary);
+    margin-bottom: 8px; padding-bottom: 6px; border-bottom: 1px solid var(--border-light);
+}
 .os-post-item {
-    display: flex; gap: 8px; padding: 6px 0; border-bottom: 1px solid var(--border-light);
+    display: flex; gap: 8px; padding: 8px 0; border-bottom: 1px solid var(--border-light);
     font-size: 12px; color: var(--text-secondary); text-decoration: none;
 }
 .os-post-item:last-child { border-bottom: none; }
 .os-post-item:hover { color: var(--accent); }
 .os-post-source {
     flex-shrink: 0; padding: 1px 6px; border-radius: 4px; font-size: 10px;
-    font-weight: 600; color: #fff;
+    font-weight: 600; color: #fff; margin-top: 1px;
 }
 .os-post-source.reddit { background: var(--source-reddit); }
 .os-post-source.youtube { background: var(--source-youtube); }
 .os-post-source.news { background: var(--source-news); }
 .os-post-source.official { background: var(--source-official); }
+.os-post-body { flex: 1; min-width: 0; }
 .os-post-title {
-    line-height: 1.4;
+    font-weight: 500; color: var(--text-primary); line-height: 1.4;
     display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;
+}
+.os-post-original {
+    font-size: 11px; color: var(--text-muted); margin-top: 2px;
+    display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden;
+    font-style: italic;
+}
+.os-post-meta-line {
+    display: flex; gap: 8px; margin-top: 3px; font-size: 11px; color: var(--text-muted);
 }
