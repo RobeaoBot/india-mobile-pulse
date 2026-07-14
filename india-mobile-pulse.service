@@ -1,0 +1,35 @@
+# India Mobile Pulse - systemd 服务配置
+# 安装位置: /etc/systemd/system/india-mobile-pulse.service
+# 启用命令: sudo systemctl enable india-mobile-pulse && sudo systemctl start india-mobile-pulse
+
+[Unit]
+Description=India Mobile Pulse - 印度手机圈热点监测
+After=network.target
+
+[Service]
+Type=simple
+User=pulse
+Group=pulse
+WorkingDirectory=/opt/india-mobile-pulse
+EnvironmentFile=/opt/india-mobile-pulse/.env
+
+# Gunicorn 启动命令（单 worker，因为 APScheduler + SQLite 限制）
+ExecStart=/opt/india-mobile-pulse/venv/bin/gunicorn \
+    --workers 1 \
+    --bind 127.0.0.1:5000 \
+    --timeout 300 \
+    --access-logfile - \
+    --error-logfile - \
+    wsgi:app
+
+# 自动重启
+Restart=always
+RestartSec=5
+
+# 日志输出到 journalctl
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=india-mobile-pulse
+
+[Install]
+WantedBy=multi-user.target
