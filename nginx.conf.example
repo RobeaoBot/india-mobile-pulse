@@ -1,0 +1,65 @@
+# India Mobile Pulse - Nginx 配置
+# 安装位置: /etc/nginx/sites-available/india-mobile-pulse
+# 启用命令: sudo ln -s /etc/nginx/sites-available/india-mobile-pulse /etc/nginx/sites-enabled/
+
+# ---- 使用域名访问 ----
+# 将 your-domain.com 替换为你的实际域名
+server {
+    listen 80;
+    server_name your-domain.com;
+
+    # 安全头
+    add_header X-Frame-Options "SAMEORIGIN" always;
+    add_header X-Content-Type-Options "nosniff" always;
+    add_header X-XSS-Protection "1; mode=block" always;
+
+    # 静态文件（Nginx 直接服务，更快）
+    location /static/ {
+        alias /opt/india-mobile-pulse/static/;
+        expires 7d;
+        add_header Cache-Control "public, no-transform";
+    }
+
+    # 反向代理到 Gunicorn
+    location / {
+        proxy_pass http://127.0.0.1:5000;
+        proxy_set_header Host $host;
+        proxy_set_header X-Real-IP $remote_addr;
+        proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+        proxy_set_header X-Forwarded-Proto $scheme;
+
+        # 长超时（采集任务可能耗时较长）
+        proxy_read_timeout 300s;
+        proxy_connect_timeout 60s;
+    }
+}
+
+# ---- 使用 IP 直接访问（无域名时用这个） ----
+# server {
+#     listen 80 default_server;
+#     server_name _;
+#
+#     location /static/ {
+#         alias /opt/india-mobile-pulse/static/;
+#         expires 7d;
+#     }
+#
+#     location / {
+#         proxy_pass http://127.0.0.1:5000;
+#         proxy_set_header Host $host;
+#         proxy_set_header X-Real-IP $remote_addr;
+#         proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+#         proxy_set_header X-Forwarded-Proto $scheme;
+#         proxy_read_timeout 300s;
+#     }
+# }
+
+# ---- HTTPS 配置（使用 certbot 自动生成后生效） ----
+# 运行 sudo certbot --nginx -d your-domain.com 后会自动添加以下配置:
+# server {
+#     listen 443 ssl;
+#     server_name your-domain.com;
+#     ssl_certificate /etc/letsencrypt/live/your-domain.com/fullchain.pem;
+#     ssl_certificate_key /etc/letsencrypt/live/your-domain.com/privkey.pem;
+#     ... (certbot 自动生成)
+# }
