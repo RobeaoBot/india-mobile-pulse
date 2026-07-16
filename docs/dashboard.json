@@ -1,12 +1,163 @@
 {
   "stats": {
-    "total": 0,
-    "today": null,
-    "by_source": {},
-    "brand_mentions": {},
+    "total": 428,
+    "today": 0,
+    "by_source": {
+      "news": 78,
+      "official": 250,
+      "reddit": 25,
+      "youtube": 75
+    },
+    "brand_mentions": {
+      "Apple": 79,
+      "Samsung": 46,
+      "OnePlus": 36,
+      "Xiaomi": 31,
+      "Motorola": 30,
+      "Oppo": 26,
+      "Nothing": 22,
+      "Vivo": 22,
+      "Realme": 19,
+      "Google": 15,
+      "iQOO": 3,
+      "Lava": 3,
+      "Nokia": 3,
+      "Tecno": 1
+    },
     "sentiment": {}
   },
-  "latest_analysis": null,
-  "recent_runs": [],
-  "last_updated": "2026-07-15T08:57:12.275563"
+  "latest_analysis": {
+    "period_start": "",
+    "period_end": "2026-07-16T01:01:15",
+    "posts_analyzed": 430,
+    "provider": "rule",
+    "summary": "热门讨论话题包括：launch、price、smartphone等。整体情感倾向：正面5%、负面0%、中性94%。",
+    "hot_topics": [
+      {
+        "topic": "launch",
+        "description": "OnePlus N6x launching soon in India. This will be OnePlus entry-level smartphone",
+        "heat": "high",
+        "count": 94
+      },
+      {
+        "topic": "price",
+        "description": "OnePlus N6x launching soon in India. This will be OnePlus entry-level smartphone",
+        "heat": "high",
+        "count": 54
+      },
+      {
+        "topic": "smartphone",
+        "description": "India drops $19.8B bet to break China's smartphone stranglehold",
+        "heat": "high",
+        "count": 48
+      },
+      {
+        "topic": "android",
+        "description": "Motorola Edge 70 Max – MagSafe for Android?",
+        "heat": "high",
+        "count": 47
+      },
+      {
+        "topic": "pro",
+        "description": "I'm building proactive AI glasses for older adults. Would you actually use somet",
+        "heat": "high",
+        "count": 37
+      },
+      {
+        "topic": "apple",
+        "description": "After Apple, India's smartphone manufacturing boom enters new phase with Vivo JV",
+        "heat": "high",
+        "count": 36
+      },
+      {
+        "topic": "galaxy",
+        "description": "Samsung Galaxy M47 5G Gets Up to Rs 8,000 Price Hike Just Days After India Launc",
+        "heat": "high",
+        "count": 35
+      },
+      {
+        "topic": "battery",
+        "description": "Honor X80 Pro Max Unboxing & First Look - 11000mAh Battery Smartphone!🔥🔥🔥",
+        "heat": "high",
+        "count": 35
+      },
+      {
+        "topic": "oneplus",
+        "description": "OnePlus N6x launching soon in India. This will be OnePlus entry-level smartphone",
+        "heat": "high",
+        "count": 34
+      },
+      {
+        "topic": "iphone",
+        "description": "Galaxy Unpacked | iPhone Ultra | Nothing Phone (4b) RCB | BSNL | Episode 207 | T",
+        "heat": "high",
+        "count": 33
+      }
+    ],
+    "brand_sentiment": {},
+    "key_insights": [
+      "讨论最热的关键词：launch, price, smartphone, android, pro"
+    ],
+    "trending_keywords": [
+      "launch",
+      "price",
+      "smartphone",
+      "android",
+      "pro",
+      "apple",
+      "galaxy",
+      "battery",
+      "oneplus",
+      "iphone",
+      "samsung",
+      "vivo",
+      "series",
+      "google",
+      "motorola"
+    ],
+    "id": 2
+  },
+  "recent_runs": [
+    {
+      "id": 4,
+      "source": "official",
+      "status": "success",
+      "posts_count": 250,
+      "new_posts": 250,
+      "error_message": "",
+      "started_at": "2026-06-29T20:26:28.434993",
+      "completed_at": "2026-06-29 12:26:41"
+    },
+    {
+      "id": 3,
+      "source": "news",
+      "status": "success",
+      "posts_count": 78,
+      "new_posts": 78,
+      "error_message": "",
+      "started_at": "2026-06-29T20:26:23.395212",
+      "completed_at": "2026-06-29 12:26:28"
+    },
+    {
+      "id": 2,
+      "source": "youtube",
+      "status": "success",
+      "posts_count": 75,
+      "new_posts": 75,
+      "error_message": "",
+      "started_at": "2026-06-29T20:26:20.359908",
+      "completed_at": "2026-06-29 12:26:23"
+    },
+    {
+      "id": 1,
+      "source": "reddit",
+      "status": "success",
+      "posts_count": 25,
+      "new_posts": 25,
+      "error_message": "",
+      "started_at": "2026-06-29T20:25:59.681907",
+      "completed_at": "2026-06-29 12:26:20"
+    }
+  ],
+  "last_updated": "2026-07-16T09:43:25.406885"
 }
