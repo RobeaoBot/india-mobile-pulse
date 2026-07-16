@@ -19,6 +19,8 @@ from collectors.news import NewsCollector
 from collectors.official import OfficialCollector
 from analyzer.llm import analyze_posts
 
+TEMP_POSTS_FILE = "/tmp/collected_posts.json"
+
 
 def run_all_collectors():
     """运行所有采集器"""
@@ -28,18 +30,25 @@ def run_all_collectors():
         ("news", NewsCollector()),
         ("official", OfficialCollector()),
     ]
-    
+
     results = {}
+    all_posts = []
     for name, collector in collectors:
         try:
             print(f"  采集 {name}...", flush=True)
             posts = collector.collect()
             results[name] = {"status": "success", "count": len(posts), "posts": posts}
+            all_posts.extend(posts)
             print(f"  ✅ {name}: {len(posts)} 条", flush=True)
         except Exception as e:
             results[name] = {"status": "error", "error": str(e), "posts": []}
             print(f"  ❌ {name}: {e}", flush=True)
-    
+
+    # 保存所有帖子到临时文件，供分析步骤使用（不依赖数据库）
+    with open(TEMP_POSTS_FILE, "w", encoding="utf-8") as f:
+        json.dump(all_posts, f, ensure_ascii=False)
+    print(f"  📦 已保存 {len(all_posts)} 条帖子到临时文件", flush=True)
+
     return results
 
 
@@ -47,11 +56,27 @@ def run_analysis():
     """运行分析"""
     try:
         print("  运行分析...", flush=True)
-        result = analyze_posts()
-        print(f"  ✅ 分析完成", flush=True)
+
+        # 优先从临时 JSON 文件读取帖子（GitHub Actions 环境）
+        posts = None
+        if os.path.exists(TEMP_POSTS_FILE):
+            try:
+                with open(TEMP_POSTS_FILE, "r", encoding="utf-8") as f:
+                    posts = json.load(f)
+                print(f"  📖 从临时文件加载了 {len(posts)} 条帖子", flush=True)
+            except Exception as e:
+                print(f"  ⚠️ 临时文件读取失败: {e}", flush=True)
+
+        result = analyze_posts(posts=posts)
+        if result:
+            print(f"  ✅ 分析完成（{result.get('posts_analyzed', 0)} 条帖子）", flush=True)
+        else:
+            print(f"  ⚠️ 没有帖子可供分析", flush=True)
         return result
     except Exception as e:
         print(f"  ❌ 分析失败: {e}", flush=True)
+        import traceback
+        traceback.print_exc()
         return None
 
 
@@ -485,6 +510,11 @@ def export_data():
     output_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
     os.makedirs(output_dir, exist_ok=True)
     
+    # 包含本次刚生成的分析结果（如果 DB 中没有则用内存中的）
+    if analysis and analysis not in analyses:
+        analyses = [analysis] + analyses[:4]  # 最多保留5条
+    latest_analysis = analysis or latest_analysis
+
     # Dashboard 数据
     dashboard_data = {
         "stats": stats,
@@ -506,10 +536,10 @@ def export_data():
         json.dump(posts_data, f, ensure_ascii=False, indent=2)
     print(f"  ✅ posts.json ({len(recent_posts)} 条)", flush=True)
     
-    # 分析数据
+    # 分析数据（包含本次分析）
     with open(os.path.join(output_dir, "analyses.json"), "w", encoding="utf-8") as f:
         json.dump({"analyses": analyses}, f, ensure_ascii=False, indent=2)
-    print(f"  ✅ analyses.json", flush=True)
+    print(f"  ✅ analyses.json ({len(analyses)} 条)", flush=True)
     
     # 品牌数据
     with open(os.path.join(output_dir, "brands.json"), "w", encoding="utf-8") as f:
