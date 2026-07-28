@@ -24,6 +24,10 @@ TEMP_POSTS_FILE = "/tmp/collected_posts.json"
 
 def run_all_collectors():
     """运行所有采集器"""
+    # 从环境变量获取要跳过的数据源（Reddit 在 GitHub Actions 中被阻止）
+    skip_sources = os.environ.get("SKIP_SOURCES", "").split(",")
+    skip_sources = [s.strip() for s in skip_sources if s.strip()]
+    
     collectors = [
         ("reddit", RedditCollector()),
         ("youtube", YouTubeCollector()),
@@ -34,6 +38,10 @@ def run_all_collectors():
     results = {}
     all_posts = []
     for name, collector in collectors:
+        if name in skip_sources:
+            print(f"  ⏭️ 跳过 {name}（配置为跳过）", flush=True)
+            results[name] = {"status": "skipped", "count": 0, "posts": []}
+            continue
         try:
             print(f"  采集 {name}...", flush=True)
             posts = collector.collect()
