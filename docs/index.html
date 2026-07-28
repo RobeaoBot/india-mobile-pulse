@@ -35,6 +35,7 @@
         .footer { text-align: center; padding: 20px; color: #666; }
         .run-item { display: flex; justify-content: space-between; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 8px; }
         .sentiment-positive { color: #4ade80; } .sentiment-negative { color: #f87171; } .sentiment-neutral { color: #a0a0a0; }
+        .last-update { text-align: center; font-size: 0.85em; color: #a0a0a0; margin-bottom: 15px; }
         @media(max-width:768px){.header h1{font-size:1.8em}.stat-value{font-size:2em}.stats-grid{grid-template-columns:repeat(2,1fr)}}
     </style>
 </head>
@@ -44,7 +45,8 @@
             <h1>📡 India Mobile Pulse</h1>
             <p>印度手机圈热点监测 | Indian Mobile Market Pulse Monitor</p>
         </div>
-        <div class="refresh-info">🔄 页面将在 <span id="countdown">60</span> 秒后自动刷新 | 数据来源: HuggingFace Spaces | <button onclick="location.reload()" style="background:#667eea;color:#fff;border:none;padding:5px 15px;border-radius:5px;cursor:pointer;margin-left:10px">立即刷新</button></div>
+        <div class="last-update" id="lastUpdate">📅 最后更新: --</div>
+        <div class="refresh-info">🔄 页面将在 <span id="countdown">300</span> 秒后自动刷新 | 数据来源: GitHub 静态文件 | <button onclick="location.reload()" style="background:#667eea;color:#fff;border:none;padding:5px 15px;border-radius:5px;cursor:pointer;margin-left:10px">立即刷新</button></div>
         <div class="stats-grid">
             <div class="stat-card"><div class="stat-value" id="statTotal">--</div><div class="stat-label">📊 总帖子数</div></div>
             <div class="stat-card"><div class="stat-value" id="statToday">--</div><div class="stat-label">📅 今日新增</div></div>
@@ -55,21 +57,21 @@
         <div class="section"><div class="section-title">📋 最新帖子</div><div id="postsContainer"><div class="loading">加载中...</div></div></div>
         <div class="section"><div class="section-title">⚙️ 最近采集记录</div><div id="runsContainer"><div class="loading">加载中...</div></div></div>
         <div class="footer">
-            <p>India Mobile Pulse © 2024-2026 | 数据每日 12:00 自动更新</p>
-            <p style="margin-top:10px"><a href="https://huggingface.co/spaces/RobeaoBot/india-mobile-pulse" target="_blank" style="color:#667eea">🔗 HuggingFace Spaces</a> | <a href="https://github.com/RobeaoBot/india-mobile-pulse" target="_blank" style="color:#667eea">💻 GitHub</a></p>
+            <p>India Mobile Pulse © 2024-2026 | 数据每日自动更新</p>
+            <p style="margin-top:10px"><a href="https://github.com/RobeaoBot/india-mobile-pulse" target="_blank" style="color:#667eea">💻 GitHub</a> | <a href="https://huggingface.co/spaces/RobeaoBot/india-mobile-pulse" target="_blank" style="color:#667eea">🤗 HuggingFace</a></p>
         </div>
     </div>
     <script>
-        const HF_URL = 'https://robeaobot-robeauobot.hf.space/api/dashboard';
-        let countdown = 60;
-        setInterval(() => { countdown--; document.getElementById('countdown').textContent = countdown; if(countdown <= 0) loadData(); }, 1000);
-        function formatTime(ts) { if(!ts) return '--'; const d = new Date(ts), diff = (new Date()-d)/1000; if(diff<60) return '刚刚'; if(diff<3600) return Math.floor(diff/60)+'分钟前'; if(diff<86400) return Math.floor(diff/3600)+'小时前'; return d.toLocaleDateString('zh-CN',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}); }
-        async function loadData() { try { const r = await fetch(HF_URL); if(!r.ok) throw new Error(); const data = await r.json(); renderDashboard(data); countdown = 60; } catch(e) { ['brandsContainer','postsContainer','runsContainer'].forEach(id => document.getElementById(id).innerHTML='<div class="error">❌ 数据加载失败，请稍后重试</div>'); } }
-        function renderDashboard(data) { const s = data.stats||{}; document.getElementById('statTotal').textContent=s.total||0; document.getElementById('statToday').textContent=s.today||0; document.getElementById('statBrands').textContent=Object.keys(s.brand_mentions||{}).length; const sent=s.sentiment||{}, tot=(sent.positive||0)+(sent.negative||0)+(sent.neutral||0); if(tot>0){const pct=Math.round((sent.positive||0)/tot*100); document.getElementById('statSentiment').innerHTML='<span class="sentiment-'+(pct>=50?'positive':pct>=30?'neutral':'negative')+'">'+pct+'% 正面</span>';} renderBrands(s.brand_mentions||{}); renderPosts(data.recent_posts||[]); renderRuns(data.recent_runs||[]); }
-        function renderBrands(m) { const c=document.getElementById('brandsContainer'); const e=Object.entries(m); if(!e.length){c.innerHTML='<div class="loading">暂无数据</div>';return;} const mx=Math.max(...e.map(x=>x[1])); c.innerHTML=e.map(([b,n])=>'<div class="brand-bar"><span class="brand-name">'+b+'</span><div class="brand-bar-bg"><div class="brand-bar-fill" style="width:'+Math.max(5,(n/mx)*100)+'%"></div></div><span class="brand-count">'+n+'</span></div>').join(''); }
-        function renderPosts(p) { const c=document.getElementById('postsContainer'), l={reddit:'R',youtube:'YT',news:'N',official:'OFF'}; if(!p||!p.length){c.innerHTML='<div class="loading">暂无帖子</div>';return;} c.innerHTML=p.slice(0,20).map(x=>'<div class="post-item"><div class="post-title">'+escapeHtml(x.title)+'</div><div class="post-meta"><span class="source-badge source-'+x.source+'">'+l[x.source]+'</span><span class="sentiment-'+(x.sentiment||'neutral')+'">'+(x.sentiment==='positive'?'😊':x.sentiment==='negative'?'😟':'😐')+'</span><span>'+formatTime(x.published_at||x.collected_at)+'</span></div></div>').join(''); }
-        function renderRuns(r) { const c=document.getElementById('runsContainer'); if(!r||!r.length){c.innerHTML='<div class="loading">暂无记录</div>';return;} c.innerHTML=r.slice(0,10).map(x=>'<div class="run-item"><span>'+x.source+'</span><span>'+(x.posts_count||0)+'条</span><span class="sentiment-'+(x.status==='success'?'positive':'negative')+'">'+(x.status==='success'?'✅ '+(x.new_posts||0)+'条':'❌')+'</span><span style="color:#a0a0a0">'+formatTime(x.started_at)+'</span></div>').join(''); }
-        function escapeHtml(s) { if(!s)return''; const d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
+        const REFRESH_INTERVAL = 300;
+        let countdown = REFRESH_INTERVAL;
+        setInterval(function() { countdown--; document.getElementById('countdown').textContent = countdown; if(countdown <= 0) location.reload(); }, 1000);
+        function formatTime(ts) { if(!ts) return '--'; var d = new Date(ts), diff = (new Date()-d)/1000; if(diff<60) return '刚刚'; if(diff<3600) return Math.floor(diff/60)+'分钟前'; if(diff<86400) return Math.floor(diff/3600)+'小时前'; return d.toLocaleDateString('zh-CN',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}); }
+        async function loadData() { try { var r = await fetch('https://raw.githubusercontent.com/RobeaoBot/india-mobile-pulse/main/docs/dashboard.json'); if(!r.ok) throw new Error(); var data = await r.json(); renderDashboard(data); countdown = REFRESH_INTERVAL; } catch(e) { console.error(e); document.getElementById('brandsContainer').innerHTML='<div class="error">❌ 数据加载失败，请稍后重试</div>'; document.getElementById('postsContainer').innerHTML='<div class="error">❌ 数据加载失败</div>'; document.getElementById('runsContainer').innerHTML='<div class="error">❌ 数据加载失败</div>'; } }
+        function renderDashboard(data) { var s = data.stats||{}; document.getElementById('lastUpdate').textContent='📅 最后更新: '+(data.last_updated?formatTime(data.last_updated):'--'); document.getElementById('statTotal').textContent=s.total||0; document.getElementById('statToday').textContent=s.today||0; document.getElementById('statBrands').textContent=Object.keys(s.brand_mentions||{}).length; var sent=s.sentiment||{}, tot=(sent.positive||0)+(sent.negative||0)+(sent.neutral||0); if(tot>0){var pct=Math.round((sent.positive||0)/tot*100); var cls=pct>=50?'positive':pct>=30?'neutral':'negative'; document.getElementById('statSentiment').innerHTML='<span class="sentiment-'+cls+'">'+pct+'% 正面</span>';} renderBrands(s.brand_mentions||{}); renderPosts(data.recent_posts||[]); renderRuns(data.recent_runs||[]); }
+        function renderBrands(m) { var c=document.getElementById('brandsContainer'); var e=Object.entries(m); if(!e.length){c.innerHTML='<div class="loading">暂无数据</div>';return;} var mx=Math.max.apply(null,e.map(function(x){return x[1]})); c.innerHTML=e.map(function(x){return'<div class="brand-bar"><span class="brand-name">'+x[0]+'</span><div class="brand-bar-bg"><div class="brand-bar-fill" style="width:'+Math.max(5,(x[1]/mx)*100)+'%"></div></div><span class="brand-count">'+x[1]+'</span></div>';}).join(''); }
+        function renderPosts(p) { var c=document.getElementById('postsContainer'), l={reddit:'R',youtube:'YT',news:'N',official:'OFF'}; if(!p||!p.length){c.innerHTML='<div class="loading">暂无帖子</div>';return;} c.innerHTML=p.slice(0,20).map(function(x){return'<div class="post-item"><div class="post-title">'+escapeHtml(x.title||'')+'</div><div class="post-meta"><span class="source-badge source-'+(x.source||'news')+'">'+l[x.source]||'?'+'</span><span class="sentiment-'+(x.sentiment||'neutral')+'">'+(x.sentiment==='positive'?'😊':x.sentiment==='negative'?'😟':'😐')+'</span><span>'+formatTime(x.published_at||x.collected_at||x.created_at)+'</span></div></div>';}).join(''); }
+        function renderRuns(r) { var c=document.getElementById('runsContainer'); if(!r||!r.length){c.innerHTML='<div class="loading">暂无记录</div>';return;} c.innerHTML=r.slice(0,10).map(function(x){return'<div class="run-item"><span>'+escapeHtml(x.source||'')+'</span><span>'+(x.posts_count||0)+'条</span><span class="sentiment-'+(x.status==='success'?'positive':'negative')+'">'+(x.status==='success'?'✅ '+(x.new_posts||0)+'条':'❌')+'</span><span style="color:#a0a0a0">'+formatTime(x.started_at||x.created_at)+'</span></div>';}).join(''); }
+        function escapeHtml(s) { if(!s)return''; var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
         document.addEventListener('DOMContentLoaded', loadData);
     </script>
 </body>
