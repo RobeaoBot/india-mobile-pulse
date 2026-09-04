@@ -1,24 +1,24 @@
 {
   "stats": {
-    "total": 910,
-    "today": 482,
+    "total": 922,
+    "today": 494,
     "by_source": {
       "hackernews": 99,
-      "news": 151,
-      "official": 445,
+      "news": 153,
+      "official": 455,
       "reddit": 25,
       "techmedia": 115,
       "youtube": 75
     },
     "brand_mentions": {
-      "Apple": 176,
-      "Samsung": 73,
-      "Xiaomi": 64,
-      "Motorola": 56,
+      "Apple": 177,
+      "Samsung": 75,
+      "Xiaomi": 65,
+      "Motorola": 59,
       "OnePlus": 48,
       "Google": 45,
       "Vivo": 45,
-      "Oppo": 37,
+      "Oppo": 38,
       "Nothing": 34,
       "Realme": 32,
       "iQOO": 4,
@@ -29,34 +29,40 @@
       "Tecno": 1
     },
     "sentiment": {
-      "neutral": 479,
+      "neutral": 491,
       "positive": 3
     }
   },
   "latest_analysis": {
     "period_start": "2010-02-17T20:13:54+00:00",
-    "period_end": "2026-09-04T07:00:36",
+    "period_end": "2026-09-04T07:30:28",
     "posts_analyzed": 541,
     "provider": "rule",
-    "summary": "本期监测到最受关注的品牌为：Apple(104次提及)、Samsung(38次提及)、Xiaomi(32次提及)、Motorola(32次提及)、Google(30次提及)。操作系统讨论热度：Android(84次)、HarmonyOS(16次)、iOS(14次)。热门讨论话题包括：launch、android、pro等。整体情感倾向：正面1%、负面0%、中性99%。",
+    "summary": "本期监测到最受关注的品牌为：Apple(104次提及)、Samsung(38次提及)、Xiaomi(32次提及)、Motorola(32次提及)、Google(30次提及)。操作系统讨论热度：Android(85次)、HarmonyOS(16次)、iOS(14次)。热门讨论话题包括：launch、android、pro等。整体情感倾向：正面1%、负面0%、中性99%。",
     "hot_topics": [
       {
         "topic": "launch",
         "description": "Nokia launches DIY repairable budget Android phone",
         "heat": "high",
-        "count": 83
+        "count": 81
       },
       {
         "topic": "android",
         "description": "Google will allow only apps from verified developers to be installed on Android",
         "heat": "high",
-        "count": 72
+        "count": 73
       },
       {
         "topic": "pro",
         "description": "Android Developer Verification: Threat masquerading as protection",
         "heat": "high",
         "count": 64
+      },
+      {
+        "topic": "apple",
+        "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
+        "heat": "high",
+        "count": 51
       },
       {
         "topic": "iphone",
@@ -71,12 +77,6 @@
         "count": 50
       },
       {
-        "topic": "apple",
-        "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
-        "heat": "high",
-        "count": 50
-      },
-      {
         "topic": "google",
         "description": "Google will allow only apps from verified developers to be installed on Android",
         "heat": "high",
@@ -86,19 +86,19 @@
         "topic": "smartphone",
         "description": "Mozilla to sell '$25' Firefox OS smartphones in India",
         "heat": "high",
-        "count": 43
+        "count": 42
       },
       {
         "topic": "galaxy",
         "description": "Samsung Galaxy S26 FE First Impressions",
         "heat": "high",
-        "count": 38
+        "count": 37
       },
       {
         "topic": "2026",
         "description": "IFA 2026: Belkin Introduces UltraCharge Power Banks, SureFind Trackers and Charg",
         "heat": "high",
-        "count": 37
+        "count": 36
       }
     ],
     "brand_sentiment": {
@@ -120,7 +120,7 @@
       },
       "Samsung": {
         "sentiment": "positive",
-        "reason": "正面2条/负面0条/中性36条 (共38条提及)"
+        "reason": "正面1条/负面0条/中性37条 (共38条提及)"
       },
       "iQOO": {
         "sentiment": "neutral",
@@ -165,16 +165,16 @@
     },
     "key_insights": [
       "品牌声量前三：Apple, Samsung, Xiaomi",
-      "讨论最热的关键词：launch, android, pro, iphone, price",
+      "讨论最热的关键词：launch, android, pro, apple, iphone",
       "OS 话题热度：Android, HarmonyOS, iOS"
     ],
     "trending_keywords": [
       "launch",
       "android",
       "pro",
+      "apple",
       "iphone",
       "price",
-      "apple",
       "google",
       "smartphone",
       "galaxy",
@@ -185,9 +185,201 @@
       "launches",
       "vivo"
     ],
-    "id": 3
+    "id": 4
   },
   "recent_posts": [
+    {
+      "id": 2546,
+      "source": "official",
+      "source_id": "official_gn_e2b53c8437eaae4f5b7b4ded4686b965",
+      "title": "These Huawei devices are getting HarmonyOS 6",
+      "content": "These Huawei devices are getting HarmonyOS 6 &nbsp;&nbsp; Notebookcheck",
+      "author": "Notebookcheck",
+      "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9lUDRId2JkRmFabkhReTlnaDQzc2c4eUJqWmlrMnJHS0hIYTdlLWUwX1lLRFVfemFQZThnQ2tPSFRNMldDRDFkc2RuRnpXSHQtdDE5Z0tNemwzN0lOSWVBeTA5WDNJU1dvaXgxZ3F6d2J0RVlIdXVEejJzNFhORE12RzJYeXNFRmNoSHBmYm05cTg?oc=5",
+      "score": 0,
+      "brands": "[]",
+      "os_tags": "[\"HarmonyOS\"]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2025-10-25T07:00:00",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2518,
+      "source": "official",
+      "source_id": "official_gn_eb8ed55e94722844a75873aca8511a9a",
+      "title": "Motorola Launches Razr Fold, Its First Book-Style Foldable Smartphone in India: Price, Specifications, Offers",
+      "content": "Motorola Launches Razr Fold, Its First Book-Style Foldable Smartphone in India: Price, Specifications, Offers &nbsp;&nbsp; ETV Bharat",
+      "author": "ETV Bharat",
+      "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxNbU9EcWZWREpTcFNlNUVkTkU1N0p3SGNUeDd5OHdNcGhKdXY0dm04Y2NWTVFOTUhQV3lFYUNBSWlHYW5PRlRNQkpZQTlJaGdVTEl6djFBaUxFZUxtMm1tWFZSUGJpdjdpNGg4NG1TWWx6UGhuaFhYaDFfWlJMMkNGMUZnQTRONmdzYmJHdDBmYVhVQTJ6NXpvUkNUb0t4SDlMbm1CVmhBc3dwQ3Zzd2puNWhTbmVCcGVLTjln0gHAAUFVX3lxTE81aW1iQXA3UGVUWm84N3FwdVFKb3dBRFBzNVJwckV2bHNFOGNuUGdaN3g3Vm0xVzRrQzRPYzc1TUd3cVp2dU1Jc1pHa1gtcFNxMlM4LVZubFhCc296aWFMVy1aMFJNMWs4OTFzTHZoYlBCcnhNWndEdmJTZnRXZjR5VXZOWGRvQzVqLU44d1p6R1dyNnp0VnRnbm5HTnI3b1AxdXA0QXRLaTlEOXNxejR1R0NXd2dvQW1VellUQi12LQ?oc=5",
+      "score": 0,
+      "brands": "[\"Motorola\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[\"foldable\"]",
+      "sentiment": "neutral",
+      "published_at": "2026-05-13T07:00:00",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2508,
+      "source": "official",
+      "source_id": "official_gn_e4fe38b63aa599d33af055ba3d27887b",
+      "title": "Motorola Edge 70 Max goes on sale in India: Price, discounts and other details",
+      "content": "Motorola Edge 70 Max goes on sale in India: Price, discounts and other details &nbsp;&nbsp; Moneycontrol.com",
+      "author": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxQZDlXQ2NwWEktN3lQMHVJNmNwbHlWYmk0bVY3bTFlcm9ONTQtdXB6Ulp5RnlZSzhFczdFYWJJOVNpV3p6N2ZWR1FZWVp6d015OFpXYWVvbTRqcXY1anExREpWZUt3dHRyaFh1U0p0UVV1SmpjRmlRUmxGTzlVUjU4ZFZqbmcwdmc4bnlnVFBLOVRBbDcyZGtNamtvdnY1TlpYVV9lX1htT21OMC1aVVBKakpiYmlaUHF2R1RHXzVWamdiMF9VbjhJYWVxamx3OGs1bHJ0TdIB2gFBVV95cUxQYmdSSjVYay1rWk1HdjZVOXdtcEY3aVZOWk1uSENyS3ZDaEh6bTRWZnFmb2hnSWlmV2dnSHQwZTR4Uk5nREFXYmZKdkh5OGlyZ3JsQW04ME8xRnlhUDlKUmc3RHA0d1lRbjBnY1J2NGV4a25DMUhwaWhfLUNHSUJkRlJybHE1Y3pGSFIzTkFpMUZuYjgybE9NTTlKNl9MZ05GblUtWDdCb0hJZUVkWF9HY2NjbFVnUHRmV1ZCN2tMeU84a3ZFYkRUc0pkVmo1VkJPRWpta0hiYmh2QQ?oc=5",
+      "score": 0,
+      "brands": "[\"Motorola\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-07-20T07:00:00",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2488,
+      "source": "official",
+      "source_id": "official_gn_49f3411a18eb50c9033875c72b4b131f",
+      "title": "Oppo Find X9 Ultra price, design, camera and everything you need to know",
+      "content": "Oppo Find X9 Ultra price, design, camera and everything you need to know &nbsp;&nbsp; Moneycontrol.com",
+      "author": "Moneycontrol.com",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxQYXFQQmtLUzBRbXBoRExvVnpRUFE3NXZjQWZCNFdseDNzeFFkY2EyeDlZbDNYVlJTUXJsZ3RqVzZkdjl1SFhtVHJ5S3h3OWNPQUtFOTZiSGtXZTl2Y253RXQ1SlZTQUI5VmZIYVBPUkZRRzhHZVF4dTRzeEJDYjlBS2NSYTdmVnRVWGhPSFY4STZoZjFLMFFYa2tRT2hBNTR6bDlYUkdiLXZXX3pQbWxISzNzMmw3ZFE0ekp3UzBVbUhaVm9rZHNzOUpaV2nSAdIBQVVfeXFMTy14ZXp4R0FERWtEb1dlQU1EemYxZnBEcVZUd29QU3pkck8xU1BCTzBoekZOS3Q4LWp0NlNfS2tkQmRiUFBRUnZTcHVsTXFISEI1REpzN3FOdzh2Q3A2YzZIMFpBUUlGM0RNNnk0dFRWdm1hYTNFbDJPWUhNbEV5ZWFQcGh1bS1kanBuYWVabjU5bEt3U1Y2SVBzT0FkczB3TUxNU1RkY2dHYklkUmd3LWxxbUZaODdZRlpaRk14d3JRN09BZ3FxTWpQaUpLR3F1MHFn?oc=5",
+      "score": 0,
+      "brands": "[\"Oppo\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[\"camera\"]",
+      "sentiment": "neutral",
+      "published_at": "2026-05-22T07:00:00",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2415,
+      "source": "official",
+      "source_id": "official_gn_30dbcfc934c8609029602d7bbb6e0ce6",
+      "title": "Samsung Galaxy M17e price in India tipped ahead of its launch",
+      "content": "Samsung Galaxy M17e price in India tipped ahead of its launch &nbsp;&nbsp; 91mobiles.com",
+      "author": "91mobiles.com",
+      "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQbjVXd2ZsUHVoOHcxTjVXUFFFb0QtWkFIaTNFWHhBTk9OX3dDZFM0YV9JbHZ4cTk4OFJkaVBRNUhLZ1NldXZaQlY0V3l1NkdaRTRVZTY3NUl5NTdpQThmSFRsd0ZFMVRVc01YY2wtcGdhajFRWXRlVFMyYUNjVXhpUmEyaU1CY3RuTkNTVWJWSGFHQ3ZsS1lTN1FjMmwyaTZC0gGmAUFVX3lxTFAwOElWYzhEdkd1VnpMWHlwYmtCejNIbU12dXg4VlVZRHd2LVRoM1ZjUnBvY0UybFkta2hvVExFemQ0VE5RUTRlaVlWei1yeHpBQjNsQ25xb0ZrV09wUF9OOWs2a1c2N3NrYWFlU2U1RkFJNS16SnBOVXdBVGotVXUtQXBPRENOUkRxOVJrcWJWV2dic3pTQ3BFcWI0LWJjMldoM09odEE?oc=5",
+      "score": 0,
+      "brands": "[\"Samsung\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-03-12T07:00:00",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2394,
+      "source": "official",
+      "source_id": "official_https://www.fonearena.com/blog/?p=491534",
+      "title": "POCO X8 with 6.83″ 1.5K 120Hz AMOLED display, IP69K ratings, 9000mAh battery launched in India",
+      "content": "POCO India has officially expanded its X-series lineup with the launch of the standard POCO X8, as it had promised. Aimed at everyday productivity, heavy multimedia consumption, and outdoor reliability, the handset brings flagship-grade durability, a high-resolution display, and a massive silicon-carbon battery. Display and Design The POCO X8 features a large 6.83-inch 1.5K (2772 &#8230; Continue reading \"POCO X8 with 6.83″ 1.5K 120Hz AMOLED display, IP69K ratings, 9000mAh battery launched in In...",
+      "author": "Srivatsan Sridhar",
+      "url": "https://www.fonearena.com/blog/491534/poco-x8-price-india-specifications.html",
+      "score": 0,
+      "brands": "[\"Xiaomi\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[\"battery\", \"amoled\"]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:07:11",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2393,
+      "source": "official",
+      "source_id": "official_https://www.fonearena.com/blog/?p=491525",
+      "title": "moto watch ultra with 1.5″ pOLED display, LTE, Wear OS, Polar health tracking announced",
+      "content": "Motorola has launched the new moto watch ultra, expanding its smartwatch lineup with a new model developed in partnership with Polar. The moto watch ultra is powered by the Snapdragon W5+ Gen 1 Platform and features a 1.5-inch OLED display with up to 2,700 nits of brightness and an always-on display. The display is protected &#8230; Continue reading \"moto watch ultra with 1.5&#8243; pOLED display, LTE, Wear OS, Polar health tracking announced\" The post moto watch ultra with 1.5″ pOLED display, L...",
+      "author": "Tamil G",
+      "url": "https://www.fonearena.com/blog/491525/moto-watch-ultra-price-features.html",
+      "score": 0,
+      "brands": "[\"Motorola\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[\"lte\", \"oled\", \"snapdragon\"]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:15:25",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2392,
+      "source": "official",
+      "source_id": "official_https://www.fonearena.com/blog/?p=491542",
+      "title": "Lenovo Yoga Pro 9n / Yoga 9n 2-in-1 AI PCs with NVIDIA RTX Spark announced",
+      "content": "Lenovo has announced the Yoga Pro 9n (15”, 11) and Yoga 9n 2-in-1 (16”, 11) at Lenovo Innovation World during IFA 2026. Both models are new additions to the company’s Yoga portfolio. Lenovo Yoga Pro 9n (15”, 11) The Lenovo Yoga Pro 9n (15”, 11) is powered by NVIDIA RTX Spark and supports up to &#8230; Continue reading \"Lenovo Yoga Pro 9n / Yoga 9n 2-in-1 AI PCs with NVIDIA RTX Spark announced\" The post Lenovo Yoga Pro 9n / Yoga 9n 2-in-1 AI PCs with NVIDIA RTX Spark announced first appeared on F...",
+      "author": "Tamil G",
+      "url": "https://www.fonearena.com/blog/491542/lenovo-yoga-pro-9n-yoga-9n-price-features.html",
+      "score": 0,
+      "brands": "[]",
+      "os_tags": "[]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:30:28",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2369,
+      "source": "official",
+      "source_id": "official_https://www.androidauthority.com/timekettle-w4-plus-ai-interpreter-earbuds-launch-3706943/",
+      "title": "These earbuds may be the only translation tool you need overseas",
+      "content": "The new earbuds even support translation profiles for various industry fields.",
+      "author": "Chethan Rao",
+      "url": "https://www.androidauthority.com/timekettle-w4-plus-ai-interpreter-earbuds-launch-3706943/",
+      "score": 0,
+      "brands": "[]",
+      "os_tags": "[]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:00:25",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2367,
+      "source": "official",
+      "source_id": "official_https://www.androidauthority.com/lexar-world-thinnest-portable-ssd-smartphone-video-3707453/",
+      "title": "High-quality video on Android is a storage hog, but the world’s slimmest portable SSD could help",
+      "content": "It looks like this super-thin portable SSD might support APV video capture, which could make it ideal for Galaxy S26 users.",
+      "author": "Hadlee Simons",
+      "url": "https://www.androidauthority.com/lexar-world-thinnest-portable-ssd-smartphone-video-3707453/",
+      "score": 0,
+      "brands": "[\"Samsung\"]",
+      "os_tags": "[\"Android\"]",
+      "hardware_tags": "[\"storage\"]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:01:45",
+      "collected_at": "2026-09-04T15:35:50.655179"
+    },
+    {
+      "id": 2285,
+      "source": "news",
+      "source_id": "CBMi-gFBVV95cUxNWDRrUnowRFdVNGtDZFJ4ZllxTFRyMkpWOWZ1Qm10S2gtbDdrU0N5UGNuS1ZHampOX1JobUxjNWJ0cEhyMk5WRFRHNzNsUzlyTFdma0U5cWRjMWZMZDQtQWtEaFhySUVaM2pLX3VWcFk3amtNLUR0aFlFS2p4TC1WTXBBdjZBQmJ3VGxwelgzXzRCRkYxUzBGOUhBV1Z3RjdKMW8zeG41UElrWTE1Qm05ZkVRNTdDOE12TVBKa3ViUHltVldZZHRqUncxTGFxb3dhcy1hbW9adnh0ZDBlVDlNTFdRblM0azJqeWl0S3FUQ1FkNVplZTNodTV30gH_AUFVX3lxTE9PTk5kdTFyQmtiOHQ2Y0hTdTNqeS1nNXp6N24wczgwWUQxYmxucHIwRUNhZWZBNGlvNWdOV2hRMUZHNHF2LU1KaWJLQnFaX1dpQ3Q5ZDUyekFmdjE1S2ttWXM4TVllTEFqLWVqNmJLc0F6cHFhTmwzMTRQSEF3aGlQU0F0VFRXLXVEXzF3UVpJaEx1S0g4YU1wVE1KT3BXd0NQcGtZNjh6N1N5dVVJYkNfRThLNG5sYnhaMzFnYjY2UE9Fd0hWZHRyV3dZcjU5WFRXdjNzWWNxMVlsdGxuUUJuSU5lWFA3aFlWcXZna1VRSXVxMVl6WnRmNDVzc0NTWQ",
+      "title": "Apple iPhone Pro Max release date: Check India, Dubai, US launch dates, price, colours; all you need to know",
+      "content": "Apple iPhone Pro Max release date: Check India, Dubai, US launch dates, price, colours; all you need to know &nbsp;&nbsp; Livemint",
+      "author": "Livemint",
+      "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNWDRrUnowRFdVNGtDZFJ4ZllxTFRyMkpWOWZ1Qm10S2gtbDdrU0N5UGNuS1ZHampOX1JobUxjNWJ0cEhyMk5WRFRHNzNsUzlyTFdma0U5cWRjMWZMZDQtQWtEaFhySUVaM2pLX3VWcFk3amtNLUR0aFlFS2p4TC1WTXBBdjZBQmJ3VGxwelgzXzRCRkYxUzBGOUhBV1Z3RjdKMW8zeG41UElrWTE1Qm05ZkVRNTdDOE12TVBKa3ViUHltVldZZHRqUncxTGFxb3dhcy1hbW9adnh0ZDBlVDlNTFdRblM0azJqeWl0S3FUQ1FkNVplZTNodTV30gH_AUFVX3lxTE9PTk5kdTFyQmtiOHQ2Y0hTdTNqeS1nNXp6N24wczgwWUQxYmxucHIwRUNhZWZBNGlvNWdOV2hRMUZHNHF2LU1KaWJLQnFaX1dpQ3Q5ZDUyekFmdjE1S2ttWXM4TVllTEFqLWVqNmJLc0F6cHFhTmwzMTRQSEF3aGlQU0F0VFRXLXVEXzF3UVpJaEx1S0g4YU1wVE1KT3BXd0NQcGtZNjh6N1N5dVVJYkNfRThLNG5sYnhaMzFnYjY2UE9Fd0hWZHRyV3dZcjU5WFRXdjNzWWNxMVlsdGxuUUJuSU5lWFA3aFlWcXZna1VRSXVxMVl6WnRmNDVzc0NTWQ?oc=5",
+      "score": 0,
+      "brands": "[\"Apple\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:12:26",
+      "collected_at": "2026-09-04T15:35:40.378356"
+    },
+    {
+      "id": 2227,
+      "source": "news",
+      "source_id": "CBMizAFBVV95cUxObl9zRmhZVjNLZktHU0NPZFBNUGFoNnN4SXJJNzdKeTNsemdPWS1Xd2p6NkYxQUVucU1ibmVRa3RUbTJmMmlScVVuSUJPY3NWdHg3N3gxQkxpWm5vQnNYQ3UxUmJad2l0VE5iNnhpVDR3M2NFTGh0ZU9kN2tXMHpfb0JWRVpGQWtzWGkzTTVqUW9iVGpUVUQzdWhpTHlJbU1Kbmw1Y2ZCdEFyYlVIeWREYUctaGxsTFd2akpVdWo3MUljTFBsaVhGRWdiV3rSAdIBQVVfeXFMTV82Q3lBRy1MU0ZrYmJaRjNaZ1RzTTNQaHRPRjlic0plTGdGRGw4VXVqVGt3SktRdGg3bUNCeXhqbVEwaDF5MjA1LXZJM2FHMDh1WWQybEtpUXpfYkZwdGJmem03cEpPY0Q2NjVIT1VsckYwMG9oMExuQ2lwQl91aVlNcW1RQlBBNGJvNWJwdkVXX2FJMzZmMi1RWE5FUUZ3LUpObzYtaV9fRmhDc2pRdjdxSUNfTzlFMDNsYmlveGplZ1BWYWNpZjJicHFzN3pTVXVB",
+      "title": "4G phones are back in India as memory costs make 5G more expensive",
+      "content": "4G phones are back in India as memory costs make 5G more expensive &nbsp;&nbsp; Business Standard",
+      "author": "Business Standard",
+      "url": "https://news.google.com/rss/articles/CBMizAFBVV95cUxObl9zRmhZVjNLZktHU0NPZFBNUGFoNnN4SXJJNzdKeTNsemdPWS1Xd2p6NkYxQUVucU1ibmVRa3RUbTJmMmlScVVuSUJPY3NWdHg3N3gxQkxpWm5vQnNYQ3UxUmJad2l0VE5iNnhpVDR3M2NFTGh0ZU9kN2tXMHpfb0JWRVpGQWtzWGkzTTVqUW9iVGpUVUQzdWhpTHlJbU1Kbmw1Y2ZCdEFyYlVIeWREYUctaGxsTFd2akpVdWo3MUljTFBsaVhGRWdiV3rSAdIBQVVfeXFMTV82Q3lBRy1MU0ZrYmJaRjNaZ1RzTTNQaHRPRjlic0plTGdGRGw4VXVqVGt3SktRdGg3bUNCeXhqbVEwaDF5MjA1LXZJM2FHMDh1WWQybEtpUXpfYkZwdGJmem03cEpPY0Q2NjVIT1VsckYwMG9oMExuQ2lwQl91aVlNcW1RQlBBNGJvNWJwdkVXX2FJMzZmMi1RWE5FUUZ3LUpObzYtaV9fRmhDc2pRdjdxSUNfTzlFMDNsYmlveGplZ1BWYWNpZjJicHFzN3pTVXVB?oc=5",
+      "score": 0,
+      "brands": "[]",
+      "os_tags": "[]",
+      "hardware_tags": "[\"5g\", \"4g\"]",
+      "sentiment": "neutral",
+      "published_at": "2026-09-04T07:17:43",
+      "collected_at": "2026-09-04T15:35:40.378356"
+    },
     {
       "id": 1429,
       "source": "official",
@@ -1595,201 +1787,69 @@
       "sentiment": "neutral",
       "published_at": "2026-08-21T07:00:00",
       "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 849,
-      "source": "official",
-      "source_id": "official_gn_ce0ad366cfd3afa834d3c895d4d00a48",
-      "title": "Redmi Note 17 Pro, Pro Max India launch tipped for September 15th with substantial price hike",
-      "content": "Redmi Note 17 Pro, Pro Max India launch tipped for September 15th with substantial price hike &nbsp;&nbsp; 91mobiles.com",
-      "author": "91mobiles.com",
-      "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxOQVhqZjBuTG1yejlCb3NSRmhENmdaclpmMndoM25LdldHY0ZlYllEWDRlcGhsbkdxNEsyc1dBNFBnTEZJdnI0QzZyQV9kaVpDVEF1aGg1MVhsMk1nVlZTVzloZHkxdnU4M3ZlMlU1YWQ0amFaSGNRN1owTmc4d2hNN3daeHhodFczeHY1cUtFaVdPSmo2U0HSAZsBQVVfeXFMTnBPLUdhZzNKYnRDTlZPbDV4WFRsMDdYOVN3Yy1aZkhNanFrc3RScmdJTWRjcnZvVi1DeFJVVFM1Zml2SjNuVGdSVmVYeXZjSE9SYXI4NncyYVh4OVg2TUJSR01UOER3VTJDdk93c1NDTDY0bk9tb2JTVDFveUVhUWZfaXhxSlNHTUhfS2FaRWVZTEtranVJR3BCeU0?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-08-24T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 847,
-      "source": "official",
-      "source_id": "official_gn_664fe2b1dccb4ec49849603bb82e2903",
-      "title": "Redmi 17C 5G with 120Hz display and Dimensity 6300 SoC goes official",
-      "content": "Redmi 17C 5G with 120Hz display and Dimensity 6300 SoC goes official &nbsp;&nbsp; 91mobiles.com",
-      "author": "91mobiles.com",
-      "url": "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPS0t6aDNFNzA0Rmd0Z1hIeDdCYnNtRTFuSm82NlNnMkMyVGdKeFQzTGNSOVBfQy1VRVp0c1JUcTdRM3NiZkJ6MWs4Y0JlaEx6U2x3ZTRvUGxlOW1TUVNsclpWY3FjSDY1ci01SlFtNTF6V3RodngwQVd4S2NyOGxuRzliNzNkUmxPbE9j0gGQAUFVX3lxTE95cHNxU2ZEQ0FYT0NKYV9yRzlpajM3VGR0aWxuV0FRb1F0cmhTN01JcGpLTGVRWE83UDFPMlEyVlBoTzZ1SnZKWDk0YWR3aEFSekRxTHRrMS1CMThLY2NCYWEyaEc5M3JlelhyOUstYlROQWcyZnIzVmM3Z3MzbmlUcTgyQXVGR0I2cFZQVmxlaw?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[\"5g\", \"dimensity\"]",
-      "sentiment": "neutral",
-      "published_at": "2026-08-26T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 846,
-      "source": "official",
-      "source_id": "official_gn_99e66be1dcb0705e0b472dfc6cedd602",
-      "title": "Redmi Note 17 series launch date and design officially revealed - GSMArena.com news",
-      "content": "Redmi Note 17 series launch date and design officially revealed - GSMArena.com news &nbsp;&nbsp; GSMArena.com",
-      "author": "GSMArena.com",
-      "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPX2hyMkZUQ3dUZ21lei1Ndk5NbzZDbzN6cVA2U3ZWcGJtZGJPR2t2X2huS2hWTFFJUnQ4WWRWWU54alNZSDhETy1TUVc4NkswWXBiU0hSVmVWX1F5enBuVk1PZUpzWlNpNm9uRGR3ZmRRNVpxQ2tjMEVTMWpNZUY1eC1fZThwQ3M2WVppakdueU9vNEdYUjJpX29veGlKT2oyREtEOW9n0gGiAUFVX3lxTFBIUG9wXzcwM0V2cUdLUVRUNFhBWURpZGZpeTA5MnZwY3BNY3dmYXYyOG42RXprNmxYOU9DRlBTMDlWMFl3SDBnbjUwTXlNZHFLVG93bGVnR2xzRlh1ZkwtWnBTdXR4eVdzd1ZPZVVWMlpyVDBsWEJXdlBHc0JxdENxbnp2WW1FUE1YdC0zbnVGOVBzWDdZUTF6Vi10T3lxdTNtQQ?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-07-08T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 845,
-      "source": "official",
-      "source_id": "official_gn_fd3ac5400ed3283ee3d1c9d430110d94",
-      "title": "REDMI Note 17 5G to launch in India on August 6",
-      "content": "REDMI Note 17 5G to launch in India on August 6 &nbsp;&nbsp; fonearena.com",
-      "author": "fonearena.com",
-      "url": "https://news.google.com/rss/articles/CBMigwFBVV95cUxNLUZ4S1VtbWdLeVB1R1BzRWRTTTBiVWQ3RFlsTXVHQVZtM2pLOGExVUQtemJRdVpLVldpdWtDdzFESVhqbWdLOXZEa2NxS056bWwtUWpkR0RIakVSY1R4aFZKUTdESERUSDY5OXVCalF4NTMyNEh4ZXVma21FOTJ6aVNIVdIBiAFBVV95cUxNbmN2S2ktcktrVHRUSGl0dmJjWUR2NDVUQWJCWnBVdUw0MlN4ajZnWmRuQUNfVFZfV0htdGd5S2VkVFltVFFUTkRETndTMjg1T2pHcGFLZzk2OGRxYXpQS3dZeWVoMy0tY1dEXzNMNEM5VnlmdGNsSjAxaTJxdVRUTnp6OHVRTU1t?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[\"5g\"]",
-      "sentiment": "neutral",
-      "published_at": "2026-07-28T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 844,
-      "source": "official",
-      "source_id": "official_gn_61ef6727417a9522bb856ad52624a359",
-      "title": "Xiaomi officially launches the Redmi Note 17 Pro Max, its first phone with a 10,000mAh battery",
-      "content": "Xiaomi officially launches the Redmi Note 17 Pro Max, its first phone with a 10,000mAh battery &nbsp;&nbsp; 91mobiles.com",
-      "author": "91mobiles.com",
-      "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxQRnV5Ym5JZ3BCSEpCMDFNSEFlSWV6ZjlJX3llTjU2MlhuSXlCSS15OU8wQzNXcFpmbkpWcG9PbDk3WUZyVkFrUGRpZkZobG0xUDdUcHhpeXZPM1ZOVl85MWd5QjhCYmJSYWdjcWRkSXEza1JxNHZ6NEhBS0d2aGMwQnNBbUtGbDRNa1NCWEZ3VXBkOUFPbWNtYktqTVk0UdIBowFBVV95cUxQQ0twTzljVlJLaXB4bWdFMUNtVDVveGdEbTBEd0hVRDFvNUhuZWgxZEpHYXJDeFFHSkduODhLbkdPUnpaRkN5NmRqVFV4WGJLLXp1RkVSNXZacEliazJpWnZlUUwxdDhqV0xBcDFJTlBsSFJySGgybXdVUGNQTXlEVVJZQUcwZWQ5MF9xVHVvNkdrNWtZUzFGNFBNZ2Y4b3FyRlE0?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[\"battery\"]",
-      "sentiment": "neutral",
-      "published_at": "2026-08-27T09:11:44",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 843,
-      "source": "official",
-      "source_id": "official_gn_7b879f6d2666bccf80ac14cc5df85838",
-      "title": "Redmi Note 17 series key specs leaked ahead of launch, full details here",
-      "content": "Redmi Note 17 series key specs leaked ahead of launch, full details here &nbsp;&nbsp; India Today",
-      "author": "India Today",
-      "url": "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPNDdERlpJU0ZrZEJZYnVka01pbHRGRDRZYlAwb196Z01SaUdIM3dlSFVyVmd3S3c1blJ5bE5ZUGk2ZF9EMTI3NlFKeDVLaWFPUXJGcWF4RXFpcy1wY1JiVjZKd2tOZGZzVHBHTDRpdzBtZGxaOFh2Z1hBQUh0VkVIZUFLUm9SZThJeDVFbWQ4Y3hpZ1E0cnBfdlFOLWpqVHc0TU4tMElhNHAxN2xkNDI4VnZEVEN1aDhGbm9STmFidmxnSDBHV0FSblM1Z080WkU2Wm9Qc9IB2gFBVV95cUxNdzBrUTFpdE9VRDdaS0FLcHJUb0xMUFNPOF81U0poOHNiSG42X3VLZXpJQ2huVEdMX2ktbm5pcTRMejBwR21qd2pVNjJnVmV0RUZRX3REVEcxbzdPZHNqOXJBekZYQW1waHBTRE9ieVJmZkVqR2FTWmlHWjVyNkd2ZFVNaXFDTmQzWHRaOTFDbWxCems4d183b2FBTTRydmcxSWx1Tkh4ZGxjRHU0NGJuR1RCdi1lOXY4YU5mNGJfRFBySGVhckxGUERkUGFVU2dmd1dUclFuTVZvZw?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-07-13T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 842,
-      "source": "official",
-      "source_id": "official_gn_CBMibEFVX3lxTE1WMmZlcHBwUmJYMW8zUjgwVXdHUTZ3SW4zNWRRVWZEa1BqbURFc21xNm9DUURhNEN1dFBxZ0xldWxMR3dGVUVkRmJZWF9lTEtjd3VFbnQyNjJvbHowbVk0eGh6cjk5MjZhN2N4Sw",
-      "title": "Redmi Note 17 India Launch Set for August 6 With an 8,000mAh Battery",
-      "content": "Redmi Note 17 India Launch Set for August 6 With an 8,000mAh Battery &nbsp;&nbsp; AndroidPure",
-      "author": "AndroidPure",
-      "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WMmZlcHBwUmJYMW8zUjgwVXdHUTZ3SW4zNWRRVWZEa1BqbURFc21xNm9DUURhNEN1dFBxZ0xldWxMR3dGVUVkRmJZWF9lTEtjd3VFbnQyNjJvbHowbVk0eGh6cjk5MjZhN2N4Sw?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[\"battery\"]",
-      "sentiment": "neutral",
-      "published_at": "2026-07-29T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 841,
-      "source": "official",
-      "source_id": "official_gn_48099388a5aa164eca6fc52145bee7d5",
-      "title": "Redmi Note 17 could launch in India next month, may differ from the China variant",
-      "content": "Redmi Note 17 could launch in India next month, may differ from the China variant &nbsp;&nbsp; Moneycontrol.com",
-      "author": "Moneycontrol.com",
-      "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxNTkw5Um1iLVdjeGlJSDhfa3ZpdzZqbzVweGZfR2JXRjgyeFRoRk51TUNieFZhdmFTN0xKLUstTW9EZWZyM184TGh6SE1uOUxUV0tRSTlhdTFzMzFMZ1JaMVB6Sl9hSVA0N1J2OWNjb21zRVRhcVhHZXoyY3FGbFFPMTdwLTlIamhMbENxeVc4cVNXYVhkU21naHBucFhUeEFKbnQ4aFpNUV84V2VzOHdaNklUZE1uMi1tSlpGb1FTYy1HTWpUbnExU2VMZHc1Z1p4bjdDRlM2XzhMUdIB3wFBVV95cUxPaFV4VGtxRFpheHFUa3FnMHdKNXNEb3dtd3FhcTFCQmdGcWRwVmd0TXFfTU1ZVE1IMzlyN2xqR2RVV3RHQTM4eDRISWRxUVZ6bXE1dlR1YUczbFZzbUlZaVFPOXhBOG1wNEJXQld2ZGVfMHBFY1ptaHdXR1ZGUE45a25JVExRMmd5bFpBMHBncUdMNERRS0ZtRm9GZjhYd1hxOFdMc28ycTZLNzJGdTk2aG5faFpHT0N1ckhCenRaZ1lZMW5ldEdHaFY1TmJYNW8wUFRCaFRDLU4zUHlISmFN?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-07-18T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 840,
-      "source": "official",
-      "source_id": "official_gn_fba7341bbf63a843d521bbe456715047",
-      "title": "New Redmi Note India Launch Appears Imminent After Official Teaser Goes Live; Could be Redmi Note 17",
-      "content": "New Redmi Note India Launch Appears Imminent After Official Teaser Goes Live; Could be Redmi Note 17 &nbsp;&nbsp; Gadgets 360",
-      "author": "Gadgets 360",
-      "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQMC1JSXhiZFdtRUdqQ1BPMEp1T3RxaUl5b2QxcVRqM0EwTnNGSzhFaW1xRndpYXdoU19RM0R6d3ljek1WM3dRT2c5SEhDWG5hbUljME1NcVFwRFlHMUl4UTEwNXNMcTJLUXJEYWFyemprTlVOR1VmblF5TEhPX0lRUFgyaFBCalk1TEhtODVzeXZRV0gxZERGT3M0MHNwZUdFd3ZJa3pHcTRnb2dWWk5aX3hzQdIBuAFBVV95cUxPZWoxcFQxN1RCVUp0LTVadWtwVVY2d2NuLTRrTFZMMXBaNmxGdzQyX2VoUXczb2hYMC1sMEhsZHIzczdXRUJVMU5YOHNueEdvVG5LVldrcUZ0VXFtdS1IREM5cWtSZVN3a0FBc0MyTmRlM2JlUGlwMGJ2dUhOeWdlVERyNlFxY3RubEY0bVVFMlJ2Q19xUjYtV1VLc1RYLWoxWXFwWkF1TDRsb2hkU2F3c1FMVGptaWZi?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-07-23T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 839,
-      "source": "official",
-      "source_id": "official_gn_96ae65131c981d82b4f1bb3277b21d82",
-      "title": "Redmi Note 17 Pro and Redmi Note 17 Pro Max India launch date leaks along with pricing details - GSMArena.com news",
-      "content": "Redmi Note 17 Pro and Redmi Note 17 Pro Max India launch date leaks along with pricing details - GSMArena.com news &nbsp;&nbsp; GSMArena.com",
-      "author": "GSMArena.com",
-      "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxQLW5yd054RjhadVh6dzA0MzRzbko5bFZLQi04TWdKakNVRXVqRmdlazNqbnd6Z2hVakdGRkpOaEk0RUdUempxWTdUMjh5eldhY0ExNG9tS091eVdIbUxLSDVqd3pvSDR1U1F6cFlXM2NZLUs3djdtZHBvNmdCM3ZMQmNqemQtbnhjR0VxQzA1VEZsSGhhajJKZ2FwSHRWSkZVZjlmQUN0TWdoQ1JCYlk0MC1nTGwxT2w5eGZXbmwtdE5tZS15ZnkzNzZrWHJmXzjSAcsBQVVfeXFMTlg2dTVkclpHSzczSDFTNFZzZHpfSlU1dGxDaG4tbnBRaHVPYVhWbXByUVlpR0NZZVV3RzhWNWVoVFBCWmN2cGM5MkI2WlF4RjhGOTFJNGRGQ2xPSEdhbl9IakpSMDJ0MmxEWkozWU5oTXZUazAyUzlJWl9OUkpoWUN2dGlNUGViMWxjejM1czJLX0haRlI3VUtEY0dlbHJRLVdzV2VOZFFfelBTNjNMV1NSTk9GWmVrZHhlWHhFTEcyZGZWcGllN1g2TWs?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-08-22T07:00:00",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 838,
-      "source": "official",
-      "source_id": "official_gn_78a3855c504996f10f6b7db0ad42eddd",
-      "title": "REDMI 17 5G to launch in India on September 3rd",
-      "content": "REDMI 17 5G to launch in India on September 3rd &nbsp;&nbsp; fonearena.com",
-      "author": "fonearena.com",
-      "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTE9mRWFHQ0diUWVIbUFWUHhSMkR3Sk5Db09OTVczblFEdEdqR3JlVzNOMXJ1UmFWQnpHbV8tOE5MWEgwOHBvcFhXcHV6aVBYSTloZUpOM09Tb3RpcW5ibnJycjR4VXBDeWtDZUdacWM2clNOV0luOVVjVjNhMWvSAdACQVVfeXFMT3hXazdQS2NoeW5wbng2S3ZKWEtHUjFnbmppM1Nxa08wa0ZMUURRVnhjd3BSczlFa1JUWW0yUTNZSDJIQ004dDNfQWpyN0VSUUVJVVNkUVJCaDVIS01mc3RiWnM2emM5RTAwZGxtbG9paTJ2U0xuc2Y0bWhGcFZqelZzVi1mcnhIMzMyYjNMc2dHU2tHRGw4ZWpsOXJMek9rSkx3NjhSV0U1YVpubFlkNndtMUo1RTAtSDJBYlNsWFhiOTd4aEtWMzN6OTJoZTRtMmpGdVpWb2FObnd4djR3cHRTTDVyWll0SVRqMXJoSzJiTW1ySUpvWkpZXzFfZWo5VEJ5NExoZzNEUXdDdGJhRWs1SkZUamVndzdfbGN3ZlZwTFl2ZWFvWERaZVd4VExBNGRFZUMzTlh1Z0FGMEV4T2NDaXYyd0VUMFpoc2oycmhI?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[\"5g\"]",
-      "sentiment": "neutral",
-      "published_at": "2026-08-28T07:04:25",
-      "collected_at": "2026-09-04T14:58:27.184976"
-    },
-    {
-      "id": 837,
-      "source": "official",
-      "source_id": "official_gn_f91b8119206c2c09acc8da0dd836f111",
-      "title": "Redmi teases ‘Max’ variant for Note series in India, Redmi Note 17 Pro Max launch expected",
-      "content": "Redmi teases ‘Max’ variant for Note series in India, Redmi Note 17 Pro Max launch expected &nbsp;&nbsp; 91mobiles.com",
-      "author": "91mobiles.com",
-      "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNRHA0NUlqdDZmODN0NkZkR3BJT3RoT2h3bmZHQmpYSFVYSHNhTzFlc2l1QTlEaEIzNWxGMmNIbTVBWXkxckR4WkdEQ2xxTmVfMDdWaTNpaVk5QlBIQjcwajJNVnRBb0Z6NXEwZi1PdmZidFc1cndoaV9TRl81c3JFSTUtcXRYQ3kyM1RicDJhdmbSAZYBQVVfeXFMTnZPbmJ0TEVGVlJLQUYwMUF5Y09mMlJQZU9hYW1zNG5RZ2dXdXRKdmpLenpGZzNVaU5Nc2RNaks2Sy1QcXZxSklTcktLZzg0aUw0U2J5SGg1WDZVb25xUzU1VTEwNW5rMkwzbFdlMnhEUnJEakxyR0d1V2tWT2wzRnRaZTVibnM4b0Z2V2R1ejNUTmxKSWRR?oc=5",
-      "score": 0,
-      "brands": "[\"Xiaomi\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-09-01T08:30:50",
-      "collected_at": "2026-09-04T14:58:27.184976"
     }
   ],
   "recent_runs": [
+    {
+      "id": 22,
+      "source": "youtube",
+      "status": "skipped",
+      "posts_count": 0,
+      "new_posts": 0,
+      "error_message": "配置为跳过",
+      "started_at": "2026-09-04T15:35:50.700347",
+      "completed_at": "2026-09-04 07:35:50"
+    },
+    {
+      "id": 21,
+      "source": "reddit",
+      "status": "skipped",
+      "posts_count": 0,
+      "new_posts": 0,
+      "error_message": "配置为跳过",
+      "started_at": "2026-09-04T15:35:50.688184",
+      "completed_at": "2026-09-04 07:35:50"
+    },
+    {
+      "id": 20,
+      "source": "official",
+      "status": "success",
+      "posts_count": 250,
+      "new_posts": 10,
+      "error_message": "",
+      "started_at": "2026-09-04T15:35:40.409031",
+      "completed_at": "2026-09-04 07:35:50"
+    },
+    {
+      "id": 19,
+      "source": "news",
+      "status": "success",
+      "posts_count": 77,
+      "new_posts": 2,
+      "error_message": "",
+      "started_at": "2026-09-04T15:35:36.033480",
+      "completed_at": "2026-09-04 07:35:40"
+    },
+    {
+      "id": 18,
+      "source": "hackernews",
+      "status": "success",
+      "posts_count": 99,
+      "new_posts": 0,
+      "error_message": "",
+      "started_at": "2026-09-04T15:35:31.943938",
+      "completed_at": "2026-09-04 07:35:36"
+    },
+    {
+      "id": 17,
+      "source": "techmedia",
+      "status": "success",
+      "posts_count": 115,
+      "new_posts": 0,
+      "error_message": "",
+      "started_at": "2026-09-04T15:35:26.264925",
+      "completed_at": "2026-09-04 07:35:31"
+    },
     {
       "id": 16,
       "source": "youtube",
@@ -1929,27 +1989,7 @@
       "error_message": "",
       "started_at": "2026-06-29T20:26:23.395212",
       "completed_at": "2026-06-29 12:26:28"
-    },
-    {
-      "id": 2,
-      "source": "youtube",
-      "status": "success",
-      "posts_count": 75,
-      "new_posts": 75,
-      "error_message": "",
-      "started_at": "2026-06-29T20:26:20.359908",
-      "completed_at": "2026-06-29 12:26:23"
-    },
-    {
-      "id": 1,
-      "source": "reddit",
-      "status": "success",
-      "posts_count": 25,
-      "new_posts": 25,
-      "error_message": "",
-      "started_at": "2026-06-29T20:25:59.681907",
-      "completed_at": "2026-06-29 12:26:20"
     }
   ],
-  "last_updated": "2026-09-04T15:01:14.549444"
+  "last_updated": "2026-09-04T15:35:50.783904"
 }
