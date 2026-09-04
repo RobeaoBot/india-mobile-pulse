@@ -27,12 +27,14 @@ REDDIT_SEARCH_QUERIES = [
 
 # YouTube 频道 ID（印度科技博主）
 # 获取方式：访问频道页面 → 查看源码 → 搜索 "channelId"
+# 注意：以下 ID 已陆续失效（RSS 返回 404），采集器会优雅降级。
+# 主要数据由 TechMedia / HackerNews / News / Official 四个稳定源提供。
 YOUTUBE_CHANNEL_IDS = [
-    "UCOhHO2ICt0ti9KAh-QHvttQ",  # Technical Guruji
-    "UCEPL07qzVsOcHd3sMUws65g",  # Trakin Tech
-    "UCO2WJZKQoDW4Te6NHx4KfTg",  # Geekyranjit
-    "UClVIlK8QHZ2PFkXF97bA0lg",  # C4ETech Hindi
-    "UCXUJJNoP1QupwsYIWFXmsZg",  # Tech Burner
+    "UCOhHO2ICt0ti9KAh-QHvttQ",  # Technical Guruji  (已失效 404)
+    "UCEPL07qzVsOcHd3sMUws65g",  # Trakin Tech       (已失效 404)
+    "UCO2WJZKQoDW4Te6NHx4KfTg",  # Geekyranjit       (已失效 404)
+    "UClVIlK8QHZ2PFkXF97bA0lg",  # C4ETech Hindi     (已失效 404)
+    "UCXUJJNoP1QupwsYIWFXmsZg",  # Tech Burner       (已失效 404)
 ]
 
 # Google News RSS 搜索关键词（综合热点）
@@ -41,6 +43,60 @@ NEWS_QUERIES = [
     "mobile phone India launch 5G",
     "Android India",
     "iPhone India price",
+]
+
+# ============================================================
+# 科技媒体 RSS（新增稳定源：替代失效的 YouTube / 被限速的 Reddit）
+# ============================================================
+
+TECH_MEDIA_RSS_SOURCES = [
+    # --- 印度本地（最贴近目标市场）---
+    {
+        "name": "Gadgets360",
+        "url": "https://feeds.feedburner.com/gadgets360-latest",
+        "brand": "",
+        "limit": 30,
+    },
+    # --- 全球手机/系统权威 ---
+    {
+        "name": "GSMArena",
+        "url": "https://www.gsmarena.com/rss-news-reviews.php3",
+        "brand": "",
+        "limit": 20,
+    },
+    {
+        "name": "XDA Developers",
+        "url": "https://www.xda-developers.com/feed/",
+        "brand": "",
+        "limit": 15,
+    },
+    {
+        "name": "Android Central",
+        "url": "https://www.androidcentral.com/feeds/all",
+        "brand": "",
+        "limit": 20,
+    },
+    {
+        "name": "9to5Mac",
+        "url": "https://9to5mac.com/feed/",
+        "brand": "Apple",
+        "limit": 20,
+    },
+    {
+        "name": "TechCrunch",
+        "url": "https://techcrunch.com/feed/",
+        "brand": "",
+        "limit": 15,
+    },
+]
+
+# Hacker News 搜索关键词（Algolia API，Reddit 被 429 限速时的稳定替代）
+HN_QUERIES = [
+    "smartphone India",
+    "Android",
+    "iPhone",
+    "Google Pixel",
+    "mobile operating system",
 ]
 
 # ============================================================
