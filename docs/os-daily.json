@@ -7,11 +7,11 @@
       "icon": "🤖",
       "name_cn": "安卓",
       "color": "#3DDC84",
-      "total_posts": 109,
+      "total_posts": 108,
       "sentiment": {
         "positive": 2,
         "negative": 0,
-        "neutral": 107
+        "neutral": 106
       },
       "sentiment_pct": {
         "positive": 2,
@@ -25,11 +25,11 @@
         },
         {
           "name": "Apple",
-          "count": 13
+          "count": 11
         },
         {
           "name": "Samsung",
-          "count": 7
+          "count": 8
         },
         {
           "name": "Motorola",
@@ -52,7 +52,7 @@
           "count": 1
         }
       ],
-      "summary": "📊 安卓生态今日共有 109 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 2% / 负面 0% / 中性 98%。\n🏷️ 热门品牌：Google、Apple、Samsung、Motorola、Vivo。\n🆕 【新品发布】共26条 — 真我、Realme UI发布功能；一加发布（印度）；vivo发布电池（印度）等26条相关报道\n🎮 【功能体验】共14条 — Android 16、Android即将登陆手机；谷歌、Android、iPhone手机；谷歌、Android相关动态等14条相关报道\n🔄 【系统更新】共11条 — 一加、ColorOS更新手机（印度）；Android更新平板；Pixel升级等11条相关报道\n📊 【市场数据】共4条 — Android相关动态；Pixel相关动态；Android相关动态等4条相关报道\n🐛 【问题反馈】共2条 — 谷歌、Pixel手机；Android、iOS修复\n🔥 关注焦点：谷歌、Android相关动态；Android相关动态；Android相关动态",
+      "summary": "📊 安卓生态今日共有 108 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 2% / 负面 0% / 中性 98%。\n🏷️ 热门品牌：Google、Apple、Samsung、Motorola、Vivo。\n🆕 【新品发布】共25条 — 真我、Realme UI发布功能；一加发布（印度）；vivo发布电池（印度）等25条相关报道\n🎮 【功能体验】共13条 — Android 16、Android即将登陆手机；谷歌、Android、iPhone手机；谷歌、Android相关动态等13条相关报道\n🔄 【系统更新】共11条 — 一加、ColorOS更新手机（印度）；Android更新平板；Pixel升级等11条相关报道\n📊 【市场数据】共4条 — Android相关动态；Pixel相关动态；Android相关动态等4条相关报道\n🐛 【问题反馈】共2条 — 谷歌、Pixel手机；Android、iOS修复\n🔥 关注焦点：谷歌、Android相关动态；Android相关动态；Android相关动态",
       "highlights": [
         {
           "category": "🆕 新品发布",
@@ -178,11 +178,11 @@
       "icon": "🍎",
       "name_cn": "苹果 iOS",
       "color": "#007AFF",
-      "total_posts": 64,
+      "total_posts": 62,
       "sentiment": {
         "positive": 0,
         "negative": 0,
-        "neutral": 64
+        "neutral": 62
       },
       "sentiment_pct": {
         "positive": 0,
@@ -192,15 +192,22 @@
       "top_brands": [
         {
           "name": "Apple",
-          "count": 62
+          "count": 60
         },
         {
           "name": "Oppo",
           "count": 1
         }
       ],
-      "summary": "📊 苹果 iOS生态今日共有 64 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 0% / 负面 0% / 中性 100%。\n🏷️ 热门品牌：Apple、Oppo。\n🆕 【新品发布】共22条 — iPhone发布手机；iPhone发布手机；iPhone发布手机等22条相关报道\n🔄 【系统更新】共5条 — iPhone升级手机（印度）；iPhone升级手机；苹果、iPhone、Apple TV手机等5条相关报道\n🐛 【问题反馈】共2条 — 苹果、iPhone修复手机；Android、iOS修复\n🎮 【功能体验】共9条 — iPhone手机；iPhone手机；iPhone手机等9条相关报道\n📊 【市场数据】共4条 — 苹果、iPhone手机；苹果相关动态；iOS 27、iOS、iPhone手机等4条相关报道\n🔥 关注焦点：苹果、iPhone手机；苹果、iPhone手机；Android、iOS修复",
+      "summary": "📊 苹果 iOS生态今日共有 62 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 0% / 负面 0% / 中性 100%。\n🏷️ 热门品牌：Apple、Oppo。\n🆕 【新品发布】共22条 — 苹果、iPhone发布手机；iPhone发布手机；iPhone发布手机等22条相关报道\n🔄 【系统更新】共4条 — iPhone升级手机（印度）；iPhone升级手机；苹果、iPhone、Apple TV手机等4条相关报道\n🐛 【问题反馈】共2条 — 苹果、iPhone修复手机；Android、iOS修复\n🎮 【功能体验】共8条 — iPhone手机；iPhone手机；iPhone手机等8条相关报道\n📊 【市场数据】共4条 — 苹果、iPhone手机；苹果相关动态；iOS 27、iOS、iPhone手机等4条相关报道\n🔥 关注焦点：苹果、iPhone手机；苹果、iPhone手机；Android、iOS修复",
       "highlights": [
+        {
+          "category": "🆕 新品发布",
+          "title": "Apple iPhone Pro Max release date: Check India, Dubai, US launch dates, price, colours; all you need to know",
+          "title_cn": "苹果、iPhone发布手机",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNWDRrUnowRFdVNGtDZFJ4ZllxTFRyMkpWOWZ1Qm10S2gtbDdrU0N5UGNuS1ZHampOX1JobUxjNWJ0cEhyMk5WRFRHNzNsUzlyTFdma0U5cWRjMWZMZDQtQWtEaFhySUVaM2pLX3VWcFk3amtNLUR0aFlFS2p4TC1WTXBBdjZBQmJ3VGxwelgzXzRCRkYxUzBGOUhBV1Z3RjdKMW8zeG41UElrWTE1Qm05ZkVRNTdDOE12TVBKa3ViUHltVldZZHRqUncxTGFxb3dhcy1hbW9adnh0ZDBlVDlNTFdRblM0azJqeWl0S3FUQ1FkNVplZTNodTV30gH_AUFVX3lxTE9PTk5kdTFyQmtiOHQ2Y0hTdTNqeS1nNXp6N24wczgwWUQxYmxucHIwRUNhZWZBNGlvNWdOV2hRMUZHNHF2LU1KaWJLQnFaX1dpQ3Q5ZDUyekFmdjE1S2ttWXM4TVllTEFqLWVqNmJLc0F6cHFhTmwzMTRQSEF3aGlQU0F0VFRXLXVEXzF3UVpJaEx1S0g4YU1wVE1KT3BXd0NQcGtZNjh6N1N5dVVJYkNfRThLNG5sYnhaMzFnYjY2UE9Fd0hWZHRyV3dZcjU5WFRXdjNzWWNxMVlsdGxuUUJuSU5lWFA3aFlWcXZna1VRSXVxMVl6WnRmNDVzc0NTWQ?oc=5"
+        },
         {
           "category": "🆕 新品发布",
           "title": "iPhone 18 Pro India launch on Sept 9: From price to features, expect all this",
@@ -263,13 +270,6 @@
           "title_cn": "iPhone发布手机",
           "source": "news",
           "url": "https://news.google.com/rss/articles/CBMizwFBVV95cUxPOU9wZlBvdTJYVWwwOFg5V2tOb2JwUFRKdkczY2hjc1pCbFVnTkMzUUZlTGtqUW03Vmc3YlZDbTlJTlBuRGpLa3VSZlEzTXdoLXlPRjJRS1NDcXZYVU9iMjE1dElSUzQ0ZnBXTWt6U0IzOEVEc1RzSUJBbEdabGtLY1VoaTVvd1dsMlVYWGIxanNWbkpwdnhiZjJsWWJicVJHZFhKSGRDd2hjR2xlTXJ2bHF2SFVsVGxPVi1UeTRkcENXSTdYZi1IMkFaTWJKbzDSAdQBQVVfeXFMTW5iQXNXUC1sbEU1RkotRHJqbXZ2Y2FvWnBlUURVY2ZVcERXQnJSZEdjaldZTnNaQXp4YVB5ZlduM2xBS1E5bHA1S1NTQ2wtZFNrRUlLVGt4T2tDTHNhWFRDQkE5NlBxUndvMExHMDZ0d2xRa2hsUmRxWjRFTHZyLVpRQ0dka0tKdFEzaEZMa3pGeGlmeFVpb1NUTHhBN1p6Tm9kRFNPMlN3d3Rjb2M1b0poN1pBTmhwaDM1cm10UFNvTU9lVlNyV3hWenJLTEFjNWxCUmw?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "iPhone 18 Pro Max: Everything We Know Before September 9 Apple Event Launch- Price, Camera, Battery, A20 Pr",
-          "title_cn": "苹果、iPhone发布手机",
-          "source": "news",
-          "url": "https://news.google.com/rss/articles/CBMi6gFBVV95cUxNV3VyNlpIVU4xajJMRjZoZWJWOHVSSnYxX0VxRHBjQkRmMmw3b2NXckdQcmRBS1Fyd0MtWlpicnF6ZnRsY1ZpQUhvQjRYaVhLaG1yNHVYNDlfS1FyNjFUeFRmY3ExV3doM2pISExoWlpqcDlRd3pjTklNTmw2czdGd0FYbzJ6bmQwTGRYVXNQczlqZm1qMGxhcmZ5SHRHOGd3Q3gzY3ZMQmExNVdrM3doaDJmYW8ydm5GT0JUY0V5WDZKRWw3bW5jWEVCcUZNQ283ZHE3Zk9EYlhYZThabks0eWQ0TzRXQUo4TEHSAe8BQVVfeXFMUEVWcUJXdkR4UExBLTNjMHhPXzNOc3BIbnlSVEotZTBwc0pvZ3FRd1NoWUFXamtWU1RBN2VvRXJ6bjlYNE5tYzRsZTJwV0VvSGZ6QUVYbFJPWXlqQS00M1kxdEJtOFFZMHNRdHJtQUlkM0RxWHE3Sk5oZjdjNnNDYTF6SXVKWDNJbTFKdThFbzBiam1NQ0lpZFF6OEM1aFY0QVY0VUZvWm1HMGlfUlZIMWs0VGh3S3k3SXRoSnlGc1puNUhBdl9XWjNlaWdULU5BQVZxaEVnT1BGRjEwbW1kblRYbmUxc0stejAtc3BXLTA?oc=5"
         }
       ],
       "top_posts": [
@@ -325,28 +325,24 @@
       "icon": "🔮",
       "name_cn": "鸿蒙",
       "color": "#CE0E2D",
-      "total_posts": 23,
+      "total_posts": 15,
       "sentiment": {
-        "positive": 1,
+        "positive": 0,
         "negative": 0,
-        "neutral": 22
+        "neutral": 15
       },
       "sentiment_pct": {
-        "positive": 4,
+        "positive": 0,
         "negative": 0,
-        "neutral": 96
+        "neutral": 100
       },
       "top_brands": [
         {
           "name": "Apple",
           "count": 1
-        },
-        {
-          "name": "Xiaomi",
-          "count": 1
         }
       ],
-      "summary": "📊 鸿蒙生态今日共有 23 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 4% / 负面 0% / 中性 96%。\n🏷️ 热门品牌：Apple、Xiaomi。\n🎮 【功能体验】共4条 — 鸿蒙功能；鸿蒙相关动态；华为、鸿蒙更新获得功能包等4条相关报道\n🔄 【系统更新】共4条 — 华为、鸿蒙测试版；华为、鸿蒙升级；鸿蒙5.1、华为、鸿蒙获官方推送日期等4条相关报道\n🆕 【新品发布】共13条 — 谷歌、苹果、华为发布；华为、鸿蒙宣布功能；华为、鸿蒙发布等13条相关报道\n🔥 关注焦点：鸿蒙发布；鸿蒙功能；华为、鸿蒙测试版",
+      "summary": "📊 鸿蒙生态今日共有 15 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 0% / 负面 0% / 中性 100%。\n🏷️ 热门品牌：Apple。\n🎮 【功能体验】共2条 — 鸿蒙功能；鸿蒙相关动态\n🔄 【系统更新】共3条 — 华为、鸿蒙测试版；华为、鸿蒙升级；鸿蒙5.1、华为、鸿蒙获官方推送日期\n🆕 【新品发布】共7条 — 谷歌、苹果、华为发布；华为、鸿蒙宣布功能；华为、鸿蒙发布等7条相关报道\n🔥 关注焦点：鸿蒙发布；鸿蒙6、华为、鸿蒙相关动态；鸿蒙功能",
       "highlights": [
         {
           "category": "🎮 功能体验",
@@ -430,6 +426,15 @@
           "published_at": "2024-10-22T15:16:41+00:00"
         },
         {
+          "title": "These Huawei devices are getting HarmonyOS 6",
+          "title_cn": "鸿蒙6、华为、鸿蒙相关动态",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9lUDRId2JkRmFabkhReTlnaDQzc2c4eUJqWmlrMnJHS0hIYTdlLWUwX1lLRFVfemFQZThnQ2tPSFRNMldDRDFkc2RuRnpXSHQtdDE5Z0tNemwzN0lOSWVBeTA5WDNJU1dvaXgxZ3F6d2J0RVlIdXVEejJzNFhORE12RzJYeXNFRmNoSHBmYm05cTg?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "Notebookcheck",
+          "published_at": "2025-10-25T07:00:00"
+        },
+        {
           "title": "WPS Office completes HarmonyOS native app core features development",
           "title_cn": "鸿蒙功能",
           "url": "https://news.google.com/rss/articles/CBMinwFBVV95cUxQYUtGbEFOZGltMnViVWhDMGtTaVl3YUl6cWRwa3hmalpQM09jZXlsS2hFdy14ZnM2QkxlaVMwUXc4VXRvS3V3ekR0OEJqdV9CQi1FQkFOUUE1THVMMFEtdDFDSWFqaVd3ck4ySVUwV1ZtOUtONjBSelJ3SE9XblVVUTV4Y2NKRDlOVEE2b090M0RhQVJlNlpGR2FlV1A3VFXSAaQBQVVfeXFMTWtDTE1GRENZdVhyYTl2QkpSeEwtZWJ4VnFKUDBsaUNYRU80RU9FM1hzRkZuNEVON2VfN25FNGdaU2JhZklIZWZrLWZRTU43Z2J4M0kzT1V6Q0g0aUtpOVVfTExfaFA3c3hOU1gzdjNpRHpfS0hvYTdhZU5LMFF4RzFSSGNlNFV6SVhuSm5wOTNZRWhDeGRwd2ItVlhBX0hlUkFSZGs?oc=5",
@@ -455,18 +460,9 @@
           "score": 0,
           "author": "finance.biggo.com",
           "published_at": "2026-05-12T07:00:00"
-        },
-        {
-          "title": "Huawei Officially Launches Self-Developed Operating System HarmonyOS To Challenge Google and Apple’s Dominance",
-          "title_cn": "谷歌、苹果、华为发布",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZ1J6VzB1R2huaFpYTTJMeEVldHVSWG0tVDR1UDZYXzY3Z0k0QXJhRzhvWHBtM3pNN29iS2NOODBQUWh3VzhjTmJoalc3a2hyVDlDUVZRZlZEdTJTWnU2WF9sdzVPYkZOR1BVcXAxYWVXSHdicWlNZjl6ZzcteFBxak5GMDB2dDdzQmRTZ0RzbllxdmVISDhyc0R0VDFkSVlNOTZUVVpNazluQ24zbTE2TnVtb3FXR2Q4djlweEdmYkd6eV9vSWQtYXNqbXBrdERTamtZbVBVLWNobngz0gHsAUFVX3lxTE5vV2tUZmdyUGdBM2dMWjh3bnhVTHcxNWtaVkpzakF3U3FuN2t6YU5PcWRfcTdjWlM4VjFJMWJpa25QS1ByTkthY0RBejRwZ3R2RzlaMzBYU1IyVDcxWkxzalFlTEVZMG9RLVBnYzdBd3Z6aGx6UFBJNm1KUHhOUVhkWC1MSXJEZGw5czNYMldSR2poN0htRW5yUDJBX0dsX1pzaDdHT3dud3N1Z0FQdmRkaGNFVEtpWmxoeHoxNnFPVkdYQklDTkk3ellFZl9yVGJuSFFIMWNQbEVTMkNsLTNBWjVXLWI5YjQ4X21s?oc=5",
-          "source": "official",
-          "score": 0,
-          "author": "Swarajya",
-          "published_at": "2021-06-03T07:00:00"
         }
       ]
     }
   ],
-  "last_updated": "2026-09-04T15:01:14.599054"
+  "last_updated": "2026-09-04T15:35:50.798557"
 }
