@@ -507,6 +507,56 @@ def _extract_highlights(posts):
     return highlights[:10]
 
 
+def restore_history():
+    """
+    从上次导出的 docs/posts.json 恢复历史数据到数据库。
+
+    背景：GitHub Actions 每次都是全新环境，而 data/ 被 .gitignore 排除，
+    默认情况下每次运行都是空库。由于 posts.json 已提交到 git，
+    这里在采集前把它导回数据库，即可实现数据跨次累积，
+    无需依赖 Actions 缓存（避免修改 workflow 文件所需的 workflow 权限）。
+
+    依赖 posts 表的 UNIQUE(source, source_id)，重复数据会被 INSERT OR IGNORE 跳过。
+    """
+    docs_dir = os.path.join(os.path.dirname(os.path.abspath(__file__)), "docs")
+    path = os.path.join(docs_dir, "posts.json")
+
+    if not os.path.exists(path):
+        print("  ℹ️ 未找到 posts.json，跳过历史恢复", flush=True)
+        return 0
+
+    def _tags(v):
+        """数据库读出的是 JSON 字符串，恢复时需还原为列表"""
+        if isinstance(v, list):
+            return v
+        if not v:
+            return []
+        try:
+            return json.loads(v)
+        except (json.JSONDecodeError, TypeError):
+            return []
+
+    try:
+        with open(path, "r", encoding="utf-8") as f:
+            posts = json.load(f).get("posts", [])
+        if not posts:
+            print("  ℹ️ posts.json 为空，跳过历史恢复", flush=True)
+            return 0
+
+        for p in posts:
+            p["brands"] = _tags(p.get("brands"))
+            p["os_tags"] = _tags(p.get("os_tags"))
+            p["hardware_tags"] = _tags(p.get("hardware_tags"))
+
+        restored = models.insert_posts_batch(posts)
+        print(f"  ♻️ 恢复历史 {len(posts)} 条（新增 {restored} 条）", flush=True)
+        return restored
+    except Exception as e:
+        # 恢复失败不应中断主流程
+        print(f"  ⚠️ 历史恢复失败（继续采集）: {e}", flush=True)
+        return 0
+
+
 def export_data():
     """主导出流程"""
     print("=" * 50, flush=True)
@@ -516,7 +566,11 @@ def export_data():
     
     # 初始化数据库
     models.init_db()
-    
+
+    # 0. 恢复历史数据（Actions 全新环境下从 posts.json 回灌，实现跨次累积）
+    print("\n♻️ 恢复历史数据...", flush=True)
+    restore_history()
+
     # 1. 采集（如果设置了 COLLECT 环境变量才采集，默认只导出已有数据）
     collect_results = {}
     if os.environ.get("COLLECT", "0") == "1":
