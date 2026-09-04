@@ -20,9 +20,73 @@ from collectors.news import NewsCollector
 from collectors.official import OfficialCollector
 from collectors.techmedia import TechMediaCollector
 from collectors.hackernews import HackerNewsCollector
-from analyzer.llm import analyze_posts
+from analyzer.llm import analyze_posts, enhance_sentiment
 
 TEMP_POSTS_FILE = "/tmp/collected_posts.json"
+
+
+def rescore_sentiment():
+    """
+    用当前词典与权重重算全库情感标签。
+
+    词典、权重或判定规则变更后必须执行，否则新旧数据口径不一致：
+    历史帖子按旧规则判定（97% 中性）会与新采集的混在一起，统计失真。
+    """
+    from collectors.base import BaseCollector
+
+    class _Scorer(BaseCollector):
+        SOURCE_NAME = "_scorer"
+
+        def collect(self):
+            return []
+
+    scorer = _Scorer()
+    posts = models.get_all_for_sentiment()
+    if not posts:
+        print("  ℹ️ 没有帖子需要重算", flush=True)
+        return 0
+
+    updates = []
+    for p in posts:
+        new_sent = scorer._basic_sentiment(p.get("title", ""), p.get("content", ""))
+        if new_sent != p.get("sentiment"):
+            updates.append((new_sent, p["source"], p["source_id"]))
+
+    if updates:
+        models.update_sentiments_batch(updates)
+    print(f"  🔁 重算 {len(posts)} 条，更新 {len(updates)} 条", flush=True)
+    return len(updates)
+
+
+def apply_llm_sentiment():
+    """
+    用 LLM 精修情感标签（可选，需配置 LLM_PROVIDER + API Key + LLM_SENTIMENT_ENABLED=1）。
+
+    未启用或调用失败时保持词典法结果不变，流程不会中断。
+    """
+    if not config.LLM_SENTIMENT_ENABLED:
+        print("  ℹ️ LLM 情感增强未启用（LLM_SENTIMENT_ENABLED=1 开启）", flush=True)
+        return 0
+
+    posts = models.get_all_for_sentiment()
+    if not posts:
+        return 0
+
+    mapping = enhance_sentiment(posts)
+    if not mapping:
+        print("  ⚠️ LLM 未返回有效结果，沿用词典法", flush=True)
+        return 0
+
+    updates = []
+    for p in posts:
+        sent = mapping.get(str(p["source_id"]))
+        if sent and sent != p.get("sentiment"):
+            updates.append((sent, p["source"], p["source_id"]))
+
+    if updates:
+        models.update_sentiments_batch(updates)
+    print(f"  🤖 LLM 精修 {len(mapping)} 条，覆盖 {len(updates)} 条", flush=True)
+    return len(updates)
 
 
 def _get_skip_sources() -> set:
@@ -596,7 +660,12 @@ def export_data():
         collect_results = run_all_collectors()
     else:
         print("\n📥 跳过采集（设置 COLLECT=1 启用）", flush=True)
-    
+
+    # 1.5 情感标签：先统一全库口径，再用 LLM 精修（未配置时自动跳过）
+    print("\n🎯 处理情感标签...", flush=True)
+    rescore_sentiment()
+    apply_llm_sentiment()
+
     # 2. 分析（如果设置了 ANALYZE 环境变量才分析）
     analysis = None
     if os.environ.get("ANALYZE", "0") == "1":
