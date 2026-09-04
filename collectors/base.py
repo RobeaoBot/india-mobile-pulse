@@ -5,13 +5,23 @@ India Mobile Pulse - Base Collector
 
 import json
 import re
+import hashlib
 import logging
 from abc import ABC, abstractmethod
 from datetime import datetime
 
+import requests
+import feedparser
+
 import config
 
 logger = logging.getLogger(__name__)
+
+# 通用 User-Agent
+DEFAULT_UA = (
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+    "AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0 Safari/537.36"
+)
 
 
 class BaseCollector(ABC):
@@ -20,10 +30,110 @@ class BaseCollector(ABC):
     # 来源名称
     SOURCE_NAME = "base"
 
+    def __init__(self):
+        self.session = requests.Session()
+        self.session.headers.update({
+            "User-Agent": DEFAULT_UA,
+            "Accept": "text/html,application/xml,application/rss+xml;q=0.9,*/*;q=0.7",
+        })
+
     @abstractmethod
     def collect(self) -> list:
         """执行采集，返回帖子列表"""
         pass
+
+    # ==========================================================
+    # 通用 RSS 抓取能力（供子类复用）
+    # ==========================================================
+
+    def fetch_rss_feed(self, url: str, limit: int = 25, source_label: str = "",
+                       brand: str = "", id_prefix: str = "") -> list:
+        """
+        通用 RSS 抓取，返回标准化帖子列表。
+
+        对请求失败 / 解析失败做优雅降级（返回空列表），避免单源故障中断整体采集。
+        """
+        limit = limit or config.MAX_POSTS_PER_SOURCE
+        try:
+            resp = self.session.get(url, timeout=20)
+            resp.raise_for_status()
+        except requests.RequestException as e:
+            logger.warning(f"[{self.SOURCE_NAME}] RSS 请求失败 {source_label or url}: {e}")
+            return []
+
+        feed = feedparser.parse(resp.text)
+        if feed.bozo and not feed.entries:
+            logger.warning(f"[{self.SOURCE_NAME}] RSS 解析失败 {source_label or url}")
+            return []
+
+        posts = []
+        for entry in feed.entries[:limit]:
+            content = entry.get("summary", entry.get("description", ""))
+            content = self._clean_html(content)
+
+            author = entry.get("author", source_label)
+            if isinstance(author, dict):
+                author = author.get("name", source_label)
+
+            source_id = entry.get("id", entry.get("link", ""))
+            if not source_id:
+                source_id = hashlib.md5(
+                    (entry.get("title", "") + url).encode()
+                ).hexdigest()
+            elif len(source_id) > 200:
+                source_id = hashlib.md5(source_id.encode()).hexdigest()
+
+            posts.append({
+                "source": self.SOURCE_NAME,
+                "source_id": f"{id_prefix}{source_id}",
+                "title": entry.get("title", "").strip(),
+                "content": self._truncate(content, 500),
+                "author": author or source_label,
+                "url": entry.get("link", ""),
+                "score": 0,
+                "published_at": self._parse_entry_time(entry),
+                "_brand_hint": brand,
+            })
+
+        return posts
+
+    @staticmethod
+    def _parse_entry_time(entry) -> str:
+        """解析 RSS entry 的发布时间"""
+        for attr in ("published_parsed", "updated_parsed"):
+            val = getattr(entry, attr, None)
+            if val:
+                try:
+                    return datetime(*val[:6]).isoformat()
+                except (TypeError, ValueError):
+                    pass
+        return None
+
+    @staticmethod
+    def _clean_html(text: str) -> str:
+        """清理 HTML 标签"""
+        if not text:
+            return ""
+        text = re.sub(r'<[^>]+>', ' ', text)
+        return re.sub(r'\s+', ' ', text).strip()
+
+    @staticmethod
+    def _truncate(text: str, max_len: int) -> str:
+        """截断文本"""
+        if len(text) <= max_len:
+            return text
+        return text[:max_len] + "..."
+
+    def dedupe(self, posts: list) -> list:
+        """按 source_id 去重"""
+        seen = set()
+        result = []
+        for p in posts:
+            key = p.get("source_id") or p.get("url", "")
+            if key and key not in seen:
+                seen.add(key)
+                result.append(p)
+        return result
 
     def tag_post(self, post: dict) -> dict:
         """
