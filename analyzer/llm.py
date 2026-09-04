@@ -118,13 +118,19 @@ Provide your analysis in the JSON format specified in the system prompt."""
         raise ValueError(f"Unknown LLM provider: {config.LLM_PROVIDER}")
 
 
-def _call_openai(prompt: str) -> dict:
-    """调用 OpenAI 兼容接口"""
+def _call_openai(prompt: str, system_prompt: str = None) -> dict:
+    """调用 OpenAI 兼容接口，返回按分析格式解析后的结果"""
+    content = _openai_text(prompt, system_prompt)
+    return _parse_llm_response(content) if content else None
+
+
+def _openai_text(prompt: str, system_prompt: str = None) -> str:
+    """调用 OpenAI 兼容接口，返回原始文本（供不同任务自行解析）"""
     try:
         from openai import OpenAI
     except ImportError:
         logger.error("openai 包未安装，请运行: pip install openai")
-        return None
+        return ""
 
     client = OpenAI(
         api_key=config.LLM_OPENAI_API_KEY,
@@ -134,37 +140,51 @@ def _call_openai(prompt: str) -> dict:
     response = client.chat.completions.create(
         model=config.LLM_OPENAI_MODEL,
         messages=[
-            {"role": "system", "content": config.ANALYSIS_SYSTEM_PROMPT},
+            {
+                "role": "system",
+                "content": system_prompt or config.ANALYSIS_SYSTEM_PROMPT,
+            },
             {"role": "user", "content": prompt},
         ],
         temperature=0.3,
         max_tokens=2000,
     )
 
-    content = response.choices[0].message.content.strip()
-
-    # 尝试解析 JSON
-    return _parse_llm_response(content)
+    return (response.choices[0].message.content or "").strip()
 
 
-def _call_gemini(prompt: str) -> dict:
-    """调用 Google Gemini API"""
+def _call_gemini(prompt: str, system_prompt: str = None) -> dict:
+    """调用 Google Gemini API，返回按分析格式解析后的结果"""
+    content = _gemini_text(prompt, system_prompt)
+    return _parse_llm_response(content) if content else None
+
+
+def _gemini_text(prompt: str, system_prompt: str = None) -> str:
+    """调用 Google Gemini API，返回原始文本（供不同任务自行解析）"""
     try:
         import google.generativeai as genai
     except ImportError:
         logger.error("google-generativeai 包未安装，请运行: pip install google-generativeai")
-        return None
+        return ""
 
     genai.configure(api_key=config.LLM_GEMINI_API_KEY)
     model = genai.GenerativeModel(config.LLM_GEMINI_MODEL)
 
     response = model.generate_content(
-        f"{config.ANALYSIS_SYSTEM_PROMPT}\n\n{prompt}",
+        f"{system_prompt or config.ANALYSIS_SYSTEM_PROMPT}\n\n{prompt}",
         generation_config={"temperature": 0.3, "max_output_tokens": 2000},
     )
 
-    content = response.text.strip()
-    return _parse_llm_response(content)
+    return (response.text or "").strip()
+
+
+def _call_llm_text(prompt: str, system_prompt: str = None) -> str:
+    """按当前配置的 provider 调用 LLM，返回原始文本"""
+    if config.LLM_PROVIDER == "openai_compatible":
+        return _openai_text(prompt, system_prompt)
+    if config.LLM_PROVIDER == "gemini":
+        return _gemini_text(prompt, system_prompt)
+    raise ValueError(f"Unknown LLM provider: {config.LLM_PROVIDER}")
 
 
 def _parse_llm_response(content: str) -> dict:
@@ -333,3 +353,115 @@ def _rule_analyze(posts: list) -> dict:
         "key_insights": key_insights,
         "trending_keywords": [kw for kw, _ in title_words.most_common(15)],
     }
+
+
+# ============================================================
+# LLM 情感增强（可选）
+# ============================================================
+
+SENTIMENT_SYSTEM_PROMPT = """You are a sentiment classifier for tech news, reviews, and social posts about the Indian mobile phone market.
+
+Classify each item as exactly one of: positive, negative, neutral.
+
+Rules:
+- positive: expresses praise, satisfaction, excitement, or a clearly favorable judgment (e.g. "excellent battery life", "great value for money", "best phone this year").
+- negative: expresses criticism, disappointment, complaints, defects, or a clearly unfavorable judgment (e.g. "buggy update ruins it", "overpriced for what you get", "severe battery drain").
+- neutral: purely factual reporting — product launches, spec leaks, price announcements, release dates, official statements, partnership news. Marketing or promotional wording WITHOUT explicit evaluative language is still neutral.
+
+Be strict: most tech news is factual and should be neutral. Do not infer positive sentiment merely from the existence of a product announcement.
+
+Respond with JSON only, no explanation, in this exact shape:
+{"<id>": "positive", "<id>": "neutral", ...}"""
+
+
+def enhance_sentiment(posts: list) -> dict:
+    """
+    用 LLM 批量精修情感标签。
+
+    :return: {source_id: "positive"/"negative"/"neutral"}，仅含 LLM 成功判定的条目。
+             未配置 LLM 或调用失败时返回空 dict —— 调用方应保持词典法结果，
+             这样即使没有 API Key，流程也能正常跑完（自动降级到词典法）。
+    """
+    if not posts:
+        return {}
+
+    if config.LLM_PROVIDER == "none":
+        logger.info("[Sentiment] 未配置 LLM_PROVIDER，跳过情感增强（沿用词典法）")
+        return {}
+
+    batch_size = max(1, getattr(config, "LLM_SENTIMENT_BATCH_SIZE", 25))
+    min_score = getattr(config, "LLM_SENTIMENT_MIN_SCORE", 0)
+
+    targets = [p for p in posts if (p.get("score") or 0) >= min_score]
+    if not targets:
+        return {}
+
+    # 热度高的优先：调用预算不足时，至少覆盖最重要的内容
+    targets.sort(key=lambda p: p.get("score") or 0, reverse=True)
+
+    result = {}
+    total_batches = (len(targets) + batch_size - 1) // batch_size
+    for i in range(0, len(targets), batch_size):
+        batch = targets[i:i + batch_size]
+        try:
+            mapping = _llm_sentiment_batch(batch)
+            result.update(mapping)
+            logger.info(
+                f"[Sentiment] 批次 {i // batch_size + 1}/{total_batches}: "
+                f"{len(mapping)}/{len(batch)} 条"
+            )
+        except Exception as e:
+            logger.warning(f"[Sentiment] 批次 {i // batch_size + 1} 失败: {e}")
+
+    return result
+
+
+def _llm_sentiment_batch(batch: list) -> dict:
+    """对单个批次调用 LLM 做情感分类"""
+    lines = []
+    valid_ids = set()
+    for p in batch:
+        sid = str(p.get("source_id") or "")
+        title = (p.get("title") or "").strip()
+        if not sid or not title:
+            continue
+        lines.append(f"{sid}\t{title}")
+        valid_ids.add(sid)
+
+    if not lines:
+        return {}
+
+    prompt = (
+        "Classify the sentiment of each item below.\n"
+        'Respond with JSON only: {"<id>": "positive|negative|neutral", ...}\n\n'
+        + "\n".join(lines)
+    )
+
+    raw = _call_llm_text(prompt, SENTIMENT_SYSTEM_PROMPT)
+    if not raw:
+        return {}
+
+    return _parse_sentiment_response(raw, valid_ids)
+
+
+def _parse_sentiment_response(raw: str, valid_ids: set) -> dict:
+    """解析 LLM 返回的情感 JSON，丢弃非法值与未知 id"""
+    text = raw.strip()
+    if "```json" in text:
+        text = text.split("```json")[1].split("```")[0].strip()
+    elif "```" in text:
+        text = text.split("```")[1].split("```")[0].strip()
+
+    try:
+        data = json.loads(text)
+    except json.JSONDecodeError:
+        logger.warning("[Sentiment] LLM 返回非 JSON，忽略该批次")
+        return {}
+
+    valid = {"positive", "negative", "neutral"}
+    result = {}
+    for k, v in data.items():
+        key, val = str(k), str(v).strip().lower()
+        if key in valid_ids and val in valid:
+            result[key] = val
+    return result
