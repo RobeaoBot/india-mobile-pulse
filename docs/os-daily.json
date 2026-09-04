@@ -7,122 +7,122 @@
       "icon": "🤖",
       "name_cn": "安卓",
       "color": "#3DDC84",
-      "total_posts": 124,
+      "total_posts": 114,
       "sentiment": {
-        "positive": 15,
-        "negative": 8,
-        "neutral": 101
+        "positive": 14,
+        "negative": 6,
+        "neutral": 94
       },
       "sentiment_pct": {
         "positive": 12,
-        "negative": 6,
-        "neutral": 81
+        "negative": 5,
+        "neutral": 82
       },
       "top_brands": [
         {
           "name": "Google",
-          "count": 32
+          "count": 34
         },
         {
           "name": "Apple",
-          "count": 16
+          "count": 12
         },
         {
           "name": "Samsung",
-          "count": 9
+          "count": 7
         },
         {
           "name": "Motorola",
-          "count": 5
+          "count": 6
         },
         {
           "name": "Xiaomi",
-          "count": 4
+          "count": 6
         },
         {
           "name": "Vivo",
-          "count": 4
+          "count": 5
         },
         {
           "name": "OnePlus",
-          "count": 3
+          "count": 2
         },
         {
-          "name": "iQOO",
+          "name": "Nothing",
           "count": 1
         }
       ],
-      "summary": "📊 安卓生态今日共有 124 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 12% / 负面 6% / 中性 82%。\n🏷️ 热门品牌：Google、Apple、Samsung、Motorola、Xiaomi。\n📊 【市场数据】共5条 — Android相关动态；谷歌相关动态；Android相关动态等5条相关报道\n🔄 【系统更新】共15条 — 三星、One UI测试版；谷歌、Android更新；Android 16、vivo、OriginOS 6更新等15条相关报道\n🎮 【功能体验】共16条 — Android相关动态；Pixel相关动态；Pixel、One UI相关动态等16条相关报道\n🆕 【新品发布】共24条 — Android手机；Android 16、vivo、OriginOS 6公布时间表（印度）；Android、iOS、BGMI发布等24条相关报道\n🐛 【问题反馈】共2条 — Android、iOS修复；谷歌、Pixel手机\n🔥 关注焦点：谷歌、Android相关动态；Android相关动态；Android相关动态",
+      "summary": "📊 安卓生态今日共有 114 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 12% / 负面 5% / 中性 83%。\n🏷️ 热门品牌：Google、Apple、Samsung、Motorola、Xiaomi。\n🎮 【功能体验】共13条 — 智能手机；Android 16、Android即将登陆手机；谷歌、Android、iPhone手机等13条相关报道\n🔄 【系统更新】共11条 — Pixel相关动态；One UI测试版；一加、ColorOS更新手机（印度）等11条相关报道\n🆕 【新品发布】共25条 — vivo发布电池（印度）；Nothing发布手机；一加发布（印度）等25条相关报道\n🔐 【安全隐私】共1条 — Pixel相关动态\n📊 【市场数据】共4条 — Android相关动态；Pixel相关动态；Android相关动态等4条相关报道\n🐛 【问题反馈】共2条 — 谷歌、Pixel手机；Android、iOS修复\n🔥 关注焦点：谷歌、Android相关动态；Android相关动态；Android相关动态",
       "highlights": [
         {
-          "category": "📊 市场数据",
-          "title": "Android still doesn't have a simple \"hide my email\" option at sign-up. Saw this on my mom's iPad and it made sense",
-          "title_cn": "Android相关动态",
+          "category": "🎮 功能体验",
+          "title": "Need help for smartphone",
+          "title_cn": "智能手机",
           "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w4zuyh/android_still_doesnt_have_a_simple_hide_my_email/"
+          "url": "https://www.reddit.com/r/smartphone/comments/1w2cmbr/need_help_for_smartphone/"
         },
         {
           "category": "🔄 系统更新",
-          "title": "Samsung Expands One UI 9 Beta Program to More Galaxy Devices",
-          "title_cn": "三星、One UI测试版",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w4bjkz/samsung_expands_one_ui_9_beta_program_to_more/"
-        },
-        {
-          "category": "🔄 系统更新",
-          "title": "Google Workspace Updates: Transitioning Google Meet room hardware to focus on Android (AOSP)",
-          "title_cn": "谷歌、Android更新",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w4ov56/google_workspace_updates_transitioning_google/"
-        },
-        {
-          "category": "🎮 功能体验",
-          "title": "September Android Drop: Helping you keep track of important items, ease motion sickness, and more",
-          "title_cn": "Android相关动态",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w4jtwn/september_android_drop_helping_you_keep_track_of/"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "PlayLink phone apps on a current Android + PS5 (That's You, SingStar, Hidden Agenda, etc.)",
-          "title_cn": "Android手机",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w59mi7/playlink_phone_apps_on_a_current_android_ps5/"
-        },
-        {
-          "category": "🎮 功能体验",
-          "title": "GrapheneOS: We have good news about the Pixel 11. It still has at least bare minimum support for MTE at a hardware level. We think they removed most of the hardware acceleration from the CPU cache to save money. They ruined the performance so it ended up being fully disabled in firmware.",
+          "title": "pixel9india",
           "title_cn": "Pixel相关动态",
           "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w4gocx/grapheneos_we_have_good_news_about_the_pixel_11/"
+          "url": "https://www.reddit.com/r/pixel9india/"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Pixel UI or One UI: A POV from someone who has used both ?",
-          "title_cn": "Pixel、One UI相关动态",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w5dhfh/pixel_ui_or_one_ui_a_pov_from_someone_who_has/"
+          "title": "Android 16 is coming to phones soon, here are 10 features it is bringing",
+          "title_cn": "Android 16、Android即将登陆手机",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi2gFBVV95cUxOVG5lRVBVUUp0WkYzZEJPTlBDaWg5MmNNWFkycWc0a3RtemZ3dks4eTFLc1ZZSUlmZ1dFVnRhci1HZVBNbldVZmZhQ2d4M1hhZDNGVWVvd0t3U2lvMTE2NlVfYURqTHJVNFlUSlBZcktJbGlYcTgxcHQtVno1OWlmRmFCRm00RnBMWU0xMURUWTdXemk1UHpNd1Q2NnpiYldlcGloM3NXMUZocWJfMEE1b0ZJWjJJVHNnTkVUTjZKTHo5aW5hR2xtd1ZKZ2FCdzhTVFVsY1RWRkU3Z9IB3wFBVV95cUxNQVNFQmstOEtROHpadS1DQkI0SkRHdlJjYmkwaHVCTzAyTmRDcnktTE85ME90SzRWMVliaFdEV3BEU01ydTVaYmlTaGlmdWFMM0VpcWhOcVdnYWRlV2JsdEJPNVpwNWZLNjBuWjlDaXBveXR5SmJpdHZ0M04ySzdGU2FzRkFlWWhoSWcxb1RieDBlRXE3aUx6Z0xYd2RtOU9zR2NxZC1aRDJkZHUyajNQMF9fNUkwYm0tMTN0QUF3MEY4Tkt3ME1vNGZGUlRwb0dhUVQtWDRVNEZsQ3hkSUlv?oc=5"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Android 17: Official features, leaked features, codename, and everything else we know",
-          "title_cn": "Android 17、Android功能",
+          "title": "Google Photos for Android may get features that were exclusive to iPhone version: Here's what to expect",
+          "title_cn": "谷歌、Android、iPhone手机",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JTTVhR1k1aEs0ZGlVZkxMaFd2VFVBWHQ5ZHJtZHdfU0ZhaTFkU09fYlduR3c3WnhBbmVIdG9Cb1U0aldhTDhJc0NOX2ZTWTJmYmROZVFIakd1V1ByRFd1R1JR?oc=5"
-        },
-        {
-          "category": "🔄 系统更新",
-          "title": "Vivo, iQOO plan shift to OriginOS 6 from FunTouch OS with Android 16 update",
-          "title_cn": "Android 16、vivo、OriginOS 6更新",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMi4wFBVV95cUxQVkpyS1J6eHZ1OHp5aXVRZUdGWHpRa2VWaWFNTEtoQ09KZVA3bjhMa3ZMRGtFQ19ZckVoT1lISXdOY2QzT0VWRFBsR2xzcEZDZDBDS2tQaGFTSlpRYkVJNmZVTjJYTWNSdFMzSk9aQXdXQ1VXZXhNdm1SNm96ZW9CWWhDbzVDWjhIcXktWWQxc1BPZmUySS1XeWZSQ1JaR2xzNmtULVhKbU9NTW1sYjN2NWktLV9LSFcyNVVkcEY2UE1EN1NLWWJJNUJKRXBkQkkyOWpjdmdaTU9mWHVpdXdiQUlsc9IB6AFBVV95cUxOZGR3VE9Nekt1WXZ0bDVMLWoxXzN3blFPQzlQSXRZdEI4bDRVOVdOT090TDl2anVlR2ZtOU9SWlVIcWNRRENRek1TVWZYcG4zdUhROFdRejc0N3NkRnRhWWllQXM5YlZld2tvM19aVUZJekUyeExjMS1NbU0tVjc5VWF6WUFOdi1fN05Ma1dJc2RFazRUTTdGcHhkNXNKS21QeWZRTzRSbFFzN1p0cVVIN2V1eTZwMDFaNk84YW4xYXZKZ3pfQ3lsekthQ2ljUVRCN3o1VzdSUW5YcjA4UnZqWFVaWXpIekRz?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMijgJBVV95cUxNYnNoZTI3X1B2dWlacDljaWtia1F4MVFBMW5YZE81dmlURV8xbWw1YnFVazNaWXM1SGk2YTJUNC01SG1Rdl93VTY0RXpudUhlYmk4d3FtbXJsSlBDV1JrZHg0T2FUVFRZa2dTN1lkR3NxM0s5emR5S25hNkEtVm9JY3NYb3k1UlcyTGRtQjdtWjdQdGJ5QTdmRnBvNEtSaHl4Q1lIdU1XZmw0TmxtVFd4YlBaRTFuT1BPcE1fMTRKTERrTU40bDNfaXFURjA2OVFNYlNyc3ZMNC1hcXk4ZElXTUJvUWp1UmpEZjRRNEZ3blpiSWdTeDlTeWJPTTNPSGlHOWNpSGhRZVM0b2RVOWfSAZMCQVVfeXFMTndVWVo4U3RFejRCUHluNHBURElUVFlhZHMxamJwSXJieWpRUERIekJGM1dCOWtzLV9qLURJVWNZZmhTSXNZRFZmUzh1R3pWSDZpRmlkTXhVYkZYTkNiZ25acGVoNDFTUm1zdk1hdk9OazN0LUtZRk9BeFlhb0VTWk9TNXdfY1lIUFhmY0RLWHR2VmtrLTFkM0liN2xaLUFCclZhWkZEV1lta0I0V3R0VExQckJNYnlXYlJOeFI5bkU0b2F5ZkRzY1hPQjBpZF9aV2lGU3dSZTJlZkxZcVFqd3ZGWHRQbVFHWFB3TUVEYV92RmM1bUJEZlRKRnVwYktZOEN2Zms1eXpkLTFJWmhvRlpsd3M?oc=5"
         },
         {
           "category": "🆕 新品发布",
-          "title": "Vivo reveals Android 16-based OriginOS 6 update timeline for India: Eligible devices, what's new & more",
-          "title_cn": "Android 16、vivo、OriginOS 6公布时间表（印度）",
+          "title": "vivo T5 5G Launches in India at Rs 34,999 With a 7,050mAh Battery",
+          "title_cn": "vivo发布电池（印度）",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNzJqd1l5SWdhN09NVzRpOWFHb1lnTGJTN3VUdVNDalhDZU9XRkRUTnc2Wm0zXzVaNVhpWmFmZXQzTEhHWURMUkJDOTBLVUh0WTVKVjlUODlsOHROQnpQbFFhU3RSQ0V3blo5aTliYWZfMGN6VXI0SU9SMTNXVkNvMEpVc0FxTWRtcGQwOE0zeDNXM3pBOHBndG81OTR6bVBrZ3pqQ2N4X1Z3Rzkxdmc1Z0ZPdTZfN2VDTlRXeTZsZFF5cjVYbm9JbVVwZy1TV1FUSmVkS0N6aERjSElUM2ppYWNieTYxUDYwVDhuT3lTSERqMXNiOU10aNIB_gFBVV95cUxQUUxZN0V5SUdiTERENEJkZ1BzdlVPT0doWkNvWUxkXzNNUWtzTENNSTBDOVBfb3FDa3VOX1BtTEJ5ZFBYZmZvUnRRVy1faUpNdDRyY3lBNlVrUENTdGpSQXEtS1haYy1IYUoyOUdaLUppQUdGZGhsWU9zVmotc1FHSk9HMVFnTmcxWVE3MHNzVjdKUXlIbFdicjZCcTNnQXVZdS1yR2I4cFk1SXdIeVdkd1JZZHY5TmpRcVJWZVFJX1JkUXNLUDFCNm43M0pGWkJhT016cUdrNjhOdWtzczV6OUJfeHR0U2pmQkRYT0NHS2JhaWVwR0RhcHZ3bjFOdw?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE5NSDBJU3JWNHA2S1NzN3J3ZkpYOVRuWW9fSm5ZZEFRa21YVi15cnUzN0diUjNLMlZweVlsQTZSeXZDaVNKTXFhRHBfVHh2NWpMNUpYbEV5clBlQm1jRWt2TA?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "The Nothing Phone 4b will launch on July 7 (Updated: Design sketch)",
+          "title_cn": "Nothing发布手机",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMifEFVX3lxTFA4RDZReXdLcFQzaFlHdFRKYmx0VzRsXzhZcldfaUJIRlJVZFBSa0JRLUw3VDNrWV9YbDE2cUJzOTE5MnRMOXNNZWpfdnZMVV9wYk5pYXYwdzhrX1lxTTkySVdKQmhWX09yd1NfQ0pPY0dIYkc3a2R2dUFleDc?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "OnePlus N6x Launched in India at Rs 18,999: Price, Specs, Sale Date",
+          "title_cn": "一加发布（印度）",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMiakFVX3lxTE5nT1JtVkNtbV81UG5xUmRrOE9iWDZPZkplY3B5TThmWlM0QzRIYnE0X1Fua3ZqaWtTZE1FSjc3Sm5GdUluQ2R5cksySHc2OW9DVVV1cUdfYUVUQVZHYzNKdEE0Smd1ZDQ2Vmc?oc=5"
+        },
+        {
+          "category": "🔐 安全隐私",
+          "title": "The Pixel 11 may not be a lost cause for GrapheneOS after all",
+          "title_cn": "Pixel相关动态",
+          "source": "official",
+          "url": "https://www.androidauthority.com/grapheneos-pixel-11-mte-support-3707488/"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "MapQuest expands to Android Auto as viral popularity brings drivers back",
+          "title_cn": "Android相关动态",
+          "source": "official",
+          "url": "https://www.androidauthority.com/mapquest-android-auto-testing-3707520/"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "Galaxy Watch 7 and Galaxy Watch Ultra join the One UI 9 Watch beta party",
+          "title_cn": "One UI测试版",
+          "source": "official",
+          "url": "https://www.androidauthority.com/samsung-galaxy-watch-7-ultra-one-ui-9-watch-beta-3707568/"
         }
       ],
       "top_posts": [
@@ -178,106 +178,114 @@
       "icon": "🍎",
       "name_cn": "苹果 iOS",
       "color": "#007AFF",
-      "total_posts": 66,
+      "total_posts": 70,
       "sentiment": {
-        "positive": 11,
-        "negative": 2,
-        "neutral": 53
+        "positive": 12,
+        "negative": 3,
+        "neutral": 55
       },
       "sentiment_pct": {
         "positive": 17,
-        "negative": 3,
-        "neutral": 80
+        "negative": 4,
+        "neutral": 79
       },
       "top_brands": [
         {
           "name": "Apple",
-          "count": 64
+          "count": 67
         },
         {
           "name": "Samsung",
+          "count": 3
+        },
+        {
+          "name": "Vivo",
           "count": 1
         },
         {
-          "name": "Google",
+          "name": "OnePlus",
           "count": 1
         },
         {
           "name": "Oppo",
           "count": 1
+        },
+        {
+          "name": "iQOO",
+          "count": 1
         }
       ],
-      "summary": "📊 苹果 iOS生态今日共有 66 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 17% / 负面 3% / 中性 80%。\n🏷️ 热门品牌：Apple、Samsung、Google、Oppo。\n🎮 【功能体验】共10条 — Pixel、One UI相关动态；Android、iOS智能手机操作系统指南；Android、iOS相关动态等10条相关报道\n🔄 【系统更新】共5条 — iOS 26.3、iOS 26、苹果终于有望修复手机；iPhone升级手机；苹果、iPhone、Apple TV手机等5条相关报道\n🆕 【新品发布】共23条 — Android、iOS、BGMI发布；iOS 27、苹果、iOS正式宣布手机；苹果、iOS宣布等23条相关报道\n📊 【市场数据】共3条 — 苹果折叠屏；苹果相关动态；苹果、iPhone手机\n🐛 【问题反馈】共2条 — Android、iOS修复；苹果、iPhone修复手机\n🔥 关注焦点：苹果、iPhone手机；苹果、iPhone手机；Android、iOS修复",
+      "summary": "📊 苹果 iOS生态今日共有 70 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 17% / 负面 4% / 中性 79%。\n🏷️ 热门品牌：Apple、Samsung、Vivo、OnePlus、Oppo。\n🐛 【问题反馈】共5条 — iPhone手机；iPhone手机；苹果、iPhone手机（印度）等5条相关报道\n🎮 【功能体验】共9条 — 智能手机；手机；iPhone手机等9条相关报道\n🆕 【新品发布】共21条 — 苹果、iPhone发布手机（印度）；苹果、iPhone发布手机；三星、苹果、iPhone发布手机等21条相关报道\n📊 【市场数据】共4条 — iPhone手机；苹果、iPhone手机；苹果、iPhone手机等4条相关报道\n🔄 【系统更新】共4条 — iPhone升级手机（印度）；iPhone升级手机；苹果、iPhone、Apple TV手机等4条相关报道\n🔥 关注焦点：苹果、iPhone手机；苹果、iPhone手机；Android、iOS修复",
       "highlights": [
         {
-          "category": "🎮 功能体验",
-          "title": "Pixel UI or One UI: A POV from someone who has used both ?",
-          "title_cn": "Pixel、One UI相关动态",
+          "category": "🐛 问题反馈",
+          "title": "“iPhone, Pen Drive Recovered!” — Aftab, the terrorist accused in the American Center attack, reportedly ran a ‘web network’ from Presidency Jail. This is the situation of West Bengal during the TMC era.",
+          "title_cn": "iPhone手机",
           "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w5dhfh/pixel_ui_or_one_ui_a_pov_from_someone_who_has/"
-        },
-        {
-          "category": "🔄 系统更新",
-          "title": "Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Android messaging that users ha",
-          "title_cn": "iOS 26.3、iOS 26、苹果终于有望修复手机",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNd0U4TU1RSHNybjNvWUc2YXAxaG8wN1U0YVcxaUFpMV9obW9jLWxWSjRuenBWRGNQNHJQbEJoU3FsaXlIdUNmTWdaa0RuT0JrWThfd2x0a3JlaHhTOElOeDVSN0prUDY3Szh6dkxPQkxtZHVYWm1pY0pwN0NNYnJiMWY3VnAybW5JU1l4blRQRnlNdFNRSzdzZmFkVzhRZHN3aXdfYkNnWlpIay1sbEwwRDAtX3FSQUFpbjQ2MER0UlA1WnNxRzJaaG9JR0F2NVQ1M0Fjcm0zektJdHEteUlrUXprRUtqNFVHRWFCckJsSGpqSGtxRzBxQm9rVFplTDdQdGtSbzF2ak95ZnhDalVfT25URzVkWGg0QWtwa0p3QUp0SEZGS3BqZHpENW9md1A0Z0VDUl82SW4wQjhWTEHSAcMCQVVfeXFMT3BHSGZqVWRtWVZWTkZ3Skx1MjBveElmUlN4RkM3VlE0NjZ5QXliUnhESHpwNmJtUGRzbnJCRXh2eWlKQ3ZzN1dlWTBCTWpMRDZ0S0tNbGV5WDZjYmZtakRLcXFCc28yVlpzWkx5MFV2Q2IyanAxdEpCcWotaWFHNWR0NG5MYk50eFppdWJkSU5Zb284MjFaRWJJWThZS3dYVVltdTBzN09TSk8zVDRqeEItTDFOcC1yVUhlcmFuWV84bGhpNWlkODlVRjNaTjNFbDlOMmt0VGRFMVhxTnJpNlJzVjBsa2hHUExqN0xXZ3NYWHNRa1U1YXJYanhNQWRHTEtnZ2VQN0QwSnVGSk9LTkRYU2g4R0tacU8yWVVsd2JoeHF3a1JwY0RYaGpOUGY0bTNhX3RRbzZ2bHpVdHViZmJ4dUE?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "BGMI 4.4 update release date India time: Check how to download new update for Android, iOS and APK users",
-          "title_cn": "Android、iOS、BGMI发布",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdXA2TG9kU0hPS2NGTWJiZnVPb3pXbVdaYW04R0VnWGd6Qm1UZkVVbXN1dW9ObXhlaG5veVFNZWExSEkzZTd1a21pVmNadnVtMmlXYmJBeklGUkRXaS01ejU2MG9jZ2dUeTRJWkduZzlYblE3TloyS2dVbEh0S0lPMjhQblplSGNXejFzLU44ODFJMDZxaVZtR2NXMUFJZU12VzFtdmhTQnRQS0k1S2ZrNjdlOU9QdEV6dWh2N1NaOUwxT2NIa3FjbnBsQ0x5NG5ScVFaUVFuQmdUMjdYanFVZVlzYXhrYWJGeDk3WXdmblpLclV1N1pDcFAyS2pGMjZ2dXFISDNJX3FfRzBT0gGSAkFVX3lxTE8yWENTRW5NdEVDWWVJVnI4US1ES3UtQUlxMEc2OUtfTjZ0c1plLURsMGtoS2YteWFzQnJORUduUzVhZWQtZENJQjNMbjlfbzFiZHJ3bVBtbGZaS0lSNEFMNmppY2RmWXo1VHVONDI5dzFxUWJMWG1TTVY4UVAyUmwtTmtkTmo2TVI1V2d0RE13SVNTTGFCUTdJQy04WmZWYUhZRWhnbVpHUzVrcWZsc1A4dFZnTzdNYUpXRzQ3bjdidUtjNXhXOVc3Ny1RUzlGY3hBblZpR2NLN1hVQ1VJSXFWQkdHYXdyS0tNM1FtOU1PekhXeHNBTmpQV3BKQ3Jab3dmN1J0dmdwVHludzV4YWVkTUE?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Apple officially announces iOS 27, the next major iPhone update",
-          "title_cn": "iOS 27、苹果、iOS正式宣布手机",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TMmRQb3c4bUNCbFVXRHJjRzhyTTZfdUxaM05CN1dxVjN0MDRxZUMyeVcyNnBFNGNqcExCVGRoYXZrZDFlaXI2ZGcyVm1UN2hhdDhZZFFTTjJGTU5UaWk2cA?oc=5"
+          "url": "https://www.reddit.com/r/indiadiscussion/comments/1w1td7r/iphone_pen_drive_recovered_aftab_the_terrorist/"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Android vs iOS vs Others – Smartphone OS Guide",
-          "title_cn": "Android、iOS智能手机操作系统指南",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5"
+          "title": "Need help for smartphone",
+          "title_cn": "智能手机",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/smartphone/comments/1w2cmbr/need_help_for_smartphone/"
         },
         {
-          "category": "🆕 新品发布",
-          "title": "Apple announces changes to iOS in Brazil",
-          "title_cn": "苹果、iOS宣布",
-          "source": "official",
-          "url": "https://www.apple.com/newsroom/2026/06/apple-announces-changes-to-ios-in-brazil/"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "This iOS 27 feature will let you use one phone number on two iPhones",
-          "title_cn": "iOS 27、iOS、iPhone手机",
-          "source": "techmedia",
-          "url": "https://www.gsmarena.com/this_ios_27_feature_will_let_you_use_one_phone_number_on_two_iphones-news-74466.php"
+          "category": "🐛 问题反馈",
+          "title": "Apple's \"Made in India\" story has grown far beyond a few localized iPhone runs.",
+          "title_cn": "苹果、iPhone手机（印度）",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/TechnologyNewsIndia/comments/1w323zm/apples_made_in_india_story_has_grown_far_beyond_a/"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Grok Bot Now Available on Android After Debuting on Linux, macOS and iOS",
-          "title_cn": "Android、iOS相关动态",
-          "source": "techmedia",
-          "url": "https://www.gadgets360.com/ai/news/spacexai-grok-bot-android-launch-features-11998128"
+          "title": "Mobile Phone Suggestion Please",
+          "title_cn": "手机",
+          "source": "reddit",
+          "url": "https://www.reddit.com/r/PickAnAndroidForMe/comments/1w504h1/mobile_phone_suggestion_please/"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "When is Apple iPhone 18 Pro Max and iPhone Ultra Launch in India and Worldwide?",
+          "title_cn": "苹果、iPhone发布手机（印度）",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxNT2g2RmU4ekxkdlJIdjlyNkotdDU0Z1pUd2I3SlkzVnI1Yzk4M2ZuR2hPQU1fTEtGbmJSdGFfRHBBWUpqdnBZYS1KTXdDYTNCVG1kMnRhbmZpR19fbjNkN3YxNE9sY2JPTFlPRHRRNmNZMGMyVl9pOHNXV3plZmstdVdIdjliUkZvR1VhRllmN2I1UlNsU2czLWZEeFU5X1YxTmgxMllOS3I2X0toSUlqSdIBtwFBVV95cUxNaEY5eG92ZFMyY2tKbVhWc2NXMmFlWlpmNWNMLUg2MHdmVkprclJSb3ZKOFkzbG5CRW9xLVQ0M2V0NUQ4T2R5dG10V3VIajJHMjhHczJUQUdWeU96SE9ldXdrbjNYdHhqVko4RGxwZ2xVcTM3amstQ0lYb2E1QTdMVk1FS19YeUp2ejd3Mkc5TlpMeUttNi01c0xYMlhYUmhLUk44YnByRWN0ZEQ2UjhJclh0RFRuT28?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Apple iPhone Pro Max release date: Check India, Dubai, US launch dates, price, colours; all you need to know",
+          "title_cn": "苹果、iPhone发布手机",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMi-gFBVV95cUxNWDRrUnowRFdVNGtDZFJ4ZllxTFRyMkpWOWZ1Qm10S2gtbDdrU0N5UGNuS1ZHampOX1JobUxjNWJ0cEhyMk5WRFRHNzNsUzlyTFdma0U5cWRjMWZMZDQtQWtEaFhySUVaM2pLX3VWcFk3amtNLUR0aFlFS2p4TC1WTXBBdjZBQmJ3VGxwelgzXzRCRkYxUzBGOUhBV1Z3RjdKMW8zeG41UElrWTE1Qm05ZkVRNTdDOE12TVBKa3ViUHltVldZZHRqUncxTGFxb3dhcy1hbW9adnh0ZDBlVDlNTFdRblM0azJqeWl0S3FUQ1FkNVplZTNodTV30gH_AUFVX3lxTE9PTk5kdTFyQmtiOHQ2Y0hTdTNqeS1nNXp6N24wczgwWUQxYmxucHIwRUNhZWZBNGlvNWdOV2hRMUZHNHF2LU1KaWJLQnFaX1dpQ3Q5ZDUyekFmdjE1S2ttWXM4TVllTEFqLWVqNmJLc0F6cHFhTmwzMTRQSEF3aGlQU0F0VFRXLXVEXzF3UVpJaEx1S0g4YU1wVE1KT3BXd0NQcGtZNjh6N1N5dVVJYkNfRThLNG5sYnhaMzFnYjY2UE9Fd0hWZHRyV3dZcjU5WFRXdjNzWWNxMVlsdGxuUUJuSU5lWFA3aFlWcXZna1VRSXVxMVl6WnRmNDVzc0NTWQ?oc=5"
         },
         {
           "category": "📊 市场数据",
-          "title": "Apple Reportedly Cancels Foldable MacBook Project Once Considered a John Ternus Priority",
-          "title_cn": "苹果折叠屏",
+          "title": "Not just in fresh, iPhone is also leading India's refurbished phone market",
+          "title_cn": "iPhone手机",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMi1gFBVV95cUxQVjJ4V01Tc0k3TFo2Y2xkQ2FSRkk1Mm94WTA3MlZpQjBpZGc1eUYzTF9pcmRycVYxUXRMMWxoeV9sRzBvdW5kWE9YdkxfYmxONVpMUmViOE44OEpqTGNkMFEyS1NHN1pFYjRFck4zUGlrVVVqdk9zSDlJS29ldVFoV1g2U3ozMnM2V0Job09USDk2dFprTk01cEUwYWx5Zl81eWh6Tm1QVnM2bF9JRFU0SjRjZlpHdFhsVmczN2p3dG9aT0dqV2p5R2w2Uy1GTjFSeTZSUGdB0gHbAUFVX3lxTE5tektJbmVOWnN4T1V0S0tMTi1pSUFuOEdzakVTUkJHQzZfcEU4dlV4YXBOeEMwUkQ3dC1Lck13V1Z1c1BtWVZrU1YyOTBBS3BnRDNSOVRJbkFQNjVDaXhtMWFlQWxtdFRDbGpIRjdjcW4yUlNiNHpLbGVMbEw1aXFzNldRTFlmQ2hUb1dyU0lGaVdDbllxLWpyOHdkNU9DLWUzWmN0cEdIUTBacW1CR3dNdFlkNHJMZk50djhDWGVNYWdmcTBVS0cteXFISzlqM3JrWmpnY01BNmQtcw?oc=5"
+        },
+        {
+          "category": "📊 市场数据",
+          "title": "Apple’s First Foldable iPhone Could Cost More Than $2,000, New Report Claims",
+          "title_cn": "苹果、iPhone手机",
           "source": "techmedia",
-          "url": "https://www.gadgets360.com/laptops/news/apple-foldable-macbook-project-cancelled-report-12000313"
+          "url": "https://www.gadgets360.com/mobiles/news/apple-foldable-iphone-price-expected-specifications-report-12001292"
         },
         {
           "category": "🆕 新品发布",
-          "title": "Here’s what the Oppo Find X10 Pro Max could look like",
-          "title_cn": "OPPO相关动态",
+          "title": "iQOO 16 to Launch Soon With a New Samsung Display, Similar Technology to Apple’s iPhone Ultra, Tipster Claims",
+          "title_cn": "三星、苹果、iPhone发布手机",
           "source": "techmedia",
-          "url": "https://www.gsmarena.com/heres_what_the_oppo_find_x10_pro_max_could_look_like-news-74451.php"
+          "url": "https://www.gadgets360.com/mobiles/news/iqoo-16-display-details-tipped-specifications-features-12001541"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "iPhone 18 Pro India launch on Sept 9: From price to features, expect all this",
+          "title_cn": "iPhone发布手机",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMi3wFBVV95cUxONElYZEJXUHp6c1owMGVPSW9jQVpsY3pkMHVZQXF4VTJNVW14YzBORnM5cU1HWXpFUUkzaGdrV0JSZldfSjBkR3MxMkJCZE1SQk96TTd2Uk5MU0UzSThXc05sbDNuSTAtZHpUS0hiSWw1c3RIV0VfNUN4aVBOdU5BdEJzc3lIeFJ4eGw1d0VfbXdWbjYxV2FSYUM4bEZJTi1pZXNfTHloWnVQRGhfUnFXcGY0bnRCNFRESkZDalVuQi1jcFVCaDFPM0RRUk9uU1lneW1wblZwOWFXRFExSGdR0gHkAUFVX3lxTE1nTG9kV0ZVd3E3TW94dmpvb3BjWC1yMjlzSENaNVIwOXBxX1o2OXhJNDQ1WjhFVWMxLXYwcW52eG1taFdzbmJ2OXdwQ2ZKV2VaSEJEc0lnU1VXckdaLXR3VTRjOE5mNzFFMjQzNHVqUWRmZnh2bDFDOG1QcWM4azNyTHVuUDV5VzhZWFR2VndOaTk4ZVNJVFR2OG1Qdnd1QVhTMld1U0FkenZ1QXBjWGdlSl9DNlppQmJuR0p2OU4zZ0RzZG9BbGpNZEIzSERaWG4xWHg0M1NuVEd2OVdwaXJUVW1Bdg?oc=5"
         }
       ],
       "top_posts": [
@@ -333,66 +341,73 @@
       "icon": "🔮",
       "name_cn": "鸿蒙",
       "color": "#CE0E2D",
-      "total_posts": 8,
+      "total_posts": 10,
       "sentiment": {
-        "positive": 1,
+        "positive": 0,
         "negative": 0,
-        "neutral": 7
+        "neutral": 10
       },
       "sentiment_pct": {
-        "positive": 12,
+        "positive": 0,
         "negative": 0,
-        "neutral": 88
+        "neutral": 100
       },
       "top_brands": [
         {
-          "name": "Xiaomi",
+          "name": "Apple",
           "count": 1
         }
       ],
-      "summary": "📊 鸿蒙生态今日共有 8 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 12% / 负面 0% / 中性 88%。\n🏷️ 热门品牌：Xiaomi。\n🆕 【新品发布】共6条 — 华为、鸿蒙即将发布电脑；小米、华为、丰田发布智能生态；鸿蒙6、鸿蒙创下安装新纪录测试版等6条相关报道\n🎮 【功能体验】共1条 — 华为、鸿蒙更新获得功能包\n🔥 关注焦点：鸿蒙发布；华为、鸿蒙即将发布电脑；鸿蒙相关动态",
+      "summary": "📊 鸿蒙生态今日共有 10 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 0% / 负面 0% / 中性 100%。\n🏷️ 热门品牌：Apple。\n🔄 【系统更新】共2条 — 华为、鸿蒙测试版；华为、鸿蒙升级\n🆕 【新品发布】共5条 — 鸿蒙6、华为、鸿蒙公布UI升级；谷歌、苹果、华为发布；华为、鸿蒙宣布功能等5条相关报道\n🎮 【功能体验】共1条 — 鸿蒙相关动态\n🔥 关注焦点：鸿蒙发布；鸿蒙添加至开源；华为、鸿蒙测试版",
       "highlights": [
         {
-          "category": "🆕 新品发布",
-          "title": "Breaking: Huawei HarmonyOS PC launching in May",
-          "title_cn": "华为、鸿蒙即将发布电脑",
+          "category": "🔄 系统更新",
+          "title": "Huawei HarmonyOS 7 closed beta could debut next month",
+          "title_cn": "华为、鸿蒙测试版",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56M1I5VGNVR2xxUUh2UXljV3Q0UnFjT1dJenM4RUtuVC14YWJJNi1ZM2Yzb0FYcTFWU2lQTkdoaUFjQlZQNWQ0TGlWMnZZOEpBMlhqTWRiWVRoWHgxekNkUjdxT2xNOVRPU3I0UGEwWG5GOEphaGfSAXtBVV95cUxNUVlKV1JBakpxNHc5eEMxeHhVREhFeXNOOTljWEhGamxvZ3VPLTBqSFhPYy1vNW5BS2syZWdlamdoR2w5Qkhra0ptcUFDZU0tM19OU3YxZU1raG10QTZ0RW1YU3o5NVl0c1JjclRBeFNhd0F5MGhkTDU1Vzg?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbUtRNjZ3cnV1NnU4eC02ZzdVMUg0UlFTU045cjZBbEFMNUNWeWVXWmx0S0F6XzhEWkxQcVZET3E3Z3hzQ1prUW9GaGNabkpXRktEWWJQX2NIcGRTLWw4SzBXakxwcURlU2FTcmZKRXY0bFptZmdIM0tkNFRZSTF5OVM3ZjU0SHlSMkM1YtIBkgFBVV95cUxQVHdKbHZRVWNPNnJwWk1UZDRtc0kwa0ZxNEZYTnBMNDdjR3g2ZFAzMEZLRGI0dURLamNaWkNDeWxfYU41U05OQWJ6UFFiOXJnTGE5U1c0SnhkcFhjS1RKUGhCMUVPNm1fYVFIM0dRUG11LTJFUy1LdHhvanNlVktxZTRUMm8yVUpwMDVNTnJQMk1JQQ?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Huawei reveals HarmonyOS 6 UI upgrades ahead of its release",
+          "title_cn": "鸿蒙6、华为、鸿蒙公布UI升级",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZjJmekQwZGhubWh5QTBEWG9Td1o0RlhiaHN6ZG1tdDR1S1dudk8zN21PamtLVFlfMm9MM0h2NEpmNExMUE5nN2VtcWFWYkVua280WEZmQmZ5UTFBLTZZb2NBVnJUN3hGbVhnUmg5NG9RUnd5VFpNSjJhYkR1YVlGMlBmOVVrUTN5Wlk5c1ZUVXc2Y1BC0gGaAUFVX3lxTFBic3pPaTVtU0l4MWx5Y1UyVDhrSFh0MjdVdFEyZjZWUnpEM1FON21SMFFUUV9rdGNZU3BRSHRRNUlrYV9fSUFwNFFKUEFNRFcyNThISEktdS1BUmtBbkNtaWlmQlFKeF8xbWVJbkljd3Y1VmFwRmdZd1RLcm9SWkpKeUxsWWV5dUlmTkNOUlpSSk9ONWFrMDl5M1E?oc=5"
+        },
+        {
+          "category": "🔄 系统更新",
+          "title": "Huawei’s HDC 2026 Confirms HarmonyOS 7: Tickets from $13, AI and Ecosystem Upgrades Coming June 12–14",
+          "title_cn": "华为、鸿蒙升级",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPTWJhSHZscW9hS3IteTVCYTdUOXl1c1RYMnFrdGMzVlR2clRWSlJoRjVsbWhsWlVYVVYydFNxaHFMNFpJcDdnLWJXbXpHZ210bmt4eVNlbVlwYkVQYlVFN2w4UFNqaGlDNFduM3JUblNUMVluSGpLU0E0eVEtckRkNE1EZVVSMXg2NkhBeUl2TQ?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Huawei Officially Launches Self-Developed Operating System HarmonyOS To Challenge Google and Apple’s Dominance",
+          "title_cn": "谷歌、苹果、华为发布",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxQZ1J6VzB1R2huaFpYTTJMeEVldHVSWG0tVDR1UDZYXzY3Z0k0QXJhRzhvWHBtM3pNN29iS2NOODBQUWh3VzhjTmJoalc3a2hyVDlDUVZRZlZEdTJTWnU2WF9sdzVPYkZOR1BVcXAxYWVXSHdicWlNZjl6ZzcteFBxak5GMDB2dDdzQmRTZ0RzbllxdmVISDhyc0R0VDFkSVlNOTZUVVpNazluQ24zbTE2TnVtb3FXR2Q4djlweEdmYkd6eV9vSWQtYXNqbXBrdERTamtZbVBVLWNobngz0gHsAUFVX3lxTE5vV2tUZmdyUGdBM2dMWjh3bnhVTHcxNWtaVkpzakF3U3FuN2t6YU5PcWRfcTdjWlM4VjFJMWJpa25QS1ByTkthY0RBejRwZ3R2RzlaMzBYU1IyVDcxWkxzalFlTEVZMG9RLVBnYzdBd3Z6aGx6UFBJNm1KUHhOUVhkWC1MSXJEZGw5czNYMldSR2poN0htRW5yUDJBX0dsX1pzaDdHT3dud3N1Z0FQdmRkaGNFVEtpWmxoeHoxNnFPVkdYQklDTkk3ellFZl9yVGJuSFFIMWNQbEVTMkNsLTNBWjVXLWI5YjQ4X21s?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Huawei announces HarmonyOS 7 with AI Features and Performance Improvements",
+          "title_cn": "华为、鸿蒙宣布功能",
+          "source": "official",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxPSXlOUTFrcVFGbVF1NWUybEQzY3EyOUFrWUhTZ0NHaFFNTWxIRC14ZzdqSTAyQmpEaEpxUkdrd19iWmZmVzdNbC1CV244NTJQV25pUmxtQ3FobEY4Wi04RHJLa2YwN0YzdUtOZDZQSDJuOEVaM3FJVFZrMHlvVG41dHoxbUV0VWIxdmc4b2p1bjJ0WlYydnZQYTVoZzMxOUI5YVFNNWJMS0Zqa2R4dXc?oc=5"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Huawei Pura 80, Pura 70, Mate 70, Mate 60 refreshed with new HarmonyOS feature pack",
-          "title_cn": "华为、鸿蒙更新获得功能包",
+          "title": "HarmonyOS 7 Is Official — Liquid Glass UI, Agentic AI, and 15% Performance Gain",
+          "title_cn": "鸿蒙相关动态",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeE8zdWhlVmczVFhXdlZEVUdFRjloT2RPakZJbnNvYjNXSWpBb01BNTJuWE5HeS11ZGtZeXNnX2l2WFo2cXdDbkV4VG8xYlhKOEh0LUpqb2pOY0c4bHhuTFFGYlBUVV93RG5fUnN5WTBDOWZYYXQ0dmRoTHozbk0ybDA2Q0FHdUFzMFpHbWlCZVdpYlptLVlxSdIBngFBVV95cUxNZ05fbElXdHVjSmxLYTJaNi1hX3BGMnN5LW9yWS05M1g3YnhoQlRvUlZ0ZjlvM2NRc1RWUkFOVWtfUDVwWF9VSkpXa0huVDFTbUtUeXQ2TE81M3hvcEVnZTNRM0x6UHlQTVhoNlNhQm9lRmwxM1NvSlQ4U2lJVXp2YzJLa1dnWW5IWlViN1BkY3RZNV9hM0hRUWVBdnZtUQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxOUGlEbFUtcm9FUFRDUTktR0Z1c2ZvRGxOczQya3lIV3lYMVR0STd0VnFNMFZKZDdLenNwbGxSNVFibjJ3b2dISE1IVjRHd04tWEoxWjJ3Znd6cE5wYlNhc0xTc0VQcFN2NUFGSURpUGthdURlV0drZmdJTDRndUlzeElGRTFOQ3BPcE1CUVpUUHhDdkxtRDB3UTJQZHc0NGxmOTZubnZtei0xZw?oc=5"
         },
         {
           "category": "🆕 新品发布",
-          "title": "Toyota bZ7 unveiled: Xiaomi smart ecosystem, 5.1-meters long, Huawei HarmonyOS",
-          "title_cn": "小米、华为、丰田发布智能生态",
+          "title": "Huawei Mate XT 2 Launch Date Confirmed With New Tri-Fold Design and HarmonyOS 7",
+          "title_cn": "华为、鸿蒙发布",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnZmdDRWZzNsTzJ4ZzdUcHFEUnlPd3ZHZjc5T3pPaVZHX0o3Rl9neS04SkNCS1lEM2ZZa0dPUU4tTTI2NWVlT2FXQ1pDVjhxZzJBWm9ON1lWZVBOQUo4V2NYcVlqZGRYRDliMTh2TFBCeHJYVkQyQXNHT0tmcjk1YUxvRHg3OFdhRGFNUXZQQ2QybXdVTWNfdjZYSDlwUU9jNVpoMmVsYzhuemhlNC1wdDlB?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "HarmonyOS 6 beta made new installation record in 24 hours of release",
-          "title_cn": "鸿蒙6、鸿蒙创下安装新纪录测试版",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeVF0RVJYbVE3cVF1ampIZjE5ZnpOVGNzYmU1ZVJUQjZXWVk4Vm5XNG9pZ0FaZU1tNi1PbVJQYkdlbVlWRWdyMUdpZVVSUUpNVnNEVTNSNHFaanpxQmdKd1pIczR0ZDhvaW9xaTdvamNWZlJJdE5qX3NMejIydUZuQ1A3YnRuWG1TUUJ4a191SXBwbWR3ZzN5OUhoVmVWd2VT0gGmAUFVX3lxTFBYMmZFZnhNbjl1Q2lJMkRFYk9zcy0zb2doYzduUXc5OTNfdHlGZGk4WGwtMkVpRkl2QkVPRmRJd201aDdoZmlFYTR0T2tuVWVzYWczRDc4NzUzdlZMX2pwRWtXOEExUUVxWXNoV2JKODB6ZGU1ZW1EaTlydFZLS044ZkVfWmZUcGhRMHRCZGtZTldtQ1RVR3k2VlVfU1U3YUtmUXpMV1E?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "HarmonyOS 4.0 will be officially announced on August 4, beta testing already underway - GSMArena.com news",
-          "title_cn": "鸿蒙宣布测试版",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVExBbklialQ0cDFrcUc2OWdoYmdhQWpubmVlTFI1Z1JwSXlPWVF1cFh4cllSWnR5XzBHWjZfWDZGbTE2TnQ2dHdyaGJTQnFOdWhIb3Bwbm9WaU9NWV9lYmpwRVVwbVNUeFpWb2x0Wm9QaDNTZWpPcXFvQWlPRzFrTnNOend4dU1EalFxdnJxekFhODRGeUU5UEQwcnBYdFBYMTlKNDRCSTZRQ1RNQm5zeFI3eEFQckhZc3QyRzRhUk_SAbwBQVVfeXFMT2xGbmdYSVB3NmV2Z0pUQ21rUUdNMFA4T2pPNVFtc0lCVVB6ZXJ0UDVQWnd3YVVrOGFxMFNoclc4X0xwbE8yWW1PY0VLXzQ3ZnJFaEVBQ0Y3WkxHOURJelM4UlMtdWZLUndEQ213eS1CTnFQUkFCc0tTbGJSTGs5WnNydl9KRkVoMlUzSHhtLVV3dXlsWThCMmNVLTAzbk1QczZaU3Q3YVFXS2J4bHhOcE5tN1E4ZmZIRF9rLXg?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Huawei announces HarmonyOS 7 with smooth performance and Agentic AI upgrades",
-          "title_cn": "华为、鸿蒙宣布",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NYkZpY0MxRm5JZGs5UGwya2h1aUNmLWRMYUlJd0NMeDBqb253SjJRazA1YVFCUEJqdmplWmFCSjY3RTY1bUc0Ny01cVpTRUxoaXFyREgwQ0owaUFTUVHSAWNBVV95cUxPNkNITUx6MEo2V2ZPYkR4RVMxVF81UGljc25oUDk5Y0ZTbXM3WFlaOHcxU3ZuTmpicUdWd1ZZMk9aYXF0VTVrdktzOW1aVzFWUXJVX3VmMzlWVjEtYlp3RTBHc2c?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE9Mc0JiNHFCUlBnY2s5MG5ZX1VEcm5ILVpseGdVMk54SEVpNm5qb2JleDJCOGFneTVrbEZsanRRN0ZONEF1NmtXc192ZE9xTGRPVUdXLXYwRGQtS2VBQ1BzRmZCOTh6RUNRLVQxR2FJM0tmTG41bXc?oc=5"
         },
         {
           "category": "🆕 新品发布",
@@ -413,43 +428,43 @@
           "published_at": "2024-10-22T15:16:41+00:00"
         },
         {
-          "title": "Breaking: Huawei HarmonyOS PC launching in May",
-          "title_cn": "华为、鸿蒙即将发布电脑",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56M1I5VGNVR2xxUUh2UXljV3Q0UnFjT1dJenM4RUtuVC14YWJJNi1ZM2Yzb0FYcTFWU2lQTkdoaUFjQlZQNWQ0TGlWMnZZOEpBMlhqTWRiWVRoWHgxekNkUjdxT2xNOVRPU3I0UGEwWG5GOEphaGfSAXtBVV95cUxNUVlKV1JBakpxNHc5eEMxeHhVREhFeXNOOTljWEhGamxvZ3VPLTBqSFhPYy1vNW5BS2syZWdlamdoR2w5Qkhra0ptcUFDZU0tM19OU3YxZU1raG10QTZ0RW1YU3o5NVl0c1JjclRBeFNhd0F5MGhkTDU1Vzg?oc=5",
+          "title": "Over 300 open source components now added to HarmonyOS",
+          "title_cn": "鸿蒙添加至开源",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZE1fb3RZRWRWak1KczBlN24yODE3ckhKdjUxbFYyMUwydU1qdTRCQXNOSUpnSVd4UUh4ODk2VGR5V2tsY3JWRXFadkdIQ2d6ZGpfbk1mb3hHVVpuTExVLTNaOGRBWGJJSGdmcGZFTHNyV3Z0LTZQVHJZVjh2QzlSOHlyOTlGcEhwdHBDMzNB0gGTAUFVX3lxTE9nN093dHBSTUlMZGlrNFlaX0JIV3BvZ3B3MkFnVWZWRWhfOEFDenIyMkJYSVM3MUYwWW85NTdSdkxQQzYwTWZ0dzM4Qmg5NDhfZUNYMjI1cXVvRzBDTW4xTDZGN1BjNjJyUEViTUZvdGk2M29rZy03RkVvaHBSVGYybENHQ0ZramhKNVZGdlRrc19GTQ?oc=5",
           "source": "official",
           "score": 0,
           "author": "Huawei Central",
-          "published_at": "2025-03-20T07:00:00"
+          "published_at": "2021-07-28T07:00:00"
         },
         {
-          "title": "HarmonyOS NEXT to officially debut on October 22",
-          "title_cn": "鸿蒙相关动态",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQTNSUGlISU92X1ZWVGlERWxmQlhvdURYb1U0c1JMNGZuVlBKcXYwV3A4dVI2NEZKRkVUU0xQX3RxT1pkbExaeXM5ZXg2Vkc2UklremthYU5xSHYtLWVyYWFDTWZrNFFsOFd6ZnU0TklEeWJ6OXROR1E3dzNWcFczeHFzeERtUdIBiwFBVV95cUxNVW14RkNaVENuSWpzMGFKR0k4OW0xYUNabGEwdlJrV1RRUHg0b056dVFIMnFZTFdrdzJtWVJUV2Ria0NEd1Joa2tSZ1dkWFVmdEgwbjhhSDcxY19JR3REZ1lnY0JaaEdXamJrWGczUUxwVHN4RDdiLVB6c2hEaElBXzJFSmU4dVMyX1lv?oc=5",
+          "title": "Huawei HarmonyOS 7 closed beta could debut next month",
+          "title_cn": "华为、鸿蒙测试版",
+          "url": "https://news.google.com/rss/articles/CBMijAFBVV95cUxPbUtRNjZ3cnV1NnU4eC02ZzdVMUg0UlFTU045cjZBbEFMNUNWeWVXWmx0S0F6XzhEWkxQcVZET3E3Z3hzQ1prUW9GaGNabkpXRktEWWJQX2NIcGRTLWw4SzBXakxwcURlU2FTcmZKRXY0bFptZmdIM0tkNFRZSTF5OVM3ZjU0SHlSMkM1YtIBkgFBVV95cUxQVHdKbHZRVWNPNnJwWk1UZDRtc0kwa0ZxNEZYTnBMNDdjR3g2ZFAzMEZLRGI0dURLamNaWkNDeWxfYU41U05OQWJ6UFFiOXJnTGE5U1c0SnhkcFhjS1RKUGhCMUVPNm1fYVFIM0dRUG11LTJFUy1LdHhvanNlVktxZTRUMm8yVUpwMDVNTnJQMk1JQQ?oc=5",
           "source": "official",
           "score": 0,
           "author": "Huawei Central",
-          "published_at": "2024-10-15T07:00:00"
+          "published_at": "2026-07-16T07:00:00"
         },
         {
-          "title": "Huawei Pura 80, Pura 70, Mate 70, Mate 60 refreshed with new HarmonyOS feature pack",
-          "title_cn": "华为、鸿蒙更新获得功能包",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeE8zdWhlVmczVFhXdlZEVUdFRjloT2RPakZJbnNvYjNXSWpBb01BNTJuWE5HeS11ZGtZeXNnX2l2WFo2cXdDbkV4VG8xYlhKOEh0LUpqb2pOY0c4bHhuTFFGYlBUVV93RG5fUnN5WTBDOWZYYXQ0dmRoTHozbk0ybDA2Q0FHdUFzMFpHbWlCZVdpYlptLVlxSdIBngFBVV95cUxNZ05fbElXdHVjSmxLYTJaNi1hX3BGMnN5LW9yWS05M1g3YnhoQlRvUlZ0ZjlvM2NRc1RWUkFOVWtfUDVwWF9VSkpXa0huVDFTbUtUeXQ2TE81M3hvcEVnZTNRM0x6UHlQTVhoNlNhQm9lRmwxM1NvSlQ4U2lJVXp2YzJLa1dnWW5IWlViN1BkY3RZNV9hM0hRUWVBdnZtUQ?oc=5",
+          "title": "Huawei reveals HarmonyOS 6 UI upgrades ahead of its release",
+          "title_cn": "鸿蒙6、华为、鸿蒙公布UI升级",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZjJmekQwZGhubWh5QTBEWG9Td1o0RlhiaHN6ZG1tdDR1S1dudk8zN21PamtLVFlfMm9MM0h2NEpmNExMUE5nN2VtcWFWYkVua280WEZmQmZ5UTFBLTZZb2NBVnJUN3hGbVhnUmg5NG9RUnd5VFpNSjJhYkR1YVlGMlBmOVVrUTN5Wlk5c1ZUVXc2Y1BC0gGaAUFVX3lxTFBic3pPaTVtU0l4MWx5Y1UyVDhrSFh0MjdVdFEyZjZWUnpEM1FON21SMFFUUV9rdGNZU3BRSHRRNUlrYV9fSUFwNFFKUEFNRFcyNThISEktdS1BUmtBbkNtaWlmQlFKeF8xbWVJbkljd3Y1VmFwRmdZd1RLcm9SWkpKeUxsWWV5dUlmTkNOUlpSSk9ONWFrMDl5M1E?oc=5",
           "source": "official",
           "score": 0,
           "author": "Huawei Central",
-          "published_at": "2025-12-16T08:00:00"
+          "published_at": "2025-10-22T07:00:00"
         },
         {
-          "title": "Toyota bZ7 unveiled: Xiaomi smart ecosystem, 5.1-meters long, Huawei HarmonyOS",
-          "title_cn": "小米、华为、丰田发布智能生态",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnZmdDRWZzNsTzJ4ZzdUcHFEUnlPd3ZHZjc5T3pPaVZHX0o3Rl9neS04SkNCS1lEM2ZZa0dPUU4tTTI2NWVlT2FXQ1pDVjhxZzJBWm9ON1lWZVBOQUo4V2NYcVlqZGRYRDliMTh2TFBCeHJYVkQyQXNHT0tmcjk1YUxvRHg3OFdhRGFNUXZQQ2QybXdVTWNfdjZYSDlwUU9jNVpoMmVsYzhuemhlNC1wdDlB?oc=5",
+          "title": "These Huawei devices are getting HarmonyOS 6",
+          "title_cn": "鸿蒙6、华为、鸿蒙相关动态",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9lUDRId2JkRmFabkhReTlnaDQzc2c4eUJqWmlrMnJHS0hIYTdlLWUwX1lLRFVfemFQZThnQ2tPSFRNMldDRDFkc2RuRnpXSHQtdDE5Z0tNemwzN0lOSWVBeTA5WDNJU1dvaXgxZ3F6d2J0RVlIdXVEejJzNFhORE12RzJYeXNFRmNoSHBmYm05cTg?oc=5",
           "source": "official",
           "score": 0,
-          "author": "CarNewsChina.com",
-          "published_at": "2025-09-12T07:00:00"
+          "author": "Notebookcheck",
+          "published_at": "2025-10-25T07:00:00"
         }
       ]
     }
   ],
-  "last_updated": "2026-09-04T10:09:26.154637"
+  "last_updated": "2026-09-04T11:39:07.624017"
 }
