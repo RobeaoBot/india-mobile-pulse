@@ -13,20 +13,45 @@ import models
 logger = logging.getLogger(__name__)
 
 
-def analyze_posts(hours: int = None) -> dict:
+def _load_tags(value, default=None):
+    """
+    兼容标签字段的两种形态：
+    - 数据库读出的是 JSON 字符串 '["Apple"]'
+    - 采集器内存中的是 Python 列表 ["Apple"]
+    """
+    if isinstance(value, (list, dict)):
+        return value
+    if not value:
+        return [] if default is None else default
+    try:
+        return json.loads(value)
+    except (json.JSONDecodeError, TypeError):
+        return [] if default is None else default
+
+
+def analyze_posts(hours: int = None, posts: list = None) -> dict:
     """
     分析最近一段时间的帖子，生成摘要报告
     优先使用 LLM，失败时回退到规则引擎
+
+    :param posts: 直接传入帖子列表（优先）。用于 GitHub Actions 等
+                  刚采集完、尚未从数据库读取的场景。
+    :param hours: 未传 posts 时，从数据库读取最近 N 小时的帖子
     """
     hours = hours or config.ANALYSIS_LOOKBACK_HOURS
-    posts = models.get_posts_for_analysis(hours)
+    if posts is None:
+        posts = models.get_posts_for_analysis(hours)
 
     if not posts:
         logger.info("[Analyzer] 没有帖子可供分析")
         return None
 
-    period_start = min(p["published_at"] or p.get("collected_at", "") for p in posts)
-    period_end = max(p["published_at"] or p.get("collected_at", "") for p in posts)
+    # 时间字段可能缺失，做兜底避免 min/max 取到 None 报错
+    def _ts(p):
+        return p.get("published_at") or p.get("collected_at") or ""
+
+    period_start = min(_ts(p) for p in posts)
+    period_end = max(_ts(p) for p in posts)
 
     analysis = {
         "period_start": period_start,
@@ -71,7 +96,7 @@ def _llm_analyze(posts: list) -> dict:
     # 构建帖子文本
     posts_text = ""
     for i, p in enumerate(posts[:50], 1):  # 限制帖子数量以控制 token
-        brands = ", ".join(json.loads(p.get("brands", "[]"))) if p.get("brands") else ""
+        brands = ", ".join(_load_tags(p.get("brands"))) if p.get("brands") else ""
         posts_text += f"\n---\n[{i}] [{p['source'].upper()}] {p['title']}\n"
         if p.get("content"):
             posts_text += f"Content: {p['content'][:200]}\n"
@@ -178,11 +203,7 @@ def _rule_analyze(posts: list) -> dict:
     brand_sentiments = {}
 
     for p in posts:
-        try:
-            brands = json.loads(p.get("brands", "[]"))
-        except (json.JSONDecodeError, TypeError):
-            brands = []
-
+        brands = _load_tags(p.get("brands"))
         sentiment = p.get("sentiment", "neutral")
 
         for brand in brands:
@@ -242,11 +263,7 @@ def _rule_analyze(posts: list) -> dict:
     # OS 提及统计
     os_mentions = Counter()
     for p in posts:
-        try:
-            os_tags = json.loads(p.get("os_tags", "[]"))
-        except (json.JSONDecodeError, TypeError):
-            os_tags = []
-        for os_name in os_tags:
+        for os_name in _load_tags(p.get("os_tags")):
             os_mentions[os_name] += 1
 
     # 热门话题（取前10个高频词组）
