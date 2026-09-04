@@ -23,11 +23,8 @@ class OfficialCollector(BaseCollector):
     SOURCE_NAME = "official"
 
     def __init__(self):
-        self.session = requests.Session()
-        self.session.headers.update({
-            "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36",
-            "Accept": "text/html,application/xml,application/rss+xml;q=0.9,*/*;q=0.7",
-        })
+        # 复用基类 session（已配置通用 UA / Accept），避免重复初始化
+        super().__init__()
 
     def collect(self) -> list:
         """采集官方渠道和权威科技媒体"""
