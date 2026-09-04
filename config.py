@@ -253,6 +253,12 @@ Write the summary and insights in Chinese (简体中文), but keep brand names a
 # 每日采集时间（24小时制），格式 "HH:MM"
 DAILY_COLLECTION_TIME = os.environ.get("DAILY_COLLECTION_TIME", "12:00")
 
+# 默认跳过的数据源（已确认失效，避免每次运行白跑）
+# YouTube: 5 个频道 ID 的 RSS 均返回 404，已失效
+# 在代码层面兜底，这样即使不修改 workflow 配置也不会浪费时间
+# 如需强制启用某源，可用环境变量覆盖（设为留空则不默认跳过任何源）
+DEFAULT_SKIP_SOURCES = os.environ.get("DEFAULT_SKIP_SOURCES", "youtube")
+
 # 每次采集每个来源的最大帖子数
 MAX_POSTS_PER_SOURCE = 25
 
