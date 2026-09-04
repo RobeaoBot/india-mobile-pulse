@@ -5,6 +5,7 @@ SQLite 数据模型与操作
 
 import os
 import json
+import hashlib
 import sqlite3
 from datetime import datetime
 from contextlib import contextmanager
@@ -132,6 +133,48 @@ def insert_posts(posts: list) -> int:
         if insert_post(post):
             new_count += 1
     return new_count
+
+
+def insert_posts_batch(posts: list) -> int:
+    """
+    批量插入帖子（单连接 executemany，性能远优于逐条 insert_posts）。
+    返回实际新增数量（已存在的会被 INSERT OR IGNORE 跳过）。
+    """
+    if not posts:
+        return 0
+
+    now = datetime.now().isoformat()
+    rows = []
+    for p in posts:
+        # source_id 兜底：为空时用 title+url 生成稳定哈希，避免唯一约束冲突
+        source_id = p.get("source_id") or hashlib.md5(
+            (p.get("title", "") + p.get("url", "")).encode("utf-8")
+        ).hexdigest()
+        rows.append((
+            p["source"],
+            source_id,
+            p.get("title", ""),
+            p.get("content", ""),
+            p.get("author", ""),
+            p.get("url", ""),
+            p.get("score", 0),
+            json.dumps(p.get("brands", []), ensure_ascii=False),
+            json.dumps(p.get("os_tags", []), ensure_ascii=False),
+            json.dumps(p.get("hardware_tags", []), ensure_ascii=False),
+            p.get("sentiment", "neutral"),
+            p.get("published_at"),
+            now,
+        ))
+
+    with get_connection() as conn:
+        before = conn.total_changes
+        conn.executemany("""
+            INSERT OR IGNORE INTO posts
+            (source, source_id, title, content, author, url, score,
+             brands, os_tags, hardware_tags, sentiment, published_at, collected_at)
+            VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        """, rows)
+        return conn.total_changes - before
 
 
 def get_posts(source=None, brand=None, period="all", limit=50, offset=0):
