@@ -6,37 +6,194 @@
     <title>India Mobile Pulse - 印度手机圈热点</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: #fff; min-height: 100vh; padding: 20px; }
-        .container { max-width: 1200px; margin: 0 auto; }
-        .header { text-align: center; padding: 30px 0; }
-        .header h1 { font-size: 2.5em; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; margin-bottom: 10px; }
-        .header p { color: #a0a0a0; font-size: 1.1em; }
-        .stats-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 20px; margin-bottom: 30px; }
-        .stat-card { background: rgba(255,255,255,0.1); border-radius: 15px; padding: 25px; text-align: center; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.1); }
-        .stat-value { font-size: 2.5em; font-weight: bold; color: #667eea; }
-        .stat-label { color: #a0a0a0; margin-top: 5px; }
-        .section { background: rgba(255,255,255,0.05); border-radius: 15px; padding: 25px; margin-bottom: 20px; border: 1px solid rgba(255,255,255,0.1); }
-        .section-title { font-size: 1.3em; margin-bottom: 15px; color: #667eea; }
-        .brand-bar { display: flex; align-items: center; gap: 10px; margin: 8px 0; }
-        .brand-name { width: 100px; font-size: 0.9em; }
-        .brand-bar-bg { flex: 1; height: 20px; background: rgba(255,255,255,0.1); border-radius: 10px; overflow: hidden; }
-        .brand-bar-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 10px; }
-        .brand-count { width: 40px; text-align: right; color: #a0a0a0; }
-        .post-item { background: rgba(255,255,255,0.05); border-radius: 10px; padding: 15px; margin-bottom: 10px; border-left: 3px solid #667eea; }
-        .post-title { font-size: 1em; margin-bottom: 8px; }
-        .post-meta { display: flex; gap: 10px; font-size: 0.85em; color: #a0a0a0; flex-wrap: wrap; }
-        .source-badge { padding: 2px 8px; border-radius: 5px; font-size: 0.75em; font-weight: bold; }
-        .source-reddit { background: #ff4500; } .source-youtube { background: #ff0000; } .source-news { background: #4285f4; } .source-official { background: #34a853; }
-        .tag { background: rgba(255,255,255,0.1); padding: 2px 8px; border-radius: 5px; font-size: 0.8em; margin: 2px; }
-        .loading { text-align: center; padding: 50px; color: #a0a0a0; }
-        .error { background: rgba(248,113,113,0.2); border: 1px solid #f87171; border-radius: 10px; padding: 20px; text-align: center; color: #f87171; }
-        .refresh-info { text-align: center; padding: 15px; background: rgba(102,126,234,0.1); border-radius: 10px; margin-bottom: 20px; font-size: 0.9em; color: #a0a0a0; }
-        .refresh-info span { color: #667eea; font-weight: bold; }
-        .footer { text-align: center; padding: 20px; color: #666; }
-        .run-item { display: flex; justify-content: space-between; padding: 10px; background: rgba(255,255,255,0.05); border-radius: 8px; margin-bottom: 8px; }
-        .sentiment-positive { color: #4ade80; } .sentiment-negative { color: #f87171; } .sentiment-neutral { color: #a0a0a0; }
-        .last-update { text-align: center; font-size: 0.85em; color: #a0a0a0; margin-bottom: 15px; }
-        @media(max-width:768px){.header h1{font-size:1.8em}.stat-value{font-size:2em}.stats-grid{grid-template-columns:repeat(2,1fr)}}
+        :root {
+            --bg-grad: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 50%, #16213e 100%);
+            --card-bg: rgba(255,255,255,0.05);
+            --card-border: rgba(255,255,255,0.1);
+            --primary: #667eea;
+            --primary-2: #764ba2;
+            --text-dim: #a0a0a0;
+            --pos: #4ade80;
+            --neg: #f87171;
+            --neu: #94a3b8;
+        }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'PingFang SC', 'Microsoft YaHei', sans-serif;
+            background: var(--bg-grad);
+            background-attachment: fixed;
+            color: #fff;
+            min-height: 100vh;
+            padding: 20px;
+            line-height: 1.6;
+        }
+        .container { max-width: 1280px; margin: 0 auto; }
+
+        /* ---------- Header ---------- */
+        .header { text-align: center; padding: 30px 0 20px; }
+        .header h1 {
+            font-size: 2.6em;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 8px;
+        }
+        .header p { color: var(--text-dim); font-size: 1.05em; }
+
+        /* ---------- Meta bar ---------- */
+        .meta-bar {
+            display: flex; align-items: center; justify-content: center;
+            gap: 15px; flex-wrap: wrap;
+            background: rgba(102,126,234,0.1);
+            border: 1px solid rgba(102,126,234,0.2);
+            border-radius: 12px; padding: 12px 20px; margin-bottom: 25px;
+            font-size: 0.9em; color: var(--text-dim);
+        }
+        .meta-bar strong { color: var(--primary); }
+        .btn-refresh {
+            background: linear-gradient(135deg, var(--primary), var(--primary-2));
+            color: #fff; border: none; padding: 6px 16px;
+            border-radius: 8px; cursor: pointer; font-size: 0.9em;
+            transition: transform .15s, box-shadow .15s;
+        }
+        .btn-refresh:hover { transform: translateY(-1px); box-shadow: 0 4px 15px rgba(102,126,234,.4); }
+
+        /* ---------- Stats ---------- */
+        .stats-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 18px; margin-bottom: 25px;
+        }
+        .stat-card {
+            background: var(--card-bg); border-radius: 16px; padding: 22px;
+            text-align: center; backdrop-filter: blur(10px);
+            border: 1px solid var(--card-border);
+            transition: transform .2s;
+        }
+        .stat-card:hover { transform: translateY(-3px); }
+        .stat-value { font-size: 2.2em; font-weight: bold; color: var(--primary); }
+        .stat-label { color: var(--text-dim); margin-top: 4px; font-size: 0.9em; }
+
+        /* ---------- Section ---------- */
+        .section {
+            background: var(--card-bg); border-radius: 16px; padding: 24px;
+            margin-bottom: 22px; border: 1px solid var(--card-border);
+            backdrop-filter: blur(10px);
+        }
+        .section-title {
+            font-size: 1.25em; margin-bottom: 18px; color: var(--primary);
+            display: flex; align-items: center; gap: 8px;
+        }
+        .section-title .badge-count {
+            font-size: 0.75em; background: rgba(102,126,234,.2);
+            padding: 2px 10px; border-radius: 20px; color: var(--text-dim);
+        }
+
+        /* ---------- OS Daily ---------- */
+        .os-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 18px; }
+        .os-card {
+            background: rgba(255,255,255,0.04); border-radius: 14px; padding: 20px;
+            border: 1px solid var(--card-border); border-left-width: 4px;
+            display: flex; flex-direction: column; gap: 12px;
+        }
+        .os-head { display: flex; align-items: center; justify-content: space-between; }
+        .os-name { font-size: 1.2em; font-weight: bold; display: flex; align-items: center; gap: 8px; }
+        .os-count { font-size: 1.5em; font-weight: bold; }
+        .os-sentiment-bar {
+            display: flex; height: 8px; border-radius: 4px; overflow: hidden;
+            background: rgba(255,255,255,0.08);
+        }
+        .os-sentiment-bar span { display: block; height: 100%; }
+        .os-sent-legend { display: flex; gap: 12px; font-size: 0.8em; color: var(--text-dim); }
+        .os-brands { display: flex; flex-wrap: wrap; gap: 6px; }
+        .os-brand-tag {
+            background: rgba(255,255,255,0.08); padding: 3px 10px;
+            border-radius: 12px; font-size: 0.8em;
+        }
+        .os-summary {
+            font-size: 0.88em; color: #cbd5e1; white-space: pre-line;
+            background: rgba(0,0,0,0.2); padding: 12px; border-radius: 10px;
+            max-height: 220px; overflow-y: auto;
+        }
+        .os-posts { display: flex; flex-direction: column; gap: 6px; }
+        .os-post {
+            font-size: 0.82em; padding: 8px 10px; background: rgba(255,255,255,0.03);
+            border-radius: 8px; color: #cbd5e1;
+        }
+        .os-post a { color: #93c5fd; text-decoration: none; }
+        .os-post a:hover { text-decoration: underline; }
+
+        /* ---------- Brand bar ---------- */
+        .brand-bar { display: flex; align-items: center; gap: 10px; margin: 9px 0; }
+        .brand-name { width: 100px; font-size: 0.9em; flex-shrink: 0; }
+        .brand-bar-bg { flex: 1; height: 20px; background: rgba(255,255,255,0.08); border-radius: 10px; overflow: hidden; }
+        .brand-bar-fill { height: 100%; background: linear-gradient(90deg, #667eea, #764ba2); border-radius: 10px; transition: width .6s ease; }
+        .brand-count { width: 45px; text-align: right; color: var(--text-dim); font-size: 0.9em; }
+
+        /* ---------- Filters ---------- */
+        .filters { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+        .filter-btn {
+            background: rgba(255,255,255,0.06); border: 1px solid var(--card-border);
+            color: var(--text-dim); padding: 5px 14px; border-radius: 20px;
+            cursor: pointer; font-size: 0.85em; transition: all .15s;
+        }
+        .filter-btn:hover { background: rgba(255,255,255,0.12); }
+        .filter-btn.active { background: linear-gradient(135deg, var(--primary), var(--primary-2)); color: #fff; border-color: transparent; }
+
+        /* ---------- Post item ---------- */
+        .post-item {
+            background: rgba(255,255,255,0.04); border-radius: 10px; padding: 14px;
+            margin-bottom: 10px; border-left: 3px solid var(--primary);
+            transition: background .2s;
+        }
+        .post-item:hover { background: rgba(255,255,255,0.08); }
+        .post-title { font-size: 0.95em; margin-bottom: 8px; }
+        .post-title a { color: #e2e8f0; text-decoration: none; }
+        .post-title a:hover { color: #93c5fd; }
+        .post-meta { display: flex; gap: 10px; font-size: 0.82em; color: var(--text-dim); flex-wrap: wrap; align-items: center; }
+        .source-badge { padding: 2px 9px; border-radius: 5px; font-size: 0.78em; font-weight: bold; color: #fff; }
+
+        /* ---------- Insights ---------- */
+        .insight-summary {
+            background: rgba(102,126,234,0.08); border-left: 3px solid var(--primary);
+            padding: 14px; border-radius: 8px; margin-bottom: 14px; font-size: 0.92em; color: #cbd5e1;
+        }
+        .topic-list { display: flex; flex-wrap: wrap; gap: 8px; }
+        .topic-tag {
+            background: rgba(255,255,255,0.07); padding: 5px 12px;
+            border-radius: 14px; font-size: 0.85em;
+        }
+        .topic-tag.heat-high { border: 1px solid #f87171; color: #fca5a5; }
+        .topic-tag.heat-medium { border: 1px solid #fbbf24; color: #fcd34d; }
+        .topic-tag.heat-low { border: 1px solid #64748b; color: var(--text-dim); }
+
+        /* ---------- Runs ---------- */
+        .run-item {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 10px 14px; background: rgba(255,255,255,0.04);
+            border-radius: 8px; margin-bottom: 7px; font-size: 0.88em;
+        }
+
+        /* ---------- Misc ---------- */
+        .loading { text-align: center; padding: 40px; color: var(--text-dim); }
+        .error {
+            background: rgba(248,113,113,0.15); border: 1px solid #f87171;
+            border-radius: 10px; padding: 18px; text-align: center; color: #f87171;
+        }
+        .empty { text-align: center; padding: 30px; color: var(--text-dim); font-size: 0.9em; }
+        .footer { text-align: center; padding: 25px 0; color: #666; font-size: 0.9em; }
+        .footer a { color: var(--primary); text-decoration: none; }
+        .footer a:hover { text-decoration: underline; }
+        .sentiment-positive { color: var(--pos); }
+        .sentiment-negative { color: var(--neg); }
+        .sentiment-neutral { color: var(--neu); }
+
+        @media(max-width:768px){
+            .header h1 { font-size: 1.8em; }
+            .stat-value { font-size: 1.8em; }
+            .stats-grid { grid-template-columns: repeat(2, 1fr); }
+            .os-grid { grid-template-columns: 1fr; }
+            body { padding: 12px; }
+        }
     </style>
 </head>
 <body>
@@ -45,34 +202,338 @@
             <h1>📡 India Mobile Pulse</h1>
             <p>印度手机圈热点监测 | Indian Mobile Market Pulse Monitor</p>
         </div>
-        <div class="last-update" id="lastUpdate">📅 最后更新: --</div>
-        <div class="refresh-info">🔄 页面将在 <span id="countdown">300</span> 秒后自动刷新 | 数据来源: GitHub 静态文件 | <button onclick="location.reload()" style="background:#667eea;color:#fff;border:none;padding:5px 15px;border-radius:5px;cursor:pointer;margin-left:10px">立即刷新</button></div>
+
+        <div class="meta-bar">
+            <span>📅 最后更新: <strong id="lastUpdate">--</strong></span>
+            <span>🔄 <strong id="countdown">300</strong> 秒后自动刷新</span>
+            <span>📦 数据来源: GitHub 静态文件</span>
+            <button class="btn-refresh" onclick="loadData(true)">立即刷新</button>
+        </div>
+
         <div class="stats-grid">
             <div class="stat-card"><div class="stat-value" id="statTotal">--</div><div class="stat-label">📊 总帖子数</div></div>
             <div class="stat-card"><div class="stat-value" id="statToday">--</div><div class="stat-label">📅 今日新增</div></div>
-            <div class="stat-card"><div class="stat-value" id="statBrands">--</div><div class="stat-label">🏷️ 涉及品牌</div></div>
+            <div class="stat-card"><div class="stat-value" id="statSources">--</div><div class="stat-label">🔌 活跃数据源</div></div>
             <div class="stat-card"><div class="stat-value" id="statSentiment">--</div><div class="stat-label">😊 整体情感</div></div>
         </div>
-        <div class="section"><div class="section-title">🏷️ 品牌声量排行</div><div id="brandsContainer"><div class="loading">加载中...</div></div></div>
-        <div class="section"><div class="section-title">📋 最新帖子</div><div id="postsContainer"><div class="loading">加载中...</div></div></div>
-        <div class="section"><div class="section-title">⚙️ 最近采集记录</div><div id="runsContainer"><div class="loading">加载中...</div></div></div>
+
+        <!-- OS 日报 -->
+        <div class="section">
+            <div class="section-title">📱 操作系统日报 <span class="badge-count" id="osBadge"></span></div>
+            <div id="osContainer"><div class="loading">加载中...</div></div>
+        </div>
+
+        <!-- 品牌声量 -->
+        <div class="section">
+            <div class="section-title">🏷️ 品牌声量排行 <span class="badge-count" id="brandBadge"></span></div>
+            <div id="brandsContainer"><div class="loading">加载中...</div></div>
+        </div>
+
+        <!-- 最新帖子 -->
+        <div class="section">
+            <div class="section-title">📋 最新帖子</div>
+            <div class="filters" id="filters"></div>
+            <div id="postsContainer"><div class="loading">加载中...</div></div>
+        </div>
+
+        <!-- 分析洞察 -->
+        <div class="section">
+            <div class="section-title">🧠 智能洞察</div>
+            <div id="insightsContainer"><div class="loading">加载中...</div></div>
+        </div>
+
+        <!-- 采集记录 -->
+        <div class="section">
+            <div class="section-title">⚙️ 最近采集记录</div>
+            <div id="runsContainer"><div class="loading">加载中...</div></div>
+        </div>
+
         <div class="footer">
             <p>India Mobile Pulse © 2024-2026 | 数据每日自动更新</p>
-            <p style="margin-top:10px"><a href="https://github.com/RobeaoBot/india-mobile-pulse" target="_blank" style="color:#667eea">💻 GitHub</a> | <a href="https://huggingface.co/spaces/RobeaoBot/india-mobile-pulse" target="_blank" style="color:#667eea">🤗 HuggingFace</a></p>
+            <p style="margin-top:8px">
+                <a href="https://github.com/RobeaoBot/india-mobile-pulse" target="_blank">💻 GitHub</a> |
+                <a href="https://huggingface.co/spaces/RobeaoBot/india-mobile-pulse" target="_blank">🤗 HuggingFace</a>
+            </p>
         </div>
     </div>
+
     <script>
+        const BASE = 'https://raw.githubusercontent.com/RobeaoBot/india-mobile-pulse/main/docs';
         const REFRESH_INTERVAL = 300;
         let countdown = REFRESH_INTERVAL;
-        setInterval(function() { countdown--; document.getElementById('countdown').textContent = countdown; if(countdown <= 0) location.reload(); }, 1000);
-        function formatTime(ts) { if(!ts) return '--'; var d = new Date(ts), diff = (new Date()-d)/1000; if(diff<60) return '刚刚'; if(diff<3600) return Math.floor(diff/60)+'分钟前'; if(diff<86400) return Math.floor(diff/3600)+'小时前'; return d.toLocaleDateString('zh-CN',{month:'short',day:'numeric',hour:'2-digit',minute:'2-digit'}); }
-        async function loadData() { try { var r = await fetch('https://raw.githubusercontent.com/RobeaoBot/india-mobile-pulse/main/docs/dashboard.json'); if(!r.ok) throw new Error(); var data = await r.json(); renderDashboard(data); countdown = REFRESH_INTERVAL; } catch(e) { console.error(e); document.getElementById('brandsContainer').innerHTML='<div class="error">❌ 数据加载失败，请稍后重试</div>'; document.getElementById('postsContainer').innerHTML='<div class="error">❌ 数据加载失败</div>'; document.getElementById('runsContainer').innerHTML='<div class="error">❌ 数据加载失败</div>'; } }
-        function renderDashboard(data) { var s = data.stats||{}; document.getElementById('lastUpdate').textContent='📅 最后更新: '+(data.last_updated?formatTime(data.last_updated):'--'); document.getElementById('statTotal').textContent=s.total||0; document.getElementById('statToday').textContent=s.today||0; document.getElementById('statBrands').textContent=Object.keys(s.brand_mentions||{}).length; var sent=s.sentiment||{}, tot=(sent.positive||0)+(sent.negative||0)+(sent.neutral||0); if(tot>0){var pct=Math.round((sent.positive||0)/tot*100); var cls=pct>=50?'positive':pct>=30?'neutral':'negative'; document.getElementById('statSentiment').innerHTML='<span class="sentiment-'+cls+'">'+pct+'% 正面</span>';} renderBrands(s.brand_mentions||{}); renderPosts(data.recent_posts||[]); renderRuns(data.recent_runs||[]); }
-        function renderBrands(m) { var c=document.getElementById('brandsContainer'); var e=Object.entries(m); if(!e.length){c.innerHTML='<div class="loading">暂无数据</div>';return;} var mx=Math.max.apply(null,e.map(function(x){return x[1]})); c.innerHTML=e.map(function(x){return'<div class="brand-bar"><span class="brand-name">'+x[0]+'</span><div class="brand-bar-bg"><div class="brand-bar-fill" style="width:'+Math.max(5,(x[1]/mx)*100)+'%"></div></div><span class="brand-count">'+x[1]+'</span></div>';}).join(''); }
-        function renderPosts(p) { var c=document.getElementById('postsContainer'), l={reddit:'R',youtube:'YT',news:'N',official:'OFF'}; if(!p||!p.length){c.innerHTML='<div class="loading">暂无帖子</div>';return;} c.innerHTML=p.slice(0,20).map(function(x){return'<div class="post-item"><div class="post-title">'+escapeHtml(x.title||'')+'</div><div class="post-meta"><span class="source-badge source-'+(x.source||'news')+'">'+l[x.source]||'?'+'</span><span class="sentiment-'+(x.sentiment||'neutral')+'">'+(x.sentiment==='positive'?'😊':x.sentiment==='negative'?'😟':'😐')+'</span><span>'+formatTime(x.published_at||x.collected_at||x.created_at)+'</span></div></div>';}).join(''); }
-        function renderRuns(r) { var c=document.getElementById('runsContainer'); if(!r||!r.length){c.innerHTML='<div class="loading">暂无记录</div>';return;} c.innerHTML=r.slice(0,10).map(function(x){return'<div class="run-item"><span>'+escapeHtml(x.source||'')+'</span><span>'+(x.posts_count||0)+'条</span><span class="sentiment-'+(x.status==='success'?'positive':'negative')+'">'+(x.status==='success'?'✅ '+(x.new_posts||0)+'条':'❌')+'</span><span style="color:#a0a0a0">'+formatTime(x.started_at||x.created_at)+'</span></div>';}).join(''); }
-        function escapeHtml(s) { if(!s)return''; var d=document.createElement('div'); d.textContent=s; return d.innerHTML; }
-        document.addEventListener('DOMContentLoaded', loadData);
+        let allPosts = [];
+        let currentFilter = 'all';
+
+        // 来源显示配置：标签 + 配色（修复原 l[x.source]||'?' 优先级 bug）
+        const SOURCES = {
+            news:       { label: 'News',       color: '#4285f4' },
+            techmedia:  { label: 'TechMedia',  color: '#a855f7' },
+            hackernews: { label: 'HackerNews', color: '#ff6600' },
+            official:   { label: 'Official',   color: '#34a853' },
+            reddit:     { label: 'Reddit',     color: '#ff4500' },
+            youtube:    { label: 'YouTube',    color: '#ff0000' },
+        };
+
+        const SENTIMENT_ICON = { positive: '😊', negative: '😟', neutral: '😐' };
+
+        function srcCfg(key) {
+            return SOURCES[key] || { label: String(key || '?').toUpperCase(), color: '#64748b' };
+        }
+
+        function formatTime(ts) {
+            if (!ts) return '--';
+            const d = new Date(ts);
+            if (isNaN(d)) return '--';
+            const diff = (Date.now() - d.getTime()) / 1000;
+            if (diff < 60) return '刚刚';
+            if (diff < 3600) return Math.floor(diff / 60) + '分钟前';
+            if (diff < 86400) return Math.floor(diff / 3600) + '小时前';
+            return d.toLocaleDateString('zh-CN', { month: 'short', day: 'numeric', hour: '2-digit', minute: '2-digit' });
+        }
+
+        function escapeHtml(s) {
+            if (s === null || s === undefined) return '';
+            const d = document.createElement('div');
+            d.textContent = String(s);
+            return d.innerHTML;
+        }
+
+        function showError(id, msg) {
+            const el = document.getElementById(id);
+            if (el) el.innerHTML = '<div class="error">❌ ' + msg + '</div>';
+        }
+
+        async function fetchJson(url) {
+            const r = await fetch(url, { cache: 'no-store' });
+            if (!r.ok) throw new Error('HTTP ' + r.status);
+            return r.json();
+        }
+
+        async function loadData(manual) {
+            if (manual) {
+                document.getElementById('osContainer').innerHTML = '<div class="loading">加载中...</div>';
+                document.getElementById('postsContainer').innerHTML = '<div class="loading">加载中...</div>';
+            }
+            try {
+                const [dash, osDaily] = await Promise.all([
+                    fetchJson(BASE + '/dashboard.json'),
+                    fetchJson(BASE + '/os-daily.json').catch(() => null),
+                ]);
+                renderDashboard(dash);
+                renderOsDaily(osDaily);
+                countdown = REFRESH_INTERVAL;
+            } catch (e) {
+                console.error(e);
+                const err = '数据加载失败，请稍后重试';
+                ['osContainer', 'brandsContainer', 'postsContainer', 'insightsContainer', 'runsContainer']
+                    .forEach(id => showError(id, err));
+            }
+        }
+
+        function renderDashboard(data) {
+            const s = data.stats || {};
+            document.getElementById('lastUpdate').textContent =
+                data.last_updated ? formatTime(data.last_updated) : '--';
+            document.getElementById('statTotal').textContent = s.total || 0;
+            document.getElementById('statToday').textContent = s.today || 0;
+
+            // 活跃数据源数
+            const bySource = s.by_source || {};
+            document.getElementById('statSources').textContent = Object.keys(bySource).length;
+
+            // 整体情感
+            const sent = s.sentiment || {};
+            const tot = (sent.positive || 0) + (sent.negative || 0) + (sent.neutral || 0);
+            if (tot > 0) {
+                const pct = Math.round((sent.positive || 0) / tot * 100);
+                const cls = pct >= 50 ? 'positive' : pct >= 30 ? 'neutral' : 'negative';
+                document.getElementById('statSentiment').innerHTML =
+                    '<span class="sentiment-' + cls + '">' + pct + '% 正面</span>';
+            } else {
+                document.getElementById('statSentiment').textContent = '--';
+            }
+
+            renderBrands(s.brand_mentions || {});
+            allPosts = data.recent_posts || [];
+            renderFilters(bySource);
+            renderPosts();
+            renderInsights(data.latest_analysis);
+            renderRuns(data.recent_runs || []);
+        }
+
+        function renderOsDaily(os) {
+            const c = document.getElementById('osContainer');
+            if (!os || !os.reports || !os.reports.length) {
+                c.innerHTML = '<div class="empty">暂无 OS 日报数据</div>';
+                return;
+            }
+            const hasData = os.reports.some(r => r.total_posts > 0);
+            document.getElementById('osBadge').textContent = os.date || '';
+
+            if (!hasData) {
+                c.innerHTML = '<div class="empty">今日暂无操作系统相关数据</div>';
+                return;
+            }
+
+            c.innerHTML = '<div class="os-grid">' + os.reports.map(function (r) {
+                const sp = r.sentiment_pct || {};
+                const brands = (r.top_brands || []).slice(0, 6).map(function (b) {
+                    return '<span class="os-brand-tag">' + escapeHtml(b.name) + ' ' + b.count + '</span>';
+                }).join('');
+
+                const posts = (r.top_posts || []).slice(0, 4).map(function (p) {
+                    const title = p.title_cn || p.title || '';
+                    return '<div class="os-post">• ' +
+                        (p.url ? '<a href="' + escapeHtml(p.url) + '" target="_blank" rel="noopener">' + escapeHtml(title) + '</a>'
+                               : escapeHtml(title)) +
+                        '</div>';
+                }).join('');
+
+                return '<div class="os-card" style="border-left-color:' + (r.color || '#58a6ff') + '">' +
+                    '<div class="os-head">' +
+                        '<span class="os-name">' + (r.icon || '📱') + ' ' + escapeHtml(r.name_cn || r.os_name) + '</span>' +
+                        '<span class="os-count" style="color:' + (r.color || '#58a6ff') + '">' + r.total_posts + '</span>' +
+                    '</div>' +
+                    '<div class="os-sentiment-bar">' +
+                        '<span style="width:' + (sp.positive || 0) + '%;background:var(--pos)"></span>' +
+                        '<span style="width:' + (sp.neutral || 0) + '%;background:var(--neu)"></span>' +
+                        '<span style="width:' + (sp.negative || 0) + '%;background:var(--neg)"></span>' +
+                    '</div>' +
+                    '<div class="os-sent-legend">' +
+                        '<span class="sentiment-positive">正面 ' + (sp.positive || 0) + '%</span>' +
+                        '<span class="sentiment-neutral">中性 ' + (sp.neutral || 0) + '%</span>' +
+                        '<span class="sentiment-negative">负面 ' + (sp.negative || 0) + '%</span>' +
+                    '</div>' +
+                    (brands ? '<div class="os-brands">' + brands + '</div>' : '') +
+                    (r.summary ? '<div class="os-summary">' + escapeHtml(r.summary) + '</div>' : '') +
+                    (posts ? '<div class="os-posts">' + posts + '</div>' : '') +
+                '</div>';
+            }).join('') + '</div>';
+        }
+
+        function renderBrands(m) {
+            const c = document.getElementById('brandsContainer');
+            const e = Object.entries(m || {});
+            document.getElementById('brandBadge').textContent = e.length ? e.length + ' 个品牌' : '';
+            if (!e.length) { c.innerHTML = '<div class="empty">暂无品牌数据</div>'; return; }
+            const mx = Math.max.apply(null, e.map(function (x) { return x[1]; }));
+            c.innerHTML = e.slice(0, 12).map(function (x) {
+                return '<div class="brand-bar">' +
+                    '<span class="brand-name">' + escapeHtml(x[0]) + '</span>' +
+                    '<div class="brand-bar-bg"><div class="brand-bar-fill" style="width:' +
+                        Math.max(4, (x[1] / mx) * 100) + '%"></div></div>' +
+                    '<span class="brand-count">' + x[1] + '</span>' +
+                '</div>';
+            }).join('');
+        }
+
+        function renderFilters(bySource) {
+            const c = document.getElementById('filters');
+            const keys = Object.keys(bySource || {}).sort(function (a, b) { return bySource[b] - bySource[a]; });
+            let html = '<button class="filter-btn' + (currentFilter === 'all' ? ' active' : '') +
+                       '" data-f="all">全部 ' + allPosts.length + '</button>';
+            html += keys.map(function (k) {
+                const cfg = srcCfg(k);
+                return '<button class="filter-btn' + (currentFilter === k ? ' active' : '') +
+                       '" data-f="' + escapeHtml(k) + '" style="' +
+                       (currentFilter === k ? '' : 'border-color:' + cfg.color + '55') + '">' +
+                       cfg.label + ' ' + bySource[k] + '</button>';
+            }).join('');
+            c.innerHTML = html;
+            c.querySelectorAll('.filter-btn').forEach(function (btn) {
+                btn.addEventListener('click', function () {
+                    currentFilter = btn.getAttribute('data-f');
+                    renderFilters(bySource);
+                    renderPosts();
+                });
+            });
+        }
+
+        function renderPosts() {
+            const c = document.getElementById('postsContainer');
+            const list = currentFilter === 'all' ? allPosts : allPosts.filter(function (p) { return p.source === currentFilter; });
+            if (!list.length) { c.innerHTML = '<div class="empty">暂无帖子</div>'; return; }
+
+            c.innerHTML = list.slice(0, 30).map(function (x) {
+                const cfg = srcCfg(x.source);
+                const title = x.title || '';
+                const url = x.url || '';
+                return '<div class="post-item" style="border-left-color:' + cfg.color + '">' +
+                    '<div class="post-title">' +
+                        (url ? '<a href="' + escapeHtml(url) + '" target="_blank" rel="noopener">' + escapeHtml(title) + '</a>'
+                             : escapeHtml(title)) +
+                    '</div>' +
+                    '<div class="post-meta">' +
+                        '<span class="source-badge" style="background:' + cfg.color + '">' + cfg.label + '</span>' +
+                        '<span class="sentiment-' + (x.sentiment || 'neutral') + '">' +
+                            (SENTIMENT_ICON[x.sentiment] || SENTIMENT_ICON.neutral) + ' ' +
+                            (x.sentiment || 'neutral') + '</span>' +
+                        (x.author ? '<span>✍️ ' + escapeHtml(x.author) + '</span>' : '') +
+                        (x.score ? '<span>🔼 ' + x.score + '</span>' : '') +
+                        '<span>' + formatTime(x.published_at || x.collected_at) + '</span>' +
+                    '</div>' +
+                '</div>';
+            }).join('');
+        }
+
+        function renderInsights(a) {
+            const c = document.getElementById('insightsContainer');
+            if (!a) { c.innerHTML = '<div class="empty">暂无分析结果</div>'; return; }
+
+            let html = '';
+            if (a.summary) html += '<div class="insight-summary">' + escapeHtml(a.summary) + '</div>';
+
+            const topics = a.hot_topics || [];
+            if (topics.length) {
+                html += '<div style="margin-bottom:12px;font-size:0.9em;color:var(--text-dim)">🔥 热门话题</div>';
+                html += '<div class="topic-list">' + topics.slice(0, 12).map(function (t) {
+                    return '<span class="topic-tag heat-' + (t.heat || 'low') + '">' +
+                        escapeHtml(t.topic) + (t.count ? ' · ' + t.count : '') + '</span>';
+                }).join('') + '</div>';
+            }
+
+            const insights = a.key_insights || [];
+            if (insights.length) {
+                html += '<div style="margin:16px 0 10px;font-size:0.9em;color:var(--text-dim)">💡 关键洞察</div>';
+                html += insights.map(function (i) {
+                    return '<div class="os-post" style="margin-bottom:6px">• ' + escapeHtml(i) + '</div>';
+                }).join('');
+            }
+
+            c.innerHTML = html || '<div class="empty">暂无分析结果</div>';
+        }
+
+        function renderRuns(runs) {
+            const c = document.getElementById('runsContainer');
+            if (!runs || !runs.length) { c.innerHTML = '<div class="empty">暂无记录</div>'; return; }
+            c.innerHTML = runs.slice(0, 12).map(function (x) {
+                const ok = x.status === 'success';
+                const cfg = srcCfg(x.source);
+                let statusHtml;
+                if (ok) {
+                    statusHtml = '<span class="sentiment-positive">✅ ' + (x.new_posts || 0) + ' 新增 / ' + (x.posts_count || 0) + ' 采集</span>';
+                } else if (x.status === 'skipped') {
+                    statusHtml = '<span class="sentiment-neutral">⏭️ 已跳过</span>';
+                } else {
+                    statusHtml = '<span class="sentiment-negative">❌ 失败</span>';
+                }
+                return '<div class="run-item">' +
+                    '<span class="source-badge" style="background:' + cfg.color + '">' + cfg.label + '</span>' +
+                    statusHtml +
+                    '<span style="color:var(--text-dim);font-size:0.9em">' + formatTime(x.started_at || x.created_at) + '</span>' +
+                '</div>';
+            }).join('');
+        }
+
+        // 倒计时 + 自动刷新
+        setInterval(function () {
+            countdown--;
+            const el = document.getElementById('countdown');
+            if (el) el.textContent = countdown;
+            if (countdown <= 0) loadData();
+        }, 1000);
+
+        document.addEventListener('DOMContentLoaded', function () { loadData(); });
     </script>
 </body>
 </html>
