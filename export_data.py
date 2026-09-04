@@ -17,39 +17,66 @@ from collectors.reddit import RedditCollector
 from collectors.youtube import YouTubeCollector
 from collectors.news import NewsCollector
 from collectors.official import OfficialCollector
+from collectors.techmedia import TechMediaCollector
+from collectors.hackernews import HackerNewsCollector
 from analyzer.llm import analyze_posts
 
 TEMP_POSTS_FILE = "/tmp/collected_posts.json"
 
 
 def run_all_collectors():
-    """运行所有采集器"""
-    # 从环境变量获取要跳过的数据源（Reddit 在 GitHub Actions 中被阻止）
+    """
+    运行所有采集器，并将结果写入数据库。
+
+    关键：采集到的帖子必须 insert 进数据库，否则后续 get_post_stats()
+    / get_posts() 读到的一直是空库，前端永远显示 0。
+    """
+    # 从环境变量获取要跳过的数据源（Reddit 在 GitHub Actions 中被 429 限速）
     skip_sources = os.environ.get("SKIP_SOURCES", "").split(",")
     skip_sources = [s.strip() for s in skip_sources if s.strip()]
-    
+
     collectors = [
-        ("reddit", RedditCollector()),
-        ("youtube", YouTubeCollector()),
+        ("techmedia", TechMediaCollector()),
+        ("hackernews", HackerNewsCollector()),
         ("news", NewsCollector()),
         ("official", OfficialCollector()),
+        ("reddit", RedditCollector()),
+        ("youtube", YouTubeCollector()),
     ]
 
     results = {}
     all_posts = []
     for name, collector in collectors:
+        started_at = datetime.now().isoformat()
+
         if name in skip_sources:
             print(f"  ⏭️ 跳过 {name}（配置为跳过）", flush=True)
-            results[name] = {"status": "skipped", "count": 0, "posts": []}
+            results[name] = {"status": "skipped", "count": 0, "new": 0, "posts": []}
+            models.log_collection_run(name, "skipped", 0, 0, "配置为跳过", started_at)
             continue
+
         try:
             print(f"  采集 {name}...", flush=True)
             posts = collector.collect()
-            results[name] = {"status": "success", "count": len(posts), "posts": posts}
+
+            # ✅ 核心修复：写入数据库（此前只写临时文件，导致统计永远为空）
+            new_count = models.insert_posts_batch(posts)
+
+            results[name] = {
+                "status": "success",
+                "count": len(posts),
+                "new": new_count,
+                "posts": posts,
+            }
             all_posts.extend(posts)
-            print(f"  ✅ {name}: {len(posts)} 条", flush=True)
+            models.log_collection_run(
+                name, "success", len(posts), new_count, "", started_at
+            )
+            print(f"  ✅ {name}: {len(posts)} 条（新增 {new_count}）", flush=True)
         except Exception as e:
-            results[name] = {"status": "error", "error": str(e), "posts": []}
+            results[name] = {"status": "error", "error": str(e), "count": 0,
+                             "new": 0, "posts": []}
+            models.log_collection_run(name, "error", 0, 0, str(e), started_at)
             print(f"  ❌ {name}: {e}", flush=True)
 
     # 保存所有帖子到临时文件，供分析步骤使用（不依赖数据库）
@@ -523,10 +550,11 @@ def export_data():
         analyses = [analysis] + analyses[:4]  # 最多保留5条
     latest_analysis = analysis or latest_analysis
 
-    # Dashboard 数据
+    # Dashboard 数据（recent_posts 供前端"最新帖子"模块渲染）
     dashboard_data = {
         "stats": stats,
         "latest_analysis": latest_analysis,
+        "recent_posts": recent_posts[:100],
         "recent_runs": recent_runs,
         "last_updated": datetime.now().isoformat(),
     }
