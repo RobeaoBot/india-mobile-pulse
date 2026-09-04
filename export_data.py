@@ -12,6 +12,7 @@ from datetime import datetime
 # 确保能 import 项目模块
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
+import config
 import models
 from collectors.reddit import RedditCollector
 from collectors.youtube import YouTubeCollector
@@ -24,6 +25,23 @@ from analyzer.llm import analyze_posts
 TEMP_POSTS_FILE = "/tmp/collected_posts.json"
 
 
+def _get_skip_sources() -> set:
+    """
+    获取要跳过的数据源。合并两处配置：
+
+    1. ``config.DEFAULT_SKIP_SOURCES`` —— 代码层面默认跳过的已失效源
+       （如 youtube 频道 ID 全部 404）。这样即使不改动 workflow 配置，
+       也不会在失效源上浪费时间。
+    2. ``SKIP_SOURCES`` 环境变量 —— 部署环境临时指定
+       （如 GitHub Actions 中被 429 限速的 reddit）。
+    """
+    raw = ",".join([
+        os.environ.get("SKIP_SOURCES", ""),
+        getattr(config, "DEFAULT_SKIP_SOURCES", "") or "",
+    ])
+    return {s.strip() for s in raw.split(",") if s.strip()}
+
+
 def run_all_collectors():
     """
     运行所有采集器，并将结果写入数据库。
@@ -31,9 +49,9 @@ def run_all_collectors():
     关键：采集到的帖子必须 insert 进数据库，否则后续 get_post_stats()
     / get_posts() 读到的一直是空库，前端永远显示 0。
     """
-    # 从环境变量获取要跳过的数据源（Reddit 在 GitHub Actions 中被 429 限速）
-    skip_sources = os.environ.get("SKIP_SOURCES", "").split(",")
-    skip_sources = [s.strip() for s in skip_sources if s.strip()]
+    skip_sources = _get_skip_sources()
+    if skip_sources:
+        print(f"  ⏭️ 跳过数据源: {', '.join(sorted(skip_sources))}", flush=True)
 
     collectors = [
         ("techmedia", TechMediaCollector()),
