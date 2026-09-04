@@ -167,19 +167,51 @@ class BaseCollector(ABC):
                 hw_tags.append(kw)
         post["hardware_tags"] = list(set(hw_tags))
 
-        # 基础情感分析
-        post["sentiment"] = self._basic_sentiment(text)
+        # 基础情感分析（标题与正文分开加权）
+        post["sentiment"] = self._basic_sentiment(
+            post.get("title", ""), post.get("content", "")
+        )
 
         return post
 
-    def _basic_sentiment(self, text: str) -> str:
-        """基于词典的简单情感判断"""
-        pos_count = sum(1 for w in config.POSITIVE_WORDS if w in text)
-        neg_count = sum(1 for w in config.NEGATIVE_WORDS if w in text)
+    @staticmethod
+    def _count_keywords(words, text: str) -> int:
+        """
+        用词边界统计关键词命中数。
 
-        if pos_count > neg_count + 1:
+        用 \b 而非朴素子串匹配，避免 "lag" 命中 "lagoon"、
+        "deal" 命中 "dealer" 这类误判。
+        """
+        if not text:
+            return 0
+        return sum(
+            1 for w in words
+            if re.search(r'\b' + re.escape(w) + r'\b', text)
+        )
+
+    def _basic_sentiment(self, title: str = "", content: str = "") -> str:
+        """
+        基于加权词典的情感判断。
+
+        标题权重高于正文：标题通常凝练核心态度（如 "Excellent Battery Life"），
+        而正文多是客观参数描述。旧实现把两者拼接后等权计数，导致明显的
+        正面/负面内容被中性正文稀释，需要命中 2 个以上情感词才会被判定，
+        最终 97% 的帖子都落到 neutral。
+        """
+        title_l = (title or "").lower()
+        content_l = (content or "").lower()
+
+        tw = getattr(config, "SENTIMENT_TITLE_WEIGHT", 2)
+        cw = getattr(config, "SENTIMENT_CONTENT_WEIGHT", 1)
+
+        pos = (tw * self._count_keywords(config.POSITIVE_WORDS, title_l)
+               + cw * self._count_keywords(config.POSITIVE_WORDS, content_l))
+        neg = (tw * self._count_keywords(config.NEGATIVE_WORDS, title_l)
+               + cw * self._count_keywords(config.NEGATIVE_WORDS, content_l))
+
+        if pos > neg:
             return "positive"
-        elif neg_count > pos_count + 1:
+        if neg > pos:
             return "negative"
         return "neutral"
 
