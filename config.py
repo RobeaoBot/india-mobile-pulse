@@ -194,21 +194,62 @@ HARDWARE_KEYWORDS = [
 # 情感分析词典（规则引擎兜底用）
 # ============================================================
 
+# 说明：匹配时使用词边界（\b），因此多词短语和复数变体需显式列出。
+# 已剔除 "cheap" / "return" / "fail" 等歧义过大的词（"cheap phone" 未必是贬义）。
+
 POSITIVE_WORDS = [
+    # 通用赞美
     "great", "amazing", "excellent", "awesome", "best", "love", "fantastic",
-    "impressive", "perfect", "beautiful", "smooth", "fast", "powerful",
-    "innovative", "breakthrough", "stunning", "superior", "outstanding",
-    "reliable", "value", "affordable", "premium", "flagship killer",
-    "game changer", "upgrade", "improve", "impressive",
+    "impressive", "perfect", "beautiful", "outstanding", "superb", "stellar",
+    "brilliant", "stunning", "superior", "wonderful", "delightful", "solid",
+    # 性能体验
+    "smooth", "fast", "snappy", "responsive", "buttery", "powerful",
+    "efficient", "seamless", "fluid", "reliable", "capable", "versatile",
+    # 品质做工
+    "premium", "durable", "rugged", "sleek", "polished", "refined", "crisp",
+    "sharp", "vibrant", "lightweight", "flagship",
+    # 价值与推荐
+    "affordable", "value", "worth", "recommended", "bargain", "deal",
+    "value for money", "bang for buck", "game changer", "must-buy",
+    "price cut", "discount", "cheaper", "inexpensive",
+    # 进步与创新
+    "upgrade", "improve", "improved", "enhanced", "boost", "innovative",
+    "breakthrough", "top-tier", "best-in-class", "unbeatable",
 ]
 
 NEGATIVE_WORDS = [
-    "worst", "terrible", "bad", "hate", "disappointing", "overpriced",
-    "expensive", "slow", "laggy", "buggy", "heating", "battery drain",
-    "poor", "cheap", "fraud", "scam", "waste", "issue", "problem",
-    "defect", "broken", "crash", "fail", "return", "refund",
-    "downgrade", "regret", "mediocre",
+    # 通用批评
+    "worst", "terrible", "bad", "hate", "awful", "horrible", "poor",
+    "disappointing", "disappointed", "underwhelming", "lackluster",
+    "mediocre", "subpar", "inferior", "useless", "waste", "regret",
+    # 性能问题
+    "slow", "sluggish", "laggy", "stutter", "buggy", "glitch", "glitchy",
+    "unstable", "unreliable", "crash", "crashes", "freeze", "throttling",
+    # 硬件缺陷
+    "heating", "overheating", "battery drain", "defect", "defective",
+    "faulty", "broken", "flawed", "plasticky",
+    # 体验不佳
+    "annoying", "frustrating", "bloatware", "dim", "dull", "weak",
+    # 价格与商业
+    "overpriced", "pricey", "costly", "expensive", "scam", "fraud",
+    # 负面事件
+    "complaint", "complaints", "criticism", "backlash", "controversy",
+    "issue", "issues", "problem", "problems", "concern", "concerns",
+    "delay", "delayed", "cancelled", "canceled", "downgrade", "worse",
 ]
+
+# 情感权重：标题凝练核心态度，正文多为客观描述，因此标题权重更高。
+# 例：标题命中 1 个正面词（权重2）即判为正面，无需像旧逻辑那样命中 2 个。
+SENTIMENT_TITLE_WEIGHT = int(os.environ.get("SENTIMENT_TITLE_WEIGHT", "2"))
+SENTIMENT_CONTENT_WEIGHT = int(os.environ.get("SENTIMENT_CONTENT_WEIGHT", "1"))
+
+# LLM 情感增强（可选）。开启后会用 LLM 覆写部分帖子的情感标签，
+# 需先配置 LLM_PROVIDER 与对应 API Key，否则自动回退到词典法。
+LLM_SENTIMENT_ENABLED = os.environ.get("LLM_SENTIMENT_ENABLED", "0") == "1"
+# 每批发给 LLM 的帖子数（控制单次 token 消耗）
+LLM_SENTIMENT_BATCH_SIZE = int(os.environ.get("LLM_SENTIMENT_BATCH_SIZE", "25"))
+# 只分析热度 >= 该值的帖子，避免对海量低热帖子浪费调用；0 表示不限
+LLM_SENTIMENT_MIN_SCORE = int(os.environ.get("LLM_SENTIMENT_MIN_SCORE", "0"))
 
 # ============================================================
 # LLM 分析配置
