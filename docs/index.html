@@ -341,16 +341,20 @@
             const bySource = s.by_source || {};
             document.getElementById('statSources').textContent = Object.keys(bySource).length;
 
-            // 整体情感
-            const sent = s.sentiment || {};
-            const tot = (sent.positive || 0) + (sent.negative || 0) + (sent.neutral || 0);
-            if (tot > 0) {
-                const pct = Math.round((sent.positive || 0) / tot * 100);
-                const cls = pct >= 50 ? 'positive' : pct >= 30 ? 'neutral' : 'negative';
-                document.getElementById('statSentiment').innerHTML =
-                    '<span class="sentiment-' + cls + '">' + pct + '% 正面</span>';
+            // 整体情感：只在"有情感倾向"的帖子中统计。
+            // 若以全部帖子为分母，大量客观新闻（发布/参数/价格）会把正面占比
+            // 稀释到接近 0，看上去像"全网口碑极差"，实际是口径问题而非事实。
+            const sv = s.sentiment_voiced || {};
+            const statSentEl = document.getElementById('statSentiment');
+            if (sv.total > 0) {
+                const pct = sv.positive_pct;
+                const cls = pct >= 60 ? 'positive' : pct >= 40 ? 'neutral' : 'negative';
+                statSentEl.innerHTML =
+                    '<span class="sentiment-' + cls + '">' + pct + '% 正面</span>' +
+                    '<div style="font-size:0.4em;color:var(--text-dim);margin-top:6px">' +
+                    sv.total + ' / ' + (s.total || 0) + ' 条有态度</div>';
             } else {
-                document.getElementById('statSentiment').textContent = '--';
+                statSentEl.textContent = '--';
             }
 
             renderBrands(s.brand_mentions || {});
