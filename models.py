@@ -205,6 +205,33 @@ def get_posts(source=None, brand=None, period="all", limit=50, offset=0):
         return [dict(r) for r in rows]
 
 
+def get_all_for_sentiment():
+    """获取全部帖子用于情感重算（只取必要字段，避免传输正文以外的大字段）"""
+    with get_connection() as conn:
+        rows = conn.execute(
+            "SELECT source, source_id, title, content, sentiment FROM posts"
+        ).fetchall()
+        return [dict(r) for r in rows]
+
+
+def update_sentiments_batch(items: list) -> int:
+    """
+    批量更新情感标签。
+
+    :param items: [(sentiment, source, source_id), ...]
+    :return: 受影响行数
+    """
+    if not items:
+        return 0
+    with get_connection() as conn:
+        before = conn.total_changes
+        conn.executemany(
+            "UPDATE posts SET sentiment = ? WHERE source = ? AND source_id = ?",
+            items,
+        )
+        return conn.total_changes - before
+
+
 def get_posts_for_analysis(hours=24):
     """获取指定时间范围内的帖子用于分析"""
     with get_connection() as conn:
@@ -254,7 +281,7 @@ def get_post_stats():
             sorted(brand_counts.items(), key=lambda x: x[1], reverse=True)
         )
 
-        # 整体情感
+        # 整体情感（近 24 小时）
         rows = conn.execute("""
             SELECT sentiment, COUNT(*) as count 
             FROM posts 
@@ -262,6 +289,21 @@ def get_post_stats():
             GROUP BY sentiment
         """).fetchall()
         stats["sentiment"] = {r["sentiment"]: r["count"] for r in rows}
+
+        # "有态度"口径：绝大多数科技新闻是客观陈述（发布、参数、价格），
+        # 本身并无情感倾向。若以全部帖子为分母，正面占比会被稀释到接近 0，
+        # 指标就失去了意义。这里额外给出"仅在表达了倾向的帖子中"的比例，
+        # 前端据此展示，避免误读为"全网口碑极差"。
+        pos = stats["sentiment"].get("positive", 0)
+        neg = stats["sentiment"].get("negative", 0)
+        voiced = pos + neg
+        stats["sentiment_voiced"] = {
+            "total": voiced,
+            "positive": pos,
+            "negative": neg,
+            "positive_pct": round(pos / voiced * 100) if voiced else 0,
+            "negative_pct": round(neg / voiced * 100) if voiced else 0,
+        }
 
         return stats
 
