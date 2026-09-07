@@ -205,7 +205,7 @@
 
         <div class="meta-bar">
             <span>📅 最后更新: <strong id="lastUpdate">--</strong></span>
-            <span>🔄 <strong id="countdown">300</strong> 秒后自动刷新</span>
+            <span>🔄 <strong id="countdown">60 分钟</strong>后自动刷新</span>
             <span>📦 数据来源: GitHub 静态文件</span>
             <button class="btn-refresh" onclick="loadData(true)">立即刷新</button>
         </div>
@@ -259,7 +259,9 @@
 
     <script>
         const BASE = 'https://raw.githubusercontent.com/RobeaoBot/india-mobile-pulse/main/docs';
-        const REFRESH_INTERVAL = 300;
+        // 自动刷新间隔（秒）。数据由 GitHub Actions 每天采集一次，
+        // 因此无需高频轮询，1 小时足够，也避免对 raw 源产生过多请求。
+        const REFRESH_INTERVAL = 3600;
         let countdown = REFRESH_INTERVAL;
         let allPosts = [];
         let currentFilter = 'all';
@@ -529,11 +531,21 @@
             }).join('');
         }
 
+        // 倒计时文案：分钟级用「X 分 Y 秒」，不足 1 分钟才显示秒
+        function formatCountdown(sec) {
+            if (sec >= 60) {
+                const m = Math.floor(sec / 60);
+                const s = sec % 60;
+                return s > 0 ? m + ' 分 ' + s + ' 秒' : m + ' 分钟';
+            }
+            return sec + ' 秒';
+        }
+
         // 倒计时 + 自动刷新
         setInterval(function () {
             countdown--;
             const el = document.getElementById('countdown');
-            if (el) el.textContent = countdown;
+            if (el) el.textContent = formatCountdown(Math.max(0, countdown));
             if (countdown <= 0) loadData();
         }, 1000);
 
