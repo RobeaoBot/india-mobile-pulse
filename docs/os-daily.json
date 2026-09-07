@@ -7,16 +7,16 @@
       "icon": "🤖",
       "name_cn": "安卓",
       "color": "#3DDC84",
-      "total_posts": 97,
+      "total_posts": 99,
       "sentiment": {
         "positive": 30,
         "negative": 1,
-        "neutral": 66
+        "neutral": 68
       },
       "sentiment_pct": {
-        "positive": 31,
+        "positive": 30,
         "negative": 1,
-        "neutral": 68
+        "neutral": 69
       },
       "top_brands": [
         {
@@ -48,12 +48,26 @@
           "count": 4
         },
         {
-          "name": "Tecno",
+          "name": "OnePlus",
           "count": 3
         }
       ],
-      "summary": "📊 安卓生态今日共有 97 条相关讨论，舆论态度偏中性。\n📈 情感分布：正面 31% / 负面 1% / 中性 68%。\n🏷️ 热门品牌：Google、Samsung、Motorola、Apple、Xiaomi。\n🎮 【功能体验】共18条 — 谷歌、Pixel手机；Pixel功能；Pixel相关动态等18条相关报道\n🆕 【新品发布】共23条 — 发布平板；iPhone手机；Android 16、iOS 26、谷歌更新等23条相关报道\n🔄 【系统更新】共19条 — Android手机（印度）；Android 16、vivo、OriginOS 6更新；Android更新等19条相关报道\n📊 【市场数据】共7条 — 谷歌、Pixel相关动态；谷歌、Pixel相关动态；The Shocking Reality Of Airtel Postpaid!🔥🔥🔥等7条相关报道\n🔐 【安全隐私】共2条 — Pixel相关动态；Pixel相关动态\n🐛 【问题反馈】共2条 — Pixel相机；Pixel修复\n🔥 关注焦点：谷歌、Pixel手机；发布平板；Pixel功能",
+      "summary": "📊 安卓生态今日共有 99 条相关讨论，舆论态度偏中性。\n📈 情感分布：正面 30% / 负面 1% / 中性 69%。\n🏷️ 热门品牌：Google、Samsung、Motorola、Apple、Xiaomi。\n🔄 【系统更新】共20条 — 一加、ColorOS、Android测试版；Android手机（印度）；Android 16、vivo、OriginOS 6更新等20条相关报道\n🆕 【新品发布】共24条 — Android、BGMI宣布；发布平板；iPhone手机等24条相关报道\n🎮 【功能体验】共18条 — 谷歌、Pixel手机；Pixel功能；Pixel相关动态等18条相关报道\n📊 【市场数据】共7条 — 谷歌、Pixel相关动态；谷歌、Pixel相关动态；The Shocking Reality Of Airtel Postpaid!🔥🔥🔥等7条相关报道\n🔐 【安全隐私】共2条 — Pixel相关动态；Pixel相关动态\n🐛 【问题反馈】共2条 — Pixel相机；Pixel修复\n🔥 关注焦点：一加、ColorOS、Android测试版；Android、BGMI宣布；谷歌、Pixel手机",
       "highlights": [
+        {
+          "category": "🔄 系统更新",
+          "title": "OnePlus India begins Android ColorOS 17 closed beta testing for OnePlus 15",
+          "title_cn": "一加、ColorOS、Android测试版",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFVLTmFuZlpXZFk5ZmZUM1M2UVlNeHEyOFpGUFB2Z29xc0psWV9EdjF0U3V1c3djQ001LXVaT0R0VkJvVjBrMkR3cUFSMTBSWk9qSzVjV0pyVVBTbEZLTk1VV2U1bVp0NlZvN1dIV2VOQXZ5clI3MEhMYmJETkQ1SHNwU0wyZm15SGZjY3lISE9uS1IzM2cxYzhTOW00azZXNngwbkt2WFVGcDFxbUh0NTZsWGFmSWNWekl0VTNPRQ?oc=5"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "KRAFTON India Announces Launch of BGMI LITE by the End of 2026, Opens Pre-Registration for Android Users On 25th August",
+          "title_cn": "Android、BGMI宣布",
+          "source": "news",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVURoSUxJWXJYT0FiaUk5WGJ1WF9lbE52UXBIUlROUGZYaU5jb295bGx6UDFVcFdRZmRNRWU2RGhpbEF4dmk2Q29MNkFId3ZlbHZvdTVlbG4wMXhrRTZkVlppaXdoYk9NNTI2RnBaWTRKYWgtWUhIWlgyTXdDRnljaW1sSjU5a2g4U25nWnduWGtGeV83VGM2eHAwYTk5ak5OOHRib3JBU21RSnVKUjh4dkQ1TTBDTkttb0RieHNVRklRQnZJVU5Way1LWE1hVFFURE9CNXR4MUN6cmJ1QUV5WUw3Q3JrbkcyTHZfazhR0gHzAUFVX3lxTE5INjVZZmw5TmRlTTdHS0tIUXFDMWxkc29wX2dSTWRDVXpocjV4VXAxd1A3eFg2ZmJVaEtONFZwTk9WUjlhRmNYNDZyb2M2Nk84dF9KbG95cy1pWjFMeGpDYkZuXzI0MjFKd004bG0tZHo0X2wzbVRzMVNkaGJnVWxhc2dlQ3Q1dU1lc3dMN3J6UmNMRzBxMmUyMVdqTHNPc1ZpT09NVHlvTFgwaTBxU0YxeDFBdHVncS1LWWRiMXM0NlpneG0xbEFMLU9BbDRPNzdEc3RXMHZaWThTR2xveldSWGlhQlBlUTkxenBZWmtyRGplYw?oc=5"
+        },
         {
           "category": "🎮 功能体验",
           "title": "Google Pixel 11/11 Pro - World's Most Smartest Phone !",
@@ -109,23 +123,27 @@
           "title_cn": "谷歌、Pixel相关动态",
           "source": "youtube",
           "url": "https://www.youtube.com/watch?v=UQkxJlhAzoo"
-        },
-        {
-          "category": "📊 市场数据",
-          "title": "Google Pixel 11 Pro XL Unboxing & Quick Review ⚡ Don't Make The Mistake!",
-          "title_cn": "谷歌、Pixel相关动态",
-          "source": "youtube",
-          "url": "https://www.youtube.com/watch?v=CNamKkcbuDc"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Indian Phone Brands Are Back?, iPhone Ultra Coming, Xring vs Snapdragon vs Dimensity | #PodcasTT🎙️",
-          "title_cn": "iPhone手机",
-          "source": "youtube",
-          "url": "https://www.youtube.com/watch?v=euFItXRfd-8"
         }
       ],
       "top_posts": [
+        {
+          "title": "OnePlus India begins Android ColorOS 17 closed beta testing for OnePlus 15",
+          "title_cn": "一加、ColorOS、Android测试版",
+          "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFVLTmFuZlpXZFk5ZmZUM1M2UVlNeHEyOFpGUFB2Z29xc0psWV9EdjF0U3V1c3djQ001LXVaT0R0VkJvVjBrMkR3cUFSMTBSWk9qSzVjV0pyVVBTbEZLTk1VV2U1bVp0NlZvN1dIV2VOQXZ5clI3MEhMYmJETkQ1SHNwU0wyZm15SGZjY3lISE9uS1IzM2cxYzhTOW00azZXNngwbkt2WFVGcDFxbUh0NTZsWGFmSWNWekl0VTNPRQ?oc=5",
+          "source": "news",
+          "score": 0,
+          "author": "Deccan Herald",
+          "published_at": "2026-08-11T07:00:00"
+        },
+        {
+          "title": "KRAFTON India Announces Launch of BGMI LITE by the End of 2026, Opens Pre-Registration for Android Users On 25th August",
+          "title_cn": "Android、BGMI宣布",
+          "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVURoSUxJWXJYT0FiaUk5WGJ1WF9lbE52UXBIUlROUGZYaU5jb295bGx6UDFVcFdRZmRNRWU2RGhpbEF4dmk2Q29MNkFId3ZlbHZvdTVlbG4wMXhrRTZkVlppaXdoYk9NNTI2RnBaWTRKYWgtWUhIWlgyTXdDRnljaW1sSjU5a2g4U25nWnduWGtGeV83VGM2eHAwYTk5ak5OOHRib3JBU21RSnVKUjh4dkQ1TTBDTkttb0RieHNVRklRQnZJVU5Way1LWE1hVFFURE9CNXR4MUN6cmJ1QUV5WUw3Q3JrbkcyTHZfazhR0gHzAUFVX3lxTE5INjVZZmw5TmRlTTdHS0tIUXFDMWxkc29wX2dSTWRDVXpocjV4VXAxd1A3eFg2ZmJVaEtONFZwTk9WUjlhRmNYNDZyb2M2Nk84dF9KbG95cy1pWjFMeGpDYkZuXzI0MjFKd004bG0tZHo0X2wzbVRzMVNkaGJnVWxhc2dlQ3Q1dU1lc3dMN3J6UmNMRzBxMmUyMVdqTHNPc1ZpT09NVHlvTFgwaTBxU0YxeDFBdHVncS1LWWRiMXM0NlpneG0xbEFMLU9BbDRPNzdEc3RXMHZaWThTR2xveldSWGlhQlBlUTkxenBZWmtyRGplYw?oc=5",
+          "source": "news",
+          "score": 0,
+          "author": "TheWire.in",
+          "published_at": "2026-08-19T07:00:00"
+        },
         {
           "title": "Google Pixel 11/11 Pro - World's Most Smartest Phone !",
           "title_cn": "谷歌、Pixel手机",
@@ -152,24 +170,6 @@
           "score": 0,
           "author": "C4ETech English",
           "published_at": "2026-08-22T09:04:52"
-        },
-        {
-          "title": "THE PIXEL 11 CAN DO WHAT?!",
-          "title_cn": "Pixel相关动态",
-          "url": "https://www.youtube.com/watch?v=8DiT4SZrQk4",
-          "source": "youtube",
-          "score": 0,
-          "author": "C4ETech English",
-          "published_at": "2026-08-24T12:14:36"
-        },
-        {
-          "title": "Sad State of Bloatware free Android Phones in India Now",
-          "title_cn": "Android手机（印度）",
-          "url": "https://www.youtube.com/watch?v=F_ilwfo0whQ",
-          "source": "youtube",
-          "score": 0,
-          "author": "Geekyranjit",
-          "published_at": "2026-07-27T12:46:46"
         }
       ]
     },
@@ -406,5 +406,5 @@
       ]
     }
   ],
-  "last_updated": "2026-09-07T10:53:20.992059"
+  "last_updated": "2026-09-07T11:28:15.632852"
 }
