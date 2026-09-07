@@ -641,6 +641,29 @@ def restore_history():
         return 0
 
 
+def _balanced_posts(posts: list, per_source: int = 150, total_limit: int = 900) -> list:
+    """
+    按来源均衡地保留帖子，用于生成归档用的 posts.json。
+
+    为什么需要：直接按时间倒序截断，会让"已停止更新的数据源"逐渐消失。
+    例如 Reddit 因被限速不再产出新帖，它的存量数据会一直排在最末，
+    每次截断都被挤掉；而 Actions 依赖 posts.json 恢复历史，
+    于是这部分数据在几轮运行后被永久清空（本项目实测 33 → 8 → 趋近 0）。
+
+    这里改为每个来源各自保留最新的 per_source 条，再整体按时间倒序。
+    """
+    by_source = {}
+    for p in posts:
+        by_source.setdefault(p.get("source") or "unknown", []).append(p)
+
+    balanced = []
+    for src, items in by_source.items():
+        balanced.extend(items[:per_source])
+
+    balanced.sort(key=lambda p: p.get("collected_at") or "", reverse=True)
+    return balanced[:total_limit]
+
+
 def export_data():
     """主导出流程"""
     print("=" * 50, flush=True)
@@ -679,7 +702,9 @@ def export_data():
     # 3. 获取统计数据
     print("\n📊 生成数据...", flush=True)
     stats = models.get_post_stats()
-    recent_posts = models.get_posts(limit=500)
+    # 先取足够多的候选帖：若在这里就截断到 500，后面的"按来源均衡"就失去意义
+    all_recent = models.get_posts(limit=3000)
+    recent_posts = all_recent[:500]
     recent_runs = models.get_recent_runs(20)
     latest_analysis = models.get_latest_analysis()
     analyses = models.get_analyses(5)
@@ -706,14 +731,15 @@ def export_data():
         json.dump(dashboard_data, f, ensure_ascii=False, indent=2)
     print(f"  ✅ dashboard.json", flush=True)
     
-    # 帖子数据
+    # 帖子数据：按来源均衡保留，避免已停止更新的老数据源被挤出归档
+    archive_posts = _balanced_posts(all_recent)
     posts_data = {
-        "posts": recent_posts,
-        "count": len(recent_posts),
+        "posts": archive_posts,
+        "count": len(archive_posts),
     }
     with open(os.path.join(output_dir, "posts.json"), "w", encoding="utf-8") as f:
         json.dump(posts_data, f, ensure_ascii=False, indent=2)
-    print(f"  ✅ posts.json ({len(recent_posts)} 条)", flush=True)
+    print(f"  ✅ posts.json ({len(archive_posts)} 条，按来源均衡)", flush=True)
     
     # 分析数据（包含本次分析）
     with open(os.path.join(output_dir, "analyses.json"), "w", encoding="utf-8") as f:
