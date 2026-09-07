@@ -20,6 +20,7 @@ from collectors.news import NewsCollector
 from collectors.official import OfficialCollector
 from collectors.techmedia import TechMediaCollector
 from collectors.hackernews import HackerNewsCollector
+from collectors.xtwitter import XTwitterCollector
 from analyzer.llm import analyze_posts, enhance_sentiment
 
 TEMP_POSTS_FILE = "/tmp/collected_posts.json"
@@ -120,6 +121,7 @@ def run_all_collectors():
     collectors = [
         ("techmedia", TechMediaCollector()),
         ("hackernews", HackerNewsCollector()),
+        ("xtwitter", XTwitterCollector()),
         ("news", NewsCollector()),
         ("official", OfficialCollector()),
         ("reddit", RedditCollector()),
