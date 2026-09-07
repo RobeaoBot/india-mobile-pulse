@@ -7,169 +7,169 @@
       "icon": "🤖",
       "name_cn": "安卓",
       "color": "#3DDC84",
-      "total_posts": 137,
+      "total_posts": 97,
       "sentiment": {
-        "positive": 19,
-        "negative": 5,
-        "neutral": 113
+        "positive": 30,
+        "negative": 1,
+        "neutral": 66
       },
       "sentiment_pct": {
-        "positive": 14,
-        "negative": 4,
-        "neutral": 82
+        "positive": 31,
+        "negative": 1,
+        "neutral": 68
       },
       "top_brands": [
         {
           "name": "Google",
-          "count": 34
+          "count": 23
         },
         {
-          "name": "Apple",
-          "count": 17
+          "name": "Samsung",
+          "count": 14
         },
         {
           "name": "Motorola",
           "count": 9
         },
         {
-          "name": "Samsung",
+          "name": "Apple",
           "count": 7
         },
         {
           "name": "Xiaomi",
-          "count": 6
+          "count": 5
         },
         {
-          "name": "Vivo",
-          "count": 6
-        },
-        {
-          "name": "OnePlus",
+          "name": "iQOO",
           "count": 4
         },
         {
-          "name": "Nothing",
-          "count": 2
+          "name": "Vivo",
+          "count": 4
+        },
+        {
+          "name": "Tecno",
+          "count": 3
         }
       ],
-      "summary": "📊 安卓生态今日共有 137 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 14% / 负面 4% / 中性 82%。\n🏷️ 热门品牌：Google、Apple、Motorola、Samsung、Xiaomi。\n🎮 【功能体验】共15条 — Pixel、One UI相关动态；Android 17、Android功能；Android、iOS智能手机操作系统指南等15条相关报道\n🔄 【系统更新】共14条 — 谷歌、Android、iOS升级；iOS 26.3、iOS 26、苹果终于有望修复手机；Pixel升级等14条相关报道\n🆕 【新品发布】共27条 — Android 16、vivo、OriginOS 6公布时间表（印度）；一加、OxygenOS 16、OxygenOS宣布手机；Android、iOS、BGMI发布等27条相关报道\n📊 【市场数据】共4条 — Android相关动态；Pixel相关动态；Android相关动态等4条相关报道\n🐛 【问题反馈】共4条 — 谷歌、Pixel手机；Android、iOS修复；Pixel修复等4条相关报道\n🔐 【安全隐私】共2条 — Pixel相关动态；Pixel相关动态\n🔥 关注焦点：谷歌、Android相关动态；Android相关动态；Android相关动态",
+      "summary": "📊 安卓生态今日共有 97 条相关讨论，舆论态度偏中性。\n📈 情感分布：正面 31% / 负面 1% / 中性 68%。\n🏷️ 热门品牌：Google、Samsung、Motorola、Apple、Xiaomi。\n🎮 【功能体验】共18条 — 谷歌、Pixel手机；Pixel功能；Pixel相关动态等18条相关报道\n🆕 【新品发布】共23条 — 发布平板；iPhone手机；Android 16、iOS 26、谷歌更新等23条相关报道\n🔄 【系统更新】共19条 — Android手机（印度）；Android 16、vivo、OriginOS 6更新；Android更新等19条相关报道\n📊 【市场数据】共7条 — 谷歌、Pixel相关动态；谷歌、Pixel相关动态；The Shocking Reality Of Airtel Postpaid!🔥🔥🔥等7条相关报道\n🔐 【安全隐私】共2条 — Pixel相关动态；Pixel相关动态\n🐛 【问题反馈】共2条 — Pixel相机；Pixel修复\n🔥 关注焦点：谷歌、Pixel手机；发布平板；Pixel功能",
       "highlights": [
         {
           "category": "🎮 功能体验",
-          "title": "Pixel UI or One UI: A POV from someone who has used both ?",
-          "title_cn": "Pixel、One UI相关动态",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w5dhfh/pixel_ui_or_one_ui_a_pov_from_someone_who_has/"
+          "title": "Google Pixel 11/11 Pro - World's Most Smartest Phone !",
+          "title_cn": "谷歌、Pixel手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=20AhMDg0r2o"
         },
         {
-          "category": "🔄 系统更新",
-          "title": "Google Translate rolls out iOS and Android upgrades - Google blog",
-          "title_cn": "谷歌、Android、iOS升级",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w78vqo/google_translate_rolls_out_ios_and_android/"
+          "category": "🆕 新品发布",
+          "title": "Don't Buy This Tablet Based on Launch Reviews.",
+          "title_cn": "发布平板",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=buJuTQskNUM"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Android 17: Official features, leaked features, codename, and everything else we know",
-          "title_cn": "Android 17、Android功能",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiYkFVX3lxTE9JTTVhR1k1aEs0ZGlVZkxMaFd2VFVBWHQ5ZHJtZHdfU0ZhaTFkU09fYlduR3c3WnhBbmVIdG9Cb1U0aldhTDhJc0NOX2ZTWTJmYmROZVFIakd1V1ByRFd1R1JR?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Vivo reveals Android 16-based OriginOS 6 update timeline for India: Eligible devices, what's new & more",
-          "title_cn": "Android 16、vivo、OriginOS 6公布时间表（印度）",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMi-AFBVV95cUxPNzJqd1l5SWdhN09NVzRpOWFHb1lnTGJTN3VUdVNDalhDZU9XRkRUTnc2Wm0zXzVaNVhpWmFmZXQzTEhHWURMUkJDOTBLVUh0WTVKVjlUODlsOHROQnpQbFFhU3RSQ0V3blo5aTliYWZfMGN6VXI0SU9SMTNXVkNvMEpVc0FxTWRtcGQwOE0zeDNXM3pBOHBndG81OTR6bVBrZ3pqQ2N4X1Z3Rzkxdmc1Z0ZPdTZfN2VDTlRXeTZsZFF5cjVYbm9JbVVwZy1TV1FUSmVkS0N6aERjSElUM2ppYWNieTYxUDYwVDhuT3lTSERqMXNiOU10aNIB_gFBVV95cUxQUUxZN0V5SUdiTERENEJkZ1BzdlVPT0doWkNvWUxkXzNNUWtzTENNSTBDOVBfb3FDa3VOX1BtTEJ5ZFBYZmZvUnRRVy1faUpNdDRyY3lBNlVrUENTdGpSQXEtS1haYy1IYUoyOUdaLUppQUdGZGhsWU9zVmotc1FHSk9HMVFnTmcxWVE3MHNzVjdKUXlIbFdicjZCcTNnQXVZdS1yR2I4cFk1SXdIeVdkd1JZZHY5TmpRcVJWZVFJX1JkUXNLUDFCNm43M0pGWkJhT016cUdrNjhOdWtzczV6OUJfeHR0U2pmQkRYT0NHS2JhaWVwR0RhcHZ3bjFOdw?oc=5"
+          "title": "7 Features w/ the Pixel 11 Series That Feel Like Magic #shorts",
+          "title_cn": "Pixel功能",
+          "source": "youtube",
+          "url": "https://www.youtube.com/shorts/QkaBjxZY9es"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Android vs iOS vs Others – Smartphone OS Guide",
-          "title_cn": "Android、iOS智能手机操作系统指南",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "OnePlus announces OxygenOS 16: Full list of eligible phones and new features",
-          "title_cn": "一加、OxygenOS 16、OxygenOS宣布手机",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNM3pPcndJZ29RREpOQzBWLUxnbEc5Q3F6WE1kQUtxRkVHaE1TR2F5aXpOUXRNREdDTUhmd0R0V0pEMTBwTEVVQTl2emdKV3dtdXFwYlVYVUVQSWNubFhpZW1Ddl92RFB4WWsxTFBxdGtBYjI2by1pRUZoMGhTQ0VJSUZLTTdlRmZTVTk0djYxU2JRakx4LTdEWkZBSThWQlp6elY1cWpKck41aWtqaUVCbldkc0hJZm9HaGYzbkY4SXZWZUJfUjNqUNIBzwFBVV95cUxPWGtLN2ZrOXBCLVVCUDAwUll4MUxwLUtzSnlHMWdoRmxkNnpjSlFZdG1TSlRNZnNobGVaUGRJYkdya1NQVEgyaTNnWWpwTURmNmUzNlZaQlh6Q0xkWjByZjZTcW9QV2lXb2ZqR2xWR3dYOXRFd1ptLWgycER2XzdVRi1pRUt2UjdxZG5XeGlRal91STVmRm02OVItdnJXWUxpa1NYcjdUV2RDMlJjajhEQ2U2ZkZoOTZrd2lKd1BxZFpTaFFlaldIVnZpRktxNkU?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "BGMI 4.4 update release date India time: Check how to download new update for Android, iOS and APK users",
-          "title_cn": "Android、iOS、BGMI发布",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdXA2TG9kU0hPS2NGTWJiZnVPb3pXbVdaYW04R0VnWGd6Qm1UZkVVbXN1dW9ObXhlaG5veVFNZWExSEkzZTd1a21pVmNadnVtMmlXYmJBeklGUkRXaS01ejU2MG9jZ2dUeTRJWkduZzlYblE3TloyS2dVbEh0S0lPMjhQblplSGNXejFzLU44ODFJMDZxaVZtR2NXMUFJZU12VzFtdmhTQnRQS0k1S2ZrNjdlOU9QdEV6dWh2N1NaOUwxT2NIa3FjbnBsQ0x5NG5ScVFaUVFuQmdUMjdYanFVZVlzYXhrYWJGeDk3WXdmblpLclV1N1pDcFAyS2pGMjZ2dXFISDNJX3FfRzBT0gGSAkFVX3lxTE8yWENTRW5NdEVDWWVJVnI4US1ES3UtQUlxMEc2OUtfTjZ0c1plLURsMGtoS2YteWFzQnJORUduUzVhZWQtZENJQjNMbjlfbzFiZHJ3bVBtbGZaS0lSNEFMNmppY2RmWXo1VHVONDI5dzFxUWJMWG1TTVY4UVAyUmwtTmtkTmo2TVI1V2d0RE13SVNTTGFCUTdJQy04WmZWYUhZRWhnbVpHUzVrcWZsc1A4dFZnTzdNYUpXRzQ3bjdidUtjNXhXOVc3Ny1RUzlGY3hBblZpR2NLN1hVQ1VJSXFWQkdHYXdyS0tNM1FtOU1PekhXeHNBTmpQV3BKQ3Jab3dmN1J0dmdwVHludzV4YWVkTUE?oc=5"
+          "title": "THE PIXEL 11 CAN DO WHAT?!",
+          "title_cn": "Pixel相关动态",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=8DiT4SZrQk4"
         },
         {
           "category": "🔄 系统更新",
-          "title": "Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Android messaging that users ha",
-          "title_cn": "iOS 26.3、iOS 26、苹果终于有望修复手机",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNd0U4TU1RSHNybjNvWUc2YXAxaG8wN1U0YVcxaUFpMV9obW9jLWxWSjRuenBWRGNQNHJQbEJoU3FsaXlIdUNmTWdaa0RuT0JrWThfd2x0a3JlaHhTOElOeDVSN0prUDY3Szh6dkxPQkxtZHVYWm1pY0pwN0NNYnJiMWY3VnAybW5JU1l4blRQRnlNdFNRSzdzZmFkVzhRZHN3aXdfYkNnWlpIay1sbEwwRDAtX3FSQUFpbjQ2MER0UlA1WnNxRzJaaG9JR0F2NVQ1M0Fjcm0zektJdHEteUlrUXprRUtqNFVHRWFCckJsSGpqSGtxRzBxQm9rVFplTDdQdGtSbzF2ak95ZnhDalVfT25URzVkWGg0QWtwa0p3QUp0SEZGS3BqZHpENW9md1A0Z0VDUl82SW4wQjhWTEHSAcMCQVVfeXFMT3BHSGZqVWRtWVZWTkZ3Skx1MjBveElmUlN4RkM3VlE0NjZ5QXliUnhESHpwNmJtUGRzbnJCRXh2eWlKQ3ZzN1dlWTBCTWpMRDZ0S0tNbGV5WDZjYmZtakRLcXFCc28yVlpzWkx5MFV2Q2IyanAxdEpCcWotaWFHNWR0NG5MYk50eFppdWJkSU5Zb284MjFaRWJJWThZS3dYVVltdTBzN09TSk8zVDRqeEItTDFOcC1yVUhlcmFuWV84bGhpNWlkODlVRjNaTjNFbDlOMmt0VGRFMVhxTnJpNlJzVjBsa2hHUExqN0xXZ3NYWHNRa1U1YXJYanhNQWRHTEtnZ2VQN0QwSnVGSk9LTkRYU2g4R0tacU8yWVVsd2JoeHF3a1JwY0RYaGpOUGY0bTNhX3RRbzZ2bHpVdHViZmJ4dUE?oc=5"
+          "title": "Sad State of Bloatware free Android Phones in India Now",
+          "title_cn": "Android手机（印度）",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=F_ilwfo0whQ"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "Google Pixel 11 -  Is this Good Enough?",
+          "title_cn": "谷歌、Pixel相关动态",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=tg2RY4vMtdQ"
+        },
+        {
+          "category": "🎮 功能体验",
+          "title": "BRAVE Ark Tablet - Loaded & Premium Yet Affordable",
+          "title_cn": "平板",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=1s2AmdFNDGM"
+        },
+        {
+          "category": "📊 市场数据",
+          "title": "Google Pixel 11 Unboxing & Quick Review ⚡ The Best Pixel Ever?!",
+          "title_cn": "谷歌、Pixel相关动态",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=UQkxJlhAzoo"
+        },
+        {
+          "category": "📊 市场数据",
+          "title": "Google Pixel 11 Pro XL Unboxing & Quick Review ⚡ Don't Make The Mistake!",
+          "title_cn": "谷歌、Pixel相关动态",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=CNamKkcbuDc"
         },
         {
           "category": "🆕 新品发布",
-          "title": "Redmi Note 17 India Launch Set for August 6 With an 8,000mAh Battery",
-          "title_cn": "发布电池",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMibEFVX3lxTE1WMmZlcHBwUmJYMW8zUjgwVXdHUTZ3SW4zNWRRVWZEa1BqbURFc21xNm9DUURhNEN1dFBxZ0xldWxMR3dGVUVkRmJZWF9lTEtjd3VFbnQyNjJvbHowbVk0eGh6cjk5MjZhN2N4Sw?oc=5"
-        },
-        {
-          "category": "🔄 系统更新",
-          "title": "Upgrade paths: Should Pixel 9 owners upgrade to Pixel 11? [Video]",
-          "title_cn": "Pixel升级",
-          "source": "official",
-          "url": "https://9to5google.com/2026/09/03/upgrade-paths-should-pixel-9-owners-upgrade-to-pixel-11-video/"
+          "title": "Indian Phone Brands Are Back?, iPhone Ultra Coming, Xring vs Snapdragon vs Dimensity | #PodcasTT🎙️",
+          "title_cn": "iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=euFItXRfd-8"
         }
       ],
       "top_posts": [
         {
-          "title": "Google will allow only apps from verified developers to be installed on Android",
-          "title_cn": "谷歌、Android相关动态",
-          "url": "https://9to5google.com/2025/08/25/android-apps-developer-verification/",
-          "source": "hackernews",
-          "score": 3050,
-          "author": "kotaKat",
-          "published_at": "2025-08-25T18:18:18+00:00"
+          "title": "Google Pixel 11/11 Pro - World's Most Smartest Phone !",
+          "title_cn": "谷歌、Pixel手机",
+          "url": "https://www.youtube.com/watch?v=20AhMDg0r2o",
+          "source": "youtube",
+          "score": 0,
+          "author": "Tech Burner",
+          "published_at": "2026-08-22T18:48:35"
         },
         {
-          "title": "Keep Android Open",
-          "title_cn": "Android相关动态",
-          "url": "http://keepandroidopen.org/",
-          "source": "hackernews",
-          "score": 2693,
-          "author": "LorenDB",
-          "published_at": "2025-10-29T04:03:41+00:00"
+          "title": "Don't Buy This Tablet Based on Launch Reviews.",
+          "title_cn": "发布平板",
+          "url": "https://www.youtube.com/watch?v=buJuTQskNUM",
+          "source": "youtube",
+          "score": 0,
+          "author": "C4ETech English",
+          "published_at": "2026-08-07T11:00:29"
         },
         {
-          "title": "Keep Android Open",
-          "title_cn": "Android相关动态",
-          "url": "https://f-droid.org/2026/02/20/twif.html",
-          "source": "hackernews",
-          "score": 2258,
-          "author": "LorenDB",
-          "published_at": "2026-02-20T17:58:51+00:00"
+          "title": "7 Features w/ the Pixel 11 Series That Feel Like Magic #shorts",
+          "title_cn": "Pixel功能",
+          "url": "https://www.youtube.com/shorts/QkaBjxZY9es",
+          "source": "youtube",
+          "score": 0,
+          "author": "C4ETech English",
+          "published_at": "2026-08-22T09:04:52"
         },
         {
-          "title": "Nokia launches DIY repairable budget Android phone",
-          "title_cn": "Android发布手机",
-          "url": "https://www.theguardian.com/technology/2023/feb/25/nokia-launches-diy-repairable-budget-android-phone",
-          "source": "hackernews",
-          "score": 1792,
-          "author": "mmastrac",
-          "published_at": "2023-02-25T17:09:54+00:00"
+          "title": "THE PIXEL 11 CAN DO WHAT?!",
+          "title_cn": "Pixel相关动态",
+          "url": "https://www.youtube.com/watch?v=8DiT4SZrQk4",
+          "source": "youtube",
+          "score": 0,
+          "author": "C4ETech English",
+          "published_at": "2026-08-24T12:14:36"
         },
         {
-          "title": "Android Developer Verification: Threat masquerading as protection",
-          "title_cn": "Android相关动态",
-          "url": "https://f-droid.org/2026/07/01/adv-malware.html",
-          "source": "hackernews",
-          "score": 1734,
-          "author": "drewfax",
-          "published_at": "2026-07-02T03:00:15+00:00"
+          "title": "Sad State of Bloatware free Android Phones in India Now",
+          "title_cn": "Android手机（印度）",
+          "url": "https://www.youtube.com/watch?v=F_ilwfo0whQ",
+          "source": "youtube",
+          "score": 0,
+          "author": "Geekyranjit",
+          "published_at": "2026-07-27T12:46:46"
         }
       ]
     },
@@ -178,153 +178,157 @@
       "icon": "🍎",
       "name_cn": "苹果 iOS",
       "color": "#007AFF",
-      "total_posts": 51,
+      "total_posts": 75,
       "sentiment": {
-        "positive": 6,
+        "positive": 16,
         "negative": 1,
-        "neutral": 44
+        "neutral": 58
       },
       "sentiment_pct": {
-        "positive": 12,
-        "negative": 2,
-        "neutral": 86
+        "positive": 21,
+        "negative": 1,
+        "neutral": 77
       },
       "top_brands": [
         {
           "name": "Apple",
-          "count": 49
+          "count": 73
         },
         {
           "name": "Samsung",
-          "count": 3
-        },
-        {
-          "name": "Google",
-          "count": 1
+          "count": 6
         },
         {
           "name": "iQOO",
+          "count": 2
+        },
+        {
+          "name": "OnePlus",
+          "count": 1
+        },
+        {
+          "name": "Xiaomi",
           "count": 1
         }
       ],
-      "summary": "📊 苹果 iOS生态今日共有 51 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 12% / 负面 2% / 中性 86%。\n🏷️ 热门品牌：Apple、Samsung、Google、iQOO。\n🎮 【功能体验】共6条 — Pixel、One UI相关动态；Android、iOS智能手机操作系统指南；iPhone手机等6条相关报道\n🔄 【系统更新】共2条 — 谷歌、Android、iOS升级；iOS 26.3、iOS 26、苹果终于有望修复手机\n🆕 【新品发布】共14条 — Android、iOS、BGMI发布；iOS 27、苹果、iOS正式宣布手机；苹果、iOS宣布等14条相关报道\n🐛 【问题反馈】共2条 — 苹果、iPhone修复手机；Android、iOS修复\n📊 【市场数据】共2条 — 苹果、iPhone手机；iPhone手机\n🔥 关注焦点：苹果、iPhone手机；苹果、iPhone手机；Android、iOS修复",
+      "summary": "📊 苹果 iOS生态今日共有 75 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 21% / 负面 1% / 中性 78%。\n🏷️ 热门品牌：Apple、Samsung、iQOO、OnePlus、Xiaomi。\n🆕 【新品发布】共30条 — 苹果、iPhone手机；智能手机；苹果、iPhone手机等30条相关报道\n🎮 【功能体验】共6条 — iPhone手机；苹果、iPhone手机（印度）；iPhone手机等6条相关报道\n📊 【市场数据】共10条 — iPhone手机；iPhone手机；iPhone智能手机等10条相关报道\n🔄 【系统更新】共6条 — 华为、iPhone手机；iPhone升级手机；苹果屏幕等6条相关报道\n🔥 关注焦点：苹果、iPhone手机；iPhone手机；iPhone手机",
       "highlights": [
         {
-          "category": "🎮 功能体验",
-          "title": "Pixel UI or One UI: A POV from someone who has used both ?",
-          "title_cn": "Pixel、One UI相关动态",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w5dhfh/pixel_ui_or_one_ui_a_pov_from_someone_who_has/"
-        },
-        {
-          "category": "🔄 系统更新",
-          "title": "Google Translate rolls out iOS and Android upgrades - Google blog",
-          "title_cn": "谷歌、Android、iOS升级",
-          "source": "reddit",
-          "url": "https://www.reddit.com/r/Android/comments/1w78vqo/google_translate_rolls_out_ios_and_android/"
+          "category": "🆕 新品发布",
+          "title": "Apple’s iPhone 18 Series Will Be Totally Different  !",
+          "title_cn": "苹果、iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=Cc03lRULbL0"
         },
         {
           "category": "🎮 功能体验",
-          "title": "Android vs iOS vs Others – Smartphone OS Guide",
-          "title_cn": "Android、iOS智能手机操作系统指南",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMib0FVX3lxTFBlWElSX0pNNVdyRmtOeW9wVWEyQ0JsMjhwWEluV2xwMVNTU2Vqd3JlZ0dPR2w5Vk9HWDFUSlVxR0s2ZzExMVNmM1gyNWNVSGl5ckhvOEJXeTVFTzZlVWJoSHdmVkZwRGFqUVZzVXVPdw?oc=5"
+          "title": "Beware of the iPhone Fold Ultra Hype!",
+          "title_cn": "iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=ny67yVFkCro"
         },
         {
-          "category": "🆕 新品发布",
-          "title": "BGMI 4.4 update release date India time: Check how to download new update for Android, iOS and APK users",
-          "title_cn": "Android、iOS、BGMI发布",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMijAJBVV95cUxNdXA2TG9kU0hPS2NGTWJiZnVPb3pXbVdaYW04R0VnWGd6Qm1UZkVVbXN1dW9ObXhlaG5veVFNZWExSEkzZTd1a21pVmNadnVtMmlXYmJBeklGUkRXaS01ejU2MG9jZ2dUeTRJWkduZzlYblE3TloyS2dVbEh0S0lPMjhQblplSGNXejFzLU44ODFJMDZxaVZtR2NXMUFJZU12VzFtdmhTQnRQS0k1S2ZrNjdlOU9QdEV6dWh2N1NaOUwxT2NIa3FjbnBsQ0x5NG5ScVFaUVFuQmdUMjdYanFVZVlzYXhrYWJGeDk3WXdmblpLclV1N1pDcFAyS2pGMjZ2dXFISDNJX3FfRzBT0gGSAkFVX3lxTE8yWENTRW5NdEVDWWVJVnI4US1ES3UtQUlxMEc2OUtfTjZ0c1plLURsMGtoS2YteWFzQnJORUduUzVhZWQtZENJQjNMbjlfbzFiZHJ3bVBtbGZaS0lSNEFMNmppY2RmWXo1VHVONDI5dzFxUWJMWG1TTVY4UVAyUmwtTmtkTmo2TVI1V2d0RE13SVNTTGFCUTdJQy04WmZWYUhZRWhnbVpHUzVrcWZsc1A4dFZnTzdNYUpXRzQ3bjdidUtjNXhXOVc3Ny1RUzlGY3hBblZpR2NLN1hVQ1VJSXFWQkdHYXdyS0tNM1FtOU1PekhXeHNBTmpQV3BKQ3Jab3dmN1J0dmdwVHludzV4YWVkTUE?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Apple officially announces iOS 27, the next major iPhone update",
-          "title_cn": "iOS 27、苹果、iOS正式宣布手机",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiYEFVX3lxTE1TMmRQb3c4bUNCbFVXRHJjRzhyTTZfdUxaM05CN1dxVjN0MDRxZUMyeVcyNnBFNGNqcExCVGRoYXZrZDFlaXI2ZGcyVm1UN2hhdDhZZFFTTjJGTU5UaWk2cA?oc=5"
+          "category": "📊 市场数据",
+          "title": "iPhone 18 Pro Max Giveaway? | JBL Vs Marshall? | Fairphone 6+? | STM #504 | Technical Guruji🔥🔥🔥",
+          "title_cn": "iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=vuvvVU4AlaM"
         },
         {
           "category": "🔄 系统更新",
-          "title": "Apple iOS 26.3 update could finally fix the biggest problem in iPhone and Android messaging that users ha",
-          "title_cn": "iOS 26.3、iOS 26、苹果终于有望修复手机",
+          "title": "iPhone Ultra Gold? | Galaxy S27 Ultra | Huawei Mate XT2 | V1 Pro | Episode 214 | Technical Guruji🔥🔥🔥",
+          "title_cn": "华为、iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=G_SeKQ-ytW4"
+        },
+        {
+          "category": "📊 市场数据",
+          "title": "iPhone 18 Pro Max Gold? | Fold 8 Experience? | Dubai Meetup? | iQOO | STM #505 | Technical Guruji🔥🔥🔥",
+          "title_cn": "iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=O84lI9-Rdvg"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Top Upcoming Smartphones - September 2026🔥🔥🔥",
+          "title_cn": "智能手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=Vbn1smC95mU"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "iPhone 18 Pro & iPhone Ultra First Look - Apple Event Details!🔥🔥🔥",
+          "title_cn": "苹果、iPhone手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=xHqrG2WB6uk"
+        },
+        {
+          "category": "📊 市场数据",
+          "title": "iPhone 20 Pro Max? | LensKart Glasses? | Smartphone Price Down? | STM #506 | Technical Guruji🔥🔥🔥",
+          "title_cn": "iPhone智能手机",
+          "source": "youtube",
+          "url": "https://www.youtube.com/watch?v=e5_V2PqLmgs"
+        },
+        {
+          "category": "🆕 新品发布",
+          "title": "Android 16 arrives early, Google drops major update right after iOS 26 liquid glass reveal",
+          "title_cn": "Android 16、iOS 26、谷歌更新",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMivgJBVV95cUxNd0U4TU1RSHNybjNvWUc2YXAxaG8wN1U0YVcxaUFpMV9obW9jLWxWSjRuenBWRGNQNHJQbEJoU3FsaXlIdUNmTWdaa0RuT0JrWThfd2x0a3JlaHhTOElOeDVSN0prUDY3Szh6dkxPQkxtZHVYWm1pY0pwN0NNYnJiMWY3VnAybW5JU1l4blRQRnlNdFNRSzdzZmFkVzhRZHN3aXdfYkNnWlpIay1sbEwwRDAtX3FSQUFpbjQ2MER0UlA1WnNxRzJaaG9JR0F2NVQ1M0Fjcm0zektJdHEteUlrUXprRUtqNFVHRWFCckJsSGpqSGtxRzBxQm9rVFplTDdQdGtSbzF2ak95ZnhDalVfT25URzVkWGg0QWtwa0p3QUp0SEZGS3BqZHpENW9md1A0Z0VDUl82SW4wQjhWTEHSAcMCQVVfeXFMT3BHSGZqVWRtWVZWTkZ3Skx1MjBveElmUlN4RkM3VlE0NjZ5QXliUnhESHpwNmJtUGRzbnJCRXh2eWlKQ3ZzN1dlWTBCTWpMRDZ0S0tNbGV5WDZjYmZtakRLcXFCc28yVlpzWkx5MFV2Q2IyanAxdEpCcWotaWFHNWR0NG5MYk50eFppdWJkSU5Zb284MjFaRWJJWThZS3dYVVltdTBzN09TSk8zVDRqeEItTDFOcC1yVUhlcmFuWV84bGhpNWlkODlVRjNaTjNFbDlOMmt0VGRFMVhxTnJpNlJzVjBsa2hHUExqN0xXZ3NYWHNRa1U1YXJYanhNQWRHTEtnZ2VQN0QwSnVGSk9LTkRYU2g4R0tacU8yWVVsd2JoeHF3a1JwY0RYaGpOUGY0bTNhX3RRbzZ2bHpVdHViZmJ4dUE?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMi7AFBVV95cUxQeG12TWg5YXNLcTZxa2xUMkxESnZqRXJTa2w3MWI2QzZqZGdHek45WHVIX2N1NklrN0poZkhoal8xN1ltN2NWazlkS09pMWFvOHV2bkZ6MW5ySzdwbEFwTG04dTB6M0NsR0VOY3lOT1FmcmhLT0ZIMnFMelBVTzhuTTdrd3RBeVdrY0YydWlKSU5EdmhsNm1YeXVtd2QxWUF1NFlZX1ZadWwwZUxfUHdHVVJjbFVfYkhZbnZkV0F5N2h1b05YaVU3am9DaGV6eVNyZW5idTA2Zk1obFdFbUZ1YWhjbVR0RUpld2ZkbdIB8gFBVV95cUxOaTFXZU5zWjFqeC1GdW9DWk00cmFtbmlraG5oMEJ6V1RkMi1HVHR4REtIVzUtQnBQWE80c3JPeC1ud3c3MU5RZGZGQWlSbkZKc01oWml2WEtvTDBubW1rcTZnV0JxVlZuWHBiMlpQVFNuTXRVRHVMemU1Y2gwX3FfWU04X2tpQ2RTejdfQk9ldTZHREdVdlpsVHhJWnpFZ2VMakFmdEYwTzM1TjhpeEwyaWMzUHM3ZUlSS3hVYUs1WDJHQ3NfMDhzMm1kMnhfWWhWcS1Ca1gyNGxlRFRpVVpRdlQ1enBXbGVvd3ZDak9sQU94QQ?oc=5"
         },
         {
           "category": "🆕 新品发布",
-          "title": "Apple announces changes to iOS in Brazil",
-          "title_cn": "苹果、iOS宣布",
+          "title": "iOS 26 Update to Be Out Today: How to Download, India Release Time, Supported iPhones and More",
+          "title_cn": "iOS 26、iOS、iPhone发布手机",
           "source": "official",
-          "url": "https://www.apple.com/newsroom/2026/06/apple-announces-changes-to-ios-in-brazil/"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Apple is facing 400% RAM price surge ahead of iPhone 18 Pro launch, report says",
-          "title_cn": "苹果、iPhone发布手机",
-          "source": "news",
-          "url": "https://news.google.com/rss/articles/CBMi3AFBVV95cUxPZWdXcXVCTW00czdxeXBGb0xNZ1N1dWl0S1Etak15Yi14aXZfMGduQ3JOYUhlU3luUVBsRndkeXlza3gteEdHOHotOEhCd191aGNZV3E4VUswaEVQSGF6STNvZXJXUmdLMWRvcUw1MFRTTVRtUTRkSEZRRUVJWkhoYkZYdTBlT3VUWVh5TVJPQk93NmFBZEtYQm0zMzFHdUlfTW5NQnN1SDFRYWE1YzBFd0xyWlVTMlFNaEszaHpRNDRUdmxVNDUxRDV1bE1aUU9yV0diUnBpQlhmci1T0gHiAUFVX3lxTFBNWG1XLUJkNXltdjFIZWRsdXpyeXVqSUxtdU9ILWpWQ0lJZHNfbkNCOHV2VHRWbVdlbXNyZkdGTW42QzU4LVpQS1VDNjQ5SFFVZXNIOWp5VE1ucW9fcWRteEcyRHh0NmIxOGtIRWw5Y2FySC00SEt3eUZ0SHlrNlc1djVQTjgwSEwxMUQ3OWI1VzJUUW1MN2VKRXI2TjhUdW5DNTlIZGJxRVdrTmtCTkVPR01NaEZsQkd0UHdCUXJzbFl3N1ZlckdZWTI0Q1hFT2RnUC0xY2luTmhuZF8wNWFRY3c?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "iPhone 18 Pro Max launch scheduled for September 9: Price in India, new cameras, colours, bigger battery...",
-          "title_cn": "iPhone发布手机（印度）",
-          "source": "news",
-          "url": "https://news.google.com/rss/articles/CBMimgJBVV95cUxPdkZUOGxLYmI2bDdKalN1M29IblMwMXVOakxZajNMY18zNUdJbkxIUlk5OHYwZ2xRTWZQdjFESVoxaHhSNm52dnZVaW5ZbFdoRVFSdVRORFdyRkxaTlRfdHBFdzdYQmpSVDhRUUVPa3NKYXpSZGNTYjYxVVNhQWdyRE1rNmQwTXR2dHVNOHlUbjdJcUpQcXdFOTYtQ2VhUnE3dk14SmdoZ2dHdG45enhEdlBlUF9RMTZWSWRSQ1Jhazlqc0hMQTdEUHdIS01NNjZfRlRCRThla1Q0S2JRV1hBNzJGZ3RzS0d3alNVSXMxMmJLdDRGeWtqVHJ0UHdJWVJSVlhYY19qdHRqOTh4eFRWSF9lNUh3N25PM3fSAZ8CQVVfeXFMTVpKT3pNWUEtenZxcnZSNWlkbUg5UUpONDkyOWszdGV5b18zWC1XZ2d1WXBTY014Y3lZZlUyTjVqR3U1UGxlb2hSVmlVUFRqZzlBY1h3dVJubElWVzlDRURmTTNLYlV1TXZiMG5KbGpRdjExaHZhMzIta3gyYjhRaEdzYzFWaUE5ak9nU3RiYTBSU0pCUXcxYzUzTW92dTQ5dGJmMFRMRmplNWJTLUlaVFZrM2FQT0U5X1lIVGJMUGxlUVZSNkdyUlBQUTZLRGZuTHA1N2xvcENQYmJocVlkVUZLdXBmQ1JPNUJNN1lXcU1FVVRYSkZmYmZ0WDVlQ0JXcVRlS3VoY082dG9Oc1BYVnpaangzcFRXakF2LUhGNWs?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Apple iPhone 18 Pro, iPhone 18 Pro Max and iPhone Fold launch on September 9: Expected India price, displ",
-          "title_cn": "苹果、iPhone发布手机",
-          "source": "news",
-          "url": "https://news.google.com/rss/articles/CBMitwJBVV95cUxOMzZCN2FhZFBuQ0dIY1k2cWpWdVZCazU1ekdwNmlKX1ZLQ2lla1M5WnpsVF9rQWNEb003d25EMWFjdFBHb3BWc2MxTXduRDc4NkJoY0lvdnpXZThOdHBNYTNxTnA5S3FhSEdCRDFKMFNHOGhabm5FcXhYd19fWEFwNzAxSFlPWDNxVHVRNV8ySHhSajd3czNWS0FvM1BYZS0tZE96Ym5kRTNLS2lSeXZmYm44X0ZKRGt5c09naGhKbkNjeHNiMUpnWGxuQ0V6VHhGNlJyWl9VaGd5VjlrcUl6YU5TZnk4MEc2YU9MTW1BMzFwRmlSVWZFRFFkOGZ5VkRyNF92N0FERGRJdVRqQWJQdVlsaDFqcDhYSmVXRzluaWRKVV9QZGhnV0NKSktsSDJCVlNqcHVjTdIBvAJBVV95cUxNMXpYMHN2LXFYOVRXenZzWGJQUEdvb2JlblJrQzQxUkZTNml5SC1QN0NHbF9OVHdIVHlhb0tjSk0zOHZEdG83WV9WUk5ESjdOXzRWRW5vbUUyZG0yWDc3Ump2ZGZ5Z2xVSTlORGlubTBlbndyMUNEZHpWbVM5Q1hIUG15cnlGdTZZZ3U5T1NhdjJZMkQwU3pXLU10UDBqM2c1SXBGeWlZd1RXYWFkN1YxY0c5b0QtSG5FM0hiMFpFWWo4X3YyWlNCMzhXbjVHY3ZPQTh4V0FCZTJ0c2FJbkFKQmZaUmppZjJLc3RiVjJPOHBQXzB2aVVueTJRQjNtRlVTakczbjgzZGdwVkZlX1hHRzIwcmNSMjZaWlFfdlY3LTNoQ3pka3ZOcEZndEFkekY4LXpsSzIzUlNIbU1M?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNTjdCM0N1TGRyRk14NjVqZ25OeGZodjR4Q1hNblQ1b1JibmhqSnN4cTBtVjBDMmNwS3dSdllwemxPV0hnUGtyX1hCS09YY3VJUlE1SVJKM25rLWFyZjMzcWpzZGZfR1h6RWEyQkxVNm5Qb3lxREpGZC1vdU9vX1dIR3BraWdHWnBrUEgwdVNVMmZNMkNXRHpIQTVDb1FOSmloWFHSAacBQVVfeXFMTjhmUjE0S2ZrcnZabjRRb0hHZUxvMGwyN0hiVFRCZmgtbXZHQlR5VmV0dFBHV0lFeXp3RV9HLUphYnZtSm9qOVB0Qkc3aWxyd2hFREduT0pxenRpSkVYVk42OVFJZ3Y4MXBZRUtNU1Bzdjh3S1ZKMGIxT3ptcmw4S19rUXFlU2dKOVB0c0VjVlhycnNybGc1dEpJcUVVVmQwRkFyVnRvU0k?oc=5"
         }
       ],
       "top_posts": [
         {
-          "title": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
+          "title": "Apple’s iPhone 18 Series Will Be Totally Different  !",
           "title_cn": "苹果、iPhone手机",
-          "url": "https://www.nytimes.com/2024/03/21/technology/apple-doj-lawsuit-antitrust.html",
-          "source": "hackernews",
-          "score": 2546,
-          "author": "jcfrei",
-          "published_at": "2024-03-21T14:37:43+00:00"
+          "url": "https://www.youtube.com/watch?v=Cc03lRULbL0",
+          "source": "youtube",
+          "score": 0,
+          "author": "Tech Burner",
+          "published_at": "2026-08-27T15:32:27"
         },
         {
-          "title": "Apple restricts Pebble from being awesome with iPhones",
-          "title_cn": "苹果、iPhone手机",
-          "url": "https://ericmigi.com/blog/apple-restricts-pebble-from-being-awesome-with-iphones/",
-          "source": "hackernews",
-          "score": 1678,
-          "author": "griffinli",
-          "published_at": "2025-03-18T16:23:21+00:00"
-        },
-        {
-          "title": "Fix the iOS keyboard before the timer hits zero or I'm switching back to Android",
-          "title_cn": "Android、iOS修复",
-          "url": "https://ios-countdown.win/",
-          "source": "hackernews",
-          "score": 1627,
-          "author": "ozzyphantom",
-          "published_at": "2026-02-13T14:21:01+00:00"
-        },
-        {
-          "title": "New iPhone SE",
+          "title": "I Bought Refurbished iPhone from Cashify !  * 13 Pro *",
           "title_cn": "iPhone手机",
-          "url": "https://www.apple.com/newsroom/2020/04/iphone-se-a-powerful-new-smartphone-in-a-popular-design/",
-          "source": "hackernews",
-          "score": 1539,
-          "author": "CoachRufus87",
-          "published_at": "2020-04-15T15:03:19+00:00"
+          "url": "https://www.youtube.com/watch?v=gwa9oyNf6j0",
+          "source": "youtube",
+          "score": 0,
+          "author": "Tech Burner",
+          "published_at": "2026-09-03T13:55:38"
         },
         {
-          "title": "I designed a Dieter Rams-inspired iPhone dock",
+          "title": "Beware of the iPhone Fold Ultra Hype!",
           "title_cn": "iPhone手机",
-          "url": "https://arslan.io/2024/09/23/dieter-rams-inspired-iphone-dock/",
-          "source": "hackernews",
-          "score": 1509,
-          "author": "farslan",
-          "published_at": "2024-09-23T07:51:26+00:00"
+          "url": "https://www.youtube.com/watch?v=ny67yVFkCro",
+          "source": "youtube",
+          "score": 0,
+          "author": "Geekyranjit",
+          "published_at": "2026-08-25T08:21:32"
+        },
+        {
+          "title": "iPhone 18 Pro Max Giveaway? | JBL Vs Marshall? | Fairphone 6+? | STM #504 | Technical Guruji🔥🔥🔥",
+          "title_cn": "iPhone手机",
+          "url": "https://www.youtube.com/watch?v=vuvvVU4AlaM",
+          "source": "youtube",
+          "score": 0,
+          "author": "Technical Guruji",
+          "published_at": "2026-08-23T13:05:24"
+        },
+        {
+          "title": "iPhone Ultra Gold? | Galaxy S27 Ultra | Huawei Mate XT2 | V1 Pro | Episode 214 | Technical Guruji🔥🔥🔥",
+          "title_cn": "华为、iPhone手机",
+          "url": "https://www.youtube.com/watch?v=G_SeKQ-ytW4",
+          "source": "youtube",
+          "score": 0,
+          "author": "Technical Guruji",
+          "published_at": "2026-08-29T13:01:56"
         }
       ]
     },
@@ -333,148 +337,74 @@
       "icon": "🔮",
       "name_cn": "鸿蒙",
       "color": "#CE0E2D",
-      "total_posts": 21,
+      "total_posts": 4,
       "sentiment": {
-        "positive": 1,
+        "positive": 0,
         "negative": 0,
-        "neutral": 20
+        "neutral": 4
       },
       "sentiment_pct": {
-        "positive": 5,
+        "positive": 0,
         "negative": 0,
-        "neutral": 95
+        "neutral": 100
       },
-      "top_brands": [
-        {
-          "name": "Xiaomi",
-          "count": 1
-        },
-        {
-          "name": "Apple",
-          "count": 1
-        }
-      ],
-      "summary": "📊 鸿蒙生态今日共有 21 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 5% / 负面 0% / 中性 95%。\n🏷️ 热门品牌：Xiaomi、Apple。\n🆕 【新品发布】共12条 — 华为、鸿蒙、至尊版宣布电脑；华为、鸿蒙即将发布电脑；鸿蒙3、鸿蒙即将发布智能手机（智能手机版）等12条相关报道\n🎮 【功能体验】共4条 — 华为、鸿蒙更新获得功能包；华为、鸿蒙确认；鸿蒙相关动态等4条相关报道\n🔄 【系统更新】共3条 — 华为、鸿蒙升级；华为、鸿蒙测试版；鸿蒙3、鸿蒙稳定版\n🔥 关注焦点：鸿蒙发布；华为、鸿蒙、至尊版宣布电脑；华为、鸿蒙即将发布电脑",
+      "top_brands": [],
+      "summary": "📊 鸿蒙生态今日共有 4 条相关讨论，以中性讨论为主。\n📈 情感分布：正面 0% / 负面 0% / 中性 100%。\n🆕 【新品发布】共1条 — 华为、鸿蒙宣布智能手机\n🔄 【系统更新】共1条 — 鸿蒙3、鸿蒙稳定版\n🔥 关注焦点：鸿蒙相关动态；华为、鸿蒙宣布智能手机；鸿蒙3、鸿蒙稳定版",
       "highlights": [
         {
           "category": "🆕 新品发布",
-          "title": "Huawei HarmonyOS PC Ultimate Design announced, with foldable form factor?",
-          "title_cn": "华为、鸿蒙、至尊版宣布电脑",
+          "title": "Huawei announces HarmonyOS 2.0, coming to smartphones in 2021",
+          "title_cn": "华为、鸿蒙宣布智能手机",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTduNTlVR1QwcWdFMVpndHh5VnZBZHNlWENlLXRmVkRZSjZaZUpqMmlZS2lMRXREOGpoSHB5UUsyTE5xYlJuR1dfWkpWTnVaMTFNSms1eVZYMG9pbGtnTDZmMWNteHB6QnpsUFpkb1hNWFVPb0U4cEVYRlE0NWV1M2FXQ1BvNEhaQ3RWZXJ4eFZnVXhrMXJ3U1dBR25sOUtSTGpwNdIBqgFBVV95cUxNY1J6aWpKb1BlZVhBVjVoZVNCSjJodGdJRG00RVctZDRhQzRaVnlMWGVESDNZSGhrdjdKRFU0TFdhbHNhTXlXTFNoeDhfNnJycXA3UzBXd0tBRzZmN0xrc2E1OVNRdXByd3RES09lUEQ2cVo0cmhPR2VNajZRdHdSaUdmRFBJdUdnTU1QcTVrZVpyR0xaYTYxWVJLUDlxajQ2OWVvUURVOVFlQQ?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQY2J0TENIRHAwSFU2SFA3TWYya1dfRmJxbTVKZ1dxX1NnM3JoVmU1NGl6Z0NPZlhSMWN3d3NTSkk0M291QmhSMmxpWHZ5Qmw3ZG8xS1Q0eWM4NURxNmFlU1NTYTRRYWdQazZ4ZWgyWDk3MFFrNlFfTHJfSmVoZnVFaFBhSER0eGU4Z3FJaExoLUxXUFlIb1oxcFNZeDVYU3Jx?oc=5"
         },
         {
-          "category": "🆕 新品发布",
-          "title": "Breaking: Huawei HarmonyOS PC launching in May",
-          "title_cn": "华为、鸿蒙即将发布电脑",
+          "category": "🔄 系统更新",
+          "title": "These 7 devices receiving stable HarmonyOS 3",
+          "title_cn": "鸿蒙3、鸿蒙稳定版",
           "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56M1I5VGNVR2xxUUh2UXljV3Q0UnFjT1dJenM4RUtuVC14YWJJNi1ZM2Yzb0FYcTFWU2lQTkdoaUFjQlZQNWQ0TGlWMnZZOEpBMlhqTWRiWVRoWHgxekNkUjdxT2xNOVRPU3I0UGEwWG5GOEphaGfSAXtBVV95cUxNUVlKV1JBakpxNHc5eEMxeHhVREhFeXNOOTljWEhGamxvZ3VPLTBqSFhPYy1vNW5BS2syZWdlamdoR2w5Qkhra0ptcUFDZU0tM19OU3YxZU1raG10QTZ0RW1YU3o5NVl0c1JjclRBeFNhd0F5MGhkTDU1Vzg?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "HarmonyOS 3 for smartphones launching on July 27",
-          "title_cn": "鸿蒙3、鸿蒙即将发布智能手机（智能手机版）",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYXlMWWdrLUF3dXhtX1RXX2pOSU9tQ2FFNzVRUi1Ma3dYTENVMTJrY0I5eXRGLUZKWEUzdVduSTYyOERBNm5kRE1SVjR4ak5YTTZ3WnNaZHRybUpVUmxlbTlmVjNnSzZxREVvODZ0aTBPMTI2UG5vWjJiU1NldE1VODJPbWVUQdIBiwFBVV95cUxNMU1pYWdZOXlDdTBDMjJjRXdlRk9GMjQydmNzbkM5SlNSa0ZXbnBGbDM2cE12ZlUwMXhXQzkzTWxIMWlYZ1Q1MFpHcHBBdkhvMXpyZjlGRmllc1VFUk5kZFlCLVlsNGlodFAzUU85OWM4aF92YndWemJwZlB1VG9KalVHSWJjSllQV1kw?oc=5"
-        },
-        {
-          "category": "🎮 功能体验",
-          "title": "Huawei Pura 80, Pura 70, Mate 70, Mate 60 refreshed with new HarmonyOS feature pack",
-          "title_cn": "华为、鸿蒙更新获得功能包",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMimAFBVV95cUxPeE8zdWhlVmczVFhXdlZEVUdFRjloT2RPakZJbnNvYjNXSWpBb01BNTJuWE5HeS11ZGtZeXNnX2l2WFo2cXdDbkV4VG8xYlhKOEh0LUpqb2pOY0c4bHhuTFFGYlBUVV93RG5fUnN5WTBDOWZYYXQ0dmRoTHozbk0ybDA2Q0FHdUFzMFpHbWlCZVdpYlptLVlxSdIBngFBVV95cUxNZ05fbElXdHVjSmxLYTJaNi1hX3BGMnN5LW9yWS05M1g3YnhoQlRvUlZ0ZjlvM2NRc1RWUkFOVWtfUDVwWF9VSkpXa0huVDFTbUtUeXQ2TE81M3hvcEVnZTNRM0x6UHlQTVhoNlNhQm9lRmwxM1NvSlQ4U2lJVXp2YzJLa1dnWW5IWlViN1BkY3RZNV9hM0hRUWVBdnZtUQ?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Huawei reveals HarmonyOS 6 UI upgrades ahead of its release",
-          "title_cn": "鸿蒙6、华为、鸿蒙公布UI升级",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQZjJmekQwZGhubWh5QTBEWG9Td1o0RlhiaHN6ZG1tdDR1S1dudk8zN21PamtLVFlfMm9MM0h2NEpmNExMUE5nN2VtcWFWYkVua280WEZmQmZ5UTFBLTZZb2NBVnJUN3hGbVhnUmg5NG9RUnd5VFpNSjJhYkR1YVlGMlBmOVVrUTN5Wlk5c1ZUVXc2Y1BC0gGaAUFVX3lxTFBic3pPaTVtU0l4MWx5Y1UyVDhrSFh0MjdVdFEyZjZWUnpEM1FON21SMFFUUV9rdGNZU3BRSHRRNUlrYV9fSUFwNFFKUEFNRFcyNThISEktdS1BUmtBbkNtaWlmQlFKeF8xbWVJbkljd3Y1VmFwRmdZd1RLcm9SWkpKeUxsWWV5dUlmTkNOUlpSSk9ONWFrMDl5M1E?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Toyota bZ7 unveiled: Xiaomi smart ecosystem, 5.1-meters long, Huawei HarmonyOS",
-          "title_cn": "小米、华为、丰田发布智能生态",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxPSnZmdDRWZzNsTzJ4ZzdUcHFEUnlPd3ZHZjc5T3pPaVZHX0o3Rl9neS04SkNCS1lEM2ZZa0dPUU4tTTI2NWVlT2FXQ1pDVjhxZzJBWm9ON1lWZVBOQUo4V2NYcVlqZGRYRDliMTh2TFBCeHJYVkQyQXNHT0tmcjk1YUxvRHg3OFdhRGFNUXZQQ2QybXdVTWNfdjZYSDlwUU9jNVpoMmVsYzhuemhlNC1wdDlB?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "HarmonyOS 6 beta made new installation record in 24 hours of release",
-          "title_cn": "鸿蒙6、鸿蒙创下安装新纪录测试版",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOeVF0RVJYbVE3cVF1ampIZjE5ZnpOVGNzYmU1ZVJUQjZXWVk4Vm5XNG9pZ0FaZU1tNi1PbVJQYkdlbVlWRWdyMUdpZVVSUUpNVnNEVTNSNHFaanpxQmdKd1pIczR0ZDhvaW9xaTdvamNWZlJJdE5qX3NMejIydUZuQ1A3YnRuWG1TUUJ4a191SXBwbWR3ZzN5OUhoVmVWd2VT0gGmAUFVX3lxTFBYMmZFZnhNbjl1Q2lJMkRFYk9zcy0zb2doYzduUXc5OTNfdHlGZGk4WGwtMkVpRkl2QkVPRmRJd201aDdoZmlFYTR0T2tuVWVzYWczRDc4NzUzdlZMX2pwRWtXOEExUUVxWXNoV2JKODB6ZGU1ZW1EaTlydFZLS044ZkVfWmZUcGhRMHRCZGtZTldtQ1RVR3k2VlVfU1U3YUtmUXpMV1E?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "HarmonyOS 4.0 will be officially announced on August 4, beta testing already underway - GSMArena.com news",
-          "title_cn": "鸿蒙宣布测试版",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiwAFBVV95cUxNVExBbklialQ0cDFrcUc2OWdoYmdhQWpubmVlTFI1Z1JwSXlPWVF1cFh4cllSWnR5XzBHWjZfWDZGbTE2TnQ2dHdyaGJTQnFOdWhIb3Bwbm9WaU9NWV9lYmpwRVVwbVNUeFpWb2x0Wm9QaDNTZWpPcXFvQWlPRzFrTnNOend4dU1EalFxdnJxekFhODRGeUU5UEQwcnBYdFBYMTlKNDRCSTZRQ1RNQm5zeFI3eEFQckhZc3QyRzRhUk_SAbwBQVVfeXFMT2xGbmdYSVB3NmV2Z0pUQ21rUUdNMFA4T2pPNVFtc0lCVVB6ZXJ0UDVQWnd3YVVrOGFxMFNoclc4X0xwbE8yWW1PY0VLXzQ3ZnJFaEVBQ0Y3WkxHOURJelM4UlMtdWZLUndEQ213eS1CTnFQUkFCc0tTbGJSTGs5WnNydl9KRkVoMlUzSHhtLVV3dXlsWThCMmNVLTAzbk1QczZaU3Q3YVFXS2J4bHhOcE5tN1E4ZmZIRF9rLXg?oc=5"
-        },
-        {
-          "category": "🎮 功能体验",
-          "title": "Huawei HDC 2026 Set for June 12–14: HarmonyOS 7 Officially Confirmed",
-          "title_cn": "华为、鸿蒙确认",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiXEFVX3lxTE1sZnI2dElHdUpmREd6d3dwdjdyaFRfODJqSHRqZ2c3cnBhVVhXdGhaUDNXWW01SEZid0RCRGlyNnJJeGVnYnB3VmFLbFhRY0hxUUR4UW9kT2lrLWdL?oc=5"
-        },
-        {
-          "category": "🆕 新品发布",
-          "title": "Huawei announces HarmonyOS 7 with smooth performance and Agentic AI upgrades",
-          "title_cn": "华为、鸿蒙宣布",
-          "source": "official",
-          "url": "https://news.google.com/rss/articles/CBMiXkFVX3lxTE5NYkZpY0MxRm5JZGs5UGwya2h1aUNmLWRMYUlJd0NMeDBqb253SjJRazA1YVFCUEJqdmplWmFCSjY3RTY1bUc0Ny01cVpTRUxoaXFyREgwQ0owaUFTUVHSAWNBVV95cUxPNkNITUx6MEo2V2ZPYkR4RVMxVF81UGljc25oUDk5Y0ZTbXM3WFlaOHcxU3ZuTmpicUdWd1ZZMk9aYXF0VTVrdktzOW1aVzFWUXJVX3VmMzlWVjEtYlp3RTBHc2c?oc=5"
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYy11aURUM3VfYVdVZHd5SVMyc0V0Y2hPN0xrdV95eUVtX21XVnU4Ylk1VmF0MndaMkQ1M0ZmQ3B6bHNRbFB0LUttcXYtUU1vNEZSREZyaVpDWFp2NEtyemdLU1BTSlc1RS1KdV82X00zVkYyZjY2eHIwYWJ4aDdHaNIBhgFBVV95cUxOXy1OUU1wbmNQc3AtY3FidEc1NkNwb0RhWTl3djVwcDlRUVMwQl9BWHp1cEd5X1kxNnJHZ3ZUQ1Eza2JHeHZCM0JQZVhsTDZ2SXJtaWdaeldnNWRuN21ISGw5X01makROcmVWdS1OLWQwYWFLMEFxV0h5NWVFT3NOVzZjMFo3dw?oc=5"
         }
       ],
       "top_posts": [
         {
-          "title": "China's first home-grown mobile operating system HarmonyOS NEXT launched",
-          "title_cn": "鸿蒙发布",
-          "url": "https://www.globaltimes.cn/page/202410/1321670.shtml",
-          "source": "hackernews",
-          "score": 8,
-          "author": "xnhbx",
-          "published_at": "2024-10-22T15:16:41+00:00"
-        },
-        {
-          "title": "Huawei HarmonyOS PC Ultimate Design announced, with foldable form factor?",
-          "title_cn": "华为、鸿蒙、至尊版宣布电脑",
-          "url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxPNTduNTlVR1QwcWdFMVpndHh5VnZBZHNlWENlLXRmVkRZSjZaZUpqMmlZS2lMRXREOGpoSHB5UUsyTE5xYlJuR1dfWkpWTnVaMTFNSms1eVZYMG9pbGtnTDZmMWNteHB6QnpsUFpkb1hNWFVPb0U4cEVYRlE0NWV1M2FXQ1BvNEhaQ3RWZXJ4eFZnVXhrMXJ3U1dBR25sOUtSTGpwNdIBqgFBVV95cUxNY1J6aWpKb1BlZVhBVjVoZVNCSjJodGdJRG00RVctZDRhQzRaVnlMWGVESDNZSGhrdjdKRFU0TFdhbHNhTXlXTFNoeDhfNnJycXA3UzBXd0tBRzZmN0xrc2E1OVNRdXByd3RES09lUEQ2cVo0cmhPR2VNajZRdHdSaUdmRFBJdUdnTU1QcTVrZVpyR0xaYTYxWVJLUDlxajQ2OWVvUURVOVFlQQ?oc=5",
+          "title": "HarmonyOS NEXT to officially debut on October 22",
+          "title_cn": "鸿蒙相关动态",
+          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxPQTNSUGlISU92X1ZWVGlERWxmQlhvdURYb1U0c1JMNGZuVlBKcXYwV3A4dVI2NEZKRkVUU0xQX3RxT1pkbExaeXM5ZXg2Vkc2UklremthYU5xSHYtLWVyYWFDTWZrNFFsOFd6ZnU0TklEeWJ6OXROR1E3dzNWcFczeHFzeERtUQ?oc=5",
           "source": "official",
           "score": 0,
           "author": "Huawei Central",
-          "published_at": "2025-05-15T07:00:00"
+          "published_at": "2024-10-15T07:00:00"
         },
         {
-          "title": "Breaking: Huawei HarmonyOS PC launching in May",
-          "title_cn": "华为、鸿蒙即将发布电脑",
-          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTE56M1I5VGNVR2xxUUh2UXljV3Q0UnFjT1dJenM4RUtuVC14YWJJNi1ZM2Yzb0FYcTFWU2lQTkdoaUFjQlZQNWQ0TGlWMnZZOEpBMlhqTWRiWVRoWHgxekNkUjdxT2xNOVRPU3I0UGEwWG5GOEphaGfSAXtBVV95cUxNUVlKV1JBakpxNHc5eEMxeHhVREhFeXNOOTljWEhGamxvZ3VPLTBqSFhPYy1vNW5BS2syZWdlamdoR2w5Qkhra0ptcUFDZU0tM19OU3YxZU1raG10QTZ0RW1YU3o5NVl0c1JjclRBeFNhd0F5MGhkTDU1Vzg?oc=5",
+          "title": "Huawei announces HarmonyOS 2.0, coming to smartphones in 2021",
+          "title_cn": "华为、鸿蒙宣布智能手机",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxQY2J0TENIRHAwSFU2SFA3TWYya1dfRmJxbTVKZ1dxX1NnM3JoVmU1NGl6Z0NPZlhSMWN3d3NTSkk0M291QmhSMmxpWHZ5Qmw3ZG8xS1Q0eWM4NURxNmFlU1NTYTRRYWdQazZ4ZWgyWDk3MFFrNlFfTHJfSmVoZnVFaFBhSER0eGU4Z3FJaExoLUxXUFlIb1oxcFNZeDVYU3Jx?oc=5",
+          "source": "official",
+          "score": 0,
+          "author": "GSMArena.com",
+          "published_at": "2020-09-10T07:00:00"
+        },
+        {
+          "title": "These 7 devices receiving stable HarmonyOS 3",
+          "title_cn": "鸿蒙3、鸿蒙稳定版",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNYy11aURUM3VfYVdVZHd5SVMyc0V0Y2hPN0xrdV95eUVtX21XVnU4Ylk1VmF0MndaMkQ1M0ZmQ3B6bHNRbFB0LUttcXYtUU1vNEZSREZyaVpDWFp2NEtyemdLU1BTSlc1RS1KdV82X00zVkYyZjY2eHIwYWJ4aDdHaNIBhgFBVV95cUxOXy1OUU1wbmNQc3AtY3FidEc1NkNwb0RhWTl3djVwcDlRUVMwQl9BWHp1cEd5X1kxNnJHZ3ZUQ1Eza2JHeHZCM0JQZVhsTDZ2SXJtaWdaeldnNWRuN21ISGw5X01makROcmVWdS1OLWQwYWFLMEFxV0h5NWVFT3NOVzZjMFo3dw?oc=5",
           "source": "official",
           "score": 0,
           "author": "Huawei Central",
-          "published_at": "2025-03-20T07:00:00"
+          "published_at": "2023-04-07T07:00:00"
         },
         {
-          "title": "Over 300 open source components now added to HarmonyOS",
-          "title_cn": "鸿蒙添加至开源",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxOZE1fb3RZRWRWak1KczBlN24yODE3ckhKdjUxbFYyMUwydU1qdTRCQXNOSUpnSVd4UUh4ODk2VGR5V2tsY3JWRXFadkdIQ2d6ZGpfbk1mb3hHVVpuTExVLTNaOGRBWGJJSGdmcGZFTHNyV3Z0LTZQVHJZVjh2QzlSOHlyOTlGcEhwdHBDMzNB0gGTAUFVX3lxTE9nN093dHBSTUlMZGlrNFlaX0JIV3BvZ3B3MkFnVWZWRWhfOEFDenIyMkJYSVM3MUYwWW85NTdSdkxQQzYwTWZ0dzM4Qmg5NDhfZUNYMjI1cXVvRzBDTW4xTDZGN1BjNjJyUEViTUZvdGk2M29rZy03RkVvaHBSVGYybENHQ0ZramhKNVZGdlRrc19GTQ?oc=5",
+          "title": "These Huawei devices are getting HarmonyOS 6",
+          "title_cn": "鸿蒙6、华为、鸿蒙相关动态",
+          "url": "https://news.google.com/rss/articles/CBMikwFBVV95cUxPME9lUDRId2JkRmFabkhReTlnaDQzc2c4eUJqWmlrMnJHS0hIYTdlLWUwX1lLRFVfemFQZThnQ2tPSFRNMldDRDFkc2RuRnpXSHQtdDE5Z0tNemwzN0lOSWVBeTA5WDNJU1dvaXgxZ3F6d2J0RVlIdXVEejJzNFhORE12RzJYeXNFRmNoSHBmYm05cTg?oc=5",
           "source": "official",
           "score": 0,
-          "author": "Huawei Central",
-          "published_at": "2021-07-28T07:00:00"
-        },
-        {
-          "title": "HarmonyOS 3 for smartphones launching on July 27",
-          "title_cn": "鸿蒙3、鸿蒙即将发布智能手机（智能手机版）",
-          "url": "https://news.google.com/rss/articles/CBMihgFBVV95cUxQYXlMWWdrLUF3dXhtX1RXX2pOSU9tQ2FFNzVRUi1Ma3dYTENVMTJrY0I5eXRGLUZKWEUzdVduSTYyOERBNm5kRE1SVjR4ak5YTTZ3WnNaZHRybUpVUmxlbTlmVjNnSzZxREVvODZ0aTBPMTI2UG5vWjJiU1NldE1VODJPbWVUQdIBiwFBVV95cUxNMU1pYWdZOXlDdTBDMjJjRXdlRk9GMjQydmNzbkM5SlNSa0ZXbnBGbDM2cE12ZlUwMXhXQzkzTWxIMWlYZ1Q1MFpHcHBBdkhvMXpyZjlGRmllc1VFUk5kZFlCLVlsNGlodFAzUU85OWM4aF92YndWemJwZlB1VG9KalVHSWJjSllQV1kw?oc=5",
-          "source": "official",
-          "score": 0,
-          "author": "Huawei Central",
-          "published_at": "2022-07-18T07:00:00"
+          "author": "Notebookcheck",
+          "published_at": "2025-10-25T07:00:00"
         }
       ]
     }
   ],
-  "last_updated": "2026-09-07T02:32:29.503915"
+  "last_updated": "2026-09-07T10:53:20.992059"
 }
