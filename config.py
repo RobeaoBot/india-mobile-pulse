@@ -100,6 +100,34 @@ HN_QUERIES = [
 ]
 
 # ============================================================
+# X (Twitter) 采集
+# ============================================================
+#
+# 重要限制：X 官方 API 自 2023 年起全面收费，免费层无法读取时间线。
+# 实测过的非官方通道目前均不可用：
+#   - cdn.syndication.twimg.com  → 返回空内容（官方已关闭）
+#   - syndication.twitter.com    → 429 Rate limit
+#   - Nitter 各公共实例          → 连接失败 / 超时 / SSL 错误
+#   - RSSHub 公共实例            → 连接超时
+#
+# 因此在没有付费 API 的前提下，唯一可行路径是通过 Google News 的
+# `site:x.com` 检索被搜索引擎收录的推文。这些通常是被媒体引用或
+# 引发广泛讨论的高热度内容，与本项目"热点监测"的定位契合。
+#
+# 局限：只能覆盖被收录的推文，不是完整实时流。
+# 若日后获得官方 API 配额，只需替换 XTwitterCollector._search() 的实现，
+# 打分/去重/过滤等流程无需改动。
+X_QUERIES = [
+    "site:x.com smartphone India",
+    "site:x.com iPhone India",
+    "site:x.com Samsung Galaxy India",
+    "site:x.com Android update India",
+    "site:x.com Xiaomi India",
+    "site:x.com OnePlus India",
+    "site:x.com 5G phone India launch",
+]
+
+# ============================================================
 # 官方渠道 & 权威科技媒体
 # ============================================================
 
