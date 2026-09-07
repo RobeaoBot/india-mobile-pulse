@@ -27,8 +27,9 @@ REDDIT_SEARCH_QUERIES = [
 
 # YouTube 频道 ID（印度科技博主）
 # 获取方式：访问频道页面 → 查看源码 → 搜索 "channelId"
-# 注意：以下 ID 已陆续失效（RSS 返回 404），采集器会优雅降级。
-# 主要数据由 TechMedia / HackerNews / News / Official 四个稳定源提供。
+# 2026-09-07 复测：5 个频道 RSS 均正常返回 15 条，数据源有效。
+# 注意：2026-09-04 曾全部返回 404，当时被误判为"永久失效"并加入默认跳过列表，
+#      实际是临时故障，现已恢复。因此对数据源的可用性不要做一次性判断。
 YOUTUBE_CHANNEL_IDS = [
     "UCOhHO2ICt0ti9KAh-QHvttQ",  # Technical Guruji  (已失效 404)
     "UCEPL07qzVsOcHd3sMUws65g",  # Trakin Tech       (已失效 404)
@@ -322,11 +323,11 @@ Write the summary and insights in Chinese (简体中文), but keep brand names a
 # 每日采集时间（24小时制），格式 "HH:MM"
 DAILY_COLLECTION_TIME = os.environ.get("DAILY_COLLECTION_TIME", "12:00")
 
-# 默认跳过的数据源（已确认失效，避免每次运行白跑）
-# YouTube: 5 个频道 ID 的 RSS 均返回 404，已失效
-# 在代码层面兜底，这样即使不修改 workflow 配置也不会浪费时间
-# 如需强制启用某源，可用环境变量覆盖（设为留空则不默认跳过任何源）
-DEFAULT_SKIP_SOURCES = os.environ.get("DEFAULT_SKIP_SOURCES", "youtube")
+# 默认跳过的数据源。默认留空 —— 数据源可用性会随时间变化，不宜在代码里永久禁用：
+# YouTube 曾因临时故障返回 404 被判为"失效"，2026-09-07 复测已完全恢复正常。
+# 单个源失败会被采集器的 try/except 捕获并记入 collection_runs，不影响整体流程。
+# 确需跳过时用环境变量指定，例如：SKIP_SOURCES=reddit
+DEFAULT_SKIP_SOURCES = os.environ.get("DEFAULT_SKIP_SOURCES", "")
 
 # 每次采集每个来源的最大帖子数
 MAX_POSTS_PER_SOURCE = 25
