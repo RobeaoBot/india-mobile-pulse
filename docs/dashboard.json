@@ -1,25 +1,25 @@
 {
   "stats": {
-    "total": 1398,
-    "today": 428,
+    "total": 1401,
+    "today": 431,
     "by_source": {
       "hackernews": 99,
-      "news": 198,
+      "news": 200,
       "official": 550,
       "reddit": 33,
-      "techmedia": 239,
+      "techmedia": 240,
       "xtwitter": 129,
       "youtube": 150
     },
     "brand_mentions": {
       "Apple": 267,
       "Samsung": 140,
-      "Xiaomi": 110,
-      "OnePlus": 79,
+      "Xiaomi": 111,
+      "OnePlus": 80,
       "Motorola": 77,
       "Google": 68,
       "Vivo": 60,
-      "Oppo": 52,
+      "Oppo": 53,
       "Realme": 41,
       "Nothing": 37,
       "iQOO": 16,
@@ -31,12 +31,12 @@
     },
     "sentiment": {
       "negative": 11,
-      "neutral": 321,
-      "positive": 96
+      "neutral": 323,
+      "positive": 97
     },
     "sentiment_voiced": {
-      "total": 107,
-      "positive": 96,
+      "total": 108,
+      "positive": 97,
       "negative": 11,
       "positive_pct": 90,
       "negative_pct": 10
@@ -44,22 +44,22 @@
   },
   "latest_analysis": {
     "period_start": "2010-02-17T20:13:54+00:00",
-    "period_end": "2026-09-07T00:00:15",
+    "period_end": "2026-09-07T03:01:02",
     "posts_analyzed": 743,
     "provider": "rule",
-    "summary": "本期监测到最受关注的品牌为：Apple(145次提及)、Samsung(86次提及)、Xiaomi(54次提及)、OnePlus(49次提及)、Google(45次提及)。操作系统讨论热度：Android(120次)、HarmonyOS(16次)、iOS(12次)。热门讨论话题包括：launch、iphone、galaxy等。整体情感倾向：正面17%、负面2%、中性80%。",
+    "summary": "本期监测到最受关注的品牌为：Apple(144次提及)、Samsung(86次提及)、Xiaomi(55次提及)、OnePlus(50次提及)、Google(44次提及)。操作系统讨论热度：Android(120次)、HarmonyOS(16次)、iOS(12次)。热门讨论话题包括：launch、iphone、galaxy等。整体情感倾向：正面17%、负面2%、中性81%。",
     "hot_topics": [
       {
         "topic": "launch",
         "description": "Nokia launches DIY repairable budget Android phone",
         "heat": "high",
-        "count": 121
+        "count": 122
       },
       {
         "topic": "iphone",
         "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
         "heat": "high",
-        "count": 105
+        "count": 102
       },
       {
         "topic": "galaxy",
@@ -77,7 +77,7 @@
         "topic": "pro",
         "description": "Android Developer Verification: Threat masquerading as protection",
         "heat": "high",
-        "count": 86
+        "count": 83
       },
       {
         "topic": "price",
@@ -101,39 +101,39 @@
         "topic": "apple",
         "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
         "heat": "high",
-        "count": 65
+        "count": 63
       },
       {
-        "topic": "google",
-        "description": "Google will allow only apps from verified developers to be installed on Android",
+        "topic": "oneplus",
+        "description": "Dixon Amber in Focus CHINESE SMARTPHONE GIANTS DEPEND HEAVILY ON INDIA: UP TO 35",
         "heat": "high",
         "count": 62
       }
     ],
     "brand_sentiment": {
+      "Oppo": {
+        "sentiment": "positive",
+        "reason": "正面7条/负面0条/中性21条 (共28条提及)"
+      },
       "Samsung": {
         "sentiment": "positive",
         "reason": "正面16条/负面1条/中性69条 (共86条提及)"
       },
-      "Oppo": {
-        "sentiment": "positive",
-        "reason": "正面7条/负面0条/中性19条 (共26条提及)"
-      },
       "Xiaomi": {
         "sentiment": "positive",
-        "reason": "正面10条/负面0条/中性44条 (共54条提及)"
+        "reason": "正面11条/负面0条/中性44条 (共55条提及)"
       },
       "Apple": {
         "sentiment": "positive",
-        "reason": "正面28条/负面3条/中性114条 (共145条提及)"
+        "reason": "正面26条/负面3条/中性115条 (共144条提及)"
       },
       "Google": {
         "sentiment": "positive",
-        "reason": "正面10条/负面2条/中性33条 (共45条提及)"
+        "reason": "正面9条/负面2条/中性33条 (共44条提及)"
       },
       "Infinix": {
         "sentiment": "positive",
-        "reason": "正面1条/负面0条/中性5条 (共6条提及)"
+        "reason": "正面1条/负面0条/中性4条 (共5条提及)"
       },
       "Tecno": {
         "sentiment": "neutral",
@@ -163,17 +163,17 @@
         "sentiment": "positive",
         "reason": "正面2条/负面0条/中性19条 (共21条提及)"
       },
+      "OnePlus": {
+        "sentiment": "positive",
+        "reason": "正面4条/负面0条/中性46条 (共50条提及)"
+      },
       "Vivo": {
         "sentiment": "positive",
         "reason": "正面2条/负面0条/中性28条 (共30条提及)"
       },
-      "OnePlus": {
-        "sentiment": "positive",
-        "reason": "正面4条/负面0条/中性45条 (共49条提及)"
-      },
       "Nothing": {
         "sentiment": "positive",
-        "reason": "正面3条/负面0条/中性11条 (共14条提及)"
+        "reason": "正面2条/负面0条/中性12条 (共14条提及)"
       }
     },
     "key_insights": [
@@ -191,16 +191,64 @@
       "smartphone",
       "samsung",
       "apple",
-      "google",
       "oneplus",
+      "google",
       "2026",
       "pixel",
       "battery",
       "ultra"
     ],
-    "id": 7
+    "id": 8
   },
   "recent_posts": [
+    {
+      "id": 7168,
+      "source": "news",
+      "source_id": "CBMivwFBVV95cUxPdFVLTmFuZlpXZFk5ZmZUM1M2UVlNeHEyOFpGUFB2Z29xc0psWV9EdjF0U3V1c3djQ001LXVaT0R0VkJvVjBrMkR3cUFSMTBSWk9qSzVjV0pyVVBTbEZLTk1VV2U1bVp0NlZvN1dIV2VOQXZ5clI3MEhMYmJETkQ1SHNwU0wyZm15SGZjY3lISE9uS1IzM2cxYzhTOW00azZXNngwbkt2WFVGcDFxbUh0NTZsWGFmSWNWekl0VTNPRQ",
+      "title": "OnePlus India begins Android ColorOS 17 closed beta testing for OnePlus 15",
+      "content": "OnePlus India begins Android ColorOS 17 closed beta testing for OnePlus 15 &nbsp;&nbsp; Deccan Herald",
+      "author": "Deccan Herald",
+      "url": "https://news.google.com/rss/articles/CBMivwFBVV95cUxPdFVLTmFuZlpXZFk5ZmZUM1M2UVlNeHEyOFpGUFB2Z29xc0psWV9EdjF0U3V1c3djQ001LXVaT0R0VkJvVjBrMkR3cUFSMTBSWk9qSzVjV0pyVVBTbEZLTk1VV2U1bVp0NlZvN1dIV2VOQXZ5clI3MEhMYmJETkQ1SHNwU0wyZm15SGZjY3lISE9uS1IzM2cxYzhTOW00azZXNngwbkt2WFVGcDFxbUh0NTZsWGFmSWNWekl0VTNPRQ?oc=5",
+      "score": 0,
+      "brands": "[\"OnePlus\", \"Oppo\"]",
+      "os_tags": "[\"Android\"]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-08-11T07:00:00",
+      "collected_at": "2026-09-07T11:27:59.197167"
+    },
+    {
+      "id": 7165,
+      "source": "news",
+      "source_id": "CBMi7gFBVV95cUxPVURoSUxJWXJYT0FiaUk5WGJ1WF9lbE52UXBIUlROUGZYaU5jb295bGx6UDFVcFdRZmRNRWU2RGhpbEF4dmk2Q29MNkFId3ZlbHZvdTVlbG4wMXhrRTZkVlppaXdoYk9NNTI2RnBaWTRKYWgtWUhIWlgyTXdDRnljaW1sSjU5a2g4U25nWnduWGtGeV83VGM2eHAwYTk5ak5OOHRib3JBU21RSnVKUjh4dkQ1TTBDTkttb0RieHNVRklRQnZJVU5Way1LWE1hVFFURE9CNXR4MUN6cmJ1QUV5WUw3Q3JrbkcyTHZfazhR0gHzAUFVX3lxTE5INjVZZmw5TmRlTTdHS0tIUXFDMWxkc29wX2dSTWRDVXpocjV4VXAxd1A3eFg2ZmJVaEtONFZwTk9WUjlhRmNYNDZyb2M2Nk84dF9KbG95cy1pWjFMeGpDYkZuXzI0MjFKd004bG0tZHo0X2wzbVRzMVNkaGJnVWxhc2dlQ3Q1dU1lc3dMN3J6UmNMRzBxMmUyMVdqTHNPc1ZpT09NVHlvTFgwaTBxU0YxeDFBdHVncS1LWWRiMXM0NlpneG0xbEFMLU9BbDRPNzdEc3RXMHZaWThTR2xveldSWGlhQlBlUTkxenBZWmtyRGplYw",
+      "title": "KRAFTON India Announces Launch of BGMI LITE by the End of 2026, Opens Pre-Registration for Android Users On 25th August",
+      "content": "KRAFTON India Announces Launch of BGMI LITE by the End of 2026, Opens Pre-Registration for Android Users On 25th August &nbsp;&nbsp; TheWire.in",
+      "author": "TheWire.in",
+      "url": "https://news.google.com/rss/articles/CBMi7gFBVV95cUxPVURoSUxJWXJYT0FiaUk5WGJ1WF9lbE52UXBIUlROUGZYaU5jb295bGx6UDFVcFdRZmRNRWU2RGhpbEF4dmk2Q29MNkFId3ZlbHZvdTVlbG4wMXhrRTZkVlppaXdoYk9NNTI2RnBaWTRKYWgtWUhIWlgyTXdDRnljaW1sSjU5a2g4U25nWnduWGtGeV83VGM2eHAwYTk5ak5OOHRib3JBU21RSnVKUjh4dkQ1TTBDTkttb0RieHNVRklRQnZJVU5Way1LWE1hVFFURE9CNXR4MUN6cmJ1QUV5WUw3Q3JrbkcyTHZfazhR0gHzAUFVX3lxTE5INjVZZmw5TmRlTTdHS0tIUXFDMWxkc29wX2dSTWRDVXpocjV4VXAxd1A3eFg2ZmJVaEtONFZwTk9WUjlhRmNYNDZyb2M2Nk84dF9KbG95cy1pWjFMeGpDYkZuXzI0MjFKd004bG0tZHo0X2wzbVRzMVNkaGJnVWxhc2dlQ3Q1dU1lc3dMN3J6UmNMRzBxMmUyMVdqTHNPc1ZpT09NVHlvTFgwaTBxU0YxeDFBdHVncS1LWWRiMXM0NlpneG0xbEFMLU9BbDRPNzdEc3RXMHZaWThTR2xveldSWGlhQlBlUTkxenBZWmtyRGplYw?oc=5",
+      "score": 0,
+      "brands": "[]",
+      "os_tags": "[\"Android\"]",
+      "hardware_tags": "[]",
+      "sentiment": "neutral",
+      "published_at": "2026-08-19T07:00:00",
+      "collected_at": "2026-09-07T11:27:59.197167"
+    },
+    {
+      "id": 6804,
+      "source": "techmedia",
+      "source_id": "tm_https://www.gsmarena.com/poco_x8_unboxing-news-74480.php",
+      "title": "Poco X8 unboxing",
+      "content": "The Poco X8 made its global debut alongside the more premium F9 Pro and F9 Ultra, and what it lacks in premiumness, it makes up for in battery. Let's begin. The Poco X8 is already on sale. It costs €400 for the 8/256GB model, and €450 if you want 12GB of RAM instead of 8. There are three colors: black, white, and orange. In the box, you'll find a USB cable, as well as a case. The case is your typical grey rubber affair, but it does its job. You'll need to supply your own charger for the Poco X8....",
+      "author": "GSMArena",
+      "url": "https://www.gsmarena.com/poco_x8_unboxing-news-74480.php",
+      "score": 0,
+      "brands": "[\"Xiaomi\"]",
+      "os_tags": "[]",
+      "hardware_tags": "[\"ram\", \"battery\"]",
+      "sentiment": "positive",
+      "published_at": "2026-09-07T03:01:02",
+      "collected_at": "2026-09-07T11:27:45.517139"
+    },
     {
       "id": 6273,
       "source": "youtube",
@@ -1752,57 +1800,79 @@
       "sentiment": "neutral",
       "published_at": "2026-09-05T11:00:01",
       "collected_at": "2026-09-07T10:28:23.901271"
-    },
-    {
-      "id": 4858,
-      "source": "official",
-      "source_id": "official_https://www.androidauthority.com/galaxy-z-fold-8-flex-mode-3704800/",
-      "title": "I thought losing Flex Mode would ruin the Galaxy Z Fold 8 — I was completely wrong",
-      "content": "Samsung's new hinge really does make up for it.",
-      "author": "Brady Snyder",
-      "url": "https://www.androidauthority.com/galaxy-z-fold-8-flex-mode-3704800/",
-      "score": 0,
-      "brands": "[\"Samsung\"]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-09-05T12:00:04",
-      "collected_at": "2026-09-07T10:28:23.901271"
-    },
-    {
-      "id": 4857,
-      "source": "official",
-      "source_id": "official_https://www.androidauthority.com/timekettle-w4-plus-3706119/",
-      "title": "The new W4 Plus is Timekettle’s most capable AI interpreter earbuds yet",
-      "content": "Whether for travel or at work, you can now cross the language barrier with ease.",
-      "author": "Ankit Banerjee",
-      "url": "https://www.androidauthority.com/timekettle-w4-plus-3706119/",
-      "score": 0,
-      "brands": "[]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "positive",
-      "published_at": "2026-09-05T14:21:33",
-      "collected_at": "2026-09-07T10:28:23.901271"
-    },
-    {
-      "id": 4856,
-      "source": "official",
-      "source_id": "official_https://www.androidauthority.com/blurams-full-home-security-ecosystem-ifa-2026-3707040/",
-      "title": "Blurams launches a full home security ecosystem at IFA 2026 Berlin",
-      "content": "From the porch to the nursery, Blurams has your home security needs covered.",
-      "author": "Ankit Banerjee",
-      "url": "https://www.androidauthority.com/blurams-full-home-security-ecosystem-ifa-2026-3707040/",
-      "score": 0,
-      "brands": "[]",
-      "os_tags": "[]",
-      "hardware_tags": "[]",
-      "sentiment": "neutral",
-      "published_at": "2026-09-05T15:16:12",
-      "collected_at": "2026-09-07T10:28:23.901271"
     }
   ],
   "recent_runs": [
+    {
+      "id": 49,
+      "source": "youtube",
+      "status": "success",
+      "posts_count": 75,
+      "new_posts": 0,
+      "error_message": "",
+      "started_at": "2026-09-07T11:28:11.985022",
+      "completed_at": "2026-09-07 03:28:14"
+    },
+    {
+      "id": 48,
+      "source": "reddit",
+      "status": "skipped",
+      "posts_count": 0,
+      "new_posts": 0,
+      "error_message": "配置为跳过",
+      "started_at": "2026-09-07T11:28:11.973346",
+      "completed_at": "2026-09-07 03:28:11"
+    },
+    {
+      "id": 47,
+      "source": "official",
+      "status": "success",
+      "posts_count": 249,
+      "new_posts": 0,
+      "error_message": "",
+      "started_at": "2026-09-07T11:27:59.220718",
+      "completed_at": "2026-09-07 03:28:11"
+    },
+    {
+      "id": 46,
+      "source": "news",
+      "status": "success",
+      "posts_count": 77,
+      "new_posts": 2,
+      "error_message": "",
+      "started_at": "2026-09-07T11:27:54.776259",
+      "completed_at": "2026-09-07 03:27:59"
+    },
+    {
+      "id": 45,
+      "source": "xtwitter",
+      "status": "success",
+      "posts_count": 128,
+      "new_posts": 0,
+      "error_message": "",
+      "started_at": "2026-09-07T11:27:48.593504",
+      "completed_at": "2026-09-07 03:27:54"
+    },
+    {
+      "id": 44,
+      "source": "hackernews",
+      "status": "success",
+      "posts_count": 99,
+      "new_posts": 0,
+      "error_message": "",
+      "started_at": "2026-09-07T11:27:45.543851",
+      "completed_at": "2026-09-07 03:27:48"
+    },
+    {
+      "id": 43,
+      "source": "techmedia",
+      "status": "success",
+      "posts_count": 115,
+      "new_posts": 1,
+      "error_message": "",
+      "started_at": "2026-09-07T11:27:26.192234",
+      "completed_at": "2026-09-07 03:27:45"
+    },
     {
       "id": 42,
       "source": "youtube",
@@ -1932,77 +2002,7 @@
       "error_message": "",
       "started_at": "2026-09-07T10:27:37.701666",
       "completed_at": "2026-09-07 02:28:01"
-    },
-    {
-      "id": 29,
-      "source": "techmedia",
-      "status": "success",
-      "posts_count": 115,
-      "new_posts": 34,
-      "error_message": "",
-      "started_at": "2026-09-07T10:27:21.376461",
-      "completed_at": "2026-09-07 02:27:37"
-    },
-    {
-      "id": 28,
-      "source": "youtube",
-      "status": "skipped",
-      "posts_count": 0,
-      "new_posts": 0,
-      "error_message": "配置为跳过",
-      "started_at": "2026-09-04T18:06:15.008972",
-      "completed_at": "2026-09-04 10:06:15"
-    },
-    {
-      "id": 27,
-      "source": "reddit",
-      "status": "skipped",
-      "posts_count": 0,
-      "new_posts": 0,
-      "error_message": "配置为跳过",
-      "started_at": "2026-09-04T18:06:14.995917",
-      "completed_at": "2026-09-04 10:06:15"
-    },
-    {
-      "id": 26,
-      "source": "official",
-      "status": "success",
-      "posts_count": 250,
-      "new_posts": 19,
-      "error_message": "",
-      "started_at": "2026-09-04T18:06:02.298382",
-      "completed_at": "2026-09-04 10:06:14"
-    },
-    {
-      "id": 25,
-      "source": "news",
-      "status": "success",
-      "posts_count": 78,
-      "new_posts": 14,
-      "error_message": "",
-      "started_at": "2026-09-04T18:05:56.102380",
-      "completed_at": "2026-09-04 10:06:02"
-    },
-    {
-      "id": 24,
-      "source": "hackernews",
-      "status": "success",
-      "posts_count": 99,
-      "new_posts": 0,
-      "error_message": "",
-      "started_at": "2026-09-04T18:05:52.768909",
-      "completed_at": "2026-09-04 10:05:56"
-    },
-    {
-      "id": 23,
-      "source": "techmedia",
-      "status": "success",
-      "posts_count": 115,
-      "new_posts": 15,
-      "error_message": "",
-      "started_at": "2026-09-04T18:05:47.447619",
-      "completed_at": "2026-09-04 10:05:52"
     }
   ],
-  "last_updated": "2026-09-07T10:53:20.953501"
+  "last_updated": "2026-09-07T11:28:15.614933"
 }
