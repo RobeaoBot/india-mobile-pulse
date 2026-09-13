@@ -2,116 +2,120 @@
   "analyses": [
     {
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-09-12T11:00:16",
-      "posts_analyzed": 758,
+      "period_end": "2026-09-13T12:00:16",
+      "posts_analyzed": 754,
       "provider": "rule",
-      "summary": "本期监测到最受关注的品牌为：Apple(160次提及)、Samsung(85次提及)、OnePlus(48次提及)、Google(45次提及)、Xiaomi(45次提及)。操作系统讨论热度：Android(118次)、iOS(16次)、HarmonyOS(16次)。热门讨论话题包括：iphone、pro、launch等。整体情感倾向：正面16%、负面4%、中性80%。",
+      "summary": "本期监测到最受关注的品牌为：Apple(165次提及)、Samsung(81次提及)、OnePlus(51次提及)、Xiaomi(49次提及)、Google(49次提及)。操作系统讨论热度：Android(118次)、HarmonyOS(16次)、iOS(14次)。热门讨论话题包括：iphone、pro、launch等。整体情感倾向：正面17%、负面4%、中性79%。",
       "hot_topics": [
         {
           "topic": "iphone",
           "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 147
+          "count": 162
         },
         {
           "topic": "pro",
           "description": "Android Developer Verification: Threat masquerading as protection",
           "heat": "high",
-          "count": 135
+          "count": 139
         },
         {
           "topic": "launch",
           "description": "Nokia launches DIY repairable budget Android phone",
           "heat": "high",
-          "count": 135
+          "count": 124
         },
         {
           "topic": "android",
           "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 103
+          "count": 101
         },
         {
           "topic": "galaxy",
-          "description": "Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online",
+          "description": "Best Camera Phones Under Rs. 30,000 in India: Samsung Galaxy F70 Pro 5G, Motorol",
           "heat": "high",
-          "count": 92
+          "count": 89
         },
         {
           "topic": "price",
           "description": "Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online",
           "heat": "high",
-          "count": 74
+          "count": 78
         },
         {
           "topic": "apple",
           "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 74
+          "count": 75
         },
         {
           "topic": "oneplus",
           "description": "OnePlus 16 may not launch in India",
           "heat": "high",
-          "count": 70
-        },
-        {
-          "topic": "samsung",
-          "description": "Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online",
-          "heat": "high",
-          "count": 67
+          "count": 74
         },
         {
           "topic": "google",
           "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 64
+          "count": 68
+        },
+        {
+          "topic": "smartphone",
+          "description": "Mozilla to sell '$25' Firefox OS smartphones in India",
+          "heat": "high",
+          "count": 62
         }
       ],
       "brand_sentiment": {
-        "Google": {
-          "sentiment": "positive",
-          "reason": "正面10条/负面4条/中性31条 (共45条提及)"
-        },
-        "Vivo": {
-          "sentiment": "positive",
-          "reason": "正面9条/负面0条/中性29条 (共38条提及)"
-        },
-        "Apple": {
-          "sentiment": "positive",
-          "reason": "正面24条/负面12条/中性124条 (共160条提及)"
-        },
         "Xiaomi": {
           "sentiment": "positive",
-          "reason": "正面6条/负面0条/中性39条 (共45条提及)"
-        },
-        "Samsung": {
-          "sentiment": "positive",
-          "reason": "正面17条/负面3条/中性65条 (共85条提及)"
-        },
-        "iQOO": {
-          "sentiment": "positive",
-          "reason": "正面7条/负面0条/中性5条 (共12条提及)"
-        },
-        "Lava": {
-          "sentiment": "positive",
-          "reason": "正面1条/负面0条/中性6条 (共7条提及)"
+          "reason": "正面9条/负面0条/中性40条 (共49条提及)"
         },
         "Oppo": {
           "sentiment": "positive",
-          "reason": "正面6条/负面0条/中性23条 (共29条提及)"
-        },
-        "Realme": {
-          "sentiment": "positive",
-          "reason": "正面2条/负面0条/中性19条 (共21条提及)"
-        },
-        "OnePlus": {
-          "sentiment": "positive",
-          "reason": "正面11条/负面0条/中性37条 (共48条提及)"
+          "reason": "正面8条/负面0条/中性21条 (共29条提及)"
         },
         "Motorola": {
           "sentiment": "positive",
-          "reason": "正面5条/负面1条/中性28条 (共34条提及)"
+          "reason": "正面7条/负面1条/中性24条 (共32条提及)"
+        },
+        "Samsung": {
+          "sentiment": "positive",
+          "reason": "正面20条/负面3条/中性58条 (共81条提及)"
+        },
+        "Nothing": {
+          "sentiment": "positive",
+          "reason": "正面3条/负面0条/中性13条 (共16条提及)"
+        },
+        "Vivo": {
+          "sentiment": "positive",
+          "reason": "正面10条/负面0条/中性26条 (共36条提及)"
+        },
+        "Apple": {
+          "sentiment": "positive",
+          "reason": "正面27条/负面11条/中性127条 (共165条提及)"
+        },
+        "Google": {
+          "sentiment": "positive",
+          "reason": "正面12条/负面5条/中性32条 (共49条提及)"
+        },
+        "iQOO": {
+          "sentiment": "positive",
+          "reason": "正面6条/负面0条/中性4条 (共10条提及)"
+        },
+        "Lava": {
+          "sentiment": "positive",
+          "reason": "正面1条/负面0条/中性4条 (共5条提及)"
+        },
+        "Realme": {
+          "sentiment": "positive",
+          "reason": "正面1条/负面0条/中性19条 (共20条提及)"
+        },
+        "OnePlus": {
+          "sentiment": "positive",
+          "reason": "正面12条/负面0条/中性39条 (共51条提及)"
         },
         "Micromax": {
           "sentiment": "neutral",
@@ -119,15 +123,11 @@
         },
         "Nokia": {
           "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性1条 (共1条提及)"
+          "reason": "正面0条/负面0条/中性2条 (共2条提及)"
         },
         "Tecno": {
           "sentiment": "neutral",
           "reason": "正面0条/负面0条/中性1条 (共1条提及)"
-        },
-        "Nothing": {
-          "sentiment": "positive",
-          "reason": "正面2条/负面0条/中性13条 (共15条提及)"
         },
         "Infinix": {
           "sentiment": "neutral",
@@ -137,7 +137,7 @@
       "key_insights": [
         "品牌声量前三：Apple, Samsung, OnePlus",
         "讨论最热的关键词：iphone, pro, launch, android, galaxy",
-        "OS 话题热度：Android, iOS, HarmonyOS"
+        "OS 话题热度：Android, HarmonyOS, iOS"
       ],
       "trending_keywords": [
         "iphone",
@@ -148,28 +148,28 @@
         "price",
         "apple",
         "oneplus",
-        "samsung",
         "google",
         "smartphone",
+        "samsung",
         "pixel",
+        "duo",
         "max",
-        "battery",
-        "series"
+        "battery"
       ],
       "id": 1
     },
     {
       "id": 1,
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-09-12T11:00:16",
-      "summary": "本期监测到最受关注的品牌为：Apple(160次提及)、Samsung(85次提及)、OnePlus(48次提及)、Google(45次提及)、Xiaomi(45次提及)。操作系统讨论热度：Android(118次)、iOS(16次)、HarmonyOS(16次)。热门讨论话题包括：iphone、pro、launch等。整体情感倾向：正面16%、负面4%、中性80%。",
-      "hot_topics": "[{\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 147}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 135}, {\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 135}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 103}, {\"topic\": \"galaxy\", \"description\": \"Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online\", \"heat\": \"high\", \"count\": 92}, {\"topic\": \"price\", \"description\": \"Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online\", \"heat\": \"high\", \"count\": 74}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 74}, {\"topic\": \"oneplus\", \"description\": \"OnePlus 16 may not launch in India\", \"heat\": \"high\", \"count\": 70}, {\"topic\": \"samsung\", \"description\": \"Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online\", \"heat\": \"high\", \"count\": 67}, {\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 64}]",
-      "brand_sentiment": "{\"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面10条/负面4条/中性31条 (共45条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面9条/负面0条/中性29条 (共38条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面24条/负面12条/中性124条 (共160条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性39条 (共45条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面17条/负面3条/中性65条 (共85条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面7条/负面0条/中性5条 (共12条提及)\"}, \"Lava\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性6条 (共7条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性23条 (共29条提及)\"}, \"Realme\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性19条 (共21条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面11条/负面0条/中性37条 (共48条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面5条/负面1条/中性28条 (共34条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Tecno\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性13条 (共15条提及)\"}, \"Infinix\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}}",
-      "key_insights": "[\"品牌声量前三：Apple, Samsung, OnePlus\", \"讨论最热的关键词：iphone, pro, launch, android, galaxy\", \"OS 话题热度：Android, iOS, HarmonyOS\"]",
-      "trending_keywords": "[\"iphone\", \"pro\", \"launch\", \"android\", \"galaxy\", \"price\", \"apple\", \"oneplus\", \"samsung\", \"google\", \"smartphone\", \"pixel\", \"max\", \"battery\", \"series\"]",
-      "posts_analyzed": 758,
+      "period_end": "2026-09-13T12:00:16",
+      "summary": "本期监测到最受关注的品牌为：Apple(165次提及)、Samsung(81次提及)、OnePlus(51次提及)、Xiaomi(49次提及)、Google(49次提及)。操作系统讨论热度：Android(118次)、HarmonyOS(16次)、iOS(14次)。热门讨论话题包括：iphone、pro、launch等。整体情感倾向：正面17%、负面4%、中性79%。",
+      "hot_topics": "[{\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 162}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 139}, {\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 124}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 101}, {\"topic\": \"galaxy\", \"description\": \"Best Camera Phones Under Rs. 30,000 in India: Samsung Galaxy F70 Pro 5G, Motorol\", \"heat\": \"high\", \"count\": 89}, {\"topic\": \"price\", \"description\": \"Samsung Galaxy SmartTag 3 Design, Colourways and Price Leaked Online\", \"heat\": \"high\", \"count\": 78}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 75}, {\"topic\": \"oneplus\", \"description\": \"OnePlus 16 may not launch in India\", \"heat\": \"high\", \"count\": 74}, {\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 68}, {\"topic\": \"smartphone\", \"description\": \"Mozilla to sell '$25' Firefox OS smartphones in India\", \"heat\": \"high\", \"count\": 62}]",
+      "brand_sentiment": "{\"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面9条/负面0条/中性40条 (共49条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面8条/负面0条/中性21条 (共29条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面7条/负面1条/中性24条 (共32条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面20条/负面3条/中性58条 (共81条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性13条 (共16条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面10条/负面0条/中性26条 (共36条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面27条/负面11条/中性127条 (共165条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面12条/负面5条/中性32条 (共49条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性4条 (共10条提及)\"}, \"Lava\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性4条 (共5条提及)\"}, \"Realme\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性19条 (共20条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面12条/负面0条/中性39条 (共51条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Tecno\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Infinix\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}}",
+      "key_insights": "[\"品牌声量前三：Apple, Samsung, OnePlus\", \"讨论最热的关键词：iphone, pro, launch, android, galaxy\", \"OS 话题热度：Android, HarmonyOS, iOS\"]",
+      "trending_keywords": "[\"iphone\", \"pro\", \"launch\", \"android\", \"galaxy\", \"price\", \"apple\", \"oneplus\", \"google\", \"smartphone\", \"samsung\", \"pixel\", \"duo\", \"max\", \"battery\"]",
+      "posts_analyzed": 754,
       "provider": "rule",
-      "created_at": "2026-09-12 11:11:27"
+      "created_at": "2026-09-13 12:14:34"
     }
   ]
 }
