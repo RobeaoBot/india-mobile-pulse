@@ -2,120 +2,108 @@
   "analyses": [
     {
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-09-14T13:12:28",
-      "posts_analyzed": 741,
+      "period_end": "2026-09-15T12:00:16",
+      "posts_analyzed": 757,
       "provider": "rule",
-      "summary": "本期监测到最受关注的品牌为：Apple(158次提及)、Samsung(94次提及)、Google(48次提及)、OnePlus(46次提及)、Xiaomi(41次提及)。操作系统讨论热度：Android(120次)、HarmonyOS(16次)、iOS(13次)。热门讨论话题包括：iphone、pro、launch等。整体情感倾向：正面17%、负面4%、中性79%。",
+      "summary": "本期监测到最受关注的品牌为：Apple(156次提及)、Samsung(110次提及)、Google(50次提及)、OnePlus(49次提及)、Xiaomi(46次提及)。操作系统讨论热度：Android(127次)、iOS(25次)、HarmonyOS(16次)。热门讨论话题包括：iphone、launch、pro等。整体情感倾向：正面15%、负面4%、中性81%。",
       "hot_topics": [
         {
           "topic": "iphone",
           "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 142
-        },
-        {
-          "topic": "pro",
-          "description": "Android Developer Verification: Threat masquerading as protection",
-          "heat": "high",
-          "count": 129
+          "count": 118
         },
         {
           "topic": "launch",
           "description": "Nokia launches DIY repairable budget Android phone",
           "heat": "high",
-          "count": 119
+          "count": 116
+        },
+        {
+          "topic": "pro",
+          "description": "Android Developer Verification: Threat masquerading as protection",
+          "heat": "high",
+          "count": 108
         },
         {
           "topic": "galaxy",
           "description": "Severe Battery Drain & Overheating on One UI 9 (Galaxy S25 FE). Root Cause Found",
           "heat": "high",
-          "count": 101
+          "count": 108
         },
         {
           "topic": "android",
           "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 96
+          "count": 102
+        },
+        {
+          "topic": "samsung",
+          "description": "Samsung Galaxy A18 Price and Specifications Reportedly Leaked Again Ahead of Exp",
+          "heat": "high",
+          "count": 77
         },
         {
           "topic": "apple",
           "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 78
+          "count": 71
+        },
+        {
+          "topic": "price",
+          "description": "Samsung Galaxy A18 Price and Specifications Reportedly Leaked Again Ahead of Exp",
+          "heat": "high",
+          "count": 70
+        },
+        {
+          "topic": "oneplus",
+          "description": "OnePlus N6 Lite India Launch Date Announced; Key Specifications, Features Reveal",
+          "heat": "high",
+          "count": 68
         },
         {
           "topic": "smartphone",
           "description": "Mozilla to sell '$25' Firefox OS smartphones in India",
           "heat": "high",
-          "count": 68
-        },
-        {
-          "topic": "google",
-          "description": "Google will allow only apps from verified developers to be installed on Android",
-          "heat": "high",
-          "count": 66
-        },
-        {
-          "topic": "samsung",
-          "description": "iQOO 16 to Launch as the World’s First Android Phone With Samsung’s M16 2K AMOLE",
-          "heat": "high",
-          "count": 66
-        },
-        {
-          "topic": "oneplus",
-          "description": "OnePlus 16 Might Not Launch in India as OnePlus 16R Will Lead Firm's New Product",
-          "heat": "high",
-          "count": 66
+          "count": 67
         }
       ],
       "brand_sentiment": {
-        "Samsung": {
-          "sentiment": "positive",
-          "reason": "正面23条/负面5条/中性66条 (共94条提及)"
-        },
         "iQOO": {
           "sentiment": "positive",
-          "reason": "正面7条/负面0条/中性5条 (共12条提及)"
-        },
-        "Realme": {
-          "sentiment": "positive",
-          "reason": "正面1条/负面0条/中性20条 (共21条提及)"
-        },
-        "Oppo": {
-          "sentiment": "positive",
-          "reason": "正面8条/负面0条/中性24条 (共32条提及)"
+          "reason": "正面8条/负面0条/中性9条 (共17条提及)"
         },
         "Apple": {
           "sentiment": "positive",
-          "reason": "正面22条/负面9条/中性127条 (共158条提及)"
-        },
-        "Motorola": {
-          "sentiment": "positive",
-          "reason": "正面6条/负面2条/中性27条 (共35条提及)"
+          "reason": "正面20条/负面8条/中性128条 (共156条提及)"
         },
         "Vivo": {
           "sentiment": "positive",
-          "reason": "正面9条/负面0条/中性28条 (共37条提及)"
+          "reason": "正面3条/负面0条/中性31条 (共34条提及)"
         },
-        "Xiaomi": {
+        "Samsung": {
           "sentiment": "positive",
-          "reason": "正面9条/负面0条/中性32条 (共41条提及)"
+          "reason": "正面26条/负面3条/中性81条 (共110条提及)"
+        },
+        "Realme": {
+          "sentiment": "neutral",
+          "reason": "正面0条/负面0条/中性22条 (共22条提及)"
         },
         "OnePlus": {
           "sentiment": "positive",
-          "reason": "正面11条/负面0条/中性35条 (共46条提及)"
+          "reason": "正面13条/负面0条/中性36条 (共49条提及)"
         },
-        "Nothing": {
+        "Xiaomi": {
           "sentiment": "positive",
-          "reason": "正面3条/负面0条/中性12条 (共15条提及)"
+          "reason": "正面6条/负面0条/中性40条 (共46条提及)"
+        },
+        "Oppo": {
+          "sentiment": "positive",
+          "reason": "正面5条/负面0条/中性24条 (共29条提及)"
         },
         "Google": {
           "sentiment": "positive",
-          "reason": "正面10条/负面4条/中性34条 (共48条提及)"
-        },
-        "Tecno": {
-          "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性1条 (共1条提及)"
+          "reason": "正面11条/负面4条/中性35条 (共50条提及)"
         },
         "Micromax": {
           "sentiment": "neutral",
@@ -123,7 +111,11 @@
         },
         "Nokia": {
           "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性3条 (共3条提及)"
+          "reason": "正面0条/负面0条/中性2条 (共2条提及)"
+        },
+        "Motorola": {
+          "sentiment": "positive",
+          "reason": "正面4条/负面1条/中性24条 (共29条提及)"
         },
         "Lava": {
           "sentiment": "neutral",
@@ -132,44 +124,48 @@
         "Infinix": {
           "sentiment": "neutral",
           "reason": "正面0条/负面0条/中性2条 (共2条提及)"
+        },
+        "Nothing": {
+          "sentiment": "positive",
+          "reason": "正面2条/负面0条/中性13条 (共15条提及)"
         }
       },
       "key_insights": [
         "品牌声量前三：Apple, Samsung, Google",
-        "讨论最热的关键词：iphone, pro, launch, galaxy, android",
-        "OS 话题热度：Android, HarmonyOS, iOS"
+        "讨论最热的关键词：iphone, launch, pro, galaxy, android",
+        "OS 话题热度：Android, iOS, HarmonyOS"
       ],
       "trending_keywords": [
         "iphone",
-        "pro",
         "launch",
+        "pro",
         "galaxy",
         "android",
+        "samsung",
         "apple",
+        "price",
+        "oneplus",
         "smartphone",
         "google",
-        "samsung",
-        "oneplus",
-        "price",
         "pixel",
-        "max",
         "s26",
-        "duo"
+        "battery",
+        "series"
       ],
       "id": 1
     },
     {
       "id": 1,
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-09-14T13:12:28",
-      "summary": "本期监测到最受关注的品牌为：Apple(158次提及)、Samsung(94次提及)、Google(48次提及)、OnePlus(46次提及)、Xiaomi(41次提及)。操作系统讨论热度：Android(120次)、HarmonyOS(16次)、iOS(13次)。热门讨论话题包括：iphone、pro、launch等。整体情感倾向：正面17%、负面4%、中性79%。",
-      "hot_topics": "[{\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 142}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 129}, {\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 119}, {\"topic\": \"galaxy\", \"description\": \"Severe Battery Drain & Overheating on One UI 9 (Galaxy S25 FE). Root Cause Found\", \"heat\": \"high\", \"count\": 101}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 96}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 78}, {\"topic\": \"smartphone\", \"description\": \"Mozilla to sell '$25' Firefox OS smartphones in India\", \"heat\": \"high\", \"count\": 68}, {\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 66}, {\"topic\": \"samsung\", \"description\": \"iQOO 16 to Launch as the World’s First Android Phone With Samsung’s M16 2K AMOLE\", \"heat\": \"high\", \"count\": 66}, {\"topic\": \"oneplus\", \"description\": \"OnePlus 16 Might Not Launch in India as OnePlus 16R Will Lead Firm's New Product\", \"heat\": \"high\", \"count\": 66}]",
-      "brand_sentiment": "{\"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面23条/负面5条/中性66条 (共94条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面7条/负面0条/中性5条 (共12条提及)\"}, \"Realme\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性20条 (共21条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面8条/负面0条/中性24条 (共32条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面22条/负面9条/中性127条 (共158条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面2条/中性27条 (共35条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面9条/负面0条/中性28条 (共37条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面9条/负面0条/中性32条 (共41条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面11条/负面0条/中性35条 (共46条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性12条 (共15条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面10条/负面4条/中性34条 (共48条提及)\"}, \"Tecno\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性3条 (共3条提及)\"}, \"Lava\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Infinix\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}}",
-      "key_insights": "[\"品牌声量前三：Apple, Samsung, Google\", \"讨论最热的关键词：iphone, pro, launch, galaxy, android\", \"OS 话题热度：Android, HarmonyOS, iOS\"]",
-      "trending_keywords": "[\"iphone\", \"pro\", \"launch\", \"galaxy\", \"android\", \"apple\", \"smartphone\", \"google\", \"samsung\", \"oneplus\", \"price\", \"pixel\", \"max\", \"s26\", \"duo\"]",
-      "posts_analyzed": 741,
+      "period_end": "2026-09-15T12:00:16",
+      "summary": "本期监测到最受关注的品牌为：Apple(156次提及)、Samsung(110次提及)、Google(50次提及)、OnePlus(49次提及)、Xiaomi(46次提及)。操作系统讨论热度：Android(127次)、iOS(25次)、HarmonyOS(16次)。热门讨论话题包括：iphone、launch、pro等。整体情感倾向：正面15%、负面4%、中性81%。",
+      "hot_topics": "[{\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 118}, {\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 116}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 108}, {\"topic\": \"galaxy\", \"description\": \"Severe Battery Drain & Overheating on One UI 9 (Galaxy S25 FE). Root Cause Found\", \"heat\": \"high\", \"count\": 108}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 102}, {\"topic\": \"samsung\", \"description\": \"Samsung Galaxy A18 Price and Specifications Reportedly Leaked Again Ahead of Exp\", \"heat\": \"high\", \"count\": 77}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 71}, {\"topic\": \"price\", \"description\": \"Samsung Galaxy A18 Price and Specifications Reportedly Leaked Again Ahead of Exp\", \"heat\": \"high\", \"count\": 70}, {\"topic\": \"oneplus\", \"description\": \"OnePlus N6 Lite India Launch Date Announced; Key Specifications, Features Reveal\", \"heat\": \"high\", \"count\": 68}, {\"topic\": \"smartphone\", \"description\": \"Mozilla to sell '$25' Firefox OS smartphones in India\", \"heat\": \"high\", \"count\": 67}]",
+      "brand_sentiment": "{\"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面8条/负面0条/中性9条 (共17条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面20条/负面8条/中性128条 (共156条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性31条 (共34条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面26条/负面3条/中性81条 (共110条提及)\"}, \"Realme\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性22条 (共22条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面13条/负面0条/中性36条 (共49条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性40条 (共46条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面5条/负面0条/中性24条 (共29条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面11条/负面4条/中性35条 (共50条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面1条/中性24条 (共29条提及)\"}, \"Lava\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Infinix\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性13条 (共15条提及)\"}}",
+      "key_insights": "[\"品牌声量前三：Apple, Samsung, Google\", \"讨论最热的关键词：iphone, launch, pro, galaxy, android\", \"OS 话题热度：Android, iOS, HarmonyOS\"]",
+      "trending_keywords": "[\"iphone\", \"launch\", \"pro\", \"galaxy\", \"android\", \"samsung\", \"apple\", \"price\", \"oneplus\", \"smartphone\", \"google\", \"pixel\", \"s26\", \"battery\", \"series\"]",
+      "posts_analyzed": 757,
       "provider": "rule",
-      "created_at": "2026-09-14 13:15:42"
+      "created_at": "2026-09-15 12:02:00"
     }
   ]
 }
