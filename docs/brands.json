@@ -1,19 +1,19 @@
 {
   "brands": {
     "Apple": 249,
-    "Samsung": 167,
-    "Xiaomi": 92,
-    "OnePlus": 84,
-    "Google": 78,
-    "Motorola": 54,
-    "Vivo": 52,
-    "Oppo": 46,
-    "Realme": 28,
+    "Samsung": 156,
+    "Xiaomi": 87,
+    "Google": 85,
+    "OnePlus": 81,
+    "Vivo": 60,
+    "Motorola": 50,
+    "Oppo": 47,
+    "Realme": 32,
+    "iQOO": 21,
     "Nothing": 21,
-    "iQOO": 18,
-    "Nokia": 14,
-    "Lava": 8,
-    "Infinix": 3,
+    "Nokia": 13,
+    "Lava": 7,
+    "Infinix": 4,
     "Micromax": 1
   }
 }
