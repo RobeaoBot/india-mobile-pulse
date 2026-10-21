@@ -2,174 +2,174 @@
   "analyses": [
     {
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-10-20T11:45:29",
-      "posts_analyzed": 717,
+      "period_end": "2026-10-21T12:12:43",
+      "posts_analyzed": 728,
       "provider": "rule",
-      "summary": "本期监测到最受关注的品牌为：Apple(144次提及)、Samsung(94次提及)、Xiaomi(43次提及)、Google(39次提及)、Vivo(37次提及)。操作系统讨论热度：Android(115次)、iOS(19次)、HarmonyOS(16次)。热门讨论话题包括：launch、iphone、android等。整体情感倾向：正面16%、负面4%、中性80%。",
+      "summary": "本期监测到最受关注的品牌为：Apple(142次提及)、Samsung(91次提及)、Xiaomi(46次提及)、Google(41次提及)、Vivo(39次提及)。操作系统讨论热度：Android(119次)、iOS(19次)、HarmonyOS(16次)。热门讨论话题包括：iphone、launch、android等。整体情感倾向：正面14%、负面3%、中性82%。",
       "hot_topics": [
-        {
-          "topic": "launch",
-          "description": "Nokia launches DIY repairable budget Android phone",
-          "heat": "high",
-          "count": 110
-        },
         {
           "topic": "iphone",
           "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 92
+          "count": 104
+        },
+        {
+          "topic": "launch",
+          "description": "Nokia launches DIY repairable budget Android phone",
+          "heat": "high",
+          "count": 103
         },
         {
           "topic": "android",
           "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 90
-        },
-        {
-          "topic": "galaxy",
-          "description": "Samsung Galaxy F70 5G With 5,000mAh Battery, 50-Megapixel Camera Goes on Sale in",
-          "heat": "high",
-          "count": 81
+          "count": 98
         },
         {
           "topic": "pro",
           "description": "Android Developer Verification: Threat masquerading as protection",
           "heat": "high",
-          "count": 81
+          "count": 84
+        },
+        {
+          "topic": "galaxy",
+          "description": "Samsung Galaxy S27 Series Display Sizes Tipped by Leaked Screen Protectors; Stor",
+          "heat": "high",
+          "count": 74
+        },
+        {
+          "topic": "samsung",
+          "description": "Samsung Galaxy S27 Series Display Sizes Tipped by Leaked Screen Protectors; Stor",
+          "heat": "high",
+          "count": 67
         },
         {
           "topic": "smartphone",
           "description": "Mozilla to sell '$25' Firefox OS smartphones in India",
           "heat": "high",
-          "count": 69
-        },
-        {
-          "topic": "samsung",
-          "description": "Samsung Galaxy F70 5G With 5,000mAh Battery, 50-Megapixel Camera Goes on Sale in",
-          "heat": "high",
-          "count": 65
-        },
-        {
-          "topic": "price",
-          "description": "OnePlus 16 vs iQOO 16: Price and Specifications Compared",
-          "heat": "high",
-          "count": 63
-        },
-        {
-          "topic": "apple",
-          "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
-          "heat": "high",
-          "count": 60
+          "count": 67
         },
         {
           "topic": "google",
           "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 60
+          "count": 65
+        },
+        {
+          "topic": "apple",
+          "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
+          "heat": "high",
+          "count": 61
+        },
+        {
+          "topic": "price",
+          "description": "Poco X8s Launched With 6,330mAh Battery, 50-Megapixel Rear Camera: Price, Specif",
+          "heat": "high",
+          "count": 57
         }
       ],
       "brand_sentiment": {
-        "Samsung": {
-          "sentiment": "positive",
-          "reason": "正面19条/负面6条/中性69条 (共94条提及)"
-        },
         "OnePlus": {
           "sentiment": "positive",
-          "reason": "正面2条/负面1条/中性27条 (共30条提及)"
-        },
-        "iQOO": {
-          "sentiment": "positive",
-          "reason": "正面4条/负面0条/中性5条 (共9条提及)"
-        },
-        "Apple": {
-          "sentiment": "positive",
-          "reason": "正面24条/负面5条/中性115条 (共144条提及)"
+          "reason": "正面4条/负面0条/中性31条 (共35条提及)"
         },
         "Oppo": {
           "sentiment": "positive",
-          "reason": "正面4条/负面1条/中性28条 (共33条提及)"
-        },
-        "Vivo": {
-          "sentiment": "positive",
-          "reason": "正面6条/负面0条/中性31条 (共37条提及)"
+          "reason": "正面6条/负面0条/中性30条 (共36条提及)"
         },
         "Xiaomi": {
           "sentiment": "positive",
-          "reason": "正面5条/负面0条/中性38条 (共43条提及)"
+          "reason": "正面8条/负面0条/中性38条 (共46条提及)"
         },
         "Realme": {
           "sentiment": "positive",
-          "reason": "正面1条/负面0条/中性20条 (共21条提及)"
+          "reason": "正面2条/负面0条/中性18条 (共20条提及)"
+        },
+        "Apple": {
+          "sentiment": "positive",
+          "reason": "正面21条/负面7条/中性114条 (共142条提及)"
+        },
+        "Lava": {
+          "sentiment": "neutral",
+          "reason": "正面0条/负面0条/中性6条 (共6条提及)"
         },
         "Motorola": {
           "sentiment": "positive",
-          "reason": "正面4条/负面0条/中性23条 (共27条提及)"
+          "reason": "正面4条/负面0条/中性20条 (共24条提及)"
         },
-        "Nokia": {
+        "Samsung": {
           "sentiment": "positive",
-          "reason": "正面2条/负面0条/中性10条 (共12条提及)"
+          "reason": "正面19条/负面6条/中性66条 (共91条提及)"
+        },
+        "Nothing": {
+          "sentiment": "positive",
+          "reason": "正面3条/负面0条/中性15条 (共18条提及)"
+        },
+        "iQOO": {
+          "sentiment": "positive",
+          "reason": "正面3条/负面0条/中性4条 (共7条提及)"
+        },
+        "Vivo": {
+          "sentiment": "positive",
+          "reason": "正面6条/负面0条/中性33条 (共39条提及)"
         },
         "Google": {
           "sentiment": "positive",
-          "reason": "正面6条/负面3条/中性30条 (共39条提及)"
+          "reason": "正面5条/负面2条/中性34条 (共41条提及)"
         },
         "Micromax": {
           "sentiment": "neutral",
           "reason": "正面0条/负面0条/中性1条 (共1条提及)"
         },
+        "Nokia": {
+          "sentiment": "positive",
+          "reason": "正面2条/负面0条/中性11条 (共13条提及)"
+        },
         "Tecno": {
           "sentiment": "positive",
-          "reason": "正面2条/负面0条/中性2条 (共4条提及)"
-        },
-        "Nothing": {
-          "sentiment": "positive",
-          "reason": "正面3条/负面0条/中性16条 (共19条提及)"
+          "reason": "正面2条/负面0条/中性1条 (共3条提及)"
         },
         "Infinix": {
           "sentiment": "positive",
           "reason": "正面1条/负面0条/中性0条 (共1条提及)"
-        },
-        "Lava": {
-          "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性1条 (共1条提及)"
         }
       },
       "key_insights": [
         "品牌声量前三：Apple, Samsung, Xiaomi",
-        "讨论最热的关键词：launch, iphone, android, galaxy, pro",
+        "讨论最热的关键词：iphone, launch, android, pro, galaxy",
         "OS 话题热度：Android, iOS, HarmonyOS"
       ],
       "trending_keywords": [
-        "launch",
         "iphone",
+        "launch",
         "android",
-        "galaxy",
         "pro",
-        "smartphone",
+        "galaxy",
         "samsung",
-        "price",
-        "apple",
+        "smartphone",
         "google",
+        "apple",
+        "price",
         "battery",
-        "pixel",
         "oneplus",
-        "vivo",
-        "launched"
+        "pixel",
+        "duo",
+        "vivo"
       ],
       "id": 1
     },
     {
       "id": 1,
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-10-20T11:45:29",
-      "summary": "本期监测到最受关注的品牌为：Apple(144次提及)、Samsung(94次提及)、Xiaomi(43次提及)、Google(39次提及)、Vivo(37次提及)。操作系统讨论热度：Android(115次)、iOS(19次)、HarmonyOS(16次)。热门讨论话题包括：launch、iphone、android等。整体情感倾向：正面16%、负面4%、中性80%。",
-      "hot_topics": "[{\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 110}, {\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 92}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 90}, {\"topic\": \"galaxy\", \"description\": \"Samsung Galaxy F70 5G With 5,000mAh Battery, 50-Megapixel Camera Goes on Sale in\", \"heat\": \"high\", \"count\": 81}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 81}, {\"topic\": \"smartphone\", \"description\": \"Mozilla to sell '$25' Firefox OS smartphones in India\", \"heat\": \"high\", \"count\": 69}, {\"topic\": \"samsung\", \"description\": \"Samsung Galaxy F70 5G With 5,000mAh Battery, 50-Megapixel Camera Goes on Sale in\", \"heat\": \"high\", \"count\": 65}, {\"topic\": \"price\", \"description\": \"OnePlus 16 vs iQOO 16: Price and Specifications Compared\", \"heat\": \"high\", \"count\": 63}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 60}, {\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 60}]",
-      "brand_sentiment": "{\"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面19条/负面6条/中性69条 (共94条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面1条/中性27条 (共30条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性5条 (共9条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面24条/负面5条/中性115条 (共144条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面1条/中性28条 (共33条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性31条 (共37条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面5条/负面0条/中性38条 (共43条提及)\"}, \"Realme\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性20条 (共21条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性23条 (共27条提及)\"}, \"Nokia\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性10条 (共12条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面3条/中性30条 (共39条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Tecno\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性2条 (共4条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性16条 (共19条提及)\"}, \"Infinix\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性0条 (共1条提及)\"}, \"Lava\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}}",
-      "key_insights": "[\"品牌声量前三：Apple, Samsung, Xiaomi\", \"讨论最热的关键词：launch, iphone, android, galaxy, pro\", \"OS 话题热度：Android, iOS, HarmonyOS\"]",
-      "trending_keywords": "[\"launch\", \"iphone\", \"android\", \"galaxy\", \"pro\", \"smartphone\", \"samsung\", \"price\", \"apple\", \"google\", \"battery\", \"pixel\", \"oneplus\", \"vivo\", \"launched\"]",
-      "posts_analyzed": 717,
+      "period_end": "2026-10-21T12:12:43",
+      "summary": "本期监测到最受关注的品牌为：Apple(142次提及)、Samsung(91次提及)、Xiaomi(46次提及)、Google(41次提及)、Vivo(39次提及)。操作系统讨论热度：Android(119次)、iOS(19次)、HarmonyOS(16次)。热门讨论话题包括：iphone、launch、android等。整体情感倾向：正面14%、负面3%、中性82%。",
+      "hot_topics": "[{\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 104}, {\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 103}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 98}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 84}, {\"topic\": \"galaxy\", \"description\": \"Samsung Galaxy S27 Series Display Sizes Tipped by Leaked Screen Protectors; Stor\", \"heat\": \"high\", \"count\": 74}, {\"topic\": \"samsung\", \"description\": \"Samsung Galaxy S27 Series Display Sizes Tipped by Leaked Screen Protectors; Stor\", \"heat\": \"high\", \"count\": 67}, {\"topic\": \"smartphone\", \"description\": \"Mozilla to sell '$25' Firefox OS smartphones in India\", \"heat\": \"high\", \"count\": 67}, {\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 65}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 61}, {\"topic\": \"price\", \"description\": \"Poco X8s Launched With 6,330mAh Battery, 50-Megapixel Rear Camera: Price, Specif\", \"heat\": \"high\", \"count\": 57}]",
+      "brand_sentiment": "{\"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性31条 (共35条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性30条 (共36条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面8条/负面0条/中性38条 (共46条提及)\"}, \"Realme\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性18条 (共20条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面21条/负面7条/中性114条 (共142条提及)\"}, \"Lava\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性6条 (共6条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性20条 (共24条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面19条/负面6条/中性66条 (共91条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性15条 (共18条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性4条 (共7条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面0条/中性33条 (共39条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面5条/负面2条/中性34条 (共41条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性11条 (共13条提及)\"}, \"Tecno\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性1条 (共3条提及)\"}, \"Infinix\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性0条 (共1条提及)\"}}",
+      "key_insights": "[\"品牌声量前三：Apple, Samsung, Xiaomi\", \"讨论最热的关键词：iphone, launch, android, pro, galaxy\", \"OS 话题热度：Android, iOS, HarmonyOS\"]",
+      "trending_keywords": "[\"iphone\", \"launch\", \"android\", \"pro\", \"galaxy\", \"samsung\", \"smartphone\", \"google\", \"apple\", \"price\", \"battery\", \"oneplus\", \"pixel\", \"duo\", \"vivo\"]",
+      "posts_analyzed": 728,
       "provider": "rule",
-      "created_at": "2026-10-20 11:59:43"
+      "created_at": "2026-10-21 12:15:30"
     }
   ]
 }
