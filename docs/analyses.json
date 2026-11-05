@@ -2,108 +2,112 @@
   "analyses": [
     {
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-11-04T14:46:10",
-      "posts_analyzed": 414,
+      "period_end": "2026-11-05T14:46:53",
+      "posts_analyzed": 774,
       "provider": "rule",
-      "summary": "本期监测到最受关注的品牌为：Apple(109次提及)、Google(40次提及)、Samsung(34次提及)、Xiaomi(15次提及)、OnePlus(12次提及)。操作系统讨论热度：Android(84次)、iOS(17次)、HarmonyOS(1次)。热门讨论话题包括：google、android、iphone等。整体情感倾向：正面17%、负面5%、中性78%。",
+      "summary": "本期监测到最受关注的品牌为：Apple(149次提及)、Samsung(84次提及)、OnePlus(56次提及)、Xiaomi(52次提及)、Oppo(42次提及)。操作系统讨论热度：Android(135次)、iOS(19次)、HarmonyOS(16次)。热门讨论话题包括：android、launch、iphone等。整体情感倾向：正面18%、负面3%、中性79%。",
       "hot_topics": [
-        {
-          "topic": "google",
-          "description": "Google will allow only apps from verified developers to be installed on Android",
-          "heat": "high",
-          "count": 81
-        },
         {
           "topic": "android",
           "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 68
+          "count": 104
+        },
+        {
+          "topic": "launch",
+          "description": "Nokia launches DIY repairable budget Android phone",
+          "heat": "high",
+          "count": 102
         },
         {
           "topic": "iphone",
           "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 48
+          "count": 85
         },
         {
-          "topic": "apple",
-          "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
+          "topic": "smartphone",
+          "description": "Mozilla to sell '$25' Firefox OS smartphones in India",
           "heat": "high",
-          "count": 43
+          "count": 84
+        },
+        {
+          "topic": "galaxy",
+          "description": "Samsung’s Hearing Aid Features Are Coming to Galaxy Buds 4 Pro and Buds 3 Pro Ea",
+          "heat": "high",
+          "count": 73
         },
         {
           "topic": "pro",
           "description": "Android Developer Verification: Threat masquerading as protection",
           "heat": "high",
-          "count": 37
+          "count": 73
         },
         {
-          "topic": "pixel",
-          "description": "Accidental Google Pixel Lock Screen Bypass",
+          "topic": "google",
+          "description": "Google will allow only apps from verified developers to be installed on Android",
           "heat": "high",
-          "count": 37
+          "count": 69
         },
         {
-          "topic": "galaxy",
-          "description": "Samsung Galaxy A38 Will Launch Next Year With a Notable Battery Upgrade, Report ",
+          "topic": "apple",
+          "description": "U.S. sues Apple, accusing it of maintaining an iPhone monopoly",
           "heat": "high",
-          "count": 23
+          "count": 68
         },
         {
-          "topic": "system",
-          "description": "EU age verification app to ban any Android system not licensed by Google",
+          "topic": "oneplus",
+          "description": "ColorOS 17 Release Schedule for November: Check Eligible Oppo, OnePlus, Realme D",
           "heat": "high",
-          "count": 23
+          "count": 59
         },
         {
-          "topic": "mobile",
-          "description": "Jolla is the last company with an 'alternative' mobile operating system",
+          "topic": "samsung",
+          "description": "Samsung’s Hearing Aid Features Are Coming to Galaxy Buds 4 Pro and Buds 3 Pro Ea",
           "heat": "high",
-          "count": 20
-        },
-        {
-          "topic": "operating",
-          "description": "Jolla is the last company with an 'alternative' mobile operating system",
-          "heat": "high",
-          "count": 20
+          "count": 59
         }
       ],
       "brand_sentiment": {
-        "Apple": {
+        "Oppo": {
           "sentiment": "positive",
-          "reason": "正面29条/负面6条/中性74条 (共109条提及)"
+          "reason": "正面14条/负面1条/中性27条 (共42条提及)"
         },
         "Vivo": {
           "sentiment": "positive",
-          "reason": "正面5条/负面0条/中性5条 (共10条提及)"
+          "reason": "正面5条/负面0条/中性26条 (共31条提及)"
         },
-        "Motorola": {
+        "iQOO": {
           "sentiment": "positive",
-          "reason": "正面2条/负面0条/中性6条 (共8条提及)"
+          "reason": "正面4条/负面0条/中性6条 (共10条提及)"
         },
-        "Oppo": {
+        "Apple": {
           "sentiment": "positive",
-          "reason": "正面1条/负面0条/中性7条 (共8条提及)"
+          "reason": "正面31条/负面6条/中性112条 (共149条提及)"
         },
         "Samsung": {
           "sentiment": "positive",
-          "reason": "正面6条/负面4条/中性24条 (共34条提及)"
+          "reason": "正面15条/负面3条/中性66条 (共84条提及)"
+        },
+        "Realme": {
+          "sentiment": "positive",
+          "reason": "正面1条/负面0条/中性20条 (共21条提及)"
+        },
+        "OnePlus": {
+          "sentiment": "positive",
+          "reason": "正面12条/负面3条/中性41条 (共56条提及)"
         },
         "Xiaomi": {
           "sentiment": "positive",
-          "reason": "正面3条/负面0条/中性12条 (共15条提及)"
+          "reason": "正面7条/负面0条/中性45条 (共52条提及)"
         },
-        "Realme": {
-          "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性1条 (共1条提及)"
+        "Motorola": {
+          "sentiment": "positive",
+          "reason": "正面11条/负面0条/中性25条 (共36条提及)"
         },
         "Google": {
           "sentiment": "positive",
-          "reason": "正面7条/负面6条/中性27条 (共40条提及)"
-        },
-        "Nothing": {
-          "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性2条 (共2条提及)"
+          "reason": "正面7条/负面5条/中性29条 (共41条提及)"
         },
         "Micromax": {
           "sentiment": "neutral",
@@ -111,57 +115,61 @@
         },
         "Nokia": {
           "sentiment": "neutral",
-          "reason": "正面0条/负面0条/中性1条 (共1条提及)"
+          "reason": "正面0条/负面0条/中性5条 (共5条提及)"
         },
-        "OnePlus": {
-          "sentiment": "positive",
-          "reason": "正面4条/负面0条/中性8条 (共12条提及)"
+        "Lava": {
+          "sentiment": "neutral",
+          "reason": "正面0条/负面0条/中性2条 (共2条提及)"
         },
-        "Infinix": {
+        "Tecno": {
           "sentiment": "positive",
           "reason": "正面1条/负面0条/中性1条 (共2条提及)"
         },
-        "iQOO": {
+        "Nothing": {
           "sentiment": "positive",
-          "reason": "正面4条/负面0条/中性1条 (共5条提及)"
+          "reason": "正面1条/负面0条/中性13条 (共14条提及)"
+        },
+        "Infinix": {
+          "sentiment": "neutral",
+          "reason": "正面0条/负面0条/中性1条 (共1条提及)"
         }
       },
       "key_insights": [
-        "品牌声量前三：Apple, Google, Samsung",
-        "讨论最热的关键词：google, android, iphone, apple, pro",
+        "品牌声量前三：Apple, Samsung, OnePlus",
+        "讨论最热的关键词：android, launch, iphone, smartphone, galaxy",
         "OS 话题热度：Android, iOS, HarmonyOS"
       ],
       "trending_keywords": [
-        "google",
         "android",
-        "iphone",
-        "apple",
-        "pro",
-        "pixel",
-        "galaxy",
-        "system",
-        "mobile",
-        "operating",
-        "duo",
         "launch",
+        "iphone",
         "smartphone",
-        "app",
-        "samsung"
+        "galaxy",
+        "pro",
+        "google",
+        "apple",
+        "oneplus",
+        "samsung",
+        "series",
+        "price",
+        "xiaomi",
+        "pixel",
+        "oppo"
       ],
       "id": 1
     },
     {
       "id": 1,
       "period_start": "2010-02-17T20:13:54+00:00",
-      "period_end": "2026-11-04T14:46:10",
-      "summary": "本期监测到最受关注的品牌为：Apple(109次提及)、Google(40次提及)、Samsung(34次提及)、Xiaomi(15次提及)、OnePlus(12次提及)。操作系统讨论热度：Android(84次)、iOS(17次)、HarmonyOS(1次)。热门讨论话题包括：google、android、iphone等。整体情感倾向：正面17%、负面5%、中性78%。",
-      "hot_topics": "[{\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 81}, {\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 68}, {\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 48}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 43}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 37}, {\"topic\": \"pixel\", \"description\": \"Accidental Google Pixel Lock Screen Bypass\", \"heat\": \"high\", \"count\": 37}, {\"topic\": \"galaxy\", \"description\": \"Samsung Galaxy A38 Will Launch Next Year With a Notable Battery Upgrade, Report \", \"heat\": \"high\", \"count\": 23}, {\"topic\": \"system\", \"description\": \"EU age verification app to ban any Android system not licensed by Google\", \"heat\": \"high\", \"count\": 23}, {\"topic\": \"mobile\", \"description\": \"Jolla is the last company with an 'alternative' mobile operating system\", \"heat\": \"high\", \"count\": 20}, {\"topic\": \"operating\", \"description\": \"Jolla is the last company with an 'alternative' mobile operating system\", \"heat\": \"high\", \"count\": 20}]",
-      "brand_sentiment": "{\"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面29条/负面6条/中性74条 (共109条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面5条/负面0条/中性5条 (共10条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面2条/负面0条/中性6条 (共8条提及)\"}, \"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性7条 (共8条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面6条/负面4条/中性24条 (共34条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面3条/负面0条/中性12条 (共15条提及)\"}, \"Realme\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面7条/负面6条/中性27条 (共40条提及)\"}, \"Nothing\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性8条 (共12条提及)\"}, \"Infinix\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性1条 (共2条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性1条 (共5条提及)\"}}",
-      "key_insights": "[\"品牌声量前三：Apple, Google, Samsung\", \"讨论最热的关键词：google, android, iphone, apple, pro\", \"OS 话题热度：Android, iOS, HarmonyOS\"]",
-      "trending_keywords": "[\"google\", \"android\", \"iphone\", \"apple\", \"pro\", \"pixel\", \"galaxy\", \"system\", \"mobile\", \"operating\", \"duo\", \"launch\", \"smartphone\", \"app\", \"samsung\"]",
-      "posts_analyzed": 414,
+      "period_end": "2026-11-05T14:46:53",
+      "summary": "本期监测到最受关注的品牌为：Apple(149次提及)、Samsung(84次提及)、OnePlus(56次提及)、Xiaomi(52次提及)、Oppo(42次提及)。操作系统讨论热度：Android(135次)、iOS(19次)、HarmonyOS(16次)。热门讨论话题包括：android、launch、iphone等。整体情感倾向：正面18%、负面3%、中性79%。",
+      "hot_topics": "[{\"topic\": \"android\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 104}, {\"topic\": \"launch\", \"description\": \"Nokia launches DIY repairable budget Android phone\", \"heat\": \"high\", \"count\": 102}, {\"topic\": \"iphone\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 85}, {\"topic\": \"smartphone\", \"description\": \"Mozilla to sell '$25' Firefox OS smartphones in India\", \"heat\": \"high\", \"count\": 84}, {\"topic\": \"galaxy\", \"description\": \"Samsung’s Hearing Aid Features Are Coming to Galaxy Buds 4 Pro and Buds 3 Pro Ea\", \"heat\": \"high\", \"count\": 73}, {\"topic\": \"pro\", \"description\": \"Android Developer Verification: Threat masquerading as protection\", \"heat\": \"high\", \"count\": 73}, {\"topic\": \"google\", \"description\": \"Google will allow only apps from verified developers to be installed on Android\", \"heat\": \"high\", \"count\": 69}, {\"topic\": \"apple\", \"description\": \"U.S. sues Apple, accusing it of maintaining an iPhone monopoly\", \"heat\": \"high\", \"count\": 68}, {\"topic\": \"oneplus\", \"description\": \"ColorOS 17 Release Schedule for November: Check Eligible Oppo, OnePlus, Realme D\", \"heat\": \"high\", \"count\": 59}, {\"topic\": \"samsung\", \"description\": \"Samsung’s Hearing Aid Features Are Coming to Galaxy Buds 4 Pro and Buds 3 Pro Ea\", \"heat\": \"high\", \"count\": 59}]",
+      "brand_sentiment": "{\"Oppo\": {\"sentiment\": \"positive\", \"reason\": \"正面14条/负面1条/中性27条 (共42条提及)\"}, \"Vivo\": {\"sentiment\": \"positive\", \"reason\": \"正面5条/负面0条/中性26条 (共31条提及)\"}, \"iQOO\": {\"sentiment\": \"positive\", \"reason\": \"正面4条/负面0条/中性6条 (共10条提及)\"}, \"Apple\": {\"sentiment\": \"positive\", \"reason\": \"正面31条/负面6条/中性112条 (共149条提及)\"}, \"Samsung\": {\"sentiment\": \"positive\", \"reason\": \"正面15条/负面3条/中性66条 (共84条提及)\"}, \"Realme\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性20条 (共21条提及)\"}, \"OnePlus\": {\"sentiment\": \"positive\", \"reason\": \"正面12条/负面3条/中性41条 (共56条提及)\"}, \"Xiaomi\": {\"sentiment\": \"positive\", \"reason\": \"正面7条/负面0条/中性45条 (共52条提及)\"}, \"Motorola\": {\"sentiment\": \"positive\", \"reason\": \"正面11条/负面0条/中性25条 (共36条提及)\"}, \"Google\": {\"sentiment\": \"positive\", \"reason\": \"正面7条/负面5条/中性29条 (共41条提及)\"}, \"Micromax\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}, \"Nokia\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性5条 (共5条提及)\"}, \"Lava\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性2条 (共2条提及)\"}, \"Tecno\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性1条 (共2条提及)\"}, \"Nothing\": {\"sentiment\": \"positive\", \"reason\": \"正面1条/负面0条/中性13条 (共14条提及)\"}, \"Infinix\": {\"sentiment\": \"neutral\", \"reason\": \"正面0条/负面0条/中性1条 (共1条提及)\"}}",
+      "key_insights": "[\"品牌声量前三：Apple, Samsung, OnePlus\", \"讨论最热的关键词：android, launch, iphone, smartphone, galaxy\", \"OS 话题热度：Android, iOS, HarmonyOS\"]",
+      "trending_keywords": "[\"android\", \"launch\", \"iphone\", \"smartphone\", \"galaxy\", \"pro\", \"google\", \"apple\", \"oneplus\", \"samsung\", \"series\", \"price\", \"xiaomi\", \"pixel\", \"oppo\"]",
+      "posts_analyzed": 774,
       "provider": "rule",
-      "created_at": "2026-11-04 14:51:40"
+      "created_at": "2026-11-05 14:54:18"
     }
   ]
 }
